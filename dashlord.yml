@@ -1,0 +1,100 @@
+title: DashLord Fabrique des ministères sociaux
+tools:
+  - lighthouse
+  - testssl
+  - wappalyzer
+  - nuclei
+  - zap
+  - thirdparties
+  - dependabot
+  - codescan
+  - updownio
+  - http
+urls:
+  - url: https://archifiltre.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - unknown
+    repositories:
+      - socialgouv/archifiltre
+      - socialgouv/archifiltre-site
+      - socialgouv/archifiltre-statistics
+  - url: https://index-egapro.travail.gouv.fr
+    category: fabrique
+    tags:
+      - travail
+    repositories:
+      - socialgouv/egapro
+      - socialgouv/egapro-api
+      - socialgouv/egapro-declaration
+  - url: https://index-egapro.travail.gouv.fr/consulter-index
+    category: fabrique
+    tags:
+      - travail
+    repositories:
+      - socialgouv/egapro-declaration
+  - url: https://code.travail.gouv.fr
+    category: fabrique
+    tags:
+      - travail
+    repositories:
+      - socialgouv/code-du-travail-numerique
+      - socialgouv/cdtn-admin
+  - url: https://domifa.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - social
+    repositories:
+      - socialgouv/domifa
+  - url: https://emjpm.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - social
+    repositories:
+      - socialgouv/emjpm
+  - url: https://www.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - social
+      - sante
+      - travail
+    repositories:
+      - socialgouv/www
+  - url: https://medle.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/medle
+  - url: https://monsuivipsy.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/monsuivipsy
+  - url: https://onvs.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/onvs
+  - url: https://ozensemble.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/ozensemble
+  - url: https://pjm.social.gouv.fr
+    category: fabrique
+    tags:
+      - social
+    repositories:
+      - socialgouv/emjpm-portail
+  - url: https://tumeplay.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/tumeplay-app
+      - socialgouv/tumeplay-back
+
