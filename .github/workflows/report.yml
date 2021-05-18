@@ -3,10 +3,10 @@ name: DashLord report
 on:
   workflow_dispatch:
   workflow_run:
-   workflows: ["DashLord scans"]
-   branches: [main]
-   types: 
-     - completed
+    workflows: ["DashLord scans"]
+    branches: [main]
+    types:
+      - completed
 
 jobs:
   website:
@@ -17,7 +17,7 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: '**/node_modules'
+          path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       # build the report
@@ -30,11 +30,18 @@ jobs:
           path: report.json
           name: report
           if-no-files-found: error
-      
+
+      # save full report for history
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: '["report.json"]'
+          author_name: ${{ secrets.SOCIALGROOVYBOT_NAME }}
+          author_email: ${{ secrets.SOCIALGROOVYBOT_EMAIL }}
+          message: "chore: report update"
+
       # deploy build to gh-pages
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
           folder: build
-
