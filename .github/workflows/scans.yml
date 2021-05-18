@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: init
-        uses: "SocialGouv/dashlord-init-action@master"
+        uses: "SocialGouv/dashlord-init-action@debug"
 
   scans:
     runs-on: ubuntu-latest
