@@ -97,4 +97,9 @@ urls:
     repositories:
       - socialgouv/tumeplay-app
       - socialgouv/tumeplay-back
-
+  - url: https://www.psyenfantado.sante.gouv.fr
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - betagouv/psy-enfant-ado
