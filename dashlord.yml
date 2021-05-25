@@ -103,3 +103,10 @@ urls:
       - sante
     repositories:
       - betagouv/psy-enfant-ado
+  - url: https://sample-next-app.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - demo
+    repositories:
+      - socialgouv/sample-next-app
+
