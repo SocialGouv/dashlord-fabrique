@@ -1,0 +1,104 @@
+{
+  "trackers": [],
+  "cookies": [
+    {
+      "name": "_pk_ses.178.2940",
+      "value": "1",
+      "domain": "www.psyenfantado.sante.gouv.fr",
+      "path": "/",
+      "expires": 1621948136,
+      "size": 17,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_pk_id.178.2940",
+      "value": "10e1b94be89067e7.1621946337.1.1621946337.1621946337.",
+      "domain": "www.psyenfantado.sante.gouv.fr",
+      "path": "/",
+      "expires": 1655901537,
+      "size": 67,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
+  "headers": {
+    "server": "openresty",
+    "date": "Tue, 25 May 2021 12:38:56 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "x-request-id": "27b030dd-90c5-4a51-bff6-5092d0c49520",
+    "strict-transport-security": "max-age=31536000",
+    "x-powered-by": "Express",
+    "content-security-policy": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+    "etag": "W/\"31a7-AldoS3yRQU5Rx1VpnoTRIWaJ+W4\"",
+    "content-encoding": "gzip"
+  },
+  "endpoints": [
+    {
+      "hostname": "www.psyenfantado.sante.gouv.fr",
+      "ip": "148.253.96.24",
+      "geoip": {
+        "continent": {
+          "code": "EU",
+          "geoname_id": 6255148,
+          "names": {
+            "de": "Europa",
+            "en": "Europe",
+            "es": "Europa",
+            "fr": "Europe",
+            "ja": "ヨーロッパ",
+            "pt-BR": "Europa",
+            "ru": "Европа",
+            "zh-CN": "欧洲"
+          }
+        },
+        "country": {
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
+          "names": {
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 500,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
+          "time_zone": "Europe/Paris"
+        },
+        "registered_country": {
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
+          "names": {
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
+          }
+        }
+      }
+    }
+  ]
+}
