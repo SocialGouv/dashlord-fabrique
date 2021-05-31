@@ -81,7 +81,7 @@ ZAP Scanning Report
         <p>
 </p>
         <h3 class="left-header">Summary of Alerts</h3>
-        <h3 class="time-stamp">Generated on Tue, 25 May 2021 23:17:59</h3>
+        <h3 class="time-stamp">Generated on Mon, 31 May 2021 10:26:03</h3>
         <table width="45%" class="summary">
             <tr bgcolor="#666666">
                 <th width="45%" height="24">Risk 
@@ -95,7 +95,7 @@ ZAP Scanning Report
                 <td><a href="#medium">Medium</a></td><td align="center">3</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#low">Low</a></td><td align="center">5</td>
+                <td><a href="#low">Low</a></td><td align="center">4</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td><a href="#info">Informational</a></td><td align="center">5</td>
@@ -108,13 +108,13 @@ ZAP Scanning Report
                 <th width="60%" height="24">Name</th><th width="20%" align="center">Risk Level</th><th width="20%" align="center">Number of Instances</th>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Content Security Policy (CSP) Header Not Set</td><td align="center">Medium</td><td align="center">6</td>
+                <td>CSP: style-src unsafe-inline</td><td align="center">Medium</td><td align="center">5</td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td>CSP: Wildcard Directive</td><td align="center">Medium</td><td align="center">5</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Reverse Tabnabbing</td><td align="center">Medium</td><td align="center">4</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
-                <td>X-Frame-Options Header Not Set</td><td align="center">Medium</td><td align="center">6</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Dangerous JS Functions</td><td align="center">Low</td><td align="center">3</td>
@@ -127,9 +127,6 @@ ZAP Scanning Report
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Server Leaks Version Information via "Server" HTTP Response Header Field</td><td align="center">Low</td><td align="center">11</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
-                <td>X-Content-Type-Options Header Missing</td><td align="center">Low</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Base64 Disclosure</td><td align="center">Informational</td><td align="center">6</td>
@@ -156,28 +153,18 @@ ZAP Scanning Report
   
   
             <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (High)</th><th width="80%">Content Security Policy (CSP) Header Not Set</th>
+                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">CSP: style-src unsafe-inline</th>
             </tr>
               
   
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page &mdash; covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p></td>
+                <td width="20%">Description</td><td width="80%"><p>style-src includes unsafe-inline.</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
             </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
               
   
   
@@ -189,34 +176,30 @@ ZAP Scanning Report
                 <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
             </tr>
               
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
             </tr>
               
-  
-  
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
             </tr>
               
   
@@ -229,18 +212,199 @@ ZAP Scanning Report
                 <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
             </tr>
               
-  
-  
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">6</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: "Content-Security-Policy" for Chrome 25+, Firefox 23+ and Safari 7+, "X-Content-Security-Policy" for Firefox 4.0+ and Internet Explorer 10+, and "X-WebKit-CSP" for Chrome 14+ and Safari 6+.</p></td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p></td>
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">16</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">15</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-medium">
+                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">CSP: Wildcard Directive</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Content-Security-Policy</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -293,7 +457,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -307,7 +471,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -344,137 +508,6 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%">Reference</td><td width="80%"><p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">X-Frame-Options Header Not Set</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">6</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's "frame-ancestors" directive. </p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">16</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">15</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -600,6 +633,26 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/webpack-855af7a395f05aa0d6b4.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
@@ -640,46 +693,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/webpack-855af7a395f05aa0d6b4.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
             </tr>
               
@@ -691,6 +704,26 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/main-8d8d94fb1ce8aa5e9ef9.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -747,6 +780,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/css/deedd414009949d56138.css</td>
             </tr>
               
@@ -789,34 +836,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/css/70774bd28bacdf6c4c91.css</td>
             </tr>
               
@@ -846,6 +865,20 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/img/app-store-badge.svg</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -948,6 +981,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/main-8d8d94fb1ce8aa5e9ef9.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
             </tr>
               
@@ -1004,7 +1051,35 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1033,48 +1108,6 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/img/favicon.png</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/main-8d8d94fb1ce8aa5e9ef9.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nginx/1.17.8</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1118,214 +1151,6 @@ ZAP Scanning Report
   
   
   
-            <tr height="24" class="risk-low">
-                <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">X-Content-Type-Options Header Missing</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/webpack-855af7a395f05aa0d6b4.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/img/favicon.png</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/main-8d8d94fb1ce8aa5e9ef9.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/css/deedd414009949d56138.css</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/css/70774bd28bacdf6c4c91.css</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">11</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At "High" threshold this scan rule will not alert on client or server error responses.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">16</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">15</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
             <tr height="24" class="risk-info">
                 <th width="20%"><a name="info"></a>Informational (Medium)</th><th width="80%">Base64 Disclosure</th>
             </tr>
@@ -1343,7 +1168,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1351,41 +1176,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">/_next/static/Hh0HcUD6SLYIc5giBC3ie/_buildManifest</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/_next/static/oxXPMhhObSWL6RgN19Bf_/_buildManifest</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">pages__SectionTitle-sc-1jfrq1t-0</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">pages__SectionTitle-sc-1jfrq1t-0</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1413,7 +1210,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1421,7 +1218,35 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">/_next/static/Hh0HcUD6SLYIc5giBC3ie/_buildManifest</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">pages__SectionTitle-sc-1jfrq1t-0</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/_next/static/oxXPMhhObSWL6RgN19Bf_/_buildManifest</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">pages__SectionTitle-sc-1jfrq1t-0</td>
             </tr>
               
   
@@ -1435,7 +1260,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>�����쵫bs���w\x0014\x000f��`�9� B�'������\x001a�'޲</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>�����쵫bs�1\�!���X����}\x0005�������\x001a�'޲</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -1495,7 +1320,77 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.13a7fab19158889806d9.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">select</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-5fd55f2c53cba7759d20.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/018b72f59dafe1fdbac45d717bc6b7c427dc305c.98580feccb4dced15d4d.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1537,20 +1432,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/robots.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
             </tr>
               
@@ -1566,62 +1447,6 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/commons.ec13d23822d2f92287e5.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-5fd55f2c53cba7759d20.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">query</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/018b72f59dafe1fdbac45d717bc6b7c427dc305c.98580feccb4dced15d4d.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">select</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1703,34 +1528,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;noscript data-n-css=""&gt;&lt;/noscript&gt;</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;noscript data-n-css=""&gt;&lt;/noscript&gt;</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/polyfills-feb8a7604fa7fce626b2.js</td>
             </tr>
               
@@ -1746,6 +1543,20 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;noscript data-n-css=""&gt;&lt;/noscript&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1788,6 +1599,20 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/politique-confidentialite</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;noscript data-n-css=""&gt;&lt;/noscript&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1887,6 +1712,16 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/main-8d8d94fb1ce8aa5e9ef9.js</td>
             </tr>
               
@@ -1897,7 +1732,27 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/webpack-855af7a395f05aa0d6b4.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1918,36 +1773,6 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/sitemap.xml</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/mentions-legales</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2019,20 +1844,6 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">805306368</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.13a7fab19158889806d9.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Evidence</td><td width="80%">1073741825</td>
             </tr>
               
@@ -2076,6 +1887,20 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Evidence</td><td width="80%">67108864</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.13a7fab19158889806d9.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">805306368</td>
             </tr>
               
   
@@ -2159,7 +1984,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>805306368, which evaluates to: 1995-07-09 16:12:48</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>1073741825, which evaluates to: 2004-01-10 13:37:05</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
