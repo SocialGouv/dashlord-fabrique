@@ -28293,246 +28293,7 @@
     "repositories": [
       "betagouv/psy-enfant-ado"
     ],
-    "http": {
-      "url": "https://www.psyenfantado.sante.gouv.fr",
-      "algorithm_version": 2,
-      "end_time": "Mon, 31 May 2021 10:33:13 GMT",
-      "grade": "A+",
-      "hidden": false,
-      "likelihood_indicator": "LOW",
-      "response_headers": {
-        "Connection": "keep-alive",
-        "Content-Encoding": "gzip",
-        "Content-Security-Policy": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
-        "Content-Type": "text/html; charset=utf-8",
-        "Date": "Mon, 31 May 2021 10:33:11 GMT",
-        "ETag": "W/\"3275-OB1JMJNuqv0wwRkTIr6iZUzfClg\"",
-        "Server": "openresty",
-        "Strict-Transport-Security": "max-age=31536000",
-        "Transfer-Encoding": "chunked",
-        "X-Powered-By": "Express",
-        "X-Request-ID": "c4b58b26-c730-451f-8d6f-eac7f0c89b30"
-      },
-      "scan_id": 19426864,
-      "score": 100,
-      "start_time": "Mon, 31 May 2021 10:33:08 GMT",
-      "state": "FINISHED",
-      "status_code": 200,
-      "tests_failed": 1,
-      "tests_passed": 11,
-      "tests_quantity": 12,
-      "details": {
-        "content-security-policy": {
-          "expectation": "csp-implemented-with-no-unsafe",
-          "name": "content-security-policy",
-          "output": {
-            "data": {
-              "base-uri": [
-                "'self'"
-              ],
-              "block-all-mixed-content": [
-                "'none'"
-              ],
-              "default-src": [
-                "'self'"
-              ],
-              "font-src": [
-                "'self'",
-                "https:",
-                "data:"
-              ],
-              "frame-ancestors": [
-                "'self'"
-              ],
-              "img-src": [
-                "https://stats.data.gouv.fr/",
-                "'self'",
-                "data:"
-              ],
-              "object-src": [
-                "'none'"
-              ],
-              "script-src": [
-                "https://stats.data.gouv.fr/",
-                "'self'"
-              ],
-              "script-src-attr": [
-                "'none'"
-              ],
-              "style-src": [
-                "'self'",
-                "'unsafe-inline'",
-                "https:"
-              ],
-              "upgrade-insecure-requests": [
-                "'none'"
-              ]
-            },
-            "http": true,
-            "meta": false,
-            "policy": {
-              "antiClickjacking": true,
-              "defaultNone": false,
-              "insecureBaseUri": false,
-              "insecureFormAction": true,
-              "insecureSchemeActive": false,
-              "insecureSchemePassive": false,
-              "strictDynamic": false,
-              "unsafeEval": false,
-              "unsafeInline": false,
-              "unsafeInlineStyle": true,
-              "unsafeObjects": false
-            }
-          },
-          "pass": true,
-          "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
-          "score_description": "Content Security Policy (CSP) implemented with unsafe sources inside style-src. This includes 'unsafe-inline', data: or overly broad sources such as https:.",
-          "score_modifier": 0
-        },
-        "contribute": {
-          "expectation": "contribute-json-only-required-on-mozilla-properties",
-          "name": "contribute",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "contribute-json-only-required-on-mozilla-properties",
-          "score_description": "Contribute.json isn't required on websites that don't belong to Mozilla",
-          "score_modifier": 0
-        },
-        "cookies": {
-          "expectation": "cookies-secure-with-httponly-sessions",
-          "name": "cookies",
-          "output": {
-            "data": null,
-            "sameSite": null
-          },
-          "pass": true,
-          "result": "cookies-not-found",
-          "score_description": "No cookies detected",
-          "score_modifier": 0
-        },
-        "cross-origin-resource-sharing": {
-          "expectation": "cross-origin-resource-sharing-not-implemented",
-          "name": "cross-origin-resource-sharing",
-          "output": {
-            "data": {
-              "acao": null,
-              "clientaccesspolicy": null,
-              "crossdomain": null
-            }
-          },
-          "pass": true,
-          "result": "cross-origin-resource-sharing-not-implemented",
-          "score_description": "Content is not visible via cross-origin resource sharing (CORS) files or headers",
-          "score_modifier": 0
-        },
-        "public-key-pinning": {
-          "expectation": "hpkp-not-implemented",
-          "name": "public-key-pinning",
-          "output": {
-            "data": null,
-            "includeSubDomains": false,
-            "max-age": null,
-            "numPins": null,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hpkp-not-implemented",
-          "score_description": "HTTP Public Key Pinning (HPKP) header not implemented",
-          "score_modifier": 0
-        },
-        "redirection": {
-          "expectation": "redirection-to-https",
-          "name": "redirection",
-          "output": {
-            "destination": "https://www.psyenfantado.sante.gouv.fr/",
-            "redirects": true,
-            "route": [
-              "http://www.psyenfantado.sante.gouv.fr/",
-              "https://www.psyenfantado.sante.gouv.fr/"
-            ],
-            "status_code": 200
-          },
-          "pass": true,
-          "result": "redirection-to-https",
-          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
-          "score_modifier": 0
-        },
-        "referrer-policy": {
-          "expectation": "referrer-policy-private",
-          "name": "referrer-policy",
-          "output": {
-            "data": null,
-            "http": false,
-            "meta": false
-          },
-          "pass": true,
-          "result": "referrer-policy-not-implemented",
-          "score_description": "Referrer-Policy header not implemented",
-          "score_modifier": 0
-        },
-        "strict-transport-security": {
-          "expectation": "hsts-implemented-max-age-at-least-six-months",
-          "name": "strict-transport-security",
-          "output": {
-            "data": "max-age=31536000",
-            "includeSubDomains": false,
-            "max-age": 31536000,
-            "preload": false,
-            "preloaded": false
-          },
-          "pass": true,
-          "result": "hsts-implemented-max-age-at-least-six-months",
-          "score_description": "HTTP Strict Transport Security (HSTS) header set to a minimum of six months (15768000)",
-          "score_modifier": 0
-        },
-        "subresource-integrity": {
-          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-          "name": "subresource-integrity",
-          "output": {
-            "data": {}
-          },
-          "pass": true,
-          "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-          "score_description": "Subresource Integrity (SRI) not implemented, but all scripts are loaded from a similar origin",
-          "score_modifier": 0
-        },
-        "x-content-type-options": {
-          "expectation": "x-content-type-options-nosniff",
-          "name": "x-content-type-options",
-          "output": {
-            "data": null
-          },
-          "pass": false,
-          "result": "x-content-type-options-not-implemented",
-          "score_description": "X-Content-Type-Options header not implemented",
-          "score_modifier": -5
-        },
-        "x-frame-options": {
-          "expectation": "x-frame-options-sameorigin-or-deny",
-          "name": "x-frame-options",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "x-frame-options-implemented-via-csp",
-          "score_description": "X-Frame-Options (XFO) implemented via the CSP frame-ancestors directive",
-          "score_modifier": 5
-        },
-        "x-xss-protection": {
-          "expectation": "x-xss-protection-1-mode-block",
-          "name": "x-xss-protection",
-          "output": {
-            "data": null
-          },
-          "pass": true,
-          "result": "x-xss-protection-not-needed-due-to-csp",
-          "score_description": "X-XSS-Protection header not needed due to strong Content Security Policy (CSP) header",
-          "score_modifier": 0
-        }
-      }
-    },
+    "http": null,
     "updownio": {
       "token": "9j0d",
       "url": "https://www.psyenfantado.sante.gouv.fr",
@@ -28555,15 +28316,15 @@
         "tok",
         "syd"
       ],
-      "last_check_at": "2021-05-31T10:39:58Z",
-      "next_check_at": "2021-05-31T10:40:58Z",
+      "last_check_at": "2021-06-05T00:07:58Z",
+      "next_check_at": "2021-06-05T00:08:58Z",
       "mute_until": null,
       "favicon_url": null,
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2021-05-31T10:35:59Z",
+        "tested_at": "2021-06-05T00:04:00Z",
         "expires_at": "2021-08-09T09:28:03Z",
         "valid": true,
         "error": null
@@ -28572,30 +28333,40 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 9,
+          "namelookup": 8,
           "connection": 8,
-          "handshake": 20,
-          "response": 12,
-          "total": 49
+          "handshake": 21,
+          "response": 15,
+          "total": 52
         }
       }
     },
     "nmap": null,
-    "dependabot": [
-      {
-        "url": "https://github.com/betagouv/psy-enfant-ado",
-        "vulnerabilityAlerts": {
-          "totalCount": 0,
-          "nodes": []
+    "dependabot": {
+      "totalCount": 0,
+      "grade": "A",
+      "repositories": [
+        {
+          "url": "https://github.com/betagouv/psy-enfant-ado",
+          "vulnerabilityAlerts": {
+            "totalCount": 0,
+            "nodes": []
+          },
+          "grade": "A"
         }
-      }
-    ],
-    "codescan": [
-      {
-        "url": "https://github.com/betagouv/psy-enfant-ado",
-        "alerts": []
-      }
-    ],
+      ]
+    },
+    "codescan": {
+      "totalCount": 0,
+      "grade": "A",
+      "repositories": [
+        {
+          "url": "https://github.com/betagouv/psy-enfant-ado",
+          "grade": "A",
+          "alerts": []
+        }
+      ]
+    },
     "testssl": [
       {
         "id": "service",
@@ -28804,7 +28575,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/148.253.96.24",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
@@ -28937,7 +28708,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/148.253.96.24",
         "port": "443",
         "severity": "OK",
-        "finding": "69 >= 30 days"
+        "finding": "65 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -29133,7 +28904,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/148.253.96.24",
         "port": "443",
         "severity": "INFO",
-        "finding": "+2 seconds from localtime"
+        "finding": "+6 seconds from localtime"
       },
       {
         "id": "HSTS_time",
@@ -30038,7 +29809,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/185.21.194.105",
         "port": "443",
         "severity": "OK",
-        "finding": "69 >= 30 days"
+        "finding": "65 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -30234,7 +30005,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "+2 seconds from localtime"
       },
       {
         "id": "HSTS_time",
@@ -30804,7 +30575,7 @@
         "ip": "www.psyenfantado.sante.gouv.fr/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "253"
+        "finding": "300"
       }
     ],
     "thirdparties": {
@@ -30815,7 +30586,7 @@
           "value": "1",
           "domain": "www.psyenfantado.sante.gouv.fr",
           "path": "/",
-          "expires": 1622459021,
+          "expires": 1622853018,
           "size": 17,
           "httpOnly": false,
           "secure": false,
@@ -30827,10 +30598,10 @@
         },
         {
           "name": "_pk_id.178.2940",
-          "value": "769169d93b8a66b7.1622457222.1.1622457222.1622457222.",
+          "value": "742d303561ac1a0c.1622851219.1.1622851219.1622851219.",
           "domain": "www.psyenfantado.sante.gouv.fr",
           "path": "/",
-          "expires": 1656412422,
+          "expires": 1656806419,
           "size": 67,
           "httpOnly": false,
           "secure": false,
@@ -30843,13 +30614,13 @@
       ],
       "headers": {
         "server": "openresty",
-        "date": "Mon, 31 May 2021 10:33:42 GMT",
+        "date": "Sat, 05 Jun 2021 00:00:26 GMT",
         "content-type": "text/html; charset=utf-8",
-        "x-request-id": "5342f41e-d123-4f4e-a749-8a64e77b2cf5",
+        "x-request-id": "7d558ce0-481e-4ae1-99cc-1dbb99aaccd1",
         "strict-transport-security": "max-age=31536000",
         "x-powered-by": "Express",
         "content-security-policy": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
-        "etag": "W/\"3275-OB1JMJNuqv0wwRkTIr6iZUzfClg\"",
+        "etag": "W/\"337e-f8el6rYlaLv+0b8809R1BzTlHhs\"",
         "content-encoding": "gzip"
       },
       "endpoints": [
@@ -31037,7 +30808,7 @@
     },
     "zap": {
       "@version": "2.10.0",
-      "@generated": "Mon, 31 May 2021 10:32:57",
+      "@generated": "Fri, 4 Jun 2021 23:53:02",
       "site": [
         {
           "@name": "https://www.psyenfantado.sante.gouv.fr",
@@ -31046,13 +30817,6 @@
           "@ssl": "true",
           "alerts": [
             {
-              "name": "X-Content-Type-Options Header Missing",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>"
-            },
-            {
               "name": "Timestamp Disclosure - Unix",
               "riskcode": "0",
               "confidence": "1",
@@ -31060,11 +30824,18 @@
               "desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>"
             },
             {
-              "name": "Base64 Disclosure",
-              "riskcode": "0",
+              "name": "X-Content-Type-Options Header Missing",
+              "riskcode": "1",
               "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>"
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>"
+            },
+            {
+              "name": "Feature Policy Header Not Set",
+              "riskcode": "1",
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>Feature Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Feature Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
             },
             {
               "name": "Storable but Non-Cacheable Content",
@@ -31072,6 +30843,13 @@
               "confidence": "2",
               "riskdesc": "Informational (Medium)",
               "desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>"
+            },
+            {
+              "name": "Base64 Disclosure",
+              "riskcode": "0",
+              "confidence": "2",
+              "riskdesc": "Informational (Medium)",
+              "desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>"
             },
             {
               "name": "Reverse Tabnabbing",
@@ -31095,18 +30873,18 @@
               "desc": "<p>The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.</p>"
             },
             {
-              "name": "Source Code Disclosure - Java",
-              "riskcode": "2",
-              "confidence": "2",
-              "riskdesc": "Medium (Medium)",
-              "desc": "<p>Application Source Code was disclosed by the web server - Java</p>"
-            },
-            {
               "name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
               "riskcode": "1",
               "confidence": "2",
               "riskdesc": "Low (Medium)",
               "desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>"
+            },
+            {
+              "name": "Source Code Disclosure - Java",
+              "riskcode": "2",
+              "confidence": "2",
+              "riskdesc": "Medium (Medium)",
+              "desc": "<p>Application Source Code was disclosed by the web server - Java</p>"
             },
             {
               "name": "Non-Storable Content",
@@ -31137,13 +30915,6 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Feature Policy Header Not Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>Feature Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Feature Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
-            },
-            {
               "name": "CSP: Wildcard Directive",
               "riskcode": "2",
               "confidence": "2",
@@ -31165,7 +30936,7 @@
     "lhr": {
       "requestedUrl": "https://www.psyenfantado.sante.gouv.fr/",
       "finalUrl": "https://www.psyenfantado.sante.gouv.fr/",
-      "fetchTime": "2021-05-31T10:33:00.531Z",
+      "fetchTime": "2021-06-04T23:53:06.339Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -31207,49 +30978,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 1701,
+          "numericValue": 2066,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1251,
-                "firstMeaningfulPaint": 1701,
-                "largestContentfulPaint": 1776,
-                "firstCPUIdle": 1701,
-                "interactive": 1701,
-                "speedIndex": 1702,
+                "firstContentfulPaint": 1204,
+                "firstMeaningfulPaint": 1729,
+                "largestContentfulPaint": 1429,
+                "firstCPUIdle": 1729,
+                "interactive": 2066,
+                "speedIndex": 1939,
                 "estimatedInputLatency": 13,
-                "totalBlockingTime": 0,
-                "maxPotentialFID": 48,
-                "cumulativeLayoutShift": 0.004680262035793728,
+                "totalBlockingTime": 5,
+                "maxPotentialFID": 60,
+                "cumulativeLayoutShift": 0.014082689073350694,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 162824122,
+                "observedTimeOriginTs": 183124440,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 162824122,
-                "observedFirstPaint": 527,
-                "observedFirstPaintTs": 163351179,
-                "observedFirstContentfulPaint": 527,
-                "observedFirstContentfulPaintTs": 163351179,
-                "observedFirstMeaningfulPaint": 771,
-                "observedFirstMeaningfulPaintTs": 163595265,
-                "observedLargestContentfulPaint": 771,
-                "observedLargestContentfulPaintTs": 163595265,
-                "observedTraceEnd": 2013,
-                "observedTraceEndTs": 164836848,
-                "observedLoad": 954,
-                "observedLoadTs": 163777649,
-                "observedDomContentLoaded": 482,
-                "observedDomContentLoadedTs": 163305932,
-                "observedCumulativeLayoutShift": 0.004680262035793728,
+                "observedNavigationStartTs": 183124440,
+                "observedFirstPaint": 709,
+                "observedFirstPaintTs": 183833369,
+                "observedFirstContentfulPaint": 709,
+                "observedFirstContentfulPaintTs": 183833369,
+                "observedFirstMeaningfulPaint": 1173,
+                "observedFirstMeaningfulPaintTs": 184296992,
+                "observedLargestContentfulPaint": 1040,
+                "observedLargestContentfulPaintTs": 184164519,
+                "observedTraceEnd": 2498,
+                "observedTraceEndTs": 185622519,
+                "observedLoad": 1440,
+                "observedLoadTs": 184564810,
+                "observedDomContentLoaded": 788,
+                "observedDomContentLoadedTs": 183912658,
+                "observedCumulativeLayoutShift": 0.014082689073350694,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 536,
-                "observedFirstVisualChangeTs": 163360122,
-                "observedLastVisualChange": 769,
-                "observedLastVisualChangeTs": 163593122,
-                "observedSpeedIndex": 688,
-                "observedSpeedIndexTs": 163512126
+                "observedFirstVisualChange": 718,
+                "observedFirstVisualChangeTs": 183842440,
+                "observedLastVisualChange": 1184,
+                "observedLastVisualChangeTs": 184308440,
+                "observedSpeedIndex": 1005,
+                "observedSpeedIndexTs": 184129301
               },
               {
                 "lcpInvalidated": false
@@ -31271,19 +31042,19 @@
                 "numScripts": 3,
                 "numStylesheets": 2,
                 "numFonts": 3,
-                "numTasks": 433,
-                "numTasksOver10ms": 5,
-                "numTasksOver25ms": 0,
+                "numTasks": 444,
+                "numTasksOver10ms": 4,
+                "numTasksOver25ms": 1,
                 "numTasksOver50ms": 0,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 84.15599999999999,
-                "throughput": 11710956.744369932,
-                "maxRtt": 88.17699999999999,
-                "maxServerLatency": 3.075000000000003,
-                "totalByteWeight": 534604,
-                "totalTaskTime": 154.82399999999978,
-                "mainDocumentTransferSize": 4137
+                "rtt": 114.959,
+                "throughput": 6999238.304663921,
+                "maxRtt": 147.789,
+                "maxServerLatency": 3.7759999999999962,
+                "totalByteWeight": 534661,
+                "totalTaskTime": 172.52800000000002,
+                "mainDocumentTransferSize": 4175
               }
             ]
           }
@@ -31292,9 +31063,12 @@
     },
     "screenshot": false,
     "summary": {
-      "httpGrade": "A+",
       "apdex": 1,
       "uptime": 99.795,
+      "dependabotGrade": "A",
+      "dependabotCount": 0,
+      "codescanCount": 0,
+      "codescanGrade": "A",
       "testsslGrade": "A+",
       "cookiesGrade": "B",
       "cookiesCount": 2,
