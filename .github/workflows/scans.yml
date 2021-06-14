@@ -142,21 +142,21 @@ jobs:
           output: scans/updownio.json
 
       - name: Dependabot vulnerabilities alerts
-        if: ${{ matrix.sites.tools.dependabot && matrix.urls.repositories }}
+        if: ${{ matrix.sites.tools.dependabot && matrix.sites.repositories }}
         continue-on-error: true
         uses: "MTES-MCT/dependabotalerts-action@main"
         with:
           token: ${{ secrets.DEPENDABOTALERTS_TOKEN }}
-          repositories: ${{ join(matrix.urls.repositories) }}
+          repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/dependabotalerts.json
 
       - name: Code quality alerts
-        if: ${{ matrix.sites.tools.codescan && matrix.urls.repositories }}
+        if: ${{ matrix.sites.tools.codescan && matrix.sites.repositories }}
         continue-on-error: true
         uses: "MTES-MCT/codescanalerts-action@main"
         with:
           token: ${{ secrets.CODESCANALERTS_TOKEN }}
-          repositories: ${{ join(matrix.urls.repositories) }}
+          repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/codescanalerts.json
 
       - uses: SocialGouv/dashlord-actions/save@main
