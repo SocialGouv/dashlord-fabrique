@@ -142,9 +142,8 @@ jobs:
           output: scans/updownio.json
 
       - name: Dependabot vulnerabilities alerts
-        if: ${{ matrix.sites.tools.dependabot }}
+        if: ${{ matrix.sites.tools.dependabot && matrix.urls.repositories }}
         continue-on-error: true
-        if: ${{ matrix.urls.repositories }}
         uses: "MTES-MCT/dependabotalerts-action@main"
         with:
           token: ${{ secrets.DEPENDABOTALERTS_TOKEN }}
@@ -152,7 +151,7 @@ jobs:
           output: scans/dependabotalerts.json
 
       - name: Code quality alerts
-        if: ${{ matrix.sites.tools.codescan }}
+        if: ${{ matrix.sites.tools.codescan && matrix.urls.repositories }}
         continue-on-error: true
         uses: "MTES-MCT/codescanalerts-action@main"
         with:
