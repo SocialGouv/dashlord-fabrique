@@ -1,15 +1,16 @@
 title: DashLord Fabrique des ministères sociaux
 tools:
-  - lighthouse
-  - testssl
-  - wappalyzer
-  - nuclei
-  - zap
-  - thirdparties
-  - dependabot
-  - codescan
-  - updownio
-  - http
+  lighthouse: true
+  testssl: true
+  wappalyzer: true
+  nuclei: true
+  zap: true
+  thirdparties: true
+  dependabot: true
+  codescan: true
+  updownio: true
+  http: true
+  nmap: false
 urls:
   - url: https://archifiltre.fabrique.social.gouv.fr
     category: fabrique
@@ -109,4 +110,3 @@ urls:
       - demo
     repositories:
       - socialgouv/sample-next-app
-
