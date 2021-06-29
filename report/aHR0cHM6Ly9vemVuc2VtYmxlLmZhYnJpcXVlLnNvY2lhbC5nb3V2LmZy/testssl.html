@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az292-758:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az154-370:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2021-06-16 22:35:40        --&gt;&gt; 20.74.14.77:443 (ozensemble.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2021-06-29 22:41:38        --&gt;&gt; 20.74.14.77:443 (ozensemble.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -92,21 +92,21 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;extended master secret/#23&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>600 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Client Authentication        </span>none
 <span style="font-weight:bold;"> Signature Algorithm          </span><span style="color:#008817;">SHA256 with RSA</span>
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial / Fingerprints        </span>043C4A34BB5EB7F68E90FC5D9EDE72FC09A8 / SHA1 CCAB7BBB76895FBBCABEC68DA7DC98B095D86CB8
-                              SHA256 743C509FB72C586BBD5EFA1BF409B780E71F998E1526B06CFB942E52E1B1D2E0
+<span style="font-weight:bold;"> Serial / Fingerprints        </span>03F489F4C5EB3CDC7FD3C0C1DA1A79AD39C5 / SHA1 DE9CA906DF3D777D8534F05AE707DCA3AAE1110D
+                              SHA256 5E39619A751B21E2112EA723EE835C200FFBEC795C420471643A142F0F78DF67
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>ozensemble.fabrique.social.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>ozensemble.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">35 &gt;= 30 days</span> (2021-04-23 20:38 --&gt; 2021-07-22 20:38)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">82 &gt;= 30 days</span> (2021-06-22 19:38 --&gt; 2021-09-20 19:38)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -114,16 +114,17 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
 <span style="font-weight:bold;"> DNS CAA RR</span> (experimental)    <span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Certificate Transparency     </span><span style="color:#008817;">yes</span> (certificate extension)
-<span style="font-weight:bold;"> Certificates provided</span>        2
+<span style="font-weight:bold;"> Certificates provided</span>        3
 <span style="font-weight:bold;"> Issuer                       </span><i>R3</i> (<i>Let&apos;s Encrypt</i> from <i>US</i>)
-<span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2021-09-29 19:21). <i>R3</i> &lt;-- <i>DST Root CA X3</i>
+<span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2025-09-15 16:00). <i>R3</i> &lt;-- <i>ISRG Root X1</i>
+                              #2: <span style="color:#008817;">ok &gt; 40 days</span> (2024-09-30 18:14). <i>ISRG Root X1</i> &lt;-- <i>DST Root CA X3</i>
 <span style="font-weight:bold;"> Intermediate Bad OCSP</span> (exp.) <span style="color:#008817;">Ok</span>
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>nginx/<span style="color:#8a7237;">1</span>.<span style="color:#8a7237;">1</span><span style="color:#8a7237;">7</span>.<span style="color:#8a7237;">8</span>
@@ -160,7 +161,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=743C509FB72C586BBD5EFA1BF409B780E71F998E1526B06CFB942E52E1B1D2E0" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=743C509FB72C586BBD5EFA1BF409B780E71F998E1526B06CFB942E52E1B1D2E0</a> could help you to find out
+                                           <a href="https://censys.io/ipv4?q=5E39619A751B21E2112EA723EE835C200FFBEC795C420471643A142F0F78DF67" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=5E39619A751B21E2112EA723EE835C200FFBEC795C420471643A142F0F78DF67</a> could help you to find out
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -220,7 +221,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2021-06-16 22:37:41 [ 123s] --&gt;&gt; 20.74.14.77:443 (ozensemble.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2021-06-29 22:43:03 [  87s] --&gt;&gt; 20.74.14.77:443 (ozensemble.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
