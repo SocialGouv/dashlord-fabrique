@@ -1,0 +1,36 @@
+[
+  {
+    "templateID": "tech-detect",
+    "info": {
+      "severity": "info",
+      "tags": "tech",
+      "name": "Wappalyzer Technology Detection",
+      "author": "hakluke"
+    },
+    "matcher_name": "nginx",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr/consulter-index",
+    "matched": "https://index-egapro.travail.gouv.fr/consulter-index",
+    "request": "GET /consulter-index HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 308 Permanent Redirect\r\nConnection: close\r\nContent-Length: 171\r\nContent-Type: text/html\r\nDate: Tue, 29 Jun 2021 22:17:17 GMT\r\nLocation: https://index-egapro.travail.gouv.fr/consulter-index/\r\nServer: nginx/1.17.8\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx/1.17.8</center>\r\n</body>\r\n</html>\r\n",
+    "ip": "20.74.14.77",
+    "timestamp": "2021-06-29T22:17:17.117056173Z"
+  },
+  {
+    "templateID": "nameserver-detection",
+    "info": {
+      "tags": "dns,ns",
+      "reference": "https://github.com/indianajson/can-i-take-over-dns",
+      "name": "NS Detection",
+      "author": "pdteam",
+      "severity": "info"
+    },
+    "matcher_name": "azure",
+    "type": "dns",
+    "host": "https://index-egapro.travail.gouv.fr/consulter-index",
+    "matched": "https://index-egapro.travail.gouv.fr/consulter-index",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 1505\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 1505\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t21599\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t21599\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t21599\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t21599\tIN\tNS\tns4-04.azure-dns.info.\n",
+    "timestamp": "2021-06-29T22:18:00.397033281Z"
+  }
+]
