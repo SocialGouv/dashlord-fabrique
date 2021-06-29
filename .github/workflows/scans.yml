@@ -51,6 +51,15 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Stats page
+        continue-on-error: true
+        uses: "MTES-MCT/stats-action@main"
+        if: ${{ matrix.sites.tools.stats }}
+        with:
+          url: ${{ matrix.sites.url }}
+          uri: 'stats'
+          output: scans/stats.json
+
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         if: ${{ matrix.sites.tools.screenshot }}
