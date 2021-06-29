@@ -2152,7 +2152,7 @@
     "http": {
       "url": "https://index-egapro.travail.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Wed, 16 Jun 2021 22:10:35 GMT",
+      "end_time": "Tue, 29 Jun 2021 22:14:41 GMT",
       "grade": "D+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -2160,17 +2160,17 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Wed, 16 Jun 2021 22:10:34 GMT",
-        "ETag": "W/\"60c365c3-981\"",
-        "Last-Modified": "Fri, 11 Jun 2021 13:31:47 GMT",
+        "Date": "Tue, 29 Jun 2021 22:14:40 GMT",
+        "ETag": "W/\"60d4907b-981\"",
+        "Last-Modified": "Thu, 24 Jun 2021 14:02:35 GMT",
         "Server": "nginx/1.17.8",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding"
       },
-      "scan_id": 19687985,
+      "scan_id": 19930669,
       "score": 40,
-      "start_time": "Wed, 16 Jun 2021 22:10:31 GMT",
+      "start_time": "Tue, 29 Jun 2021 22:14:37 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -2357,15 +2357,15 @@
         "tok",
         "syd"
       ],
-      "last_check_at": "2021-06-16T22:14:15Z",
-      "next_check_at": "2021-06-16T22:15:15Z",
+      "last_check_at": "2021-06-29T23:52:29Z",
+      "next_check_at": "2021-06-29T23:53:29Z",
       "mute_until": null,
       "favicon_url": null,
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2021-06-16T22:11:16Z",
+        "tested_at": "2021-06-29T23:50:30Z",
         "expires_at": "2021-09-11T01:01:32Z",
         "valid": true,
         "error": null
@@ -2374,11 +2374,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 40,
+          "namelookup": 0,
           "connection": 14,
-          "handshake": 42,
+          "handshake": 41,
           "response": 23,
-          "total": 119
+          "total": 79
         }
       },
       "uptimeGrade": "A",
@@ -2386,7 +2386,7 @@
     },
     "nmap": null,
     "dependabot": {
-      "totalCount": 29,
+      "totalCount": 37,
       "grade": "D",
       "repositories": [
         {
@@ -2408,7 +2408,7 @@
         {
           "url": "https://github.com/SocialGouv/egapro",
           "vulnerabilityAlerts": {
-            "totalCount": 29,
+            "totalCount": 37,
             "nodes": [
               {
                 "dismissedAt": null,
@@ -2957,36 +2957,6 @@
               },
               {
                 "dismissedAt": null,
-                "createdAt": "2021-05-07T14:08:50Z",
-                "securityVulnerability": {
-                  "severity": "HIGH",
-                  "package": {
-                    "name": "lodash"
-                  },
-                  "advisory": {
-                    "identifiers": [
-                      {
-                        "type": "GHSA",
-                        "value": "GHSA-35jh-r3h4-6jhm"
-                      },
-                      {
-                        "type": "CVE",
-                        "value": "CVE-2021-23337"
-                      }
-                    ],
-                    "references": [
-                      {
-                        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337"
-                      },
-                      {
-                        "url": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm"
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "dismissedAt": null,
                 "createdAt": "2021-05-08T07:00:18Z",
                 "securityVulnerability": {
                   "severity": "MODERATE",
@@ -3010,6 +2980,36 @@
                       },
                       {
                         "url": "https://github.com/advisories/GHSA-43f8-2h32-f4cj"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "dismissedAt": null,
+                "createdAt": "2021-05-08T23:26:28Z",
+                "securityVulnerability": {
+                  "severity": "HIGH",
+                  "package": {
+                    "name": "lodash"
+                  },
+                  "advisory": {
+                    "identifiers": [
+                      {
+                        "type": "GHSA",
+                        "value": "GHSA-35jh-r3h4-6jhm"
+                      },
+                      {
+                        "type": "CVE",
+                        "value": "CVE-2021-23337"
+                      }
+                    ],
+                    "references": [
+                      {
+                        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337"
+                      },
+                      {
+                        "url": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm"
                       }
                     ]
                   }
@@ -3237,7 +3237,7 @@
         "ip": "index-egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -3363,7 +3363,7 @@
         "ip": "index-egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "73 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -4129,7 +4129,7 @@
         "ip": "index-egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "79"
+        "finding": "86"
       }
     ],
     "thirdparties": {
@@ -4140,7 +4140,7 @@
           "value": "1",
           "domain": "index-egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1623883266,
+          "expires": 1625012350,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -4152,10 +4152,10 @@
         },
         {
           "name": "_pk_id.11.78e9",
-          "value": "0f4adbc72d9f3ba9.1623881466.",
+          "value": "99daff8ea7ef600c.1625010550.",
           "domain": "index-egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1657836666,
+          "expires": 1658965750,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -4168,11 +4168,11 @@
       ],
       "headers": {
         "server": "nginx/1.17.8",
-        "date": "Wed, 16 Jun 2021 22:11:05 GMT",
+        "date": "Tue, 29 Jun 2021 23:49:08 GMT",
         "content-type": "text/html; charset=utf-8",
         "vary": "Accept-Encoding",
-        "last-modified": "Fri, 11 Jun 2021 13:31:47 GMT",
-        "etag": "W/\"60c365c3-981\"",
+        "last-modified": "Thu, 24 Jun 2021 14:02:35 GMT",
+        "etag": "W/\"60d4907b-981\"",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
         "content-encoding": "gzip"
       },
@@ -4390,7 +4390,7 @@
     },
     "zap": {
       "@version": "2.10.0",
-      "@generated": "Wed, 16 Jun 2021 22:10:21",
+      "@generated": "Tue, 29 Jun 2021 23:48:43",
       "site": [
         {
           "@name": "https://index-egapro.travail.gouv.fr",
@@ -4413,11 +4413,18 @@
               "desc": "<p>The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>"
             },
             {
-              "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
-              "riskcode": "1",
-              "confidence": "2",
-              "riskdesc": "Low (Medium)",
-              "desc": "<p>The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.</p>"
+              "name": "Timestamp Disclosure - Unix",
+              "riskcode": "0",
+              "confidence": "1",
+              "riskdesc": "Informational (Low)",
+              "desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>"
+            },
+            {
+              "name": "Information Disclosure - Suspicious Comments",
+              "riskcode": "0",
+              "confidence": "1",
+              "riskdesc": "Informational (Low)",
+              "desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>"
             },
             {
               "name": "Content Security Policy (CSP) Header Not Set",
@@ -4441,25 +4448,18 @@
               "desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>"
             },
             {
-              "name": "Timestamp Disclosure - Unix",
-              "riskcode": "0",
-              "confidence": "1",
-              "riskdesc": "Informational (Low)",
-              "desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>"
-            },
-            {
-              "name": "Feature Policy Header Not Set",
+              "name": "Permissions Policy Header Not Set",
               "riskcode": "1",
               "confidence": "2",
               "riskdesc": "Low (Medium)",
-              "desc": "<p>Feature Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Feature Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
+              "desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>"
             },
             {
-              "name": "Dangerous JS Functions",
+              "name": "Incomplete or No Cache-control Header Set",
               "riskcode": "1",
-              "confidence": "1",
-              "riskdesc": "Low (Low)",
-              "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>"
             },
             {
               "name": "Modern Web Application",
@@ -4469,11 +4469,11 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Information Disclosure - Suspicious Comments",
-              "riskcode": "0",
+              "name": "Dangerous JS Functions",
+              "riskcode": "1",
               "confidence": "1",
-              "riskdesc": "Informational (Low)",
-              "desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>"
+              "riskdesc": "Low (Low)",
+              "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
             }
           ]
         }
@@ -4483,10 +4483,10 @@
       {
         "templateID": "nginx-version",
         "info": {
-          "name": "nginx version detect",
-          "author": "philippedelteil",
           "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
-          "severity": "info"
+          "severity": "info",
+          "name": "nginx version detect",
+          "author": "philippedelteil"
         },
         "type": "http",
         "host": "https://index-egapro.travail.gouv.fr",
@@ -4495,28 +4495,43 @@
           "nginx/1.17.8"
         ],
         "ip": "20.74.14.77",
-        "timestamp": "2021-06-16T22:12:56.208019285Z"
+        "timestamp": "2021-06-29T23:51:11.612520299Z"
       },
       {
         "templateID": "tech-detect",
         "info": {
+          "name": "Wappalyzer Technology Detection",
           "author": "hakluke",
           "severity": "info",
-          "tags": "tech",
-          "name": "Wappalyzer Technology Detection"
+          "tags": "tech"
         },
         "matcher_name": "nginx",
         "type": "http",
         "host": "https://index-egapro.travail.gouv.fr",
         "matched": "https://index-egapro.travail.gouv.fr",
         "ip": "20.74.14.77",
-        "timestamp": "2021-06-16T22:13:20.113029845Z"
+        "timestamp": "2021-06-29T23:51:20.472463822Z"
+      },
+      {
+        "templateID": "nameserver-detection",
+        "info": {
+          "name": "NS Detection",
+          "author": "pdteam",
+          "severity": "info",
+          "tags": "dns,ns",
+          "reference": "https://github.com/indianajson/can-i-take-over-dns"
+        },
+        "matcher_name": "azure",
+        "type": "dns",
+        "host": "https://index-egapro.travail.gouv.fr",
+        "matched": "https://index-egapro.travail.gouv.fr",
+        "timestamp": "2021-06-29T23:51:56.288611138Z"
       }
     ],
     "lhr": {
       "requestedUrl": "https://index-egapro.travail.gouv.fr/",
       "finalUrl": "https://index-egapro.travail.gouv.fr/",
-      "fetchTime": "2021-06-16T22:10:24.456Z",
+      "fetchTime": "2021-06-29T23:48:46.924Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -4558,49 +4573,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 2975,
+          "numericValue": 3565,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 2830,
-                "firstMeaningfulPaint": 2975,
-                "largestContentfulPaint": 2975,
-                "firstCPUIdle": 2975,
-                "interactive": 2975,
-                "speedIndex": 2962,
-                "estimatedInputLatency": 13,
-                "totalBlockingTime": 94,
-                "maxPotentialFID": 355,
+                "firstContentfulPaint": 2866,
+                "firstMeaningfulPaint": 3008,
+                "largestContentfulPaint": 3008,
+                "firstCPUIdle": 3008,
+                "interactive": 3565,
+                "speedIndex": 2958,
+                "estimatedInputLatency": 14,
+                "totalBlockingTime": 93,
+                "maxPotentialFID": 451,
                 "cumulativeLayoutShift": 0.012098849826388888,
                 "cumulativeLayoutShiftAllFrames": 0.012098849826388888,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 137690484,
+                "observedTimeOriginTs": 339802850,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 137690484,
-                "observedFirstPaint": 908,
-                "observedFirstPaintTs": 138598070,
-                "observedFirstContentfulPaint": 908,
-                "observedFirstContentfulPaintTs": 138598070,
-                "observedFirstMeaningfulPaint": 1076,
-                "observedFirstMeaningfulPaintTs": 138766419,
-                "observedLargestContentfulPaint": 1076,
-                "observedLargestContentfulPaintTs": 138766419,
-                "observedTraceEnd": 2238,
-                "observedTraceEndTs": 139928530,
-                "observedLoad": 1180,
-                "observedLoadTs": 138870809,
-                "observedDomContentLoaded": 852,
-                "observedDomContentLoadedTs": 138542198,
+                "observedNavigationStartTs": 339802850,
+                "observedFirstPaint": 907,
+                "observedFirstPaintTs": 340709981,
+                "observedFirstContentfulPaint": 907,
+                "observedFirstContentfulPaintTs": 340709981,
+                "observedFirstMeaningfulPaint": 1022,
+                "observedFirstMeaningfulPaintTs": 340824890,
+                "observedLargestContentfulPaint": 1022,
+                "observedLargestContentfulPaintTs": 340824890,
+                "observedTraceEnd": 2423,
+                "observedTraceEndTs": 342226197,
+                "observedLoad": 1364,
+                "observedLoadTs": 341166398,
+                "observedDomContentLoaded": 848,
+                "observedDomContentLoadedTs": 340650649,
                 "observedCumulativeLayoutShift": 0.012098849826388888,
                 "observedCumulativeLayoutShiftAllFrames": 0.012098849826388888,
-                "observedFirstVisualChange": 920,
-                "observedFirstVisualChangeTs": 138610484,
-                "observedLastVisualChange": 1503,
-                "observedLastVisualChangeTs": 139193484,
-                "observedSpeedIndex": 980,
-                "observedSpeedIndexTs": 138670453
+                "observedFirstVisualChange": 916,
+                "observedFirstVisualChangeTs": 340718850,
+                "observedLastVisualChange": 1516,
+                "observedLastVisualChangeTs": 341318850,
+                "observedSpeedIndex": 961,
+                "observedSpeedIndexTs": 340763869
               },
               {
                 "lcpInvalidated": false
@@ -4622,19 +4637,19 @@
                 "numScripts": 3,
                 "numStylesheets": 2,
                 "numFonts": 2,
-                "numTasks": 307,
+                "numTasks": 311,
                 "numTasksOver10ms": 3,
                 "numTasksOver25ms": 2,
                 "numTasksOver50ms": 1,
-                "numTasksOver100ms": 0,
+                "numTasksOver100ms": 1,
                 "numTasksOver500ms": 0,
-                "rtt": 80.881,
-                "throughput": 6367907.554294035,
-                "maxRtt": 81.25,
-                "maxServerLatency": 63.96799999999999,
-                "totalByteWeight": 376926,
-                "totalTaskTime": 190.57799999999958,
-                "mainDocumentTransferSize": 1381
+                "rtt": 84.61,
+                "throughput": 9455038.72228803,
+                "maxRtt": 84.625,
+                "maxServerLatency": 11.801999999999992,
+                "totalByteWeight": 416472,
+                "totalTaskTime": 236.42299999999923,
+                "mainDocumentTransferSize": 1383
               }
             ]
           }
@@ -4642,7 +4657,11 @@
       }
     },
     "screenshot": true,
-    "stats": null,
+    "stats": {
+      "grade": "A",
+      "url": "https://index-egapro.travail.gouv.fr",
+      "uri": "stats"
+    },
     "summary": {
       "httpGrade": "D+",
       "apdex": 1,
@@ -4650,7 +4669,7 @@
       "uptime": 100,
       "uptimeGrade": "A",
       "dependabotGrade": "D",
-      "dependabotCount": 29,
+      "dependabotCount": 37,
       "testsslGrade": "A+",
       "cookiesGrade": "B",
       "cookiesCount": 2,
@@ -4665,7 +4684,8 @@
       "lighthouse_seo": 0.92,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.42,
-      "lighthouse_pwaGrade": "D"
+      "lighthouse_pwaGrade": "D",
+      "statsGrade": "A"
     }
   },
   {
