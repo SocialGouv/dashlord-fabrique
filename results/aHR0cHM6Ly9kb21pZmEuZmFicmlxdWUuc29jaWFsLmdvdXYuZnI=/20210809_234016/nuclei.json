@@ -1,0 +1,55 @@
+[
+  {
+    "templateID": "nginx-version",
+    "info": {
+      "name": "nginx version detect",
+      "author": "philippedelteil",
+      "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://domifa.fabrique.social.gouv.fr",
+    "matched": "https://domifa.fabrique.social.gouv.fr",
+    "extracted_results": [
+      "nginx/1.17.8"
+    ],
+    "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Security-Policy: default-src 'self' https://*.fabrique.social.gouv.fr; connect-src 'self' https://*.fabrique.social.gouv.fr; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://matomo.fabrique.social.gouv.fr/piwik.js; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html\r\nDate: Mon, 09 Aug 2021 23:38:19 GMT\r\nEtag: W/\"610ac910-768\"\r\nLast-Modified: Wed, 04 Aug 2021 17:06:24 GMT\r\nServer: nginx/1.17.8\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      Domifa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"Domifa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"article\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"Domifa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\"/>\n  <link rel=\"stylesheet\" href=\"styles.b9fa841d68a9276d237c.css\"></head>\n  <body>\n    <app-root></app-root>\n  <script src=\"runtime-es2015.653bd4bb740a71f3c115.js\" type=\"module\"></script><script src=\"runtime-es5.653bd4bb740a71f3c115.js\" nomodule defer></script><script src=\"polyfills-es5.ca01eb420766c3f61896.js\" nomodule defer></script><script src=\"polyfills-es2015.d8e689cfeec95ca88e4c.js\" type=\"module\"></script><script src=\"main-es2015.81fc40ab6938f09664e2.js\" type=\"module\"></script><script src=\"main-es5.81fc40ab6938f09664e2.js\" nomodule defer></script></body>\n</html>\n",
+    "ip": "20.74.14.77",
+    "timestamp": "2021-08-09T23:38:19.320184091Z"
+  },
+  {
+    "templateID": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": "hakluke",
+      "severity": "info",
+      "tags": "tech"
+    },
+    "matcher_name": "nginx",
+    "type": "http",
+    "host": "https://domifa.fabrique.social.gouv.fr",
+    "matched": "https://domifa.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Security-Policy: default-src 'self' https://*.fabrique.social.gouv.fr; connect-src 'self' https://*.fabrique.social.gouv.fr; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://matomo.fabrique.social.gouv.fr/piwik.js; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html\r\nDate: Mon, 09 Aug 2021 23:38:24 GMT\r\nEtag: W/\"610ac910-768\"\r\nLast-Modified: Wed, 04 Aug 2021 17:06:24 GMT\r\nServer: nginx/1.17.8\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      Domifa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"Domifa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"article\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"Domifa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\"/>\n  <link rel=\"stylesheet\" href=\"styles.b9fa841d68a9276d237c.css\"></head>\n  <body>\n    <app-root></app-root>\n  <script src=\"runtime-es2015.653bd4bb740a71f3c115.js\" type=\"module\"></script><script src=\"runtime-es5.653bd4bb740a71f3c115.js\" nomodule defer></script><script src=\"polyfills-es5.ca01eb420766c3f61896.js\" nomodule defer></script><script src=\"polyfills-es2015.d8e689cfeec95ca88e4c.js\" type=\"module\"></script><script src=\"main-es2015.81fc40ab6938f09664e2.js\" type=\"module\"></script><script src=\"main-es5.81fc40ab6938f09664e2.js\" nomodule defer></script></body>\n</html>\n",
+    "ip": "20.74.14.77",
+    "timestamp": "2021-08-09T23:38:24.189897565Z"
+  },
+  {
+    "templateID": "can-i-take-over-dns",
+    "info": {
+      "name": "Can I Take Over DNS - Fingerprint",
+      "author": "pdteam",
+      "severity": "info",
+      "tags": "dns,ns,takeover",
+      "reference": "https://github.com/indianajson/can-i-take-over-dns"
+    },
+    "matcher_name": "azure",
+    "type": "dns",
+    "host": "https://domifa.fabrique.social.gouv.fr",
+    "matched": "https://domifa.fabrique.social.gouv.fr",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 62704\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 62704\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t NS\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+    "timestamp": "2021-08-09T23:38:53.259583731Z"
+  }
+]
