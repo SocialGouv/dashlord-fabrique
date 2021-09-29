@@ -1,0 +1,180 @@
+[
+  {
+    "name": "emjpm/portail",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/emjpm%2Fportail",
+    "image": "ghcr.io/socialgouv/emjpm/portail",
+    "trivy": {
+      "Target": "ghcr.io/socialgouv/emjpm/portail:latest (alpine 3.14.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://ubuntu.com/security/notices/USN-5079-1"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-09-23T13:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: protocol downgrade required TLS bypassed",
+          "Description": "A flaw was found in curl. This flaw lies in the --ssl-reqd option or related settings in libcurl. Users specify this flag to upgrade to TLS when communicating with either IMAP, POP3 or a FTP server. An attacker controlling such servers could return a crafted response which could lead to curl client continue its operation without TLS encryption leading to data being transmitted in clear text over the network. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: STARTTLS protocol injection via MITM",
+          "Description": "A flaw was found in curl. The flaw lies in how curl handles cached or pipelined responses that it receives from either a IMAP, POP3, SMTP or FTP server before the TLS upgrade using STARTTLS. In such a scenario curl even after upgrading to TLS would trust these cached responses treating them as valid and authenticated and use them. An attacker could potentially use this flaw to carry out a Man-In-The-Middle attack. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://ubuntu.com/security/notices/USN-5079-1"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-09-23T13:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: protocol downgrade required TLS bypassed",
+          "Description": "A flaw was found in curl. This flaw lies in the --ssl-reqd option or related settings in libcurl. Users specify this flag to upgrade to TLS when communicating with either IMAP, POP3 or a FTP server. An attacker controlling such servers could return a crafted response which could lead to curl client continue its operation without TLS encryption leading to data being transmitted in clear text over the network. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: STARTTLS protocol injection via MITM",
+          "Description": "A flaw was found in curl. The flaw lies in how curl handles cached or pipelined responses that it receives from either a IMAP, POP3, SMTP or FTP server before the TLS upgrade using STARTTLS. In such a scenario curl even after upgrading to TLS would trust these cached responses treating them as valid and authenticated and use them. An attacker could potentially use this flaw to carry out a Man-In-The-Middle attack. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4"
+          ]
+        }
+      ]
+    }
+  }
+]
