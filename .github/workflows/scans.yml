@@ -51,6 +51,14 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Trivy GHCR
+        continue-on-error: true
+        uses: "socialgouv/dashlord-actions/trivy-ghcr@main"
+        if: ${{ matrix.sites.tools['trivy'] && matrix.sites.repositories }}
+        with:
+          repos: ${{ join(matrix.sites.repositories) }}
+          output: scans/trivy.json
+
       - name: Detect 404s
         continue-on-error: true
         uses: "socialgouv/detect-404-action@master"
