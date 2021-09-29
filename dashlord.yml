@@ -80,6 +80,7 @@ urls:
       - sante
     repositories:
       - socialgouv/monsuivipsy
+      - socialgouv/monsuivipsy-site
   - url: https://onvs.fabrique.social.gouv.fr
     category: fabrique
     tags:
@@ -92,6 +93,7 @@ urls:
       - sante
     repositories:
       - socialgouv/ozensemble
+      - socialgouv/ozensemble-site
   - url: https://pjm.social.gouv.fr
     category: fabrique
     tags:
@@ -103,8 +105,7 @@ urls:
     tags:
       - sante
     repositories:
-      - socialgouv/tumeplay-app
-      - socialgouv/tumeplay-back
+      - socialgouv/tumeplay
   - url: https://www.psyenfantado.sante.gouv.fr
     category: fabrique
     tags:
