@@ -1,0 +1,1253 @@
+[
+  {
+    "name": "archifiltre/archifiltre-site",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/archifiltre%2Farchifiltre-site",
+    "image": "ghcr.io/socialgouv/archifiltre/archifiltre-site",
+    "trivy": {
+      "Target": "ghcr.io/socialgouv/archifiltre/archifiltre-site:latest (alpine 3.13.5)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-36159",
+          "PkgName": "apk-tools",
+          "InstalledVersion": "2.12.5-r0",
+          "FixedVersion": "2.12.6-r0",
+          "Layer": {
+            "Digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba",
+            "DiffID": "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-36159",
+          "Description": "libfetch before 2021-07-26, as used in apk-tools, xbps, and other products, mishandles numeric strings for the FTP and HTTP protocols. The FTP passive mode implementation allows an out-of-bounds read because strtol is used to parse the relevant numbers into address bytes. It does not check if the line ends prematurely. If it does, the for-loop condition checks for the '\\0' terminator one byte too late.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/freebsd/freebsd-src/commits/main/lib/libfetch",
+            "https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10749",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E"
+          ],
+          "PublishedDate": "2021-08-03T14:15:00Z",
+          "LastModifiedDate": "2021-09-02T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22901",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.77.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22901",
+          "Title": "curl: Use-after-free in TLS session handling when using OpenSSL TLS backend",
+          "Description": "curl 7.75.0 through 7.76.1 suffers from a use-after-free vulnerability resulting in already freed memory being used when a TLS 1.3 session ticket arrives over a connection. A malicious server can use this in rare unfortunate circumstances to potentially reach remote code execution in the client. When libcurl at run-time sets up support for TLS 1.3 session tickets on a connection using OpenSSL, it stores pointers to the transfer in-memory object for later retrieval when a session ticket arrives. If the connection is used by multiple transfers (like with a reused HTTP/1.1 connection or multiplexed HTTP/2 connection) that first transfer object might be freed before the new session is established on that connection and then the function will access a memory buffer that might be freed. When using that memory, libcurl might even call a function pointer in the object, making it possible for a remote code execution if the server could somehow manage to get crafted memory content into the correct place in memory.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22901.html",
+            "https://github.com/curl/curl/commit/7f4a9a9b2a49547eae24d2e19bc5c346e9026479",
+            "https://hackerone.com/reports/1180380",
+            "https://security.netapp.com/advisory/ntap-20210723-0001/",
+            "https://security.netapp.com/advisory/ntap-20210727-0007/",
+            "https://www.oracle.com//security-alerts/cpujul2021.html"
+          ],
+          "PublishedDate": "2021-06-11T16:15:00Z",
+          "LastModifiedDate": "2021-07-30T14:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://ubuntu.com/security/notices/USN-5079-1"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-09-23T13:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22922",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22922",
+          "Title": "curl: Content not matching hash in Metalink is not being discarded",
+          "Description": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-354"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22922.html",
+            "https://hackerone.com/reports/1213175",
+            "https://linux.oracle.com/cve/CVE-2021-22922.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3582.html",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-21T19:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22923",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22923",
+          "Title": "curl: Metalink download sends credentials",
+          "Description": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V2Score": 2.6,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 5.7
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22923.html",
+            "https://hackerone.com/reports/1213181",
+            "https://linux.oracle.com/cve/CVE-2021-22923.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3582.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-21T19:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22925",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22925",
+          "Title": "curl: Incorrect fix for CVE-2021-22898 TELNET stack contents disclosure",
+          "Description": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2021/Sep/39",
+            "http://seclists.org/fulldisclosure/2021/Sep/40",
+            "https://curl.se/docs/CVE-2021-22925.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22925",
+            "https://hackerone.com/reports/1223882",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://support.apple.com/kb/HT212804",
+            "https://support.apple.com/kb/HT212805",
+            "https://ubuntu.com/security/notices/USN-5021-1"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-22T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: protocol downgrade required TLS bypassed",
+          "Description": "A flaw was found in curl. This flaw lies in the --ssl-reqd option or related settings in libcurl. Users specify this flag to upgrade to TLS when communicating with either IMAP, POP3 or a FTP server. An attacker controlling such servers could return a crafted response which could lead to curl client continue its operation without TLS encryption leading to data being transmitted in clear text over the network. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "curl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: STARTTLS protocol injection via MITM",
+          "Description": "A flaw was found in curl. The flaw lies in how curl handles cached or pipelined responses that it receives from either a IMAP, POP3, SMTP or FTP server before the TLS upgrade using STARTTLS. In such a scenario curl even after upgrading to TLS would trust these cached responses treating them as valid and authenticated and use them. An attacker could potentially use this flaw to carry out a Man-In-The-Middle attack. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3711",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba",
+            "DiffID": "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3711",
+          "Title": "openssl: SM2 Decryption Buffer Overflow",
+          "Description": "In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt(). Typically an application will call this function twice. The first time, on entry, the \"out\" parameter can be NULL and, on exit, the \"outlen\" parameter is populated with the buffer size required to hold the decrypted plaintext. The application can then allocate a sufficiently sized buffer and call EVP_PKEY_decrypt() again, but this time passing a non-NULL value for the \"out\" parameter. A bug in the implementation of the SM2 decryption code means that the calculation of the buffer size required to hold the plaintext returned by the first call to EVP_PKEY_decrypt() can be smaller than the actual size required by the second call. This can lead to a buffer overflow when EVP_PKEY_decrypt() is called by the application a second time with a buffer that is too small. A malicious attacker who is able present SM2 content for decryption to an application could cause attacker chosen data to overflow the buffer by up to a maximum of 62 bytes altering the contents of other data held after the buffer, possibly changing application behaviour or causing the application to crash. The location of the buffer is application dependent but is typically heap allocated. Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=59f5e75f3bced8fc0e130d72a3f582cf7b480b46",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-22T18:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3712",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba",
+            "DiffID": "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "Title": "openssl: Read buffer overruns processing ASN.1 strings",
+          "Description": "ASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL's own \"d2i\" functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the \"data\" and \"length\" fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the \"data\" field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://ubuntu.com/security/notices/USN-5051-2",
+            "https://ubuntu.com/security/notices/USN-5051-3",
+            "https://ubuntu.com/security/notices/USN-5051-4 (regression only in trusty/esm)",
+            "https://ubuntu.com/security/notices/USN-5088-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-27T02:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22901",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.77.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22901",
+          "Title": "curl: Use-after-free in TLS session handling when using OpenSSL TLS backend",
+          "Description": "curl 7.75.0 through 7.76.1 suffers from a use-after-free vulnerability resulting in already freed memory being used when a TLS 1.3 session ticket arrives over a connection. A malicious server can use this in rare unfortunate circumstances to potentially reach remote code execution in the client. When libcurl at run-time sets up support for TLS 1.3 session tickets on a connection using OpenSSL, it stores pointers to the transfer in-memory object for later retrieval when a session ticket arrives. If the connection is used by multiple transfers (like with a reused HTTP/1.1 connection or multiplexed HTTP/2 connection) that first transfer object might be freed before the new session is established on that connection and then the function will access a memory buffer that might be freed. When using that memory, libcurl might even call a function pointer in the object, making it possible for a remote code execution if the server could somehow manage to get crafted memory content into the correct place in memory.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22901.html",
+            "https://github.com/curl/curl/commit/7f4a9a9b2a49547eae24d2e19bc5c346e9026479",
+            "https://hackerone.com/reports/1180380",
+            "https://security.netapp.com/advisory/ntap-20210723-0001/",
+            "https://security.netapp.com/advisory/ntap-20210727-0007/",
+            "https://www.oracle.com//security-alerts/cpujul2021.html"
+          ],
+          "PublishedDate": "2021-06-11T16:15:00Z",
+          "LastModifiedDate": "2021-07-30T14:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://ubuntu.com/security/notices/USN-5079-1"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-09-23T13:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22922",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22922",
+          "Title": "curl: Content not matching hash in Metalink is not being discarded",
+          "Description": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-354"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22922.html",
+            "https://hackerone.com/reports/1213175",
+            "https://linux.oracle.com/cve/CVE-2021-22922.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3582.html",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-21T19:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22923",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22923",
+          "Title": "curl: Metalink download sends credentials",
+          "Description": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V2Score": 2.6,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 5.7
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22923.html",
+            "https://hackerone.com/reports/1213181",
+            "https://linux.oracle.com/cve/CVE-2021-22923.html",
+            "https://linux.oracle.com/errata/ELSA-2021-3582.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-21T19:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22925",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.78.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22925",
+          "Title": "curl: Incorrect fix for CVE-2021-22898 TELNET stack contents disclosure",
+          "Description": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2021/Sep/39",
+            "http://seclists.org/fulldisclosure/2021/Sep/40",
+            "https://curl.se/docs/CVE-2021-22925.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22925",
+            "https://hackerone.com/reports/1223882",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FRUCW2UVNYUDZF72DQLFQR4PJEC6CF7V/",
+            "https://security.netapp.com/advisory/ntap-20210902-0003/",
+            "https://support.apple.com/kb/HT212804",
+            "https://support.apple.com/kb/HT212805",
+            "https://ubuntu.com/security/notices/USN-5021-1"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-09-22T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: protocol downgrade required TLS bypassed",
+          "Description": "A flaw was found in curl. This flaw lies in the --ssl-reqd option or related settings in libcurl. Users specify this flag to upgrade to TLS when communicating with either IMAP, POP3 or a FTP server. An attacker controlling such servers could return a crafted response which could lead to curl client continue its operation without TLS encryption leading to data being transmitted in clear text over the network. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.76.1-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: STARTTLS protocol injection via MITM",
+          "Description": "A flaw was found in curl. The flaw lies in how curl handles cached or pipelined responses that it receives from either a IMAP, POP3, SMTP or FTP server before the TLS upgrade using STARTTLS. In such a scenario curl even after upgrading to TLS would trust these cached responses treating them as valid and authenticated and use them. An attacker could potentially use this flaw to carry out a Man-In-The-Middle attack. The highest threat from this vulnerability is to data confidentiality.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33560",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.7-r0",
+          "FixedVersion": "1.8.8-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33560",
+          "Title": "libgcrypt: mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm",
+          "Description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33560",
+            "https://dev.gnupg.org/T5305",
+            "https://dev.gnupg.org/T5328",
+            "https://dev.gnupg.org/T5466",
+            "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
+            "https://eprint.iacr.org/2021/923",
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2"
+          ],
+          "PublishedDate": "2021-06-08T11:15:00Z",
+          "LastModifiedDate": "2021-09-13T19:47:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-40528",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.7-r0",
+          "FixedVersion": "1.8.8-r1",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-40528",
+          "Title": "libgcrypt: ElGamal implementation allows plaintext recovery",
+          "Description": "The ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver's public key, the generator defined by the receiver's public key, and the sender's ephemeral exponents can lead to a cross-configuration attack against OpenPGP.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.6,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40528",
+            "https://eprint.iacr.org/2021/923",
+            "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+            "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2"
+          ],
+          "PublishedDate": "2021-09-06T19:15:00Z",
+          "LastModifiedDate": "2021-09-13T16:22:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3711",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba",
+            "DiffID": "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3711",
+          "Title": "openssl: SM2 Decryption Buffer Overflow",
+          "Description": "In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt(). Typically an application will call this function twice. The first time, on entry, the \"out\" parameter can be NULL and, on exit, the \"outlen\" parameter is populated with the buffer size required to hold the decrypted plaintext. The application can then allocate a sufficiently sized buffer and call EVP_PKEY_decrypt() again, but this time passing a non-NULL value for the \"out\" parameter. A bug in the implementation of the SM2 decryption code means that the calculation of the buffer size required to hold the plaintext returned by the first call to EVP_PKEY_decrypt() can be smaller than the actual size required by the second call. This can lead to a buffer overflow when EVP_PKEY_decrypt() is called by the application a second time with a buffer that is too small. A malicious attacker who is able present SM2 content for decryption to an application could cause attacker chosen data to overflow the buffer by up to a maximum of 62 bytes altering the contents of other data held after the buffer, possibly changing application behaviour or causing the application to crash. The location of the buffer is application dependent but is typically heap allocated. Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=59f5e75f3bced8fc0e130d72a3f582cf7b480b46",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-22T18:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3712",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba",
+            "DiffID": "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "Title": "openssl: Read buffer overruns processing ASN.1 strings",
+          "Description": "ASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL's own \"d2i\" functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the \"data\" and \"length\" fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the \"data\" field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://ubuntu.com/security/notices/USN-5051-2",
+            "https://ubuntu.com/security/notices/USN-5051-3",
+            "https://ubuntu.com/security/notices/USN-5051-4 (regression only in trusty/esm)",
+            "https://ubuntu.com/security/notices/USN-5088-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-27T02:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3517",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.10-r6",
+          "FixedVersion": "2.9.10-r7",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3517",
+          "Title": "libxml2: Heap-based buffer overflow in xmlEncodeEntitiesInternal() in entities.c",
+          "Description": "There is a flaw in the xml entity encoding functionality of libxml2 in versions before 2.9.11. An attacker who is able to supply a crafted file to be processed by an application linked with the affected functionality of libxml2 could trigger an out-of-bounds read. The most likely impact of this flaw is to application availability, with some potential impact to confidentiality and integrity if an attacker is able to use memory information to further exploit the application.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V2Score": 7.5,
+              "V3Score": 8.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1954232",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3517",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/bf22713507fe1fc3a2c4b525cf0a88c2dc87a3a2",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/235",
+            "https://linux.oracle.com/cve/CVE-2021-3517.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2569.html",
+            "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/05/msg00008.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BZOMV5J4PMZAORVT64BKLV6YIZAFDGX6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QVM4UJ3376I6ZVOYMHBNX4GY3NIV52WV/",
+            "https://security.gentoo.org/glsa/202107-05",
+            "https://security.netapp.com/advisory/ntap-20210625-0002/",
+            "https://ubuntu.com/security/notices/USN-4991-1"
+          ],
+          "PublishedDate": "2021-05-19T14:15:00Z",
+          "LastModifiedDate": "2021-09-13T19:49:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3518",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.10-r6",
+          "FixedVersion": "2.9.10-r7",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3518",
+          "Title": "libxml2: Use-after-free in xmlXIncludeDoProcess() in xinclude.c",
+          "Description": "There's a flaw in libxml2 in versions before 2.9.11. An attacker who is able to submit a crafted file to be processed by an application linked with libxml2 could trigger a use-after-free. The greatest impact from this flaw is to confidentiality, integrity, and availability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2021/Jul/54",
+            "http://seclists.org/fulldisclosure/2021/Jul/55",
+            "http://seclists.org/fulldisclosure/2021/Jul/58",
+            "http://seclists.org/fulldisclosure/2021/Jul/59",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1954242",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3518",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/1098c30a040e72a4654968547f415be4e4c40fe7",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/237",
+            "https://linux.oracle.com/cve/CVE-2021-3518.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2569.html",
+            "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/05/msg00008.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BZOMV5J4PMZAORVT64BKLV6YIZAFDGX6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QVM4UJ3376I6ZVOYMHBNX4GY3NIV52WV/",
+            "https://security.gentoo.org/glsa/202107-05",
+            "https://security.netapp.com/advisory/ntap-20210625-0002/",
+            "https://support.apple.com/kb/HT212601",
+            "https://support.apple.com/kb/HT212602",
+            "https://support.apple.com/kb/HT212604",
+            "https://support.apple.com/kb/HT212605",
+            "https://ubuntu.com/security/notices/USN-4991-1"
+          ],
+          "PublishedDate": "2021-05-18T12:15:00Z",
+          "LastModifiedDate": "2021-09-13T19:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3537",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.10-r6",
+          "FixedVersion": "2.9.10-r7",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3537",
+          "Title": "libxml2: NULL pointer dereference when post-validating mixed content parsed in recovery mode",
+          "Description": "A vulnerability found in libxml2 in versions before 2.9.11 shows that it did not propagate errors while parsing XML mixed content, causing a NULL dereference. If an untrusted XML document was parsed in recovery mode and post-validated, the flaw could be used to crash the application. The highest threat from this vulnerability is to system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1956522",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3537",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/babe75030c7f64a37826bb3342317134568bef61",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/243",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/244",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/245",
+            "https://linux.oracle.com/cve/CVE-2021-3537.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2569.html",
+            "https://lists.debian.org/debian-lts-announce/2021/05/msg00008.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BZOMV5J4PMZAORVT64BKLV6YIZAFDGX6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QVM4UJ3376I6ZVOYMHBNX4GY3NIV52WV/",
+            "https://security.gentoo.org/glsa/202107-05",
+            "https://security.netapp.com/advisory/ntap-20210625-0002/",
+            "https://ubuntu.com/security/notices/USN-4991-1"
+          ],
+          "PublishedDate": "2021-05-14T20:15:00Z",
+          "LastModifiedDate": "2021-09-13T19:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3541",
+          "PkgName": "libxml2",
+          "InstalledVersion": "2.9.10-r6",
+          "FixedVersion": "2.9.11-r0",
+          "Layer": {
+            "Digest": "sha256:0ae30075c5da17b026dbafbfb1e108cccd9fbbd37a4a71cede72e2f6a4441008",
+            "DiffID": "sha256:a42a23cd7b07a408e16c433f60eb97332b0dcd14313479a8094a69ad59da29fa"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3541",
+          "Title": "libxml2: Exponential entity expansion attack bypasses all existing protection mechanisms",
+          "Description": "A flaw was found in libxml2. Exponential entity expansion attack its possible bypassing all existing protection mechanisms and leading to denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-776"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 4,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://blog.hartwork.org/posts/cve-2021-3541-parameter-laughs-fixed-in-libxml2-2-9-11/",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1950515",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3541",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/8598060bacada41a0eb09d95c97744ff4e428f8e",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/228 (currently private)",
+            "https://linux.oracle.com/cve/CVE-2021-3541.html",
+            "https://linux.oracle.com/errata/ELSA-2021-2569.html",
+            "https://ubuntu.com/security/notices/USN-4991-1"
+          ],
+          "PublishedDate": "2021-07-09T17:15:00Z",
+          "LastModifiedDate": "2021-08-05T12:15:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "name": "archifiltre/archifiltre-statistics",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/archifiltre%2Farchifiltre-statistics",
+    "image": "ghcr.io/socialgouv/archifiltre/archifiltre-statistics",
+    "trivy": {
+      "Target": "ghcr.io/socialgouv/archifiltre/archifiltre-statistics:latest (alpine 3.11.11)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-36159",
+          "PkgName": "apk-tools",
+          "InstalledVersion": "2.10.6-r0",
+          "FixedVersion": "2.10.7-r0",
+          "Layer": {
+            "Digest": "sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be1566e9ef0d546e0",
+            "DiffID": "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-36159",
+          "Description": "libfetch before 2021-07-26, as used in apk-tools, xbps, and other products, mishandles numeric strings for the FTP and HTTP protocols. The FTP passive mode implementation allows an out-of-bounds read because strtol is used to parse the relevant numbers into address bytes. It does not check if the line ends prematurely. If it does, the for-loop condition checks for the '\\0' terminator one byte too late.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/freebsd/freebsd-src/commits/main/lib/libfetch",
+            "https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10749",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E"
+          ],
+          "PublishedDate": "2021-08-03T14:15:00Z",
+          "LastModifiedDate": "2021-09-02T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3711",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be1566e9ef0d546e0",
+            "DiffID": "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3711",
+          "Title": "openssl: SM2 Decryption Buffer Overflow",
+          "Description": "In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt(). Typically an application will call this function twice. The first time, on entry, the \"out\" parameter can be NULL and, on exit, the \"outlen\" parameter is populated with the buffer size required to hold the decrypted plaintext. The application can then allocate a sufficiently sized buffer and call EVP_PKEY_decrypt() again, but this time passing a non-NULL value for the \"out\" parameter. A bug in the implementation of the SM2 decryption code means that the calculation of the buffer size required to hold the plaintext returned by the first call to EVP_PKEY_decrypt() can be smaller than the actual size required by the second call. This can lead to a buffer overflow when EVP_PKEY_decrypt() is called by the application a second time with a buffer that is too small. A malicious attacker who is able present SM2 content for decryption to an application could cause attacker chosen data to overflow the buffer by up to a maximum of 62 bytes altering the contents of other data held after the buffer, possibly changing application behaviour or causing the application to crash. The location of the buffer is application dependent but is typically heap allocated. Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=59f5e75f3bced8fc0e130d72a3f582cf7b480b46",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-22T18:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3712",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be1566e9ef0d546e0",
+            "DiffID": "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "Title": "openssl: Read buffer overruns processing ASN.1 strings",
+          "Description": "ASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL's own \"d2i\" functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the \"data\" and \"length\" fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the \"data\" field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://ubuntu.com/security/notices/USN-5051-2",
+            "https://ubuntu.com/security/notices/USN-5051-3",
+            "https://ubuntu.com/security/notices/USN-5051-4 (regression only in trusty/esm)",
+            "https://ubuntu.com/security/notices/USN-5088-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-27T02:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3711",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be1566e9ef0d546e0",
+            "DiffID": "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3711",
+          "Title": "openssl: SM2 Decryption Buffer Overflow",
+          "Description": "In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt(). Typically an application will call this function twice. The first time, on entry, the \"out\" parameter can be NULL and, on exit, the \"outlen\" parameter is populated with the buffer size required to hold the decrypted plaintext. The application can then allocate a sufficiently sized buffer and call EVP_PKEY_decrypt() again, but this time passing a non-NULL value for the \"out\" parameter. A bug in the implementation of the SM2 decryption code means that the calculation of the buffer size required to hold the plaintext returned by the first call to EVP_PKEY_decrypt() can be smaller than the actual size required by the second call. This can lead to a buffer overflow when EVP_PKEY_decrypt() is called by the application a second time with a buffer that is too small. A malicious attacker who is able present SM2 content for decryption to an application could cause attacker chosen data to overflow the buffer by up to a maximum of 62 bytes altering the contents of other data held after the buffer, possibly changing application behaviour or causing the application to crash. The location of the buffer is application dependent but is typically heap allocated. Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=59f5e75f3bced8fc0e130d72a3f582cf7b480b46",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-22T18:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3712",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1k-r0",
+          "FixedVersion": "1.1.1l-r0",
+          "Layer": {
+            "Digest": "sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be1566e9ef0d546e0",
+            "DiffID": "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "Title": "openssl: Read buffer overruns processing ASN.1 strings",
+          "Description": "ASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL's own \"d2i\" functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the \"data\" and \"length\" fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the \"data\" field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+            "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://security.netapp.com/advisory/ntap-20210827-0010/",
+            "https://ubuntu.com/security/notices/USN-5051-1",
+            "https://ubuntu.com/security/notices/USN-5051-2",
+            "https://ubuntu.com/security/notices/USN-5051-3",
+            "https://ubuntu.com/security/notices/USN-5051-4 (regression only in trusty/esm)",
+            "https://ubuntu.com/security/notices/USN-5088-1",
+            "https://www.debian.org/security/2021/dsa-4963",
+            "https://www.openssl.org/news/secadv/20210824.txt",
+            "https://www.tenable.com/security/tns-2021-16"
+          ],
+          "PublishedDate": "2021-08-24T15:15:00Z",
+          "LastModifiedDate": "2021-09-27T02:15:00Z"
+        }
+      ]
+    }
+  }
+]
