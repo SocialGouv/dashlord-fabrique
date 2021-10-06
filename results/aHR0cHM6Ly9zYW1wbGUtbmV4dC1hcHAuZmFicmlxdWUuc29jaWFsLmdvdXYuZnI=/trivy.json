@@ -7688,12 +7688,13 @@
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
             "https://web.mit.edu/kerberos/advisories/"
           ],
           "PublishedDate": "2021-08-23T05:15:00Z",
-          "LastModifiedDate": "2021-09-23T13:15:00Z"
+          "LastModifiedDate": "2021-09-30T22:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-12886",
@@ -14501,12 +14502,13 @@
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
             "https://web.mit.edu/kerberos/advisories/"
           ],
           "PublishedDate": "2021-08-23T05:15:00Z",
-          "LastModifiedDate": "2021-09-23T13:15:00Z"
+          "LastModifiedDate": "2021-09-30T22:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-12290",
@@ -14735,12 +14737,13 @@
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
             "https://web.mit.edu/kerberos/advisories/"
           ],
           "PublishedDate": "2021-08-23T05:15:00Z",
-          "LastModifiedDate": "2021-09-23T13:15:00Z"
+          "LastModifiedDate": "2021-09-30T22:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-5709",
@@ -14811,12 +14814,13 @@
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
             "https://web.mit.edu/kerberos/advisories/"
           ],
           "PublishedDate": "2021-08-23T05:15:00Z",
-          "LastModifiedDate": "2021-09-23T13:15:00Z"
+          "LastModifiedDate": "2021-09-30T22:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-5709",
@@ -14887,12 +14891,13 @@
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
             "https://web.mit.edu/kerberos/advisories/"
           ],
           "PublishedDate": "2021-08-23T05:15:00Z",
-          "LastModifiedDate": "2021-09-23T13:15:00Z"
+          "LastModifiedDate": "2021-09-30T22:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2017-17740",
@@ -15704,11 +15709,21 @@
             "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
             "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
           "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
           "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
-          "Severity": "MEDIUM",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
               "V3Score": 5.5
@@ -15718,7 +15733,7 @@
             "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html"
           ],
           "PublishedDate": "2021-09-20T16:15:00Z",
-          "LastModifiedDate": "2021-09-20T17:21:00Z"
+          "LastModifiedDate": "2021-10-02T02:14:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -15728,11 +15743,21 @@
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
           "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
           "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
-          "Severity": "MEDIUM",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
               "V3Score": 5.5
@@ -15742,7 +15767,7 @@
             "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html"
           ],
           "PublishedDate": "2021-09-20T16:15:00Z",
-          "LastModifiedDate": "2021-09-20T17:21:00Z"
+          "LastModifiedDate": "2021-10-02T02:14:00Z"
         },
         {
           "VulnerabilityID": "CVE-2017-11164",
@@ -16313,6 +16338,7 @@
             "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
             "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html",
             "https://security.netapp.com/advisory/ntap-20210827-0010/",
             "https://ubuntu.com/security/notices/USN-5051-1",
             "https://ubuntu.com/security/notices/USN-5051-2",
@@ -16324,7 +16350,7 @@
             "https://www.tenable.com/security/tns-2021-16"
           ],
           "PublishedDate": "2021-08-24T15:15:00Z",
-          "LastModifiedDate": "2021-09-27T02:15:00Z"
+          "LastModifiedDate": "2021-10-01T01:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2007-6755",
@@ -16812,11 +16838,21 @@
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
           "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
           "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
-          "Severity": "MEDIUM",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
               "V3Score": 5.5
@@ -16826,7 +16862,7 @@
             "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html"
           ],
           "PublishedDate": "2021-09-20T16:15:00Z",
-          "LastModifiedDate": "2021-09-20T17:21:00Z"
+          "LastModifiedDate": "2021-10-02T02:14:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-12886",
@@ -18285,10 +18321,11 @@
           },
           "References": [
             "https://kb.cert.org/vuls/id/799380",
-            "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/reporting-security/"
+            "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/reporting-security/",
+            "https://www.kb.cert.org/vuls/id/799380"
           ],
           "PublishedDate": "2021-05-24T18:15:00Z",
-          "LastModifiedDate": "2021-06-03T17:30:00Z"
+          "LastModifiedDate": "2021-09-29T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-26557",
@@ -18458,6 +18495,9 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3702",
+            "https://lore.kernel.org/linux-wireless/CABvG-CVvPF++0vuGzCrBj8+s=Bcx1GwWfiW1_Somu_GVncTAcQ@mail.gmail.com/",
+            "https://lore.kernel.org/stable/20210818084859.vcs4vs3yd6zetmyt@pali/t/#mf8b430d4f19f1b939a29b6c5098fdc514fd1a928",
             "https://www.arista.com/en/support/advisories-notices/security-advisories/11998-security-advisory-58",
             "https://www.debian.org/security/2021/dsa-4978",
             "https://www.qualcomm.com/company/product-security/bulletins/august-2020-bulletin"
@@ -18506,6 +18546,8 @@
             "https://ubuntu.com/security/notices/USN-5071-1",
             "https://ubuntu.com/security/notices/USN-5071-2",
             "https://ubuntu.com/security/notices/USN-5071-3",
+            "https://ubuntu.com/security/notices/USN-5094-1",
+            "https://ubuntu.com/security/notices/USN-5094-2",
             "https://www.openwall.com/lists/oss-security/2021/05/26/3",
             "https://www.openwall.com/lists/oss-security/2021/05/26/4",
             "https://www.openwall.com/lists/oss-security/2021/05/26/5"
@@ -18779,7 +18821,8 @@
             "https://ubuntu.com/security/notices/USN-5071-3",
             "https://ubuntu.com/security/notices/USN-5073-1",
             "https://ubuntu.com/security/notices/USN-5073-2",
-            "https://ubuntu.com/security/notices/USN-5073-3"
+            "https://ubuntu.com/security/notices/USN-5073-3",
+            "https://ubuntu.com/security/notices/USN-5096-1"
           ],
           "PublishedDate": "2021-07-09T11:15:00Z",
           "LastModifiedDate": "2021-09-20T17:01:00Z"
@@ -18794,8 +18837,11 @@
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3653",
           "Title": "kernel: SVM nested virtualization issue in KVM (AVIC support)",
-          "Description": "A flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"int_ctl\" field, this issue could allow a malicious L1 to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape.",
+          "Description": "A flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"int_ctl\" field, this issue could allow a malicious L1 to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape. This flaw affects Linux kernel versions prior to 5.14-rc7.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-862"
+          ],
           "CVSS": {
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
@@ -18803,6 +18849,7 @@
             }
           },
           "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1983686",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3653",
             "https://github.com/torvalds/linux/commit/3d6368ef580a",
             "https://linux.oracle.com/cve/CVE-2021-3653.html",
@@ -18816,7 +18863,9 @@
             "https://ubuntu.com/security/notices/USN-5073-2",
             "https://ubuntu.com/security/notices/USN-5082-1",
             "https://www.openwall.com/lists/oss-security/2021/08/16/1"
-          ]
+          ],
+          "PublishedDate": "2021-09-29T20:15:00Z",
+          "LastModifiedDate": "2021-09-29T20:55:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3656",
@@ -18849,6 +18898,29 @@
             "https://ubuntu.com/security/notices/USN-5073-2",
             "https://ubuntu.com/security/notices/USN-5082-1",
             "https://www.openwall.com/lists/oss-security/2021/08/16/1"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3752",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3752",
+          "Title": "kernel: possible use-after-free in bluetooth module",
+          "Description": "A use-after-free flaw was found in the Linux kernel’s Bluetooth subsystem in the way user calls connect to the socket and disconnect simultaneously due to a race condition. This flaw allows a user to crash the system or escalate their privileges. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://lore.kernel.org/lkml/20210714031733.1395549-1-bobo.shaobowang@huawei.com/",
+            "https://www.openwall.com/lists/oss-security/2021/09/15/4"
           ]
         },
         {
@@ -18892,6 +18964,8 @@
             "https://security.netapp.com/advisory/ntap-20210917-0005/",
             "https://ubuntu.com/security/notices/USN-5091-1",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5094-1",
             "https://www.debian.org/security/2021/dsa-4978",
             "https://www.openwall.com/lists/oss-security/2021/07/26/1"
           ],
@@ -18936,7 +19010,10 @@
             "https://ubuntu.com/security/notices/USN-5073-2",
             "https://ubuntu.com/security/notices/USN-5073-3",
             "https://ubuntu.com/security/notices/USN-5091-1",
+            "https://ubuntu.com/security/notices/USN-5091-2",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.debian.org/security/2021/dsa-4978"
           ],
           "PublishedDate": "2021-08-07T04:15:00Z",
@@ -18988,11 +19065,18 @@
             "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
             "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-38300",
           "Title": "kernel: crafting anomalous machine code may lead to arbitrary Kernel code execution",
           "Description": "arch/mips/net/bpf_jit.c in the Linux kernel through 5.14.6 can generate undesirable machine code when transforming unprivileged cBPF programs, allowing execution of arbitrary code within the kernel context. This occurs because conditional branches can exceed the 128 KB limit of the MIPS architecture.",
           "Severity": "HIGH",
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.2,
+              "V3Score": 7.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 8.1
@@ -19002,7 +19086,7 @@
             "http://www.openwall.com/lists/oss-security/2021/09/15/5"
           ],
           "PublishedDate": "2021-09-20T06:15:00Z",
-          "LastModifiedDate": "2021-09-20T11:58:00Z"
+          "LastModifiedDate": "2021-09-29T03:06:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-40490",
@@ -19040,10 +19124,37 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6VS2DLGT7TK7URKAS2KWJL3S533SGVA/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJGX3DMJT6MRBW2XEF3TWVHYWZW3DG3N/",
             "https://lore.kernel.org/linux-ext4/000000000000e5080305c9e51453@google.com/",
+            "https://security.netapp.com/advisory/ntap-20211004-0001/",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.debian.org/security/2021/dsa-4978"
           ],
           "PublishedDate": "2021-09-03T01:15:00Z",
-          "LastModifiedDate": "2021-09-25T15:15:00Z"
+          "LastModifiedDate": "2021-10-04T19:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-41864",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41864",
+          "Title": "kernel: eBPF multiplication integer overflow in prealloc_elems_and_freelist() in kernel/bpf/stackmap.c leads to out-of-bounds write",
+          "Description": "prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the Linux kernel through 5.14.9 allows unprivileged users to trigger an eBPF multiplication integer overflow with a resultant out-of-bounds write.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=30e29a9a2bc6a4888335a6ede968b75cd329657a",
+            "https://github.com/torvalds/linux/commit/30e29a9a2bc6a4888335a6ede968b75cd329657a"
+          ],
+          "PublishedDate": "2021-10-02T00:15:00Z",
+          "LastModifiedDate": "2021-10-04T11:58:00Z"
         },
         {
           "VulnerabilityID": "CVE-2004-0230",
@@ -20965,6 +21076,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=2005258",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20317",
+            "https://git.kernel.org/linus/511885d7061eda3eb1faf3f57dcc936ff75863f1 (5.4-rc1)",
             "https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?id=511885d7061eda3eb1faf3f57dcc936ff75863f1"
           ],
           "PublishedDate": "2021-09-27T11:15:00Z",
@@ -21004,7 +21117,7 @@
             "https://git.kernel.org/linus/775c5033a0d164622d9d10dd0f0a5531639ed3ed",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=775c5033a0d164622d9d10dd0f0a5531639ed3ed",
             "https://linux.oracle.com/cve/CVE-2021-28950.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9221.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9471.html",
             "https://lists.debian.org/debian-lts-announce/2021/06/msg00020.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FB6LUXPEIRLZH32YXWZVEZAD4ZL6SDK2/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QRTPQE73ANG7D6M4L4PK5ZQDPO4Y2FVD/",
@@ -21052,7 +21165,9 @@
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/patch/?id=fe9a5ca7e370e613a9a75a13008a3845ea759d6e",
             "https://github.com/torvalds/linux/commit/9183671af6dbf60a1219371d4ed73e23f43b49db",
             "https://ubuntu.com/security/notices/USN-5091-1",
+            "https://ubuntu.com/security/notices/USN-5091-2",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
             "https://www.openwall.com/lists/oss-security/2021/06/21/1",
             "https://www.usenix.org/conference/usenixsecurity21/presentation/kirzner"
           ],
@@ -21095,6 +21210,8 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/565ZS55ZFEN62WVRRORT7R63RXW5F4T4/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6JKK6XNRZX5BT5QVYOKGVJ2BHFZAP5EX/",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T05:15:00Z",
@@ -21157,6 +21274,8 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/565ZS55ZFEN62WVRRORT7R63RXW5F4T4/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6JKK6XNRZX5BT5QVYOKGVJ2BHFZAP5EX/",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T04:15:00Z",
@@ -21240,7 +21359,12 @@
             "https://linux.oracle.com/errata/ELSA-2021-9460.html",
             "https://lore.kernel.org/lkml/20210723125527.767d1c18@oasis.local.home/",
             "https://ubuntu.com/security/notices/USN-5091-1",
+            "https://ubuntu.com/security/notices/USN-5091-2",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5094-1",
+            "https://ubuntu.com/security/notices/USN-5094-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.debian.org/security/2021/dsa-4978"
           ],
           "PublishedDate": "2021-08-05T20:15:00Z",
@@ -21280,6 +21404,8 @@
             "https://lore.kernel.org/linux-usb/20201002114323.GA3296553@kroah.com/",
             "https://security.netapp.com/advisory/ntap-20210819-0003/",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.spinics.net/lists/linux-usb/msg202228.html"
           ],
           "PublishedDate": "2021-07-21T15:16:00Z",
@@ -21332,30 +21458,9 @@
             }
           },
           "References": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=36cf515b9bbe"
-          ]
-        },
-        {
-          "VulnerabilityID": "CVE-2021-3752",
-          "PkgName": "linux-libc-dev",
-          "InstalledVersion": "4.19.194-3",
-          "Layer": {
-            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
-            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3752",
-          "Title": "kernel: possible use-after-free in bluetooth module",
-          "Description": "A use-after-free flaw was found in the Linux kernel’s Bluetooth subsystem in the way user calls connect to the socket and disconnect simultaneously due to a race condition. This flaw allows a user to crash the system or escalate their privileges. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.",
-          "Severity": "MEDIUM",
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.4
-            }
-          },
-          "References": [
-            "https://lore.kernel.org/lkml/20210714031733.1395549-1-bobo.shaobowang@huawei.com/",
-            "https://www.openwall.com/lists/oss-security/2021/09/15/4"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2000627",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3744",
+            "https://kernel.googlesource.com/pub/scm/linux/kernel/git/herbert/crypto-2.6/+/505d9dcb0f7ddf9d075e729523a33d38642ae680%5E%21/#F0"
           ]
         },
         {
@@ -21425,6 +21530,8 @@
             }
           },
           "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1997467",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3764",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=36cf515b9bbe"
           ]
         },
@@ -21513,48 +21620,14 @@
             "https://github.com/torvalds/linux/commit/dd99e9f98fbf423ff6d365b37a98e8879170f17c",
             "https://security.netapp.com/advisory/ntap-20210902-0010/",
             "https://ubuntu.com/security/notices/USN-5091-1",
+            "https://ubuntu.com/security/notices/USN-5091-2",
             "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5096-1",
             "https://www.debian.org/security/2021/dsa-4978"
           ],
           "PublishedDate": "2021-08-08T20:15:00Z",
           "LastModifiedDate": "2021-09-25T15:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-38203",
-          "PkgName": "linux-libc-dev",
-          "InstalledVersion": "4.19.194-3",
-          "Layer": {
-            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
-            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-38203",
-          "Title": "kernel: btrfs: deadlock via processes that trigger allocation of new system chunks during times when there is a shortage of free space in the system space_info",
-          "Description": "btrfs in the Linux kernel before 5.13.4 allows attackers to cause a denial of service (deadlock) via processes that trigger allocation of new system chunks during times when there is a shortage of free space in the system space_info.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-770"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V2Score": 2.1,
-              "V3Score": 5.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 5.5
-            }
-          },
-          "References": [
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.13.4",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1cb3db1cf383a3c7dbda1aa0ce748b0958759947",
-            "https://github.com/torvalds/linux/commit/1cb3db1cf383a3c7dbda1aa0ce748b0958759947",
-            "https://security.netapp.com/advisory/ntap-20210902-0010/"
-          ],
-          "PublishedDate": "2021-08-08T20:15:00Z",
-          "LastModifiedDate": "2021-09-02T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-38204",
@@ -21590,47 +21663,15 @@
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b5fdf5c6e6bee35837e160c00ac89327bdad031b",
             "https://github.com/torvalds/linux/commit/b5fdf5c6e6bee35837e160c00ac89327bdad031b",
             "https://ubuntu.com/security/notices/USN-5091-1",
-            "https://ubuntu.com/security/notices/USN-5092-1"
+            "https://ubuntu.com/security/notices/USN-5091-2",
+            "https://ubuntu.com/security/notices/USN-5092-1",
+            "https://ubuntu.com/security/notices/USN-5092-2",
+            "https://ubuntu.com/security/notices/USN-5094-1",
+            "https://ubuntu.com/security/notices/USN-5094-2",
+            "https://ubuntu.com/security/notices/USN-5096-1"
           ],
           "PublishedDate": "2021-08-08T20:15:00Z",
           "LastModifiedDate": "2021-08-17T16:37:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-38206",
-          "PkgName": "linux-libc-dev",
-          "InstalledVersion": "4.19.194-3",
-          "Layer": {
-            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
-            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-38206",
-          "Title": "kernel: NULL pointer dereference in the radiotap parser by injecting a frame with 802.11a rates in mac80211 subsystem",
-          "Description": "The mac80211 subsystem in the Linux kernel before 5.12.13, when a device supporting only 5 GHz is used, allows attackers to cause a denial of service (NULL pointer dereference in the radiotap parser) by injecting a frame with 802.11a rates.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-476"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V2Score": 2.1,
-              "V3Score": 5.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 6.5
-            }
-          },
-          "References": [
-            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.12.13",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38206",
-            "https://github.com/torvalds/linux/commit/bddc0c411a45d3718ac535a070f349be8eca8d48",
-            "https://ubuntu.com/security/notices/USN-5070-1"
-          ],
-          "PublishedDate": "2021-08-08T20:15:00Z",
-          "LastModifiedDate": "2021-08-12T13:33:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-19882",
@@ -22882,11 +22923,21 @@
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
           "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
           "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
-          "Severity": "MEDIUM",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
               "V3Score": 5.5
@@ -22896,7 +22947,7 @@
             "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html"
           ],
           "PublishedDate": "2021-09-20T16:15:00Z",
-          "LastModifiedDate": "2021-09-20T17:21:00Z"
+          "LastModifiedDate": "2021-10-02T02:14:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -22906,11 +22957,21 @@
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
           "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
           "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
-          "Severity": "MEDIUM",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
               "V3Score": 5.5
@@ -22920,7 +22981,7 @@
             "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html"
           ],
           "PublishedDate": "2021-09-20T16:15:00Z",
-          "LastModifiedDate": "2021-09-20T17:21:00Z"
+          "LastModifiedDate": "2021-10-02T02:14:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3711",
@@ -23003,6 +23064,7 @@
             "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
             "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html",
             "https://security.netapp.com/advisory/ntap-20210827-0010/",
             "https://ubuntu.com/security/notices/USN-5051-1",
             "https://ubuntu.com/security/notices/USN-5051-2",
@@ -23014,7 +23076,7 @@
             "https://www.tenable.com/security/tns-2021-16"
           ],
           "PublishedDate": "2021-08-24T15:15:00Z",
-          "LastModifiedDate": "2021-09-27T02:15:00Z"
+          "LastModifiedDate": "2021-10-01T01:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2007-6755",
