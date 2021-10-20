@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "cdtn/elasticsearch",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/cdtn%2Felasticsearch",
+    "image": "ghcr.io/socialgouv/cdtn/elasticsearch",
+    "trivy": null
+  },
+  {
+    "name": "cdtn-elasticsearch",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/cdtn-elasticsearch",
+    "image": "ghcr.io/socialgouv/cdtn-elasticsearch",
+    "trivy": null
+  }
+]
