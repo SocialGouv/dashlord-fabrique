@@ -1,11 +1,47 @@
 {
-  "trackers": [],
-  "cookies": [],
+  "trackers": [
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-sentry.cloud-ed.fr/api/27/envelope/?sentry_key=24f5b07f17a544b1b76ac0766ee68020&sentry_version=7"
+    }
+  ],
+  "cookies": [
+    {
+      "name": "_pk_ses.15.fec2",
+      "value": "1",
+      "domain": "sample-next-app.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1635042144,
+      "size": 16,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_pk_id.15.fec2",
+      "value": "810413797b33e307.1635040345.",
+      "domain": "sample-next-app.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1668995545,
+      "size": 42,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
   "headers": {
-    "date": "Wed, 06 Oct 2021 01:44:37 GMT",
+    "date": "Sun, 24 Oct 2021 01:52:23 GMT",
     "content-type": "text/html; charset=utf-8",
     "x-powered-by": "Next.js",
-    "etag": "\"c3e-4Ze+XFCVrp9vEDhzxm3uJD+ee5s\"",
+    "etag": "\"bfd-SyqXm2GyroE2v8LvCzEUI4QqmhY\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
@@ -73,7 +109,7 @@
             "de": "USA",
             "en": "United States",
             "es": "EE. UU.",
-            "fr": "É.-U.",
+            "fr": "États Unis",
             "ja": "アメリカ",
             "pt-BR": "EUA",
             "ru": "США",
@@ -103,6 +139,60 @@
             }
           }
         ]
+      }
+    },
+    {
+      "hostname": "lafabriquenumerique-sentry.cloud-ed.fr",
+      "ip": "154.41.70.5",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "EE. UU.",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "EE. UU.",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
       }
     }
   ]
