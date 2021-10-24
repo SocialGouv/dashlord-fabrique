@@ -42,10 +42,11 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
             "https://hackerone.com/reports/1269242",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1"
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-08T15:51:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -72,8 +73,8 @@
               "V3Score": 7.5
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
             }
           },
           "References": [
@@ -83,10 +84,11 @@
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2"
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-08T02:21:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -127,10 +129,11 @@
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4"
+            "https://ubuntu.com/security/notices/USN-5079-4",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-08T02:58:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22945",
@@ -166,10 +169,11 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
             "https://hackerone.com/reports/1269242",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1"
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-08T15:51:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -196,8 +200,8 @@
               "V3Score": 7.5
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
             }
           },
           "References": [
@@ -207,10 +211,11 @@
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2"
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-08T02:21:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -251,10 +256,11 @@
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4"
+            "https://ubuntu.com/security/notices/USN-5079-4",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-08T02:58:00Z"
+          "LastModifiedDate": "2021-10-20T11:16:00Z"
         }
       ]
     }
