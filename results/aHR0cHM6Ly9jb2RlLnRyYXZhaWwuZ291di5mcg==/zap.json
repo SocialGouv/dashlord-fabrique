@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Wed, 20 Oct 2021 10:24:11",
+	"@generated": "Sun, 24 Oct 2021 01:49:23",
 	"site":[ 
 		{
 			"@name": "https://code.travail.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "573"
+					"sourceid": "575"
 				},
 				{
 					"pluginid": "10055",
@@ -151,6 +151,13 @@
 							"evidence": "<link href=\"https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/faq-chomage-partiel-activite-partielle\" rel=\"canonical\"/>"
 						},
 						{
+							"uri": "https://code.travail.gouv.fr/fiche-ministere-travail/aide-a-lembauche-des-jeunes",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://travail-emploi.gouv.fr/le-ministere-en-action/relance-activite/plan-1jeune-1solution/faciliter-l-entree-dans-la-vie-professionnelle-10878/aide-embauche-jeunes\" rel=\"canonical\"/>"
+						},
+						{
 							"uri": "https://code.travail.gouv.fr/fiche-ministere-travail/fiche-activite-partielle-chomage-partiel",
 							"method": "GET",
 							"param": "",
@@ -200,13 +207,6 @@
 							"evidence": "<link href=\"https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/teletravail-en-periode-de-covid-19\" rel=\"canonical\"/>"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/fiche-service-public/aide-a-lembauche-dun-jeune-de-moins-de-26-ans",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://www.service-public.fr/associations/vosdroits/F35364\" rel=\"canonical\"/>"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/fiche-service-public/arret-maladie-indemnites-journalieres-versees-au-salarie",
 							"method": "GET",
 							"param": "",
@@ -234,7 +234,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "646"
+					"sourceid": "648"
 				},
 				{
 					"pluginid": "10020",
@@ -378,13 +378,6 @@
 							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -414,6 +407,13 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -485,7 +485,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "574"
+					"sourceid": "577"
 				},
 				{
 					"pluginid": "10015",
@@ -566,13 +566,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -602,6 +595,13 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -3650,7 +3650,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "78"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "10021",
@@ -3794,13 +3794,6 @@
 							"evidence": "/_next/static/_b7rA_fnw3KebRvwgatED/_buildManifest"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "c58b-GIVlz8G6sXrlKf12oW+m2XbR5lY"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -3826,7 +3819,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "d9d4-WEEAjndUIWG1L2RklcZv32U4zBE"
+							"evidence": "d9d4-9DGsTwDgTghvOIg8Uc+w2bWruio"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
@@ -3834,6 +3827,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "d554-KAsM242KDk9siCnWlGLhK9A+mNE"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "e81f-NGd9y3jgB79OqoKNK1iVO9QUp5o"
 						}
 					],
 					"count": "11",
@@ -3889,7 +3889,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "69"
+					"sourceid": "75"
 				},
 				{
 					"pluginid": "10024",
@@ -3915,7 +3915,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "584"
+					"sourceid": "596"
 				},
 				{
 					"pluginid": "10027",
@@ -3963,13 +3963,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -3999,6 +3992,13 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -4059,13 +4059,6 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -4095,6 +4088,13 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -4155,13 +4155,6 @@
 							"evidence": "no-store"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/images/",
 							"method": "GET",
 							"param": "",
@@ -4181,6 +4174,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "307"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
 						}
 					],
 					"count": "9",
@@ -4222,7 +4222,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "69"
+					"sourceid": "75"
 				},
 				{
 					"pluginid": "10031",
@@ -4248,7 +4248,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "829"
+					"sourceid": "826"
 				}
 			]
 		}

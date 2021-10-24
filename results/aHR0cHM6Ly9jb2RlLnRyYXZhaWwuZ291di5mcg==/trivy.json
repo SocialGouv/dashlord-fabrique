@@ -6,9 +6,39 @@
     "trivy": null
   },
   {
+    "name": "cdtn/code-du-travail-api",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/cdtn%2Fcode-du-travail-api",
+    "image": "ghcr.io/socialgouv/cdtn/code-du-travail-api",
+    "trivy": null
+  },
+  {
+    "name": "cdtn/code-du-travail-frontend",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/cdtn%2Fcode-du-travail-frontend",
+    "image": "ghcr.io/socialgouv/cdtn/code-du-travail-frontend",
+    "trivy": null
+  },
+  {
+    "name": "app",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/code-du-travail-numerique%2Fapp",
+    "image": "ghcr.io/socialgouv/code-du-travail-numerique/app",
+    "trivy": null
+  },
+  {
     "name": "cdtn-elasticsearch",
     "url": "https://github.com//orgs/SocialGouv/packages/container/package/cdtn-elasticsearch",
     "image": "ghcr.io/socialgouv/cdtn-elasticsearch",
+    "trivy": null
+  },
+  {
+    "name": "code-du-travail-api",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/code-du-travail-api",
+    "image": "ghcr.io/socialgouv/code-du-travail-api",
+    "trivy": null
+  },
+  {
+    "name": "code-du-travail-frontend",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/code-du-travail-frontend",
+    "image": "ghcr.io/socialgouv/code-du-travail-frontend",
     "trivy": null
   }
 ]
