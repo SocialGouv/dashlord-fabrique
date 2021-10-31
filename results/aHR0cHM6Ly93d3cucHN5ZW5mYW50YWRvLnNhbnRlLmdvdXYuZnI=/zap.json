@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 24 Oct 2021 01:44:04",
+	"@generated": "Sun, 31 Oct 2021 01:45:24",
 	"site":[ 
 		{
 			"@name": "https://www.psyenfantado.sante.gouv.fr",
@@ -630,6 +630,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0143965714"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0160148233"
 						},
 						{
@@ -742,6 +749,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0466367670"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0467140112"
 						},
 						{
@@ -750,13 +764,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0467592573"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "0468380056"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -855,6 +862,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0562753632"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0563708333"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -1085,13 +1099,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "0608531938"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "0608616034"
 						},
 						{
@@ -1260,6 +1267,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0611854001"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0611967192"
 						},
 						{
@@ -1366,13 +1380,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0614500104"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "0614717805"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -1709,6 +1716,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0621944141"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0622021322"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -2555,6 +2569,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0650510361"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0650754349"
 						},
 						{
@@ -3095,6 +3116,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0666161183"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0666227024"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -4312,6 +4340,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0763623106"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0764070561"
 						},
 						{
@@ -4886,13 +4921,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "51795237"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "57383377"
 						},
 						{
@@ -4959,9 +4987,9 @@
 							"evidence": "696061234"
 						}
 					],
-					"count": "619",
+					"count": "623",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>0160148233, which evaluates to: 1975-01-28 13:37:13</p>",
+					"otherinfo": "<p>0143965714, which evaluates to: 1974-07-25 06:28:34</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -5099,7 +5127,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3A0mDGuUNswqdg3HqrHRAFtxQMa_QJepug"
+							"evidence": "3AhX0eY10utpnY0S0MaC8bj1PUWpPo_GE-"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
@@ -5113,7 +5141,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3Awhrb-zG4Rn4KcdAW_6rPGxeXaGJNy1I1"
+							"evidence": "3A6juqyhJE1Q4oAUlyVhJ72RuTnaqZgzdl"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
@@ -5127,21 +5155,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3Ad8UKrPMA5Mp2bGuC2CzHMChbYowrJrtY"
+							"evidence": "3AE55Kqv1l7ZAf-HVisvxN_NRF5cFZnOVB"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AEjUDsPejlZWvA5A7QWi4qxW3hOT_vRkX"
+							"evidence": "3Ay6KwniHAMjL-f_TK8QTEZ44z0S5TW5X6"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/documents/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AmK1JacS6R1dGKd6j2q7p_EH7bGfD7d37"
+							"evidence": "3Ace5XwC-oViuqfTQb2Of4NNXw2JJd-NBW"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/gouvfr/css/dsfr.min.css",

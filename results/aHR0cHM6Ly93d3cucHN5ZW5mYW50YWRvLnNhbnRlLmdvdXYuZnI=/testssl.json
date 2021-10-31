@@ -279,6 +279,13 @@
               "finding"      : "03AC0B404D83AB42B3974AD29B97308FEB79"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
@@ -346,7 +353,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "44 >= 30 days"
+              "finding"      : "37 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,7 +549,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1401,6 +1408,13 @@
               "finding"      : "03AC0B404D83AB42B3974AD29B97308FEB79"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
               "port"         : "443",
@@ -1468,7 +1482,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "44 >= 30 days"
+              "finding"      : "37 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2248,6 +2262,6 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "197"
+              "finding"      : "299"
           }
 ]
