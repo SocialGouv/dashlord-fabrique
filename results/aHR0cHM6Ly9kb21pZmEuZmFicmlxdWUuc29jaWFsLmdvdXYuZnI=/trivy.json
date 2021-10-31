@@ -1,271 +1,5 @@
 [
   {
-    "name": "frontend",
-    "url": "https://github.com//orgs/SocialGouv/packages/container/package/domifa%2Ffrontend",
-    "image": "ghcr.io/socialgouv/domifa/frontend",
-    "trivy": {
-      "Target": "ghcr.io/socialgouv/domifa/frontend:latest (alpine 3.14.2)",
-      "Class": "os-pkgs",
-      "Type": "alpine",
-      "Vulnerabilities": [
-        {
-          "VulnerabilityID": "CVE-2021-22945",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
-          "Title": "curl: use-after-free and double-free in MQTT sending",
-          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
-          "Severity": "CRITICAL",
-          "CweIDs": [
-            "CWE-415"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V2Score": 5.8,
-              "V3Score": 9.1
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V3Score": 7.4
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22945.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
-            "https://hackerone.com/reports/1269242",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22946",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
-          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
-          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-319"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V2Score": 5,
-              "V3Score": 7.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22946.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
-            "https://hackerone.com/reports/1334111",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22947",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
-          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
-          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-345"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-              "V2Score": 4.3,
-              "V3Score": 5.9
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22947.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
-            "https://hackerone.com/reports/1334763",
-            "https://launchpad.net/bugs/1944120 (regression bug)",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22945",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
-          "Title": "curl: use-after-free and double-free in MQTT sending",
-          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
-          "Severity": "CRITICAL",
-          "CweIDs": [
-            "CWE-415"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V2Score": 5.8,
-              "V3Score": 9.1
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V3Score": 7.4
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22945.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
-            "https://hackerone.com/reports/1269242",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22946",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
-          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
-          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-319"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V2Score": 5,
-              "V3Score": 7.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22946.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
-            "https://hackerone.com/reports/1334111",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22947",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
-          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
-          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-345"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-              "V2Score": 4.3,
-              "V3Score": 5.9
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22947.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
-            "https://hackerone.com/reports/1334763",
-            "https://launchpad.net/bugs/1944120 (regression bug)",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
-        }
-      ]
-    }
-  },
-  {
     "name": "backend",
     "url": "https://github.com//orgs/SocialGouv/packages/container/package/domifa%2Fbackend",
     "image": "ghcr.io/socialgouv/domifa/backend",
@@ -2324,11 +2058,13 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16592",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJIW6KKY2TSLD43XEZXG56WREIIBUIIQ/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKIMSD5FIC3QFJDKNHR2PSO6JYJGCLHB/",
             "https://security.netapp.com/advisory/ntap-20210115-0003/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=25823",
-            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a"
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2020-12-09T21:15:00Z",
           "LastModifiedDate": "2021-01-15T11:15:00Z"
@@ -2692,7 +2428,8 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/"
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2021-04-15T14:15:00Z",
           "LastModifiedDate": "2021-05-04T12:55:00Z"
@@ -4705,11 +4442,13 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16592",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJIW6KKY2TSLD43XEZXG56WREIIBUIIQ/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKIMSD5FIC3QFJDKNHR2PSO6JYJGCLHB/",
             "https://security.netapp.com/advisory/ntap-20210115-0003/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=25823",
-            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a"
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2020-12-09T21:15:00Z",
           "LastModifiedDate": "2021-01-15T11:15:00Z"
@@ -5073,7 +4812,8 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/"
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2021-04-15T14:15:00Z",
           "LastModifiedDate": "2021-05-04T12:55:00Z"
@@ -7086,11 +6826,13 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16592",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJIW6KKY2TSLD43XEZXG56WREIIBUIIQ/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKIMSD5FIC3QFJDKNHR2PSO6JYJGCLHB/",
             "https://security.netapp.com/advisory/ntap-20210115-0003/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=25823",
-            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a"
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2020-12-09T21:15:00Z",
           "LastModifiedDate": "2021-01-15T11:15:00Z"
@@ -7454,7 +7196,8 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/"
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2021-04-15T14:15:00Z",
           "LastModifiedDate": "2021-05-04T12:55:00Z"
@@ -7678,12 +7421,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22922",
@@ -7804,6 +7548,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -7811,7 +7556,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -7827,7 +7572,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -7852,7 +7597,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-37600",
@@ -8404,7 +8149,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8429,7 +8174,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8445,7 +8190,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8470,7 +8215,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8486,7 +8231,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8511,7 +8256,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8527,7 +8272,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8552,7 +8297,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8568,7 +8313,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8593,7 +8338,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8609,7 +8354,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8634,7 +8379,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8650,7 +8395,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8675,7 +8420,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8691,7 +8436,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8716,7 +8461,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8732,7 +8477,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8757,7 +8502,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-14855",
@@ -8773,7 +8518,7 @@
           "Description": "A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.",
           "Severity": "HIGH",
           "CweIDs": [
-            "CWE-327"
+            "CWE-326"
           ],
           "CVSS": {
             "nvd": {
@@ -8798,7 +8543,7 @@
             "https://usn.ubuntu.com/4516-1/"
           ],
           "PublishedDate": "2020-03-20T16:15:00Z",
-          "LastModifiedDate": "2020-09-22T06:15:00Z"
+          "LastModifiedDate": "2021-10-29T15:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-30535",
@@ -12832,8 +12577,8 @@
           "PkgName": "libapparmor1",
           "InstalledVersion": "2.13.2-10",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1585",
@@ -13011,8 +12756,8 @@
           "PkgName": "libavahi-client3",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-6519",
@@ -13057,8 +12802,8 @@
           "PkgName": "libavahi-client3",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3468",
@@ -13094,8 +12839,8 @@
           "PkgName": "libavahi-common-data",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-6519",
@@ -13140,8 +12885,8 @@
           "PkgName": "libavahi-common-data",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3468",
@@ -13177,8 +12922,8 @@
           "PkgName": "libavahi-common3",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-6519",
@@ -13223,8 +12968,8 @@
           "PkgName": "libavahi-common3",
           "InstalledVersion": "0.7-4+deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3468",
@@ -13260,8 +13005,8 @@
           "PkgName": "libbcprov-java",
           "InstalledVersion": "1.60-1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-15522",
@@ -13299,8 +13044,8 @@
           "PkgName": "libbcprov-java",
           "InstalledVersion": "1.60-1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26939",
@@ -15335,11 +15080,13 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16592",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJIW6KKY2TSLD43XEZXG56WREIIBUIIQ/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UKIMSD5FIC3QFJDKNHR2PSO6JYJGCLHB/",
             "https://security.netapp.com/advisory/ntap-20210115-0003/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=25823",
-            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a"
+            "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=7ecb51549ab1ec22aba5aaf34b70323cf0b8509a",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2020-12-09T21:15:00Z",
           "LastModifiedDate": "2021-01-15T11:15:00Z"
@@ -15703,7 +15450,8 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/"
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
+            "https://ubuntu.com/security/notices/USN-5124-1"
           ],
           "PublishedDate": "2021-04-15T14:15:00Z",
           "LastModifiedDate": "2021-05-04T12:55:00Z"
@@ -19287,8 +19035,8 @@
           "PkgName": "libcups2",
           "InstalledVersion": "2.2.10-6+deb10u4",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2014-8166",
@@ -19324,8 +19072,8 @@
           "PkgName": "libcups2",
           "InstalledVersion": "2.2.10-6+deb10u4",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-10001",
@@ -19349,10 +19097,11 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10001",
+            "https://lists.debian.org/debian-lts-announce/2021/10/msg00027.html",
             "https://support.apple.com/en-us/HT212011"
           ],
           "PublishedDate": "2021-04-02T18:15:00Z",
-          "LastModifiedDate": "2021-04-07T15:48:00Z"
+          "LastModifiedDate": "2021-10-30T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -19388,12 +19137,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22922",
@@ -19514,6 +19264,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -19521,7 +19272,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -19557,12 +19308,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22922",
@@ -19683,6 +19435,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -19690,7 +19443,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -19726,12 +19479,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22922",
@@ -19852,6 +19606,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -19859,7 +19614,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-21598",
@@ -21493,6 +21248,9 @@
           },
           "References": [
             "http://openwall.com/lists/oss-security/2013/02/22/3",
+            "http://seclists.org/fulldisclosure/2021/Oct/61",
+            "http://seclists.org/fulldisclosure/2021/Oct/62",
+            "http://seclists.org/fulldisclosure/2021/Oct/63",
             "http://seclists.org/fulldisclosure/2021/Sep/33",
             "http://seclists.org/fulldisclosure/2021/Sep/34",
             "http://seclists.org/fulldisclosure/2021/Sep/35",
@@ -21515,7 +21273,7 @@
             "https://support.apple.com/kb/HT212819"
           ],
           "PublishedDate": "2014-01-21T18:55:00Z",
-          "LastModifiedDate": "2021-10-07T18:15:00Z"
+          "LastModifiedDate": "2021-10-27T20:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2013-0340",
@@ -21545,6 +21303,9 @@
           },
           "References": [
             "http://openwall.com/lists/oss-security/2013/02/22/3",
+            "http://seclists.org/fulldisclosure/2021/Oct/61",
+            "http://seclists.org/fulldisclosure/2021/Oct/62",
+            "http://seclists.org/fulldisclosure/2021/Oct/63",
             "http://seclists.org/fulldisclosure/2021/Sep/33",
             "http://seclists.org/fulldisclosure/2021/Sep/34",
             "http://seclists.org/fulldisclosure/2021/Sep/35",
@@ -21567,7 +21328,7 @@
             "https://support.apple.com/kb/HT212819"
           ],
           "PublishedDate": "2014-01-21T18:55:00Z",
-          "LastModifiedDate": "2021-10-07T18:15:00Z"
+          "LastModifiedDate": "2021-10-27T20:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-37600",
@@ -37748,8 +37509,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-12403",
@@ -37788,8 +37549,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11695",
@@ -37828,8 +37589,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11696",
@@ -37868,8 +37629,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11697",
@@ -37908,8 +37669,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11698",
@@ -37948,8 +37709,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-25648",
@@ -37992,8 +37753,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-12400",
@@ -38035,8 +37796,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-12401",
@@ -38078,8 +37839,8 @@
           "PkgName": "libnss3",
           "InstalledVersion": "2:3.42.1-1+deb10u3",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-6829",
@@ -49343,6 +49104,25 @@
           ]
         },
         {
+          "VulnerabilityID": "CVE-2021-3760",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.208-1",
+          "Layer": {
+            "Digest": "sha256:a8367252e08e761371f9573b3782f46abf9fc70ae38395ae9f3d3c232ced60d3",
+            "DiffID": "sha256:9e28eabfde8b462fffe49866f65633b2813c6944f6b3e267710d00cf0f83ed32"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3760",
+          "Title": "kernel: nfc: Use-After-Free vulnerability of ndev->rf_conn_info object",
+          "Description": "A flaw was found in the Linux kernel. A use-after-free vulnerability in the NFC stack can lead to a threat to confidentiality, integrity, and system availability.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2021-38207",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.208-1",
@@ -49409,11 +49189,8 @@
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/09/15/5",
             "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.10",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38300",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=37cb28ec7d3a36a5bace7063a3dba633ab110f8b",
-            "https://lore.kernel.org/bpf/20210915160437.4080-1-piotras@gmail.com/",
-            "https://security.netapp.com/advisory/ntap-20211008-0003/",
-            "https://www.openwall.com/lists/oss-security/2021/09/15/5"
+            "https://security.netapp.com/advisory/ntap-20211008-0003/"
           ],
           "PublishedDate": "2021-09-20T06:15:00Z",
           "LastModifiedDate": "2021-10-12T01:15:00Z"
@@ -49452,35 +49229,47 @@
             "https://github.com/torvalds/linux/commit/30e29a9a2bc6a4888335a6ede968b75cd329657a",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7BLLVKYAIETEORUPTFO3TR3C33ZPFXQM/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LAT3RERO6QBKSPJBNNRWY3D4NCGTFOS7/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYKURLXBB2555ASWMPDNMBUPD6AG2JKQ/"
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYKURLXBB2555ASWMPDNMBUPD6AG2JKQ/",
+            "https://security.netapp.com/advisory/ntap-20211029-0004/"
           ],
           "PublishedDate": "2021-10-02T00:15:00Z",
-          "LastModifiedDate": "2021-10-11T23:15:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
-          "VulnerabilityID": "CVE-2021-42327",
+          "VulnerabilityID": "CVE-2021-42739",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.208-1",
           "Layer": {
             "Digest": "sha256:a8367252e08e761371f9573b3782f46abf9fc70ae38395ae9f3d3c232ced60d3",
             "DiffID": "sha256:9e28eabfde8b462fffe49866f65633b2813c6944f6b3e267710d00cf0f83ed32"
           },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42327",
-          "Title": "kernel: heap-based buffer overflow in dp_link_settings_write() in drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm_debugfs.c",
-          "Description": "dp_link_settings_write in drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm_debugfs.c in the Linux kernel through 5.14.14 allows a heap-based buffer overflow by an attacker who can write a string to the AMD GPU display drivers debug filesystem. There are no checks on size within parse_write_buffer_into_params when it uses the size of copy_from_user to copy a userspace buffer into a 40-byte heap buffer.",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42739",
+          "Title": "kernel: Heap buffer overflow in firedtv driver",
+          "Description": "The firewire subsystem in the Linux kernel through 5.14.13 has a buffer overflow related to drivers/media/firewire/firedtv-avc.c and drivers/media/firewire/firedtv-ci.c, because avc_ca_pmt mishandles bounds checking.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 4.6,
+              "V3Score": 7.8
+            },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 8.4
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
             }
           },
           "References": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm_debugfs.c",
-            "https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg69080.html"
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=35d2969ea3c7d32aee78066b1f3cf61a0d935a4e",
+            "https://lore.kernel.org/linux-media/YHaulytonFcW+lyZ@mwanda/",
+            "https://seclists.org/oss-sec/2021/q2/46"
           ],
-          "PublishedDate": "2021-10-21T17:15:00Z",
-          "LastModifiedDate": "2021-10-21T17:28:00Z"
+          "PublishedDate": "2021-10-20T07:15:00Z",
+          "LastModifiedDate": "2021-10-26T18:57:00Z"
         },
         {
           "VulnerabilityID": "CVE-2004-0230",
@@ -51102,22 +50891,25 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/05/11/12",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-913875.pdf",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26141",
             "https://github.com/vanhoefm/fragattacks/blob/master/SUMMARY.md",
             "https://linux.oracle.com/cve/CVE-2020-26141.html",
             "https://linux.oracle.com/errata/ELSA-2021-9459.html",
             "https://lore.kernel.org/linux-wireless/20210511200110.c3f1d42c6746.I795593fcaae941c471425b8c7d5f7bb185d29142@changeid/",
             "https://papers.mathyvanhoef.com/usenix2021.pdf",
+            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-wifi-faf-22epcEWu",
             "https://ubuntu.com/security/notices/USN-4997-1",
             "https://ubuntu.com/security/notices/USN-4997-2",
             "https://ubuntu.com/security/notices/USN-4999-1",
             "https://ubuntu.com/security/notices/USN-5000-1",
             "https://ubuntu.com/security/notices/USN-5000-2",
             "https://ubuntu.com/security/notices/USN-5001-1",
+            "https://www.arista.com/en/support/advisories-notices/security-advisories/12602-security-advisory-63",
             "https://www.fragattacks.com"
           ],
           "PublishedDate": "2021-05-11T20:15:00Z",
-          "LastModifiedDate": "2021-07-13T13:15:00Z"
+          "LastModifiedDate": "2021-10-28T15:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-26145",
@@ -51645,6 +51437,28 @@
           }
         },
         {
+          "VulnerabilityID": "CVE-2021-3892",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.208-1",
+          "Layer": {
+            "Digest": "sha256:a8367252e08e761371f9573b3782f46abf9fc70ae38395ae9f3d3c232ced60d3",
+            "DiffID": "sha256:9e28eabfde8b462fffe49866f65633b2813c6944f6b3e267710d00cf0f83ed32"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3892",
+          "Title": "kernel: memory leak in fib6_rule_suppress could result in DoS",
+          "Description": "A memory leak flaw was reported in firewalld when IPv6_rpfilter is enabled and a suppress_prefix rule is present in the IPv6 routing rules. In such scenarios, every incoming packet will leak an allocation in ip6_dst_cache slab cache.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://lore.kernel.org/lkml/20191003154533.875309419@linuxfoundation.org/"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2021-3896",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.208-1",
@@ -51654,7 +51468,7 @@
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3896",
           "Title": "kernel: an array-index-out-bounds in detach_capi_ctr in drivers/isdn/capi/kcapi.c",
-          "Description": "No description is available for this CVE.",
+          "Description": "An improper validation of an array index and out of bounds memory read in the Linux kernel's Integrated Services Digital Network (ISDN) functionality was found in the way users call ioctl CMTPCONNADD. A local user could use this flaw to crash the system or starve the resources causing denial of service.",
           "Severity": "MEDIUM",
           "CVSS": {
             "redhat": {
@@ -51995,17 +51809,22 @@
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35550",
           "Title": "OpenJDK: Weak ciphers preferred over stronger ones for TLS (JSSE, 8264210)",
           "Description": "Vulnerability in the Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE). Supported versions that are affected are Java SE: 7u311, 8u301, 11.0.12; Oracle GraalVM Enterprise Edition: 20.3.3 and 21.2.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via TLS to compromise Java SE, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.9 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N).",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-863"
+          ],
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:C/I:N/A:N",
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 7.1,
               "V3Score": 5.9
             },
             "redhat": {
@@ -52016,19 +51835,25 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35550.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35556",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35556",
@@ -52037,7 +51862,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52048,28 +51875,39 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35556.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35559",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35559",
           "Title": "OpenJDK: Excessive memory allocation in RTFReader (Swing, 8265580)",
           "Description": "Vulnerability in the Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Swing). Supported versions that are affected are Java SE: 7u311, 8u301, 11.0.12, 17; Oracle GraalVM Enterprise Edition: 20.3.3 and 21.2.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.3 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L).",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-863"
+          ],
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52080,19 +51918,25 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35559.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35561",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35561",
@@ -52101,7 +51945,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52112,19 +51958,25 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35561.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35564",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35564",
@@ -52133,7 +51985,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52144,19 +51998,25 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35564.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35565",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35565",
@@ -52165,7 +52025,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52176,19 +52038,25 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35565.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7WTVCIVHTX3XONYOEGUMLKCM4QEC6INT/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DJILEHYV2U37HKMGFEQ7CAVOV4DUWW2O/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V362B2BWTH5IJDL45QPQGMBKIQOG7JX5/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35567",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35567",
@@ -52197,7 +52065,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:C/I:N/A:N",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N",
+              "V2Score": 6.3,
               "V3Score": 6.8
             },
             "redhat": {
@@ -52208,19 +52078,22 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35567.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35578",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35578",
@@ -52229,7 +52102,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52240,19 +52115,22 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35578.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35586",
           "PkgName": "openjdk-11-jre-headless",
           "InstalledVersion": "11.0.12+7-2~deb10u1",
           "Layer": {
-            "Digest": "sha256:78ea15e29878150d3279cbba001ae51301e965348bc29e7dc382b11ce8935e10",
-            "DiffID": "sha256:5beb0cd2e7eeb149de897d9d7da0e78dbd28419ea310c7da980971c9afd4a453"
+            "Digest": "sha256:1d995da9bc176fc217b2c3d8f16bf88d6acc76b2466ee150aee0a549197a3c19",
+            "DiffID": "sha256:8e1d1530e6069ec3ef490518fc05773c5eac805eccf0dda1ae0477fc908ec8ad"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35586",
@@ -52261,7 +52139,9 @@
           "Severity": "MEDIUM",
           "CVSS": {
             "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V2Score": 5,
               "V3Score": 5.3
             },
             "redhat": {
@@ -52272,11 +52152,14 @@
           "References": [
             "https://linux.oracle.com/cve/CVE-2021-35586.html",
             "https://linux.oracle.com/errata/ELSA-2021-3893.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EUURAQOIJYFZHQ7DFZCO6IKDPIAWTNK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GTYZWIXDFUV2H57YQZJWPOD3BC3I3EIQ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GXTUWAWXVU37GRNIG4TPMA47THO6VAE6/",
             "https://security.netapp.com/advisory/ntap-20211022-0004/",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-10-20T11:16:00Z",
-          "LastModifiedDate": "2021-10-22T18:15:00Z"
+          "LastModifiedDate": "2021-10-30T02:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-16905",
@@ -55093,6 +54976,278 @@
     }
   },
   {
+    "name": "frontend",
+    "url": "https://github.com//orgs/SocialGouv/packages/container/package/domifa%2Ffrontend",
+    "image": "ghcr.io/socialgouv/domifa/frontend",
+    "trivy": {
+      "Target": "ghcr.io/socialgouv/domifa/frontend:latest (alpine 3.14.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
+          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-319"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://hackerone.com/reports/1334111",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-29T20:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "curl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
+          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://hackerone.com/reports/1334763",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-29T20:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22945",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
+          "Title": "curl: use-after-free and double-free in MQTT sending",
+          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22945.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
+            "https://hackerone.com/reports/1269242",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-23T13:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22946",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
+          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
+          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-319"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22946.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
+            "https://hackerone.com/reports/1334111",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-29T20:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22947",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.78.0-r0",
+          "FixedVersion": "7.79.0-r0",
+          "Layer": {
+            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
+            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
+          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
+          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://curl.se/docs/CVE-2021-22947.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
+            "https://hackerone.com/reports/1334763",
+            "https://launchpad.net/bugs/1944120 (regression bug)",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
+            "https://ubuntu.com/security/notices/USN-5079-1",
+            "https://ubuntu.com/security/notices/USN-5079-2",
+            "https://ubuntu.com/security/notices/USN-5079-3",
+            "https://ubuntu.com/security/notices/USN-5079-4",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-09-29T20:15:00Z",
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
+        }
+      ]
+    }
+  },
+  {
     "name": "portail-usagers",
     "url": "https://github.com//orgs/SocialGouv/packages/container/package/domifa%2Fportail-usagers",
     "image": "ghcr.io/socialgouv/domifa/portail-usagers",
@@ -55135,11 +55290,12 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
             "https://hackerone.com/reports/1269242",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -55176,12 +55332,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -55219,6 +55376,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -55226,7 +55384,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22945",
@@ -55262,11 +55420,12 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
             "https://hackerone.com/reports/1269242",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22946",
@@ -55303,12 +55462,13 @@
             "https://hackerone.com/reports/1334111",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -55346,6 +55506,7 @@
             "https://launchpad.net/bugs/1944120 (regression bug)",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
+            "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
             "https://ubuntu.com/security/notices/USN-5079-2",
             "https://ubuntu.com/security/notices/USN-5079-3",
@@ -55353,7 +55514,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:16:00Z"
+          "LastModifiedDate": "2021-10-29T13:15:00Z"
         }
       ]
     }
