@@ -279,6 +279,13 @@
               "finding"      : "034B4C2AFEC3D047B0F0ECE394423D43C641"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "medle.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "medle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -346,7 +353,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "51 >= 30 days"
+              "finding"      : "44 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,7 +549,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1112,6 +1119,6 @@
               "ip"           : "medle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "140"
+              "finding"      : "85"
           }
 ]
