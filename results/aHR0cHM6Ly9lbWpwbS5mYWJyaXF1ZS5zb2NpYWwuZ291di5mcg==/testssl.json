@@ -279,6 +279,13 @@
               "finding"      : "D5457B4FFCE4E4A89B44E25826F75C68"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -346,7 +353,7 @@
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "352 >= 60 days"
+              "finding"      : "345 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1091,6 +1098,6 @@
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "127"
+              "finding"      : "85"
           }
 ]
