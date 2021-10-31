@@ -279,6 +279,13 @@
               "finding"      : "0329E6BDEE2AFEEEC3E6FDEB25B12C851215"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -346,7 +353,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "37 >= 30 days"
+              "finding"      : "30 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
