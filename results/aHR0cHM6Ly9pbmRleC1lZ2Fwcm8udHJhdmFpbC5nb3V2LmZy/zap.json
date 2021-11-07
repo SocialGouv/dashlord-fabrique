@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 31 Oct 2021 01:08:56",
+	"@generated": "Sun, 7 Nov 2021 01:09:18",
 	"site":[ 
 		{
 			"@name": "https://index-egapro.travail.gouv.fr",
@@ -103,32 +103,6 @@
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "10110",
-					"alertRef": "10110",
-					"alert": "Dangerous JS Functions",
-					"name": "Dangerous JS Functions",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
-					"instances":[ 
-						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval"
-						}
-					],
-					"count": "1",
-					"solution": "<p>See the references for security advice on the use of these functions.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://angular.io/guide/security</p>",
-					"cweid": "749",
-					"wascid": "-1",
-					"sourceid": "22"
-				},
-				{
 					"pluginid": "10015",
 					"alertRef": "10015",
 					"alert": "Incomplete or No Cache-control Header Set",
@@ -221,21 +195,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.4fb28517.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.3e34b75b.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -254,83 +221,118 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.a6ee895e.chunk.css",
+							"uri": "https://index-egapro.travail.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/simulateur/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.02647208.chunk.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.02647208.chunk.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2147483647"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/main.d54ad473.chunk.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "78773388"
-						},
-						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "0123456789"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1073741821"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1073741822"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1073741823"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1540483477"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2147483647"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "62425156"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "94906265"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.3e34b75b.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "20190225"
 						}
 					],
-					"count": "10",
+					"count": "15",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>2147483647, which evaluates to: 2038-01-19 03:14:07</p>",
+					"otherinfo": "<p>02647208, which evaluates to: 1970-01-31 15:20:08</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "18"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -378,28 +380,28 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.a6ee895e.chunk.css",
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.02647208.chunk.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/main.d54ad473.chunk.css",
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/main.0abd4663.chunk.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.4fb28517.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.3e34b75b.chunk.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -425,14 +427,14 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "bug"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.4fb28517.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.3e34b75b.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -441,11 +443,11 @@
 					],
 					"count": "2",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[2],[function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return _})),n.d(t,\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[2],[function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return T})),n.d(t,\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "22"
+					"sourceid": "24"
 				},
 				{
 					"pluginid": "10109",
@@ -486,7 +488,7 @@
 							"evidence": "<script>!function(e){function r(r){for(var n,p,l=r[0],a=r[1],f=r[2],c=0,s=[];c<l.length;c++)p=l[c],Object.prototype.hasOwnProperty.call(o,p)&&o[p]&&s.push(o[p][0]),o[p]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(i&&i(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var a=t[l];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=p(p.s=t[0]))}return e}var n={},o={1:0},u=[];function p(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,p),t.l=!0,t.exports}p.m=e,p.c=n,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},p.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},p.t=function(e,r){if(1&r&&(e=p(e)),8&r)return e;if(4&r&&\"object\"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(p.r(t),Object.defineProperty(t,\"default\",{enumerable:!0,value:e}),2&r&&\"string\"!=typeof e)for(var n in e)p.d(t,n,function(r){return e[r]}.bind(null,n));return t},p.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return p.d(r,\"a\",r),r},p.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},p.p=\"/\";var l=this.webpackJsonpapp=this.webpackJsonpapp||[],a=l.push.bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)r(l[f]);var i=a;t()}([])</script>"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.5d5973cb.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -547,35 +549,28 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.a6ee895e.chunk.css",
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/2.02647208.chunk.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/css/main.d54ad473.chunk.css",
+							"uri": "https://index-egapro.travail.gouv.fr/static/css/main.0abd4663.chunk.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/2.aeede9e1.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.4fb28517.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.3e34b75b.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
