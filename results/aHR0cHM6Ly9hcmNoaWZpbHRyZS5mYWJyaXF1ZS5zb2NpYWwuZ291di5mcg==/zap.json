@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 31 Oct 2021 01:09:36",
+	"@generated": "Sun, 7 Nov 2021 01:09:41",
 	"site":[ 
 		{
 			"@name": "https://archifiltre.fabrique.social.gouv.fr",
@@ -464,20 +464,6 @@
 							"evidence": "712016698"
 						},
 						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2050432530"
-						},
-						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "712016698"
-						},
-						{
 							"uri": "https://archifiltre.fabrique.social.gouv.fr/qui-sommes-nous",
 							"method": "GET",
 							"param": "",
@@ -520,7 +506,7 @@
 							"evidence": "712016698"
 						}
 					],
-					"count": "12",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>2050432530, which evaluates to: 2034-12-22 20:35:30</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
