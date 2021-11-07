@@ -684,7 +684,8 @@
             }
           },
           "References": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3549"
           ],
           "PublishedDate": "2021-05-26T21:15:00Z",
           "LastModifiedDate": "2021-06-04T13:47:00Z"
@@ -2342,7 +2343,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20197",
-          "Title": "binutils: race window allows users to own arbitrary files",
+          "Title": "binutils: Race window allows users to own arbitrary files",
           "Description": "There is an open race window when writing output in the following utilities in GNU binutils version 2.35 and earlier:ar, objcopy, strip, ranlib. When these utilities are run as a privileged user (presumably as part of a script updating binaries across different users), an unprivileged user can trick these utilities into getting ownership of arbitrary files through a symlink.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -2414,7 +2415,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3487",
-          "Title": "binutils: excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
+          "Title": "binutils: Excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
           "Description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -3068,7 +3069,8 @@
             }
           },
           "References": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3549"
           ],
           "PublishedDate": "2021-05-26T21:15:00Z",
           "LastModifiedDate": "2021-06-04T13:47:00Z"
@@ -4726,7 +4728,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20197",
-          "Title": "binutils: race window allows users to own arbitrary files",
+          "Title": "binutils: Race window allows users to own arbitrary files",
           "Description": "There is an open race window when writing output in the following utilities in GNU binutils version 2.35 and earlier:ar, objcopy, strip, ranlib. When these utilities are run as a privileged user (presumably as part of a script updating binaries across different users), an unprivileged user can trick these utilities into getting ownership of arbitrary files through a symlink.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -4798,7 +4800,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3487",
-          "Title": "binutils: excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
+          "Title": "binutils: Excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
           "Description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -5452,7 +5454,8 @@
             }
           },
           "References": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3549"
           ],
           "PublishedDate": "2021-05-26T21:15:00Z",
           "LastModifiedDate": "2021-06-04T13:47:00Z"
@@ -7110,7 +7113,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20197",
-          "Title": "binutils: race window allows users to own arbitrary files",
+          "Title": "binutils: Race window allows users to own arbitrary files",
           "Description": "There is an open race window when writing output in the following utilities in GNU binutils version 2.35 and earlier:ar, objcopy, strip, ranlib. When these utilities are run as a privileged user (presumably as part of a script updating binaries across different users), an unprivileged user can trick these utilities into getting ownership of arbitrary files through a symlink.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -7182,7 +7185,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3487",
-          "Title": "binutils: excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
+          "Title": "binutils: Excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
           "Description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -8472,7 +8475,8 @@
             }
           },
           "References": [
-            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717"
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1960717",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3549"
           ],
           "PublishedDate": "2021-05-26T21:15:00Z",
           "LastModifiedDate": "2021-06-04T13:47:00Z"
@@ -10130,7 +10134,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20197",
-          "Title": "binutils: race window allows users to own arbitrary files",
+          "Title": "binutils: Race window allows users to own arbitrary files",
           "Description": "There is an open race window when writing output in the following utilities in GNU binutils version 2.35 and earlier:ar, objcopy, strip, ranlib. When these utilities are run as a privileged user (presumably as part of a script updating binaries across different users), an unprivileged user can trick these utilities into getting ownership of arbitrary files through a symlink.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -10202,7 +10206,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3487",
-          "Title": "binutils: excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
+          "Title": "binutils: Excessive debug section size can cause excessive memory consumption in bfd's dwarf2.c read_section()",
           "Description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -10330,6 +10334,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -10368,9 +10373,11 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
+            "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
             "https://sourceware.org/glibc/wiki/Security%20Exceptions"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",
@@ -11008,6 +11015,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11046,9 +11054,11 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
+            "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
             "https://sourceware.org/glibc/wiki/Security%20Exceptions"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",
@@ -11686,6 +11696,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11724,9 +11735,11 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
+            "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
             "https://sourceware.org/glibc/wiki/Security%20Exceptions"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",
@@ -12364,6 +12377,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -12402,9 +12416,11 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
+            "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
             "https://sourceware.org/glibc/wiki/Security%20Exceptions"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",
@@ -14985,13 +15001,14 @@
             "https://github.com/lz4/lz4/pull/972",
             "https://linux.oracle.com/cve/CVE-2021-3520.html",
             "https://linux.oracle.com/errata/ELSA-2021-2575.html",
+            "https://security.netapp.com/advisory/ntap-20211104-0005/",
             "https://ubuntu.com/security/notices/USN-4968-1",
             "https://ubuntu.com/security/notices/USN-4968-2",
             "https://www.oracle.com//security-alerts/cpujul2021.html",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-02T13:15:00Z",
-          "LastModifiedDate": "2021-10-20T11:17:00Z"
+          "LastModifiedDate": "2021-11-04T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -15590,7 +15607,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-20838",
-          "Title": "pcre: buffer over-read in JIT when UTF is disabled",
+          "Title": "pcre: Buffer over-read in JIT when UTF is disabled and \\X or \\R has fixed quantifier greater than 1",
           "Description": "libpcre in PCRE before 8.43 allows a subject buffer over-read in JIT when UTF is disabled, and \\X or \\R has more than one fixed quantifier, a related issue to CVE-2019-20454.",
           "Severity": "HIGH",
           "CweIDs": [
@@ -15672,7 +15689,7 @@
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-14155",
-          "Title": "pcre: integer overflow in libpcre",
+          "Title": "pcre: Integer overflow when parsing callout numeric arguments",
           "Description": "libpcre in PCRE before 8.44 allows an integer overflow via a large number after a (?C substring.",
           "Severity": "MEDIUM",
           "CweIDs": [
@@ -16418,6 +16435,7 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
+            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16425,7 +16443,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-09-21T16:28:00Z"
+          "LastModifiedDate": "2021-11-04T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000654",
@@ -16934,6 +16952,7 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
+            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16941,7 +16960,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-09-21T16:28:00Z"
+          "LastModifiedDate": "2021-11-04T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-25032",
@@ -18175,9 +18194,9 @@
           },
           "References": [
             "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36385",
-            "https://git.kernel.org/linus/f5449e74802c1112dea984aec8af7a33c4516af1",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f5449e74802c1112dea984aec8af7a33c4516af1",
+            "https://linux.oracle.com/cve/CVE-2020-36385.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4056.html",
             "https://sites.google.com/view/syzscope/kasan-use-after-free-read-in-ucma_close-2",
             "https://syzkaller.appspot.com/bug?id=457491c4672d7b52c1007db213d93e47c711fae6"
           ],
@@ -18969,6 +18988,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42008",
             "https://git.kernel.org/linus/19d1532a187669ce86d5a2696eb7275310070793 (5.14-rc7)",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=19d1532a187669ce86d5a2696eb7275310070793",
+            "https://security.netapp.com/advisory/ntap-20211104-0002/",
             "https://ubuntu.com/security/notices/USN-5113-1",
             "https://ubuntu.com/security/notices/USN-5114-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
@@ -18977,7 +18997,7 @@
             "https://www.youtube.com/watch?v=d5f9xLK8Vhw"
           ],
           "PublishedDate": "2021-10-05T00:15:00Z",
-          "LastModifiedDate": "2021-10-12T18:36:00Z"
+          "LastModifiedDate": "2021-11-04T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42252",
@@ -19007,6 +19027,8 @@
           },
           "References": [
             "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.6",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42252",
+            "https://git.kernel.org/linus/b49a0e69a7b1a68c8d3f64097d06dabb770fec96 (5.15-rc1)",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b49a0e69a7b1a68c8d3f64097d06dabb770fec96"
           ],
           "PublishedDate": "2021-10-11T19:15:00Z",
@@ -19041,6 +19063,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42739",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=35d2969ea3c7d32aee78066b1f3cf61a0d935a4e",
             "https://lore.kernel.org/linux-media/YHaulytonFcW+lyZ@mwanda/",
             "https://seclists.org/oss-sec/2021/q2/46"
@@ -20822,21 +20845,34 @@
             "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
             "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-27820",
           "Title": "kernel: use-after-free in nouveau kernel module",
           "Description": "A vulnerability was found in Linux kernel, where a use-after-frees in nouveau's postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if \"unbind\" the driver).",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
           "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 4.7,
+              "V3Score": 4.7
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 4.1
             }
           },
           "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1901726",
             "https://lore.kernel.org/dri-devel/20201103194912.184413-2-jcline@redhat.com/",
             "https://lore.kernel.org/dri-devel/20201103194912.184413-3-jcline@redhat.com/",
             "https://lore.kernel.org/dri-devel/20201103194912.184413-4-jcline@redhat.com/"
-          ]
+          ],
+          "PublishedDate": "2021-11-03T00:15:00Z",
+          "LastModifiedDate": "2021-11-04T17:35:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-27835",
@@ -21737,29 +21773,6 @@
           ]
         },
         {
-          "VulnerabilityID": "CVE-2021-3896",
-          "PkgName": "linux-libc-dev",
-          "InstalledVersion": "4.19.194-3",
-          "Layer": {
-            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
-            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3896",
-          "Title": "kernel: an array-index-out-bounds in detach_capi_ctr in drivers/isdn/capi/kcapi.c",
-          "Description": "An improper validation of an array index and out of bounds memory read in the Linux kernel's Integrated Services Digital Network (ISDN) functionality was found in the way users call ioctl CMTPCONNADD. A local user could use this flaw to crash the system or starve the resources causing denial of service.",
-          "Severity": "MEDIUM",
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 4.7
-            }
-          },
-          "References": [
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1f3e2e97c003f80c4b087092b225c8787ff91e4d",
-            "https://lore.kernel.org/netdev/CAFcO6XOvGQrRTaTkaJ0p3zR7y7nrAWD79r48=L_BbOyrK9X-vA@mail.gmail.com/"
-          ]
-        },
-        {
           "VulnerabilityID": "CVE-2019-19882",
           "PkgName": "login",
           "InstalledVersion": "1:4.5-1.1",
@@ -22315,6 +22328,7 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -22353,9 +22367,11 @@
             }
           },
           "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
+            "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
             "https://sourceware.org/glibc/wiki/Security%20Exceptions"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",

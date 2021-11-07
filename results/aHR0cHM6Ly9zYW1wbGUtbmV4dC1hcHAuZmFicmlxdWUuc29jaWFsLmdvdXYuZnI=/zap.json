@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 31 Oct 2021 01:49:59",
+	"@generated": "Sun, 7 Nov 2021 01:51:55",
 	"site":[ 
 		{
 			"@name": "https://sample-next-app.fabrique.social.gouv.fr",
@@ -161,7 +161,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "30"
+					"sourceid": "27"
 				},
 				{
 					"pluginid": "10110",
@@ -187,7 +187,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "47"
+					"sourceid": "45"
 				},
 				{
 					"pluginid": "10015",
@@ -268,7 +268,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-efb88bdc60ef7e1c718f.js",
+							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/framework-09a88f8e6a8ced89af74.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -529,7 +529,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "44"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10021",
@@ -734,11 +734,11 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-efb88bdc60ef7e1c718f.js",
+							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/framework-09a88f8e6a8ced89af74.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "query"
+							"evidence": "select"
 						},
 						{
 							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/polyfills-687e794d8e071078d3f3.js",
