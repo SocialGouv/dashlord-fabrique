@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 31 Oct 2021 01:52:47",
+	"@generated": "Sun, 7 Nov 2021 01:56:05",
 	"site":[ 
 		{
 			"@name": "https://code.travail.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "575"
+					"sourceid": "578"
 				},
 				{
 					"pluginid": "10055",
@@ -49,24 +49,50 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
-						},
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055",
+					"alert": "CSP: script-src unsafe-inline",
+					"name": "CSP: script-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>script-src includes unsafe-inline.</p>",
+					"instances":[ 
 						{
-							"uri": "https://code.travail.gouv.fr/images",
+							"uri": "https://code.travail.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/assets",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -89,24 +115,17 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -130,6 +149,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<link href=\"https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/faq-chomage-partiel-activite-partielle\" rel=\"canonical\"/>"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/fiche-ministere-travail/aide-exceptionnelle-aux-employeurs-qui-recrutent-en-apprentissage",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://travail-emploi.gouv.fr/formation-professionnelle/entreprise-et-alternance/aide-exceptionnelle-apprentissage\" rel=\"canonical\"/>"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/fiche-ministere-travail/fiche-activite-partielle-chomage-partiel",
@@ -181,13 +207,6 @@
 							"evidence": "<link href=\"https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/teletravail-en-periode-de-covid-19\" rel=\"canonical\"/>"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/fiche-service-public/aide-a-lembauche-dun-jeune-de-moins-de-26-ans",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://www.service-public.fr/associations/vosdroits/F35364\" rel=\"canonical\"/>"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/fiche-service-public/arret-maladie-indemnites-journalieres-versees-au-salarie",
 							"method": "GET",
 							"param": "",
@@ -215,7 +234,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "648"
+					"sourceid": "649"
 				},
 				{
 					"pluginid": "10020",
@@ -284,6 +303,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://code.travail.gouv.fr/themes/conges-et-repos",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -292,13 +318,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/themes/temps-de-travail",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -338,13 +357,6 @@
 							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/assets",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux",
 							"method": "GET",
 							"param": "",
@@ -360,13 +372,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/dossiers/ministere-du-travail-notre-dossier-sur-le-coronavirus",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/images",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -394,7 +399,21 @@
 							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
 						},
 						{
+							"uri": "https://code.travail.gouv.fr/themes/conges-et-repos",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
+						},
+						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" action=\"/recherche\" class=\"SearchBar__SearchForm-sc-14cbasn-0 dczXD\">"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -408,6 +427,53 @@
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "90022",
+					"alertRef": "90022",
+					"alert": "Application Error Disclosure",
+					"name": "Application Error Disclosure",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
+					"instances":[ 
+						{
+							"uri": "https://code.travail.gouv.fr/assets",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 OK"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/fiche-service-public/exonerations-fiscales-et-sociales-pour-les-entreprises-en-zones-de-restructuration-de-la-defense-zrd",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 OK"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/fiche-service-public/handicap-contrat-ou-stage-de-reeducation-professionnelle",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 OK"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/images",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 OK"
+						}
+					],
+					"count": "4",
+					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "67"
 				},
 				{
 					"pluginid": "10055",
@@ -424,24 +490,17 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.55.1"
+							"evidence": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -460,20 +519,27 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://code.travail.gouv.fr/_next/static/chunks/pages/_app-739df8eac4bbc3933e71.js",
+							"uri": "https://code.travail.gouv.fr/_next/static/chunks/pages/_app-77352c0535f2c1dc41d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/static/tarteaucitron/tarteaucitron.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "eval"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "577"
+					"sourceid": "580"
 				},
 				{
 					"pluginid": "10015",
@@ -509,6 +575,53 @@
 					"sourceid": "6"
 				},
 				{
+					"pluginid": "10023",
+					"alertRef": "10023",
+					"alert": "Information Disclosure - Debug Error Messages",
+					"name": "Information Disclosure - Debug Error Messages",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
+					"instances":[ 
+						{
+							"uri": "https://code.travail.gouv.fr/assets",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/fiche-service-public/exonerations-fiscales-et-sociales-pour-les-entreprises-en-zones-de-restructuration-de-la-defense-zrd",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/fiche-service-public/handicap-contrat-ou-stage-de-reeducation-professionnelle",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/images",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						}
+					],
+					"count": "4",
+					"solution": "<p>Disable debugging messages before pushing to production.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "67"
+				},
+				{
 					"pluginid": "10063",
 					"alertRef": "10063",
 					"alert": "Permissions Policy Header Not Set",
@@ -534,13 +647,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -590,6 +696,13 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -3638,7 +3751,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "80"
+					"sourceid": "81"
 				},
 				{
 					"pluginid": "10021",
@@ -3666,13 +3779,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/api/sitemap",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -3726,6 +3832,13 @@
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
 						}
 					],
 					"count": "11",
@@ -3751,82 +3864,82 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "c212-djhPM8j5toqqK2NGxKBJTLR3q+U"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "15-/6VXivhc2MKdLfIkLcUE47K6aH0"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/dossiers/aides-et-accompagnement-embauche-et-perennisation-des-emplois",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/dossiers/ministere-du-travail-notre-dossier-sur-le-coronavirus",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/images",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "c212-djhPM8j5toqqK2NGxKBJTLR3q+U"
+							"evidence": "15-/6VXivhc2MKdLfIkLcUE47K6aH0"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/outils/simulateur-embauche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/D0lcaMfgZJXCG8JLsWm4z/_buildManifest"
+							"evidence": "/_next/static/l-ROzI2wN0JUiiE9DCEjC/_buildManifest"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "d541-LMJp8KWITL/knMfQmldxsGXPGe8"
+							"evidence": "d6ec-I5WSjEBgFun+Eto5v7zDFORoqkM"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "d235-Y/A/VIY2OZtI1+svQoYISP/Naz8"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\u018C~\\x0006I\\!\uFFFD$\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD~D\uFFFD\uFFFD\uFFFD\\x0003t%H\uFFFD\\x0013\uFFFD\uFFFD\\x00120\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -3877,7 +3990,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "70"
+					"sourceid": "77"
 				},
 				{
 					"pluginid": "10024",
@@ -3903,7 +4016,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "596"
+					"sourceid": "599"
 				},
 				{
 					"pluginid": "10027",
@@ -3924,13 +4037,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/assets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -3958,13 +4064,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/images",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/outils",
 							"method": "GET",
 							"param": "",
@@ -3986,7 +4085,21 @@
 							"evidence": "query"
 						},
 						{
+							"uri": "https://code.travail.gouv.fr/themes/conges-et-repos",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -4026,13 +4139,6 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://code.travail.gouv.fr/assets",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
 							"uri": "https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux",
 							"method": "GET",
 							"param": "",
@@ -4048,13 +4154,6 @@
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/dossiers/ministere-du-travail-notre-dossier-sur-le-coronavirus",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
-							"uri": "https://code.travail.gouv.fr/images",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -4082,7 +4181,21 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
+							"uri": "https://code.travail.gouv.fr/themes/conges-et-repos",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
 							"uri": "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://code.travail.gouv.fr/themes/salaire-et-remuneration",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -4126,7 +4239,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "500"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/assets/",
@@ -4140,7 +4253,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "500"
 						},
 						{
 							"uri": "https://code.travail.gouv.fr/images/",
@@ -4210,7 +4323,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "70"
+					"sourceid": "77"
 				},
 				{
 					"pluginid": "10031",
@@ -4236,7 +4349,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "830"
+					"sourceid": "849"
 				}
 			]
 		}
