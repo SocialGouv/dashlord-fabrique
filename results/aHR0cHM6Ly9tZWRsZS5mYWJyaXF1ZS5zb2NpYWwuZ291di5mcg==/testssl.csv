@@ -48,7 +48,7 @@
 "cert_trust","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","Ok via SAN and CN (SNI mandatory)","",""
 "cert_chain_of_trust","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","passed.","",""
 "cert_certificatePolicies_EV","medle.fabrique.social.gouv.fr/20.74.14.77","443","INFO","no","",""
-"cert_expirationStatus","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","37 >= 30 days","",""
+"cert_expirationStatus","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","30 >= 30 days","",""
 "cert_notBefore","medle.fabrique.social.gouv.fr/20.74.14.77","443","INFO","2021-09-15 21:50","",""
 "cert_notAfter","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","2021-12-14 21:50","",""
 "cert_extlifeSpan","medle.fabrique.social.gouv.fr/20.74.14.77","443","OK","certificate has no extended life time according to browser forum","",""
