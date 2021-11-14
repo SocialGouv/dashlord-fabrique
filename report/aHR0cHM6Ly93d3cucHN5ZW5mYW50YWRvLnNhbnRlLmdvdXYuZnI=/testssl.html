@@ -21,13 +21,13 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az290-301:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az212-621:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>185.21.194.105 148.253.96.193
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2021-11-07 01:45:15        --&gt;&gt; 185.21.194.105:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2021-11-14 01:47:22        --&gt;&gt; 185.21.194.105:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   148.253.96.193 
  rDNS (185.21.194.105):  ows-185-21-194-105.cloudgouv-eu-west-1.compute.outscale.com.
@@ -108,15 +108,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>03AC0B404D83AB42B3974AD29B97308FEB79 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 31CD05FABA1BD2EBBF92DEC001503F3FEBC27B45
-                              SHA256 6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A
+<span style="font-weight:bold;"> Serial                       </span>036780B67381C7646C517AC1D736EC145C32 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 68981431894A682EB11C29313653B34EB1F81EF4
+                              SHA256 17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>www.psyenfantado.sante.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-secnum-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>www.psyenfantado.sante.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">30 &gt;= 30 days</span> (2021-09-08 09:30 --&gt; 2021-12-07 09:30)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">83 &gt;= 30 days</span> (2021-11-07 09:31 --&gt; 2022-02-05 09:31)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -134,7 +134,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>+1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#168092;">, just this domain</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>openresty
@@ -169,7 +169,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A</a> could help you to find out
+                                           <a href="https://censys.io/ipv4?q=17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445</a> could help you to find out
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     potentially <span style="color:#a86437;">VULNERABLE</span>, uses cipher block chaining (CBC) ciphers with TLS. Check patches
@@ -229,10 +229,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2021-11-07 01:47:34 [ 141s] --&gt;&gt; 185.21.194.105:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2021-11-14 01:49:03 [ 103s] --&gt;&gt; 185.21.194.105:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2021-11-07 01:47:34        --&gt;&gt; 148.253.96.193:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2021-11-14 01:49:03        --&gt;&gt; 148.253.96.193:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   185.21.194.105 
  rDNS (148.253.96.193):  ows-148-253-96-193.cloudgouv-eu-west-1.compute.outscale.com.
@@ -313,15 +313,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>03AC0B404D83AB42B3974AD29B97308FEB79 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 31CD05FABA1BD2EBBF92DEC001503F3FEBC27B45
-                              SHA256 6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A
+<span style="font-weight:bold;"> Serial                       </span>036780B67381C7646C517AC1D736EC145C32 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 68981431894A682EB11C29313653B34EB1F81EF4
+                              SHA256 17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>www.psyenfantado.sante.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-secnum-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>www.psyenfantado.sante.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">30 &gt;= 30 days</span> (2021-09-08 09:30 --&gt; 2021-12-07 09:30)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">83 &gt;= 30 days</span> (2021-11-07 09:31 --&gt; 2022-02-05 09:31)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -374,7 +374,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=6D6D1FB322452EF032DE9311F9920BDCAF5BDB26148CA85AF0C647BA40982A0A</a> could help you to find out
+                                           <a href="https://censys.io/ipv4?q=17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=17F9683E6A317B378059D25C398DAFB62041621E17A7B82B08C487E0C9824445</a> could help you to find out
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     potentially <span style="color:#a86437;">VULNERABLE</span>, uses cipher block chaining (CBC) ciphers with TLS. Check patches
@@ -434,7 +434,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2021-11-07 01:50:00 [ 287s] --&gt;&gt; 148.253.96.193:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2021-11-14 01:50:38 [ 198s] --&gt;&gt; 148.253.96.193:443 (www.psyenfantado.sante.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>185.21.194.105 148.253.96.193
