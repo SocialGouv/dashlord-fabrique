@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 7 Nov 2021 01:16:05",
+	"@generated": "Sun, 14 Nov 2021 01:18:01",
 	"site":[ 
 		{
 			"@name": "https://domifa.fabrique.social.gouv.fr.",
@@ -24,15 +24,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "bypassSecurityTrustHtml"
+						},
+						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bypassSecurityTrustHtml"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "68"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10015",
@@ -111,6 +118,13 @@
 							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 						},
 						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+						},
+						{
 							"uri": "https://domifa.fabrique.social.gouv.fr./styles.fe793362d1a8c5710c47.css",
 							"method": "GET",
 							"param": "",
@@ -118,7 +132,7 @@
 							"evidence": "PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTI1NiA4QzExOS4wNDMgOCA4IDExOS4wODMgOCAyNTZjMCAxMzYuOTk3IDExMS4wNDMgMjQ4IDI0OCAyNDhzMjQ4LTExMS4wMDMgMjQ4LTI0OEM1MDQgMTE5LjA4MyAzOTIuOTU3IDggMjU2IDh6bTAgMTEwYzIzLjE5NiAwIDQyIDE4LjgwNCA0MiA0MnMtMTguODA0IDQyLTQyIDQyLTQyLTE4LjgwNC00Mi00MiAxOC44MDQtNDIgNDItNDJ6bTU2IDI1NGMwIDYuNjI3LTUuMzczIDEyLTEyIDEyaC04OGMtNi42MjcgMC0xMi01LjM3My0xMi0xMnYtMjRjMC02LjYyNyA1LjM3My0xMiAxMi0xMmgxMnYtNjRoLTEyYy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDY0YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MTAwaDEyYzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MjR6Jy8+PC9zdmc+"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD?M\\x001f\uFFFD\uFFFDMD@\uFFFDIQ\uFFFD\uFFFDM5\uFFFD\uFFFD8\uFFFD4\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -144,6 +158,13 @@
 							"evidence": "bug"
 						},
 						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bug"
+						},
+						{
 							"uri": "https://domifa.fabrique.social.gouv.fr./polyfills-es2015.9c0ff595308f30329714.js",
 							"method": "GET",
 							"param": "",
@@ -158,13 +179,13 @@
 							"evidence": "Select"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(self.webpackChunk_domifa_frontend=self.webpackChunk_domifa_frontend||[]).push([[179],{8255:function(e){function t(e){return Pro\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "68"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10109",
@@ -345,6 +366,13 @@
 							"evidence": "bypassSecurityTrustHtml"
 						},
 						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bypassSecurityTrustHtml"
+						},
+						{
 							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
@@ -359,13 +387,13 @@
 							"evidence": "bypassSecurityTrustHtml"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "68"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10015",
@@ -535,595 +563,595 @@
 							"evidence": "20010904"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "00000024"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "01010133"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "0606060606"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "10025880"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "10040012"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "10145074"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "10506797"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "10824234"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11119017"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11393254"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11403055"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11529966"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11584734"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11591910"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "11674146"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "12092939"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "12211667"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "12357519"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "12433259"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "12632256"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13047173"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13458524"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13468991"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13789470"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13808780"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13882323"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14204888"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14315734"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14329120"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14381203"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14423100"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14474460"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14524637"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14596231"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "14745599"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15132410"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15308410"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15631086"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15657130"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15761536"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15787660"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15792383"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15794160"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "15794175"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16032864"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16113331"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16119260"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16119285"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16121850"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16316671"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16416882"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16444375"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16445670"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16448210"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16643558"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16711680"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16711935"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16716947"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16729344"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16737095"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16738740"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16744272"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16747520"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16752762"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16753920"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16758465"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16761035"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16766720"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16767673"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16768685"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16770229"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16770244"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16770273"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16772045"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16773077"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16773365"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16774638"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16775388"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16775885"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16775920"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16775930"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16776960"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16777184"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "16777200"
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/main-es2015.b8625ebab6732eb95bc1.js",
+							"uri": "https://domifa.fabrique.social.gouv.fr/main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1184,6 +1212,13 @@
 							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 						},
 						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+						},
+						{
 							"uri": "https://domifa.fabrique.social.gouv.fr./styles.fe793362d1a8c5710c47.css",
 							"method": "GET",
 							"param": "",
@@ -1219,7 +1254,7 @@
 							"evidence": "PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTI1NiA4QzExOS4wNDMgOCA4IDExOS4wODMgOCAyNTZjMCAxMzYuOTk3IDExMS4wNDMgMjQ4IDI0OCAyNDhzMjQ4LTExMS4wMDMgMjQ4LTI0OEM1MDQgMTE5LjA4MyAzOTIuOTU3IDggMjU2IDh6bTAgMTEwYzIzLjE5NiAwIDQyIDE4LjgwNCA0MiA0MnMtMTguODA0IDQyLTQyIDQyLTQyLTE4LjgwNC00Mi00MiAxOC44MDQtNDIgNDItNDJ6bTU2IDI1NGMwIDYuNjI3LTUuMzczIDEyLTEyIDEyaC04OGMtNi42MjcgMC0xMi01LjM3My0xMi0xMnYtMjRjMC02LjYyNyA1LjM3My0xMiAxMi0xMmgxMnYtNjRoLTEyYy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDY0YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MTAwaDEyYzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MjR6Jy8+PC9zdmc+"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD?M\\x001f\uFFFD\uFFFDMD@\uFFFDIQ\uFFFD\uFFFDM5\uFFFD\uFFFD8\uFFFD4\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1239,6 +1274,13 @@
 					"instances":[ 
 						{
 							"uri": "https://domifa.fabrique.social.gouv.fr./main-es2015.b8625ebab6732eb95bc1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bug"
+						},
+						{
+							"uri": "https://domifa.fabrique.social.gouv.fr./main-es5.b8625ebab6732eb95bc1.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1287,13 +1329,13 @@
 							"evidence": "Select"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(self.webpackChunk_domifa_frontend=self.webpackChunk_domifa_frontend||[]).push([[179],{8255:function(e){function t(e){return Pro\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "68"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10109",
@@ -1437,14 +1479,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://domifa.fabrique.social.gouv.fr/runtime-es5.4e908f11a0f6b3ad6348.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://domifa.fabrique.social.gouv.fr/styles.fe793362d1a8c5710c47.css",
+							"uri": "https://domifa.fabrique.social.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
