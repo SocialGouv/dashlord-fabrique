@@ -1,21 +1,12 @@
 {
-  "trackers": [
-    {
-      "type": "xiti",
-      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=aea23252-49a6-4e5d-9af6-04cd4109f71b&ts=1636250219825&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x56x59&lng=en-US&idp=0156593998605&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
-      "details": {
-        "id": "xiti",
-        "message": "Use hosted Matomo instance"
-      }
-    }
-  ],
+  "trackers": [],
   "cookies": [
     {
       "name": "_pk_ses.4.ef54",
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1636252020,
+      "expires": 1636856591,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +18,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "371837a7665555e8.1636250221.",
+      "value": "8cf24a6392d0c6ac.1636854792.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1670205421,
+      "expires": 1670809992,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -39,27 +30,13 @@
       "sameParty": false,
       "sourceScheme": "Secure",
       "sourcePort": 443
-    },
-    {
-      "name": "atuserid",
-      "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%22aea23252-49a6-4e5d-9af6-04cd4109f71b%22%2C%22options%22%3A%7B%22end%22%3A%222022-12-09T01%3A56%3A59.815Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
-      "domain": ".code.travail.gouv.fr",
-      "path": "/",
-      "expires": 1670551019,
-      "size": 194,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
     }
   ],
   "headers": {
-    "date": "Sun, 07 Nov 2021 01:56:58 GMT",
+    "date": "Sun, 14 Nov 2021 01:53:10 GMT",
     "content-type": "text/html; charset=utf-8",
-    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.56.5",
-    "etag": "\"32997-a//FWmg2kKtxPhY8/eLMDV1ghRw\"",
+    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.fr https://cdtnadminprod.blob.core.windows.net *.doubleclick.net *.xiti.com;script-src 'self' https://mon-entreprise.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline' *.doubleclick.net;style-src 'self' 'unsafe-inline';report-uri https://c2aa7e731a494cfd8f7fb1ddabca11c9@sentry.fabrique.social.gouv.fr/5&sentry_environment=production&sentry_release=refs/tags/v4.57.1",
+    "etag": "\"3296a-drrUlQBksCY0LC472AeFdgygQno\"",
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
@@ -155,85 +132,6 @@
               "en": "Paris",
               "es": "Paris",
               "fr": "Paris"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "logs1412.xiti.com",
-      "ip": "3.224.139.182",
-      "geoip": {
-        "city": {
-          "geoname_id": 4744870,
-          "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
-          }
-        },
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "EE. UU.",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "20149"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "EE. UU.",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
-            "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
             }
           }
         ]

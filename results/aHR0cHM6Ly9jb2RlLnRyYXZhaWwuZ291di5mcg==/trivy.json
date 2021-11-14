@@ -12,6 +12,7 @@
           "VulnerabilityID": "CVE-2021-25214",
           "PkgName": "bind-export-libs",
           "InstalledVersion": "32:9.11.26-4.el8_4",
+          "FixedVersion": "32:9.11.26-6.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -77,8 +78,8 @@
               "V3Score": 5.3
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
-              "V3Score": 3.7
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
             }
           },
           "References": [
@@ -86,13 +87,15 @@
             "https://kb.isc.org/docs/cve-2021-25219",
             "https://kb.isc.org/v1/docs/cve-2021-25219",
             "https://lists.debian.org/debian-lts-announce/2021/11/msg00001.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EF4NAVRV4H3W4GA3LGGZYUKD3HSJBAVW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YGV7SA27CTYLGFJSPUM3V36ZWK7WWDI4/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YTKC4E3HUOLYN5IA4EBL4VAQSWG2ZVTX/",
             "https://ubuntu.com/security/notices/USN-5126-1",
             "https://ubuntu.com/security/notices/USN-5126-2",
             "https://www.debian.org/security/2021/dsa-4994"
           ],
           "PublishedDate": "2021-10-27T21:15:00Z",
-          "LastModifiedDate": "2021-11-04T04:15:00Z"
+          "LastModifiedDate": "2021-11-11T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000876",
@@ -393,6 +396,7 @@
           "VulnerabilityID": "CVE-2021-20197",
           "PkgName": "binutils",
           "InstalledVersion": "2.30-93.el8",
+          "FixedVersion": "2.30-108.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -429,6 +433,7 @@
           "VulnerabilityID": "CVE-2021-3487",
           "PkgName": "binutils",
           "InstalledVersion": "2.30-93.el8",
+          "FixedVersion": "2.30-108.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -469,6 +474,7 @@
           "VulnerabilityID": "CVE-2021-42574",
           "PkgName": "binutils",
           "InstalledVersion": "2.30-93.el8",
+          "FixedVersion": "2.30-108.el8_5.1",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -502,16 +508,18 @@
             "http://www.unicode.org/versions/Unicode14.0.0/",
             "https://linux.oracle.com/cve/CVE-2021-42574.html",
             "https://linux.oracle.com/errata/ELSA-2021-4033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IH2RG5YTR6ZZOLUV3EUPZEIJR7XHJLVD/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQNTFF24ROHLVPLUOEISBN3F7QM27L4U/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QUPA37D57VPTDLSXOOGF4UXUEADOC4PQ/",
             "https://trojansource.codes",
             "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
             "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
             "https://www.unicode.org/reports/tr39/"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-05T04:15:00Z"
+          "LastModifiedDate": "2021-11-11T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2017-18018",
@@ -590,6 +598,7 @@
           "VulnerabilityID": "CVE-2021-22876",
           "PkgName": "curl",
           "InstalledVersion": "7.61.1-18.el8",
+          "FixedVersion": "7.61.1-22.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -800,7 +809,6 @@
             "https://linux.oracle.com/cve/CVE-2021-22946.html",
             "https://linux.oracle.com/errata/ELSA-2021-4059.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
@@ -808,7 +816,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-03T04:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -847,7 +855,6 @@
             "https://linux.oracle.com/cve/CVE-2021-22947.html",
             "https://linux.oracle.com/errata/ELSA-2021-4059.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
@@ -857,12 +864,89 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-03T04:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3445",
+          "PkgName": "dnf",
+          "InstalledVersion": "4.4.2-11.el8",
+          "FixedVersion": "4.7.0-4.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3445",
+          "Title": "libdnf: Signature verification bypass via signature placed in the main RPM header",
+          "Description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1932079",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3445",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DPMFGGQ5T6WVFTFX3OKMVTTM5O4EXWZR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G4NL7TNWAHJ6JVRABQUPWHKKCTHUZMNF/"
+          ],
+          "PublishedDate": "2021-05-19T14:15:00Z",
+          "LastModifiedDate": "2021-06-02T14:58:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3445",
+          "PkgName": "dnf-data",
+          "InstalledVersion": "4.4.2-11.el8",
+          "FixedVersion": "4.7.0-4.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3445",
+          "Title": "libdnf: Signature verification bypass via signature placed in the main RPM header",
+          "Description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1932079",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3445",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DPMFGGQ5T6WVFTFX3OKMVTTM5O4EXWZR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G4NL7TNWAHJ6JVRABQUPWHKKCTHUZMNF/"
+          ],
+          "PublishedDate": "2021-05-19T14:15:00Z",
+          "LastModifiedDate": "2021-06-02T14:58:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-18218",
           "PkgName": "file",
           "InstalledVersion": "5.33-16.el8_3.1",
+          "FixedVersion": "5.33-20.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -912,6 +996,7 @@
           "VulnerabilityID": "CVE-2019-18218",
           "PkgName": "file-libs",
           "InstalledVersion": "5.33-16.el8_3.1",
+          "FixedVersion": "5.33-20.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1008,6 +1093,7 @@
           "VulnerabilityID": "CVE-2021-3800",
           "PkgName": "glib2",
           "InstalledVersion": "2.56.4-10.el8_4",
+          "FixedVersion": "2.56.4-156.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1066,6 +1152,7 @@
           "VulnerabilityID": "CVE-2021-35942",
           "PkgName": "glibc",
           "InstalledVersion": "2.28-151.el8",
+          "FixedVersion": "2.28-164.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1138,6 +1225,7 @@
           "VulnerabilityID": "CVE-2021-35942",
           "PkgName": "glibc-common",
           "InstalledVersion": "2.28-151.el8",
+          "FixedVersion": "2.28-164.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1210,6 +1298,7 @@
           "VulnerabilityID": "CVE-2021-35942",
           "PkgName": "glibc-langpack-en",
           "InstalledVersion": "2.28-151.el8",
+          "FixedVersion": "2.28-164.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1282,6 +1371,7 @@
           "VulnerabilityID": "CVE-2021-35942",
           "PkgName": "glibc-minimal-langpack",
           "InstalledVersion": "2.28-151.el8",
+          "FixedVersion": "2.28-164.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1321,6 +1411,7 @@
           "VulnerabilityID": "CVE-2021-20231",
           "PkgName": "gnutls",
           "InstalledVersion": "3.6.14-8.el8_3",
+          "FixedVersion": "3.6.16-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1368,6 +1459,7 @@
           "VulnerabilityID": "CVE-2021-20232",
           "PkgName": "gnutls",
           "InstalledVersion": "3.6.14-8.el8_3",
+          "FixedVersion": "3.6.16-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1412,9 +1504,48 @@
           "LastModifiedDate": "2021-05-17T14:30:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-3580",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.14-8.el8_3",
+          "FixedVersion": "3.6.16-4.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3580",
+          "Title": "nettle: Remote crash in RSA decryption via manipulated ciphertext",
+          "Description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3580",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
+            "https://ubuntu.com/security/notices/USN-4990-1"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2020-12762",
           "PkgName": "json-c",
           "InstalledVersion": "0.13.1-0.4.el8",
+          "FixedVersion": "0.13.1-2.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1497,13 +1628,12 @@
             "https://linux.oracle.com/cve/CVE-2021-36222.html",
             "https://linux.oracle.com/errata/ELSA-2021-3576.html",
             "https://security.netapp.com/advisory/ntap-20211022-0003/",
-            "https://security.netapp.com/advisory/ntap-20211104-0007/",
             "https://web.mit.edu/kerberos/advisories/",
             "https://www.debian.org/security/2021/dsa-4944",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-37750",
@@ -1586,6 +1716,7 @@
           "VulnerabilityID": "CVE-2021-22876",
           "PkgName": "libcurl-minimal",
           "InstalledVersion": "7.61.1-18.el8",
+          "FixedVersion": "7.61.1-22.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1796,7 +1927,6 @@
             "https://linux.oracle.com/cve/CVE-2021-22946.html",
             "https://linux.oracle.com/errata/ELSA-2021-4059.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
@@ -1804,7 +1934,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-03T04:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-22947",
@@ -1843,7 +1973,6 @@
             "https://linux.oracle.com/cve/CVE-2021-22947.html",
             "https://linux.oracle.com/errata/ELSA-2021-4059.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
             "https://security.netapp.com/advisory/ntap-20211029-0003/",
             "https://ubuntu.com/security/notices/USN-5079-1",
@@ -1853,12 +1982,13 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-03T04:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:16:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3445",
           "PkgName": "libdnf",
           "InstalledVersion": "0.55.0-7.el8",
+          "FixedVersion": "0.63.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1896,6 +2026,7 @@
           "VulnerabilityID": "CVE-2018-20673",
           "PkgName": "libgcc",
           "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -1928,6 +2059,57 @@
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
           "LastModifiedDate": "2020-08-24T17:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42574",
+          "PkgName": "libgcc",
+          "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-4.el8_5",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42574",
+          "Title": "Developer environment: Unicode's bidirectional (BiDi) override characters can cause trojan source attacks",
+          "Description": "An issue was discovered in the Bidirectional Algorithm in the Unicode Specification through 14.0. It permits the visual reordering of characters via control sequences, which can be used to craft source code that renders different logic than the logical ordering of tokens ingested by compilers and interpreters. Adversaries can leverage this to encode source code for compilers accepting Unicode such that targeted vulnerabilities are introduced invisibly to human reviewers.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/01/1",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/4",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/5",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/6",
+            "http://www.openwall.com/lists/oss-security/2021/11/02/10",
+            "http://www.unicode.org/versions/Unicode14.0.0/",
+            "https://linux.oracle.com/cve/CVE-2021-42574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IH2RG5YTR6ZZOLUV3EUPZEIJR7XHJLVD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQNTFF24ROHLVPLUOEISBN3F7QM27L4U/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QUPA37D57VPTDLSXOOGF4UXUEADOC4PQ/",
+            "https://trojansource.codes",
+            "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
+            "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
+            "https://www.unicode.org/reports/tr39/"
+          ],
+          "PublishedDate": "2021-11-01T04:15:00Z",
+          "LastModifiedDate": "2021-11-11T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-12904",
@@ -1972,6 +2154,7 @@
           "VulnerabilityID": "CVE-2021-33560",
           "PkgName": "libgcrypt",
           "InstalledVersion": "1.8.5-4.el8",
+          "FixedVersion": "1.8.5-6.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -2037,8 +2220,8 @@
               "V3Score": 5.9
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
             }
           },
           "References": [
@@ -2056,6 +2239,7 @@
           "VulnerabilityID": "CVE-2018-20673",
           "PkgName": "libgomp",
           "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2090,9 +2274,61 @@
           "LastModifiedDate": "2020-08-24T17:37:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-42574",
+          "PkgName": "libgomp",
+          "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-4.el8_5",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42574",
+          "Title": "Developer environment: Unicode's bidirectional (BiDi) override characters can cause trojan source attacks",
+          "Description": "An issue was discovered in the Bidirectional Algorithm in the Unicode Specification through 14.0. It permits the visual reordering of characters via control sequences, which can be used to craft source code that renders different logic than the logical ordering of tokens ingested by compilers and interpreters. Adversaries can leverage this to encode source code for compilers accepting Unicode such that targeted vulnerabilities are introduced invisibly to human reviewers.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/01/1",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/4",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/5",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/6",
+            "http://www.openwall.com/lists/oss-security/2021/11/02/10",
+            "http://www.unicode.org/versions/Unicode14.0.0/",
+            "https://linux.oracle.com/cve/CVE-2021-42574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IH2RG5YTR6ZZOLUV3EUPZEIJR7XHJLVD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQNTFF24ROHLVPLUOEISBN3F7QM27L4U/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QUPA37D57VPTDLSXOOGF4UXUEADOC4PQ/",
+            "https://trojansource.codes",
+            "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
+            "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
+            "https://www.unicode.org/reports/tr39/"
+          ],
+          "PublishedDate": "2021-11-01T04:15:00Z",
+          "LastModifiedDate": "2021-11-11T03:15:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-36084",
           "PkgName": "libsepol",
           "InstalledVersion": "2.9-2.el8",
+          "FixedVersion": "2.9-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2129,6 +2365,7 @@
           "VulnerabilityID": "CVE-2021-36085",
           "PkgName": "libsepol",
           "InstalledVersion": "2.9-2.el8",
+          "FixedVersion": "2.9-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2165,6 +2402,7 @@
           "VulnerabilityID": "CVE-2021-36086",
           "PkgName": "libsepol",
           "InstalledVersion": "2.9-2.el8",
+          "FixedVersion": "2.9-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2201,6 +2439,7 @@
           "VulnerabilityID": "CVE-2021-36087",
           "PkgName": "libsepol",
           "InstalledVersion": "2.9-2.el8",
+          "FixedVersion": "2.9-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2393,6 +2632,7 @@
           "VulnerabilityID": "CVE-2018-20673",
           "PkgName": "libstdc++",
           "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2425,6 +2665,57 @@
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
           "LastModifiedDate": "2020-08-24T17:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42574",
+          "PkgName": "libstdc++",
+          "InstalledVersion": "8.4.1-1.el8",
+          "FixedVersion": "8.5.0-4.el8_5",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42574",
+          "Title": "Developer environment: Unicode's bidirectional (BiDi) override characters can cause trojan source attacks",
+          "Description": "An issue was discovered in the Bidirectional Algorithm in the Unicode Specification through 14.0. It permits the visual reordering of characters via control sequences, which can be used to craft source code that renders different logic than the logical ordering of tokens ingested by compilers and interpreters. Adversaries can leverage this to encode source code for compilers accepting Unicode such that targeted vulnerabilities are introduced invisibly to human reviewers.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/01/1",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/4",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/5",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/6",
+            "http://www.openwall.com/lists/oss-security/2021/11/02/10",
+            "http://www.unicode.org/versions/Unicode14.0.0/",
+            "https://linux.oracle.com/cve/CVE-2021-42574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4033.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IH2RG5YTR6ZZOLUV3EUPZEIJR7XHJLVD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LQNTFF24ROHLVPLUOEISBN3F7QM27L4U/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QUPA37D57VPTDLSXOOGF4UXUEADOC4PQ/",
+            "https://trojansource.codes",
+            "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
+            "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
+            "https://www.unicode.org/reports/tr39/"
+          ],
+          "PublishedDate": "2021-11-01T04:15:00Z",
+          "LastModifiedDate": "2021-11-11T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -2481,6 +2772,7 @@
           "VulnerabilityID": "CVE-2019-17594",
           "PkgName": "ncurses-base",
           "InstalledVersion": "6.1-7.20180224.el8",
+          "FixedVersion": "6.1-9.20180224.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -2520,6 +2812,7 @@
           "VulnerabilityID": "CVE-2019-17595",
           "PkgName": "ncurses-base",
           "InstalledVersion": "6.1-7.20180224.el8",
+          "FixedVersion": "6.1-9.20180224.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -2595,6 +2888,7 @@
           "VulnerabilityID": "CVE-2019-17594",
           "PkgName": "ncurses-libs",
           "InstalledVersion": "6.1-7.20180224.el8",
+          "FixedVersion": "6.1-9.20180224.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -2634,6 +2928,7 @@
           "VulnerabilityID": "CVE-2019-17595",
           "PkgName": "ncurses-libs",
           "InstalledVersion": "6.1-7.20180224.el8",
+          "FixedVersion": "6.1-9.20180224.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -2706,9 +3001,106 @@
           "LastModifiedDate": "2021-10-18T14:15:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-20231",
+          "PkgName": "nettle",
+          "InstalledVersion": "3.4.1-4.el8_3",
+          "FixedVersion": "3.4.1-7.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20231",
+          "Title": "gnutls: Use after free in client key_share extension",
+          "Description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922276",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20231",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-06-01T14:07:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-20232",
+          "PkgName": "nettle",
+          "InstalledVersion": "3.4.1-4.el8_3",
+          "FixedVersion": "3.4.1-7.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20232",
+          "Title": "gnutls: Use after free in client_send_params in lib/ext/pre_shared_key.c",
+          "Description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922275",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20232",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-05-17T14:30:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-3580",
           "PkgName": "nettle",
           "InstalledVersion": "3.4.1-4.el8_3",
+          "FixedVersion": "3.4.1-7.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2737,16 +3129,16 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3580",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
-            "https://security.netapp.com/advisory/ntap-20211104-0006/",
             "https://ubuntu.com/security/notices/USN-4990-1"
           ],
           "PublishedDate": "2021-08-05T21:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-23840",
           "PkgName": "openssl",
           "InstalledVersion": "1:1.1.1g-15.el8_3",
+          "FixedVersion": "1:1.1.1k-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2801,6 +3193,7 @@
           "VulnerabilityID": "CVE-2021-23841",
           "PkgName": "openssl",
           "InstalledVersion": "1:1.1.1g-15.el8_3",
+          "FixedVersion": "1:1.1.1k-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2910,6 +3303,7 @@
           "VulnerabilityID": "CVE-2021-23840",
           "PkgName": "openssl-libs",
           "InstalledVersion": "1:1.1.1g-15.el8_3",
+          "FixedVersion": "1:1.1.1k-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -2964,6 +3358,7 @@
           "VulnerabilityID": "CVE-2021-23841",
           "PkgName": "openssl-libs",
           "InstalledVersion": "1:1.1.1g-15.el8_3",
+          "FixedVersion": "1:1.1.1k-4.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3073,6 +3468,7 @@
           "VulnerabilityID": "CVE-2021-3426",
           "PkgName": "platform-python",
           "InstalledVersion": "3.6.8-37.el8",
+          "FixedVersion": "3.6.8-41.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3158,8 +3554,47 @@
         },
         {
           "VulnerabilityID": "CVE-2021-3445",
+          "PkgName": "python3-dnf",
+          "InstalledVersion": "4.4.2-11.el8",
+          "FixedVersion": "4.7.0-4.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3445",
+          "Title": "libdnf: Signature verification bypass via signature placed in the main RPM header",
+          "Description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1932079",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3445",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DPMFGGQ5T6WVFTFX3OKMVTTM5O4EXWZR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G4NL7TNWAHJ6JVRABQUPWHKKCTHUZMNF/"
+          ],
+          "PublishedDate": "2021-05-19T14:15:00Z",
+          "LastModifiedDate": "2021-06-02T14:58:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3445",
           "PkgName": "python3-hawkey",
           "InstalledVersion": "0.55.0-7.el8",
+          "FixedVersion": "0.63.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3197,6 +3632,7 @@
           "VulnerabilityID": "CVE-2021-3445",
           "PkgName": "python3-libdnf",
           "InstalledVersion": "0.55.0-7.el8",
+          "FixedVersion": "0.63.0-3.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3234,6 +3670,7 @@
           "VulnerabilityID": "CVE-2021-3426",
           "PkgName": "python3-libs",
           "InstalledVersion": "3.6.8-37.el8",
+          "FixedVersion": "3.6.8-41.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3759,6 +4196,7 @@
           "VulnerabilityID": "CVE-2019-5827",
           "PkgName": "sqlite-libs",
           "InstalledVersion": "3.26.0-13.el8",
+          "FixedVersion": "3.26.0-15.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3805,6 +4243,7 @@
           "VulnerabilityID": "CVE-2019-13750",
           "PkgName": "sqlite-libs",
           "InstalledVersion": "3.26.0-13.el8",
+          "FixedVersion": "3.26.0-15.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3853,6 +4292,7 @@
           "VulnerabilityID": "CVE-2019-13751",
           "PkgName": "sqlite-libs",
           "InstalledVersion": "3.26.0-13.el8",
+          "FixedVersion": "3.26.0-15.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3901,6 +4341,7 @@
           "VulnerabilityID": "CVE-2019-19603",
           "PkgName": "sqlite-libs",
           "InstalledVersion": "3.26.0-13.el8",
+          "FixedVersion": "3.26.0-15.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -3939,6 +4380,7 @@
           "VulnerabilityID": "CVE-2020-13435",
           "PkgName": "sqlite-libs",
           "InstalledVersion": "3.26.0-13.el8",
+          "FixedVersion": "3.26.0-15.el8",
           "Layer": {
             "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
             "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
@@ -4118,7 +4560,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -4126,7 +4567,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4213,7 +4654,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -4221,7 +4661,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4308,7 +4748,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -4316,7 +4755,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4403,7 +4842,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -4411,7 +4849,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4565,6 +5003,7 @@
           "VulnerabilityID": "CVE-2021-3778",
           "PkgName": "vim-minimal",
           "InstalledVersion": "2:8.0.1763-15.el8",
+          "FixedVersion": "2:8.0.1763-16.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -4594,18 +5033,18 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3778",
             "https://github.com/vim/vim/commit/65b605665997fad54ef39a93199e305af2fe4d7f",
             "https://huntr.dev/bounties/d9c17308-2c99-4f9f-a706-f7f72c24c273",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7K4JJBIH3OQSZRVTWKCJCDLGMFGQ5DOH/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S42L4Z4DTW4LHLQ4FJ33VEOXRCBE7WN4/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TE62UMYBZE4AE53K6OBBWK32XQ7544QM/",
             "https://ubuntu.com/security/notices/USN-5093-1"
           ],
           "PublishedDate": "2021-09-15T08:15:00Z",
-          "LastModifiedDate": "2021-11-05T17:59:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3796",
           "PkgName": "vim-minimal",
           "InstalledVersion": "2:8.0.1763-15.el8",
+          "FixedVersion": "2:8.0.1763-16.el8",
           "Layer": {
             "Digest": "sha256:7a0437f04f83f084b7ed68ad9c4a4947e12fc4e1b006b38129bac89114ec3621",
             "DiffID": "sha256:2653d992f4ef2bfd27f94db643815aa567240c37732cae1405ad1c1309ee9859"
@@ -4635,13 +5074,12 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3796",
             "https://github.com/vim/vim/commit/35a9a00afcb20897d462a766793ff45534810dc3",
             "https://huntr.dev/bounties/ab60b7f3-6fb1-4ac2-a4fa-4d592e08008d",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7K4JJBIH3OQSZRVTWKCJCDLGMFGQ5DOH/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S42L4Z4DTW4LHLQ4FJ33VEOXRCBE7WN4/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TE62UMYBZE4AE53K6OBBWK32XQ7544QM/",
             "https://ubuntu.com/security/notices/USN-5093-1"
           ],
           "PublishedDate": "2021-09-15T13:15:00Z",
-          "LastModifiedDate": "2021-11-05T18:57:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3872",
@@ -4675,11 +5113,48 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3872",
             "https://github.com/vim/vim/commit/826bfe4bbd7594188e3d74d2539d9707b1c6a14b",
             "https://huntr.dev/bounties/c958013b-1c09-4939-92ca-92f50aa169e8",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7K4JJBIH3OQSZRVTWKCJCDLGMFGQ5DOH/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S42L4Z4DTW4LHLQ4FJ33VEOXRCBE7WN4/"
           ],
           "PublishedDate": "2021-10-19T13:15:00Z",
-          "LastModifiedDate": "2021-10-30T02:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3445",
+          "PkgName": "yum",
+          "InstalledVersion": "4.4.2-11.el8",
+          "FixedVersion": "4.7.0-4.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3445",
+          "Title": "libdnf: Signature verification bypass via signature placed in the main RPM header",
+          "Description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-347"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1932079",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3445",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DPMFGGQ5T6WVFTFX3OKMVTTM5O4EXWZR/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/G4NL7TNWAHJ6JVRABQUPWHKKCTHUZMNF/"
+          ],
+          "PublishedDate": "2021-05-19T14:15:00Z",
+          "LastModifiedDate": "2021-06-02T14:58:00Z"
         }
       ]
     }
