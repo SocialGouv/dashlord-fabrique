@@ -13413,8 +13413,8 @@
               "V3Score": 5.9
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
             }
           },
           "References": [
@@ -15001,14 +15001,13 @@
             "https://github.com/lz4/lz4/pull/972",
             "https://linux.oracle.com/cve/CVE-2021-3520.html",
             "https://linux.oracle.com/errata/ELSA-2021-2575.html",
-            "https://security.netapp.com/advisory/ntap-20211104-0005/",
             "https://ubuntu.com/security/notices/USN-4968-1",
             "https://ubuntu.com/security/notices/USN-4968-2",
             "https://www.oracle.com//security-alerts/cpujul2021.html",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-02T13:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -15796,6 +15795,31 @@
           "LastModifiedDate": "2020-02-10T21:54:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-23214",
+          "PkgName": "libpq5",
+          "InstalledVersion": "11.12-0+deb10u1",
+          "FixedVersion": "11.14-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23214",
+          "Title": "postgresql: server processes unencrypted bytes from man-in-the-middle",
+          "Description": "No description is available for this CVE.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23214",
+            "https://ubuntu.com/security/notices/USN-5145-1",
+            "https://www.postgresql.org/about/news/postgresql-141-135-129-1114-1019-and-9624-released-2349/"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2021-3677",
           "PkgName": "libpq5",
           "InstalledVersion": "11.12-0+deb10u1",
@@ -16435,7 +16459,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16443,7 +16466,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000654",
@@ -16952,7 +16975,6 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
-            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16960,7 +16982,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:17:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-25032",
@@ -17858,7 +17880,9 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19449",
             "https://github.com/bobfuzzer/CVE/tree/master/CVE-2019-19449",
             "https://security.netapp.com/advisory/ntap-20200103-0001/",
-            "https://ubuntu.com/security/notices/USN-5120-1"
+            "https://ubuntu.com/security/notices/USN-5120-1",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1"
           ],
           "PublishedDate": "2019-12-08T02:15:00Z",
           "LastModifiedDate": "2020-01-03T11:15:00Z"
@@ -18021,7 +18045,7 @@
             "https://www.openwall.com/lists/oss-security/2020/10/13/7"
           ],
           "PublishedDate": "2021-01-14T01:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-12T19:53:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-26556",
@@ -18194,11 +18218,15 @@
           },
           "References": [
             "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36385",
+            "https://git.kernel.org/linus/f5449e74802c1112dea984aec8af7a33c4516af1",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f5449e74802c1112dea984aec8af7a33c4516af1",
             "https://linux.oracle.com/cve/CVE-2020-36385.html",
             "https://linux.oracle.com/errata/ELSA-2021-4056.html",
             "https://sites.google.com/view/syzscope/kasan-use-after-free-read-in-ucma_close-2",
-            "https://syzkaller.appspot.com/bug?id=457491c4672d7b52c1007db213d93e47c711fae6"
+            "https://syzkaller.appspot.com/bug?id=457491c4672d7b52c1007db213d93e47c711fae6",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1"
           ],
           "PublishedDate": "2021-06-07T12:15:00Z",
           "LastModifiedDate": "2021-07-20T11:15:00Z"
@@ -18281,7 +18309,7 @@
             "https://www.openwall.com/lists/oss-security/2021/05/26/5"
           ],
           "PublishedDate": "2021-05-26T11:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-12T20:08:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-26934",
@@ -18386,6 +18414,7 @@
           },
           "References": [
             "http://packetstormsecurity.com/files/162117/Kernel-Live-Patch-Security-Notice-LSN-0075-1.html",
+            "http://packetstormsecurity.com/files/164950/Kernel-Live-Patch-Security-Notice-LSN-0082-1.html",
             "http://www.openwall.com/lists/oss-security/2021/03/23/2",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3444",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9b00f1b78809",
@@ -18398,7 +18427,7 @@
             "https://www.openwall.com/lists/oss-security/2021/03/23/2"
           ],
           "PublishedDate": "2021-03-23T18:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-12T19:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3493",
@@ -18738,7 +18767,13 @@
               "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
               "V3Score": 7
             }
-          }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3760",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=1b1499a817c90fd1ce9453a2c98d2a01cca0e775",
+            "https://ubuntu.com/security/notices/USN-5139-1",
+            "https://www.openwall.com/lists/oss-security/2021/10/26/2"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2021-38160",
@@ -18949,7 +18984,9 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/7BLLVKYAIETEORUPTFO3TR3C33ZPFXQM/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LAT3RERO6QBKSPJBNNRWY3D4NCGTFOS7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYKURLXBB2555ASWMPDNMBUPD6AG2JKQ/",
-            "https://security.netapp.com/advisory/ntap-20211029-0004/"
+            "https://security.netapp.com/advisory/ntap-20211029-0004/",
+            "https://ubuntu.com/security/notices/USN-5139-1",
+            "https://ubuntu.com/security/notices/USN-5140-1"
           ],
           "PublishedDate": "2021-10-02T00:15:00Z",
           "LastModifiedDate": "2021-10-29T13:15:00Z"
@@ -18988,7 +19025,6 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42008",
             "https://git.kernel.org/linus/19d1532a187669ce86d5a2696eb7275310070793 (5.14-rc7)",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=19d1532a187669ce86d5a2696eb7275310070793",
-            "https://security.netapp.com/advisory/ntap-20211104-0002/",
             "https://ubuntu.com/security/notices/USN-5113-1",
             "https://ubuntu.com/security/notices/USN-5114-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
@@ -18997,7 +19033,7 @@
             "https://www.youtube.com/watch?v=d5f9xLK8Vhw"
           ],
           "PublishedDate": "2021-10-05T00:15:00Z",
-          "LastModifiedDate": "2021-11-04T09:15:00Z"
+          "LastModifiedDate": "2021-11-10T01:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42252",
@@ -19029,10 +19065,13 @@
             "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.6",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42252",
             "https://git.kernel.org/linus/b49a0e69a7b1a68c8d3f64097d06dabb770fec96 (5.15-rc1)",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b49a0e69a7b1a68c8d3f64097d06dabb770fec96"
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b49a0e69a7b1a68c8d3f64097d06dabb770fec96",
+            "https://security.netapp.com/advisory/ntap-20211112-0006/",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1"
           ],
           "PublishedDate": "2021-10-11T19:15:00Z",
-          "LastModifiedDate": "2021-10-19T01:59:00Z"
+          "LastModifiedDate": "2021-11-12T09:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42739",
@@ -20984,7 +21023,8 @@
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5d069dbe8aaf2a197142558b6fb2978189ba3454",
             "https://linux.oracle.com/cve/CVE-2020-36322.html",
             "https://linux.oracle.com/errata/ELSA-2021-9488.html",
-            "https://lists.debian.org/debian-lts-announce/2021/06/msg00020.html"
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00020.html",
+            "https://ubuntu.com/security/notices/USN-5136-1"
           ],
           "PublishedDate": "2021-04-14T06:15:00Z",
           "LastModifiedDate": "2021-06-23T02:15:00Z"
@@ -21034,6 +21074,24 @@
           ],
           "PublishedDate": "2020-09-08T10:15:00Z",
           "LastModifiedDate": "2021-10-16T01:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-0920",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "FixedVersion": "4.19.208-1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-0920",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-0920",
+            "https://git.kernel.org/linus/cbcf01128d0a92e131bd09f1688fe032480b65ca",
+            "https://source.android.com/security/bulletin/2021-11-01"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2021-20317",
@@ -21209,7 +21267,7 @@
             "https://www.usenix.org/conference/usenixsecurity21/presentation/kirzner"
           ],
           "PublishedDate": "2021-06-23T16:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-12T20:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-34556",
@@ -21252,6 +21310,7 @@
             "https://ubuntu.com/security/notices/USN-5092-2",
             "https://ubuntu.com/security/notices/USN-5096-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
+            "https://ubuntu.com/security/notices/USN-5137-1",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T05:15:00Z",
@@ -21297,10 +21356,11 @@
             "https://ubuntu.com/security/notices/USN-5092-2",
             "https://ubuntu.com/security/notices/USN-5096-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
+            "https://ubuntu.com/security/notices/USN-5137-1",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T04:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-11T03:25:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3640",
@@ -21321,6 +21381,7 @@
             }
           },
           "References": [
+            "https://lkml.org/lkml/2021/8/28/238",
             "https://www.openwall.com/lists/oss-security/2021/07/22/1"
           ]
         },
@@ -21442,7 +21503,7 @@
             "https://www.spinics.net/lists/linux-usb/msg202228.html"
           ],
           "PublishedDate": "2021-07-21T15:16:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-11T03:26:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3743",
@@ -21475,6 +21536,8 @@
             "https://ubuntu.com/security/notices/USN-5113-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
             "https://ubuntu.com/security/notices/USN-5117-1",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1",
             "https://www.openwall.com/lists/oss-security/2021/08/27/2"
           ]
         },
@@ -21499,7 +21562,9 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3744",
             "https://kernel.googlesource.com/pub/scm/linux/kernel/git/herbert/crypto-2.6/+/505d9dcb0f7ddf9d075e729523a33d38642ae680%5E%21/#F0",
-            "https://seclists.org/oss-sec/2021/q3/164"
+            "https://seclists.org/oss-sec/2021/q3/164",
+            "https://ubuntu.com/security/notices/USN-5139-1",
+            "https://ubuntu.com/security/notices/USN-5140-1"
           ]
         },
         {
@@ -21528,6 +21593,8 @@
             "https://ubuntu.com/security/notices/USN-5113-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
             "https://ubuntu.com/security/notices/USN-5117-1",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1",
             "https://www.openwall.com/lists/oss-security/2021/09/01/4"
           ]
         },
@@ -21554,7 +21621,10 @@
             "https://lore.kernel.org/linux-mm/1626333284-1404-1-git-send-email-nglaive@gmail.com/",
             "https://ubuntu.com/security/notices/USN-5115-1",
             "https://ubuntu.com/security/notices/USN-5117-1",
-            "https://ubuntu.com/security/notices/USN-5120-1"
+            "https://ubuntu.com/security/notices/USN-5120-1",
+            "https://ubuntu.com/security/notices/USN-5135-1",
+            "https://ubuntu.com/security/notices/USN-5136-1",
+            "https://ubuntu.com/security/notices/USN-5137-1"
           ]
         },
         {
@@ -21577,7 +21647,9 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3764",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=36cf515b9bbe"
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=36cf515b9bbe",
+            "https://ubuntu.com/security/notices/USN-5139-1",
+            "https://ubuntu.com/security/notices/USN-5140-1"
           ]
         },
         {
@@ -21597,7 +21669,11 @@
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 5.9
             }
-          }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3772",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git/commit/?id=32f8807a48ae55be0e76880cfe8607a18b5bb0df"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2021-38198",
@@ -21638,7 +21714,7 @@
             "https://ubuntu.com/security/notices/USN-5116-2"
           ],
           "PublishedDate": "2021-08-08T20:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-11T03:29:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-38199",
@@ -21680,10 +21756,11 @@
             "https://ubuntu.com/security/notices/USN-5096-1",
             "https://ubuntu.com/security/notices/USN-5106-1",
             "https://ubuntu.com/security/notices/USN-5120-1",
+            "https://ubuntu.com/security/notices/USN-5136-1",
             "https://www.debian.org/security/2021/dsa-4978"
           ],
           "PublishedDate": "2021-08-08T20:15:00Z",
-          "LastModifiedDate": "2021-10-16T01:15:00Z"
+          "LastModifiedDate": "2021-11-12T19:33:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-38204",
@@ -21748,7 +21825,10 @@
               "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
               "V3Score": 6.4
             }
-          }
+          },
+          "References": [
+            "https://www.openwall.com/lists/oss-security/2021/10/14/3"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2021-3892",
@@ -21771,6 +21851,49 @@
           "References": [
             "https://lore.kernel.org/lkml/20191003154533.875309419@linuxfoundation.org/"
           ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43389",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43389",
+          "Title": "kernel: an array-index-out-bounds in detach_capi_ctr in drivers/isdn/capi/kcapi.c",
+          "Description": "An issue was discovered in the Linux kernel before 5.14.15. There is an array-index-out-of-bounds flaw in the detach_capi_ctr function in drivers/isdn/capi/kcapi.c.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/05/1",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2013180",
+            "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.15",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43389",
+            "https://git.kernel.org/linus/1f3e2e97c003f80c4b087092b225c8787ff91e4d",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1f3e2e97c003f80c4b087092b225c8787ff91e4d",
+            "https://lore.kernel.org/netdev/CAFcO6XOvGQrRTaTkaJ0p3zR7y7nrAWD79r48=L_BbOyrK9X-vA@mail.gmail.com/",
+            "https://seclists.org/oss-sec/2021/q4/39",
+            "https://ubuntu.com/security/notices/USN-5139-1",
+            "https://www.openwall.com/lists/oss-security/2021/10/19/1"
+          ],
+          "PublishedDate": "2021-11-04T19:15:00Z",
+          "LastModifiedDate": "2021-11-09T15:26:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-19882",
