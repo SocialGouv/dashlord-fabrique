@@ -107,6 +107,7 @@ jobs:
           docker_name: "owasp/zap2docker-stable"
           target: "${{ matrix.sites.url }}"
           cmd_options: "-a"
+          allow_issue_writing: false
 
       - name: Lighthouse scan
         if: ${{ matrix.sites.tools.lighthouse }}
