@@ -53,6 +53,14 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Déclaration a11y
+        continue-on-error: true
+        uses: "socialgouv/dashlord-actions/declaration-a11y@declaration-a11y"
+        if: ${{ matrix.sites.tools['declaration-a11y'] }}
+        with:
+          url: ${{ matrix.sites.url }}
+          output: scans/declaration-a11y.json
+          
       - name: Trivy GHCR
         continue-on-error: true
         uses: "socialgouv/dashlord-actions/trivy-ghcr@main"
