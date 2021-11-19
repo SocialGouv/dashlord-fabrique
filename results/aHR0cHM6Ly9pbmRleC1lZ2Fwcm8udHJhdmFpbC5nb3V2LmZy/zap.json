@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 14 Nov 2021 01:09:43",
+	"@generated": "Fri, 19 Nov 2021 10:49:31",
 	"site":[ 
 		{
 			"@name": "https://index-egapro.travail.gouv.fr",
@@ -126,7 +126,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "19"
+					"sourceid": "22"
 				},
 				{
 					"pluginid": "10015",
@@ -228,7 +228,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.d0e2b68b.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.b8159542.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -255,6 +255,20 @@
 					"instances":[ 
 						{
 							"uri": "https://index-egapro.travail.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "02647208"
+						},
+						{
+							"uri": "https://index-egapro.travail.gouv.fr/simulateur/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -338,7 +352,7 @@
 							"evidence": "94906265"
 						}
 					],
-					"count": "12",
+					"count": "14",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>02647208, which evaluates to: 1970-01-31 15:20:08</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -413,7 +427,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.d0e2b68b.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.b8159542.chunk.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -446,7 +460,7 @@
 							"evidence": "bug"
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.d0e2b68b.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.b8159542.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -459,7 +473,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "19"
+					"sourceid": "22"
 				},
 				{
 					"pluginid": "10109",
@@ -582,7 +596,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.d0e2b68b.chunk.js",
+							"uri": "https://index-egapro.travail.gouv.fr/static/js/main.b8159542.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
