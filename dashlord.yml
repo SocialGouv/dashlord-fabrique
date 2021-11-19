@@ -18,6 +18,7 @@ tools:
   nmap: false
   stats: true
   trivy: true
+  declaration-a11y: true
 urls:
   - url: https://archifiltre.fabrique.social.gouv.fr
     category: fabrique

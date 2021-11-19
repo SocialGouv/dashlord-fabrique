@@ -17,7 +17,7 @@ on:
       - "urls.txt"
   schedule:
     - cron: "0 0 * * 0" # see https://crontab.guru
-    
+
 jobs:
   init:
     runs-on: ubuntu-latest
@@ -53,6 +53,14 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Déclaration a11y
+        continue-on-error: true
+        uses: "socialgouv/dashlord-actions/declaration-a11y@v1"
+        if: ${{ matrix.sites.tools['declaration-a11y'] }}
+        with:
+          url: ${{ matrix.sites.url }}
+          output: scans/declaration-a11y.json
+
       - name: Trivy GHCR
         continue-on-error: true
         uses: "socialgouv/dashlord-actions/trivy-ghcr@main"
@@ -75,7 +83,7 @@ jobs:
         if: ${{ matrix.sites.tools.stats }}
         with:
           url: ${{ matrix.sites.url }}
-          uri: 'stats'
+          uri: "stats"
           output: scans/stats.json
 
       - name: Screenshot Website
