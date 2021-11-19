@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: init
-        uses: "SocialGouv/dashlord-actions/init@main"
+        uses: "SocialGouv/dashlord-actions/init@v1"
         with:
           url: ${{ github.event.inputs.url }}
 
@@ -63,7 +63,7 @@ jobs:
 
       - name: Trivy GHCR
         continue-on-error: true
-        uses: "socialgouv/dashlord-actions/trivy-ghcr@main"
+        uses: "socialgouv/dashlord-actions/trivy-ghcr@v1"
         if: ${{ matrix.sites.tools['trivy'] && matrix.sites.repositories }}
         with:
           repos: ${{ join(matrix.sites.repositories) }}
@@ -195,7 +195,7 @@ jobs:
           repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/codescanalerts.json
 
-      - uses: SocialGouv/dashlord-actions/save@main
+      - uses: SocialGouv/dashlord-actions/save@v1
         with:
           url: ${{ matrix.sites.url }}
 
