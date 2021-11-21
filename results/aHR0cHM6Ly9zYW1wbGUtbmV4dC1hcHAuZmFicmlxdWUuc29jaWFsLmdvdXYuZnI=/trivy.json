@@ -4,7 +4,7 @@
     "url": "https://github.com//orgs/SocialGouv/packages/container/package/sample-next-app%2Fapp",
     "image": "ghcr.io/socialgouv/sample-next-app/app",
     "trivy": {
-      "Target": "ghcr.io/socialgouv/sample-next-app/app:latest (alpine 3.11.12)",
+      "Target": "ghcr.io/socialgouv/sample-next-app/app:latest (alpine 3.14.3)",
       "Class": "os-pkgs",
       "Type": "alpine"
     }
@@ -1465,6 +1465,8 @@
           "References": [
             "http://www.securityfocus.com/bid/106454",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20673",
+            "https://linux.oracle.com/cve/CVE-2018-20673.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4386.html",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=24039"
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
@@ -2363,6 +2365,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1913743",
+            "https://linux.oracle.com/cve/CVE-2021-20197.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210528-0009/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26945"
           ],
@@ -2399,6 +2403,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1937784",
+            "https://linux.oracle.com/cve/CVE-2021-20284.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210521-0010/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26931"
           ],
@@ -2437,6 +2443,8 @@
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1947111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
+            "https://linux.oracle.com/cve/CVE-2021-3487.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
@@ -3850,6 +3858,8 @@
           "References": [
             "http://www.securityfocus.com/bid/106454",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20673",
+            "https://linux.oracle.com/cve/CVE-2018-20673.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4386.html",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=24039"
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
@@ -4748,6 +4758,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1913743",
+            "https://linux.oracle.com/cve/CVE-2021-20197.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210528-0009/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26945"
           ],
@@ -4784,6 +4796,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1937784",
+            "https://linux.oracle.com/cve/CVE-2021-20284.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210521-0010/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26931"
           ],
@@ -4822,6 +4836,8 @@
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1947111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
+            "https://linux.oracle.com/cve/CVE-2021-3487.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
@@ -6235,6 +6251,8 @@
           "References": [
             "http://www.securityfocus.com/bid/106454",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20673",
+            "https://linux.oracle.com/cve/CVE-2018-20673.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4386.html",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=24039"
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
@@ -7133,6 +7151,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1913743",
+            "https://linux.oracle.com/cve/CVE-2021-20197.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210528-0009/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26945"
           ],
@@ -7169,6 +7189,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1937784",
+            "https://linux.oracle.com/cve/CVE-2021-20284.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210521-0010/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26931"
           ],
@@ -7207,6 +7229,8 @@
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1947111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
+            "https://linux.oracle.com/cve/CVE-2021-3487.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
@@ -9256,6 +9280,8 @@
           "References": [
             "http://www.securityfocus.com/bid/106454",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20673",
+            "https://linux.oracle.com/cve/CVE-2018-20673.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4386.html",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=24039"
           ],
           "PublishedDate": "2019-01-04T18:29:00Z",
@@ -10154,6 +10180,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1913743",
+            "https://linux.oracle.com/cve/CVE-2021-20197.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210528-0009/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26945"
           ],
@@ -10190,6 +10218,8 @@
           },
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1937784",
+            "https://linux.oracle.com/cve/CVE-2021-20284.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://security.netapp.com/advisory/ntap-20210521-0010/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=26931"
           ],
@@ -10228,6 +10258,8 @@
           "References": [
             "https://bugzilla.redhat.com/show_bug.cgi?id=1947111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3487",
+            "https://linux.oracle.com/cve/CVE-2021-3487.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4364.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3Z3KSJY3CLAAFFT7FNFCJOMDITPQGN56/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6V2LF5AVOUTHPYY2O5TRNAIXVMXFDGL/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNBNDMJWZOQYCEZXENHBSM6DBZ332UZZ/",
@@ -10335,6 +10367,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
+            "https://linux.oracle.com/cve/CVE-2021-33574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -10374,6 +10408,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
+            "https://linux.oracle.com/cve/CVE-2021-35942.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -10651,6 +10687,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
             "https://linux.oracle.com/cve/CVE-2021-3326.html",
             "https://linux.oracle.com/errata/ELSA-2021-9344.html",
@@ -11016,6 +11053,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
+            "https://linux.oracle.com/cve/CVE-2021-33574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11055,6 +11094,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
+            "https://linux.oracle.com/cve/CVE-2021-35942.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -11332,6 +11373,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
             "https://linux.oracle.com/cve/CVE-2021-3326.html",
             "https://linux.oracle.com/errata/ELSA-2021-9344.html",
@@ -11697,6 +11739,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
+            "https://linux.oracle.com/cve/CVE-2021-33574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11736,6 +11780,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
+            "https://linux.oracle.com/cve/CVE-2021-35942.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -12013,6 +12059,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
             "https://linux.oracle.com/cve/CVE-2021-3326.html",
             "https://linux.oracle.com/errata/ELSA-2021-9344.html",
@@ -12378,6 +12425,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
+            "https://linux.oracle.com/cve/CVE-2021-33574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -12417,6 +12466,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
+            "https://linux.oracle.com/cve/CVE-2021-35942.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -12694,6 +12745,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
             "https://linux.oracle.com/cve/CVE-2021-3326.html",
             "https://linux.oracle.com/errata/ELSA-2021-9344.html",
@@ -13327,6 +13379,8 @@
             "https://dev.gnupg.org/T5466",
             "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
             "https://eprint.iacr.org/2021/923",
+            "https://linux.oracle.com/cve/CVE-2021-33560.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4409.html",
             "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
@@ -13419,14 +13473,127 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40528",
+            "https://dev.gnupg.org/rCb118681ebc4c9ea4b9da79b0f9541405a64f4c13",
             "https://eprint.iacr.org/2021/923",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320",
             "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
             "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
             "https://ubuntu.com/security/notices/USN-5080-1",
             "https://ubuntu.com/security/notices/USN-5080-2"
           ],
           "PublishedDate": "2021-09-06T19:15:00Z",
-          "LastModifiedDate": "2021-09-13T16:22:00Z"
+          "LastModifiedDate": "2021-11-17T07:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43618",
+          "PkgName": "libgmp-dev",
+          "InstalledVersion": "2:6.1.2+dfsg-4",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43618",
+          "Title": "gmp: Integer overflow and resultant buffer overflow via crafted input",
+          "Description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "https://bugs.debian.org/994405",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43618",
+            "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
+            "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e"
+          ],
+          "PublishedDate": "2021-11-15T04:15:00Z",
+          "LastModifiedDate": "2021-11-18T21:07:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43618",
+          "PkgName": "libgmp10",
+          "InstalledVersion": "2:6.1.2+dfsg-4",
+          "Layer": {
+            "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
+            "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43618",
+          "Title": "gmp: Integer overflow and resultant buffer overflow via crafted input",
+          "Description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "https://bugs.debian.org/994405",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43618",
+            "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
+            "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e"
+          ],
+          "PublishedDate": "2021-11-15T04:15:00Z",
+          "LastModifiedDate": "2021-11-18T21:07:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43618",
+          "PkgName": "libgmpxx4ldbl",
+          "InstalledVersion": "2:6.1.2+dfsg-4",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43618",
+          "Title": "gmp: Integer overflow and resultant buffer overflow via crafted input",
+          "Description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "https://bugs.debian.org/994405",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43618",
+            "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
+            "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e"
+          ],
+          "PublishedDate": "2021-11-15T04:15:00Z",
+          "LastModifiedDate": "2021-11-18T21:07:00Z"
         },
         {
           "VulnerabilityID": "CVE-2011-3389",
@@ -15001,13 +15168,14 @@
             "https://github.com/lz4/lz4/pull/972",
             "https://linux.oracle.com/cve/CVE-2021-3520.html",
             "https://linux.oracle.com/errata/ELSA-2021-2575.html",
+            "https://security.netapp.com/advisory/ntap-20211104-0005/",
             "https://ubuntu.com/security/notices/USN-4968-1",
             "https://ubuntu.com/security/notices/USN-4968-2",
             "https://www.oracle.com//security-alerts/cpujul2021.html",
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-02T13:15:00Z",
-          "LastModifiedDate": "2021-11-10T01:19:00Z"
+          "LastModifiedDate": "2021-11-17T22:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -15629,6 +15797,8 @@
             "http://seclists.org/fulldisclosure/2021/Feb/14",
             "https://bugs.gentoo.org/717920",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20838",
+            "https://linux.oracle.com/cve/CVE-2019-20838.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4373.html",
             "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
             "https://support.apple.com/kb/HT211931",
             "https://support.apple.com/kb/HT212147",
@@ -15712,6 +15882,8 @@
             "https://about.gitlab.com/releases/2020/07/01/security-release-13-1-2-release/",
             "https://bugs.gentoo.org/717920",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14155",
+            "https://linux.oracle.com/cve/CVE-2020-14155.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4373.html",
             "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
             "https://support.apple.com/kb/HT211931",
             "https://support.apple.com/kb/HT212147",
@@ -16365,6 +16537,8 @@
             "http://www.openwall.com/lists/oss-security/2021/08/17/3",
             "http://www.openwall.com/lists/oss-security/2021/09/07/3",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13529",
+            "https://linux.oracle.com/cve/CVE-2020-13529.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4361.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
             "https://security.netapp.com/advisory/ntap-20210625-0005/",
@@ -16459,6 +16633,7 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
+            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16466,7 +16641,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-10T01:17:00Z"
+          "LastModifiedDate": "2021-11-17T22:18:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000654",
@@ -16881,6 +17056,8 @@
             "http://www.openwall.com/lists/oss-security/2021/08/17/3",
             "http://www.openwall.com/lists/oss-security/2021/09/07/3",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13529",
+            "https://linux.oracle.com/cve/CVE-2020-13529.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4361.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
             "https://security.netapp.com/advisory/ntap-20210625-0005/",
@@ -16975,6 +17152,7 @@
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2LSDMHAKI4LGFOCSPXNVVSEWQFAVFWR7/",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/42TMJVNYRY65B4QCJICBYOEIVZV3KUYI/",
             "https://security.gentoo.org/glsa/202107-48",
+            "https://security.netapp.com/advisory/ntap-20211104-0008/",
             "https://ubuntu.com/security/notices/USN-5013-1",
             "https://ubuntu.com/security/notices/USN-5013-2",
             "https://www.debian.org/security/2021/dsa-4942",
@@ -16982,7 +17160,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-10T01:17:00Z"
+          "LastModifiedDate": "2021-11-17T22:18:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-25032",
@@ -17882,7 +18060,8 @@
             "https://security.netapp.com/advisory/ntap-20200103-0001/",
             "https://ubuntu.com/security/notices/USN-5120-1",
             "https://ubuntu.com/security/notices/USN-5136-1",
-            "https://ubuntu.com/security/notices/USN-5137-1"
+            "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2"
           ],
           "PublishedDate": "2019-12-08T02:15:00Z",
           "LastModifiedDate": "2020-01-03T11:15:00Z"
@@ -18226,7 +18405,8 @@
             "https://sites.google.com/view/syzscope/kasan-use-after-free-read-in-ucma_close-2",
             "https://syzkaller.appspot.com/bug?id=457491c4672d7b52c1007db213d93e47c711fae6",
             "https://ubuntu.com/security/notices/USN-5136-1",
-            "https://ubuntu.com/security/notices/USN-5137-1"
+            "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2"
           ],
           "PublishedDate": "2021-06-07T12:15:00Z",
           "LastModifiedDate": "2021-07-20T11:15:00Z"
@@ -18535,6 +18715,8 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3600",
             "https://git.kernel.org/linus/e88b2c6e5a4d9ce30d75391e4d950da74bb2bd90",
+            "https://linux.oracle.com/cve/CVE-2021-3600.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4356.html",
             "https://lore.kernel.org/patchwork/patch/1379497/",
             "https://ubuntu.com/security/notices/USN-5003-1",
             "https://www.openwall.com/lists/oss-security/2021/06/23/1"
@@ -19025,6 +19207,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42008",
             "https://git.kernel.org/linus/19d1532a187669ce86d5a2696eb7275310070793 (5.14-rc7)",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=19d1532a187669ce86d5a2696eb7275310070793",
+            "https://security.netapp.com/advisory/ntap-20211104-0002/",
             "https://ubuntu.com/security/notices/USN-5113-1",
             "https://ubuntu.com/security/notices/USN-5114-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
@@ -19033,7 +19216,7 @@
             "https://www.youtube.com/watch?v=d5f9xLK8Vhw"
           ],
           "PublishedDate": "2021-10-05T00:15:00Z",
-          "LastModifiedDate": "2021-11-10T01:19:00Z"
+          "LastModifiedDate": "2021-11-17T22:19:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42252",
@@ -19074,7 +19257,7 @@
           "LastModifiedDate": "2021-11-12T09:15:00Z"
         },
         {
-          "VulnerabilityID": "CVE-2021-42739",
+          "VulnerabilityID": "CVE-2021-43975",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.194-3",
           "Layer": {
@@ -19082,9 +19265,9 @@
             "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42739",
-          "Title": "kernel: Heap buffer overflow in firedtv driver",
-          "Description": "The firewire subsystem in the Linux kernel through 5.14.13 has a buffer overflow related to drivers/media/firewire/firedtv-avc.c and drivers/media/firewire/firedtv-ci.c, because avc_ca_pmt mishandles bounds checking.",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43975",
+          "Title": "kernel: out-of-bounds write in hw_atl_utils_fw_rpc_wait() in drivers/net/ethernet/aquantia/atlantic/hw_atl/hw_atl_utils.c",
+          "Description": "In the Linux kernel through 5.15.2, hw_atl_utils_fw_rpc_wait in drivers/net/ethernet/aquantia/atlantic/hw_atl/hw_atl_utils.c allows an attacker (who can introduce a crafted device) to trigger an out-of-bounds write via a crafted length value.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-787"
@@ -19097,18 +19280,16 @@
               "V3Score": 7.8
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.4
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
             }
           },
           "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42739",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=35d2969ea3c7d32aee78066b1f3cf61a0d935a4e",
-            "https://lore.kernel.org/linux-media/YHaulytonFcW+lyZ@mwanda/",
-            "https://seclists.org/oss-sec/2021/q2/46"
+            "https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git/commit/?id=b922f622592af76b57cbc566eaeccda0b31a3496",
+            "https://lore.kernel.org/netdev/163698540868.13805.17800408021782408762.git-patchwork-notify@kernel.org/T/"
           ],
-          "PublishedDate": "2021-10-20T07:15:00Z",
-          "LastModifiedDate": "2021-10-26T18:57:00Z"
+          "PublishedDate": "2021-11-17T17:15:00Z",
+          "LastModifiedDate": "2021-11-19T04:46:00Z"
         },
         {
           "VulnerabilityID": "CVE-2004-0230",
@@ -20662,9 +20843,6 @@
           "Title": "kernel: incorrect unprivileged overlayfs permission checking may lead to information disclosure",
           "Description": "Overlayfs did not properly perform permission checking when copying up files in an overlayfs and could be exploited from within a user namespace, if, for example, unprivileged user namespaces were allowed. It was possible to have a file not readable by an unprivileged user to be copied to a mountpoint controlled by the user, like a removable device. This was introduced in kernel version 4.19 by commit d1d04ef (\"ovl: stack file ops\"). This was fixed in kernel version 5.8 by commits 56230d9 (\"ovl: verify permissions in ovl_path_open()\"), 48bd024 (\"ovl: switch to mounter creds in readdir\") and 05acefb (\"ovl: check permission to open real file\"). Additionally, commits 130fdbc (\"ovl: pass correct flags for opening real directory\") and 292f902 (\"ovl: call secutiry hook in ovl_real_ioctl()\") in kernel 5.8 might also be desired or necessary. These additional commits introduced a regression in overlay mounts within user namespaces which prevented access to files with ownership outside of the user namespace. This regression was mitigated by subsequent commit b6650da (\"ovl: do not fail because of O_NOATIMEi\") in kernel 5.11.",
           "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-269"
-          ],
           "CVSS": {
             "nvd": {
               "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
@@ -20698,7 +20876,7 @@
             "https://www.openwall.com/lists/oss-security/2020/10/14/2"
           ],
           "PublishedDate": "2021-02-10T20:15:00Z",
-          "LastModifiedDate": "2021-02-18T16:00:00Z"
+          "LastModifiedDate": "2021-11-18T18:40:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-26141",
@@ -21125,7 +21303,9 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2005258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20317",
             "https://git.kernel.org/linus/511885d7061eda3eb1faf3f57dcc936ff75863f1 (5.4-rc1)",
-            "https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?id=511885d7061eda3eb1faf3f57dcc936ff75863f1"
+            "https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?id=511885d7061eda3eb1faf3f57dcc936ff75863f1",
+            "https://linux.oracle.com/cve/CVE-2021-20317.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4647.html"
           ],
           "PublishedDate": "2021-09-27T11:15:00Z",
           "LastModifiedDate": "2021-10-05T19:46:00Z"
@@ -21311,6 +21491,7 @@
             "https://ubuntu.com/security/notices/USN-5096-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
             "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T05:15:00Z",
@@ -21357,6 +21538,7 @@
             "https://ubuntu.com/security/notices/USN-5096-1",
             "https://ubuntu.com/security/notices/USN-5115-1",
             "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2",
             "https://www.openwall.com/lists/oss-security/2021/08/01/3"
           ],
           "PublishedDate": "2021-08-02T04:15:00Z",
@@ -21538,6 +21720,7 @@
             "https://ubuntu.com/security/notices/USN-5117-1",
             "https://ubuntu.com/security/notices/USN-5136-1",
             "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2",
             "https://www.openwall.com/lists/oss-security/2021/08/27/2"
           ]
         },
@@ -21595,6 +21778,7 @@
             "https://ubuntu.com/security/notices/USN-5117-1",
             "https://ubuntu.com/security/notices/USN-5136-1",
             "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2",
             "https://www.openwall.com/lists/oss-security/2021/09/01/4"
           ]
         },
@@ -21624,7 +21808,8 @@
             "https://ubuntu.com/security/notices/USN-5120-1",
             "https://ubuntu.com/security/notices/USN-5135-1",
             "https://ubuntu.com/security/notices/USN-5136-1",
-            "https://ubuntu.com/security/notices/USN-5137-1"
+            "https://ubuntu.com/security/notices/USN-5137-1",
+            "https://ubuntu.com/security/notices/USN-5137-2"
           ]
         },
         {
@@ -21853,6 +22038,47 @@
           ]
         },
         {
+          "VulnerabilityID": "CVE-2021-42739",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42739",
+          "Title": "kernel: Heap buffer overflow in firedtv driver",
+          "Description": "The firewire subsystem in the Linux kernel through 5.14.13 has a buffer overflow related to drivers/media/firewire/firedtv-avc.c and drivers/media/firewire/firedtv-ci.c, because avc_ca_pmt mishandles bounds checking.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 4.6,
+              "V3Score": 6.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42739",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=35d2969ea3c7d32aee78066b1f3cf61a0d935a4e",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6EHZNHNHRLPC2NJKUDS5PJG5AGRYJVJN/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AOWGMZ2MJFUGNA5QSD5JF4QHIC4URATS/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CKMQEOEESIO3GMHAOL3NYS36FER6UTWA/",
+            "https://lore.kernel.org/linux-media/YHaulytonFcW+lyZ@mwanda/",
+            "https://seclists.org/oss-sec/2021/q2/46",
+            "https://security.netapp.com/advisory/ntap-20211118-0001/"
+          ],
+          "PublishedDate": "2021-10-20T07:15:00Z",
+          "LastModifiedDate": "2021-11-18T16:00:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-43389",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.194-3",
@@ -21894,6 +22120,37 @@
           ],
           "PublishedDate": "2021-11-04T19:15:00Z",
           "LastModifiedDate": "2021-11-09T15:26:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43976",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43976",
+          "Title": "kernel: mwifiex_usb_recv() in drivers/net/wireless/marvell/mwifiex/usb.c allows an attacker to cause DoS via crafted USB device",
+          "Description": "In the Linux kernel through 5.15.2, mwifiex_usb_recv in drivers/net/wireless/marvell/mwifiex/usb.c allows an attacker (who can connect a crafted USB device) to cause a denial of service (skb_over_panic).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 2.1,
+              "V3Score": 4.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 4.6
+            }
+          },
+          "References": [
+            "https://patchwork.kernel.org/project/linux-wireless/patch/YX4CqjfRcTa6bVL+@Zekuns-MBP-16.fios-router.home/"
+          ],
+          "PublishedDate": "2021-11-17T17:15:00Z",
+          "LastModifiedDate": "2021-11-19T04:45:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-19882",
@@ -22452,6 +22709,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
+            "https://linux.oracle.com/cve/CVE-2021-33574.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -22491,6 +22750,8 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
+            "https://linux.oracle.com/cve/CVE-2021-35942.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -22768,6 +23029,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2021/01/28/2",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2146",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3326",
             "https://linux.oracle.com/cve/CVE-2021-3326.html",
             "https://linux.oracle.com/errata/ELSA-2021-9344.html",
