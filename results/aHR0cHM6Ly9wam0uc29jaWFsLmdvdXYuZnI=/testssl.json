@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (16)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 15 days (9)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2021-11-30 08:23"
           }
 ,         {
