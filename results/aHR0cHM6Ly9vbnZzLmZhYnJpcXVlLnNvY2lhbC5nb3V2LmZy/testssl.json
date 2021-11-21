@@ -213,7 +213,7 @@
               "ip"           : "onvs.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +353,7 @@
               "ip"           : "onvs.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (28)"
+              "finding"      : "expires < 30 days (21)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1119,6 +1119,6 @@
               "ip"           : "onvs.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "88"
           }
 ]

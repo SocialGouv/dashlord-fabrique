@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 14 Nov 2021 01:32:44",
+	"@generated": "Sun, 21 Nov 2021 01:33:17",
 	"site":[ 
 		{
 			"@name": "https://onvs.fabrique.social.gouv.fr",
@@ -222,7 +222,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "55"
+					"sourceid": "57"
 				},
 				{
 					"pluginid": "10015",
@@ -413,7 +413,7 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/polyfills-687e794d8e071078d3f3.js",
+							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/webpack-a6ab0247429f494db257.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -973,7 +973,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/polyfills-687e794d8e071078d3f3.js",
+							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/webpack-a6ab0247429f494db257.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1061,7 +1061,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "38"
+					"sourceid": "49"
 				}
 			]
 		}
