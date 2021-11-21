@@ -116,6 +116,365 @@
           "LastModifiedDate": "2021-05-26T10:15:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-42378",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42378",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:40:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42379",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42379",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42380",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42380",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:38:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42381",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42381",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42382",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42382",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42383",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42383",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42384",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42384",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:35:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42385",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42385",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:33:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42386",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42386",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-16T21:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42374",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42374",
+          "Title": "busybox: out-of-bounds read in unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed",
+          "Description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V2Score": 3.3,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.7
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-19T15:59:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-3711",
           "PkgName": "libcrypto1.1",
           "InstalledVersion": "1.1.1i-r0",
@@ -821,6 +1180,365 @@
           ],
           "PublishedDate": "2021-03-19T05:15:00Z",
           "LastModifiedDate": "2021-05-26T10:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42378",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42378",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:40:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42379",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42379",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42380",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42380",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:38:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42381",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42381",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42382",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42382",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42383",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42383",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42384",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42384",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:35:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42385",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42385",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-17T00:33:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42386",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42386",
+          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc()",
+          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.5,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.6
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-16T21:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42374",
+          "PkgName": "ssl_client",
+          "InstalledVersion": "1.31.1-r9",
+          "FixedVersion": "1.31.1-r11",
+          "Layer": {
+            "Digest": "sha256:0a6724ff3fcd51338afdfdc2b1d4ffd04569818e31efad957213d67c29b45101",
+            "DiffID": "sha256:0fcbbeeeb0d7fc5c06362d7a6717b999e605574c7210eff4f7418f6e9be9fbfe"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42374",
+          "Title": "busybox: out-of-bounds read in unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed",
+          "Description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V2Score": 3.3,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.7
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+          ],
+          "PublishedDate": "2021-11-15T21:15:00Z",
+          "LastModifiedDate": "2021-11-19T15:59:00Z"
         }
       ]
     }

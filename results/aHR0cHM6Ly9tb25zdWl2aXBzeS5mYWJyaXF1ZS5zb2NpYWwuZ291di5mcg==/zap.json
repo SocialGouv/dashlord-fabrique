@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 14 Nov 2021 01:30:13",
+	"@generated": "Sun, 21 Nov 2021 01:32:53",
 	"site":[ 
 		{
 			"@name": "https://monsuivipsy.fabrique.social.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "87"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10055",
@@ -173,7 +173,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "38"
+					"sourceid": "39"
 				},
 				{
 					"pluginid": "10015",
@@ -508,7 +508,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "63"
+					"sourceid": "62"
 				},
 				{
 					"pluginid": "10094",
@@ -616,7 +616,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "95"
+					"sourceid": "96"
 				},
 				{
 					"pluginid": "10027",
@@ -643,13 +643,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://monsuivipsy.fabrique.social.gouv.fr/_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.53c3df775484e1739959.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
 							"uri": "https://monsuivipsy.fabrique.social.gouv.fr/_next/static/chunks/framework.e3de07479da4f2477dea.js",
 							"method": "GET",
 							"param": "",
@@ -658,6 +651,13 @@
 						},
 						{
 							"uri": "https://monsuivipsy.fabrique.social.gouv.fr/_next/static/chunks/main-a82a5dbffdd669eb3a59.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://monsuivipsy.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-206fc76221ada6d42a8d.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
