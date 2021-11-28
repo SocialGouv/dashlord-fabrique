@@ -522,11 +522,12 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
             "https://www.unicode.org/reports/tr39/"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:16:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2017-18018",
@@ -1201,7 +1202,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -1276,7 +1277,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -1351,7 +1352,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -1426,7 +1427,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -1575,7 +1576,7 @@
             "https://ubuntu.com/security/notices/USN-4990-1"
           ],
           "PublishedDate": "2021-08-05T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-26T21:06:00Z"
         },
         {
           "VulnerabilityID": "CVE-2020-12762",
@@ -1629,6 +1630,39 @@
           ],
           "PublishedDate": "2020-05-09T18:15:00Z",
           "LastModifiedDate": "2021-05-21T09:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-17049",
+          "PkgName": "krb5-libs",
+          "InstalledVersion": "1.18.2-8.el8",
+          "Layer": {
+            "Digest": "sha256:ae6ccfc62b2d03098658a8269f0c57cba67f4175498561b8bf8883cb69068cb1",
+            "DiffID": "sha256:795721140ae94a9fbd18f379c723222894f4ba5418603da77d9ca595b924379b"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-17049",
+          "Title": "Kerberos: delegation constrain bypass in S4U2Proxy",
+          "Description": "Kerberos Security Feature Bypass Vulnerability",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 9,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/10/3",
+            "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-17049",
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-17049"
+          ],
+          "PublishedDate": "2020-11-11T07:15:00Z",
+          "LastModifiedDate": "2021-11-10T16:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -1707,7 +1741,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -2152,11 +2186,12 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
             "https://www.unicode.org/reports/tr39/"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:16:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42694",
@@ -2194,10 +2229,11 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Canonical_Represenation"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:17:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-12904",
@@ -2412,11 +2448,12 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
             "https://www.unicode.org/reports/tr39/"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:16:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42694",
@@ -2454,10 +2491,11 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Canonical_Represenation"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:17:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36084",
@@ -2861,11 +2899,12 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Bidirectional_Text_Spoofing",
             "https://www.unicode.org/reports/tr39/"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:16:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42694",
@@ -2903,10 +2942,11 @@
             "https://trojansource.codes/",
             "https://www.kb.cert.org/vuls/id/999008",
             "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
             "https://www.unicode.org/reports/tr36/#Canonical_Represenation"
           ],
           "PublishedDate": "2021-11-01T04:15:00Z",
-          "LastModifiedDate": "2021-11-16T15:17:00Z"
+          "LastModifiedDate": "2021-11-26T14:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -3338,7 +3378,7 @@
             "https://ubuntu.com/security/notices/USN-4990-1"
           ],
           "PublishedDate": "2021-08-05T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-26T21:06:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-23840",
@@ -3376,7 +3416,7 @@
             "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
             "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
             "https://linux.oracle.com/cve/CVE-2021-23840.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9561.html",
             "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
             "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
             "https://security.gentoo.org/glsa/202103-03",
@@ -3433,7 +3473,7 @@
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807",
             "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
             "https://linux.oracle.com/cve/CVE-2021-23841.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9561.html",
             "https://security.gentoo.org/glsa/202103-03",
             "https://security.netapp.com/advisory/ntap-20210219-0009/",
             "https://security.netapp.com/advisory/ntap-20210513-0002/",
@@ -3541,7 +3581,7 @@
             "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
             "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
             "https://linux.oracle.com/cve/CVE-2021-23840.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9561.html",
             "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
             "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
             "https://security.gentoo.org/glsa/202103-03",
@@ -3598,7 +3638,7 @@
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807",
             "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
             "https://linux.oracle.com/cve/CVE-2021-23841.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9561.html",
             "https://security.gentoo.org/glsa/202103-03",
             "https://security.netapp.com/advisory/ntap-20210219-0009/",
             "https://security.netapp.com/advisory/ntap-20210513-0002/",
@@ -4794,7 +4834,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4889,7 +4929,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -4984,7 +5024,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -5079,7 +5119,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-20839",
@@ -5271,7 +5311,7 @@
             "https://ubuntu.com/security/notices/USN-5093-1"
           ],
           "PublishedDate": "2021-09-15T08:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-24T21:46:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3796",
@@ -5315,7 +5355,7 @@
             "https://ubuntu.com/security/notices/USN-5093-1"
           ],
           "PublishedDate": "2021-09-15T13:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-24T21:46:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3872",
@@ -5439,10 +5479,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:40:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42379",
@@ -5475,10 +5517,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:39:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42380",
@@ -5511,10 +5555,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:38:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42381",
@@ -5547,10 +5593,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:37:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42382",
@@ -5583,10 +5631,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42383",
@@ -5618,10 +5668,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42384",
@@ -5654,10 +5706,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:35:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42385",
@@ -5690,10 +5744,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:33:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42386",
@@ -5726,10 +5782,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-16T21:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42374",
@@ -5762,10 +5820,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T15:59:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42375",
@@ -5794,10 +5854,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T16:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42378",
@@ -5830,10 +5892,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:40:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42379",
@@ -5866,10 +5930,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:39:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42380",
@@ -5902,10 +5968,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:38:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42381",
@@ -5938,10 +6006,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:37:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42382",
@@ -5974,10 +6044,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42383",
@@ -6009,10 +6081,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42384",
@@ -6045,10 +6119,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:35:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42385",
@@ -6081,10 +6157,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:33:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42386",
@@ -6117,10 +6195,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-16T21:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42374",
@@ -6153,10 +6233,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T15:59:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42375",
@@ -6185,10 +6267,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T16:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         }
       ]
     }
@@ -6233,10 +6317,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:40:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42379",
@@ -6269,10 +6355,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:39:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42380",
@@ -6305,10 +6393,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:38:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42381",
@@ -6341,10 +6431,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:37:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42382",
@@ -6377,10 +6469,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42383",
@@ -6412,10 +6506,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42384",
@@ -6448,10 +6544,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:35:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42385",
@@ -6484,10 +6582,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:33:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42386",
@@ -6520,10 +6620,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-16T21:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42374",
@@ -6556,10 +6658,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T15:59:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42375",
@@ -6588,10 +6692,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T16:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42378",
@@ -6624,10 +6730,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:40:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42379",
@@ -6660,10 +6768,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:39:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42380",
@@ -6696,10 +6806,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:38:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42381",
@@ -6732,10 +6844,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:37:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42382",
@@ -6768,10 +6882,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42383",
@@ -6803,10 +6919,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:36:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42384",
@@ -6839,10 +6957,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:35:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42385",
@@ -6875,10 +6995,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-17T00:33:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42386",
@@ -6911,10 +7033,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-16T21:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42374",
@@ -6947,10 +7071,12 @@
           },
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T15:59:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42375",
@@ -6979,10 +7105,12 @@
             }
           },
           "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/"
+            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
           ],
           "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-19T16:50:00Z"
+          "LastModifiedDate": "2021-11-25T03:15:00Z"
         }
       ]
     }
