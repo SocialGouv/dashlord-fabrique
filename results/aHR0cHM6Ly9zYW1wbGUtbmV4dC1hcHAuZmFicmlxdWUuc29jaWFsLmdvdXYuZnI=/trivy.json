@@ -103,6 +103,35 @@
           "LastModifiedDate": "2019-08-03T13:15:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-37322",
+          "PkgName": "binutils",
+          "InstalledVersion": "2.31.1-16",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37322",
+          "Description": "GCC c++filt v2.26 was discovered to contain a use-after-free vulnerability via the component cplus-dem.c.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=99188"
+          ],
+          "PublishedDate": "2021-11-18T22:15:00Z",
+          "LastModifiedDate": "2021-11-23T00:31:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2018-1000876",
           "PkgName": "binutils",
           "InstalledVersion": "2.31.1-16",
@@ -2494,6 +2523,35 @@
           ],
           "PublishedDate": "2018-06-23T23:29:00Z",
           "LastModifiedDate": "2019-08-03T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37322",
+          "PkgName": "binutils-common",
+          "InstalledVersion": "2.31.1-16",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37322",
+          "Description": "GCC c++filt v2.26 was discovered to contain a use-after-free vulnerability via the component cplus-dem.c.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=99188"
+          ],
+          "PublishedDate": "2021-11-18T22:15:00Z",
+          "LastModifiedDate": "2021-11-23T00:31:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000876",
@@ -4887,6 +4945,35 @@
           ],
           "PublishedDate": "2018-06-23T23:29:00Z",
           "LastModifiedDate": "2019-08-03T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37322",
+          "PkgName": "binutils-x86-64-linux-gnu",
+          "InstalledVersion": "2.31.1-16",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37322",
+          "Description": "GCC c++filt v2.26 was discovered to contain a use-after-free vulnerability via the component cplus-dem.c.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=99188"
+          ],
+          "PublishedDate": "2021-11-18T22:15:00Z",
+          "LastModifiedDate": "2021-11-23T00:31:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000876",
@@ -7718,7 +7805,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -7916,6 +8003,35 @@
           ],
           "PublishedDate": "2018-06-23T23:29:00Z",
           "LastModifiedDate": "2019-08-03T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-37322",
+          "PkgName": "libbinutils",
+          "InstalledVersion": "2.31.1-16",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-37322",
+          "Description": "GCC c++filt v2.26 was discovered to contain a use-after-free vulnerability via the component cplus-dem.c.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=99188"
+          ],
+          "PublishedDate": "2021-11-18T22:15:00Z",
+          "LastModifiedDate": "2021-11-23T00:31:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000876",
@@ -10368,7 +10484,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://linux.oracle.com/cve/CVE-2021-33574.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -10409,7 +10525,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -11054,7 +11170,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://linux.oracle.com/cve/CVE-2021-33574.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11095,7 +11211,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -11740,7 +11856,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://linux.oracle.com/cve/CVE-2021-33574.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -11781,7 +11897,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -12426,7 +12542,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://linux.oracle.com/cve/CVE-2021-33574.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -12467,7 +12583,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -14363,7 +14479,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -14599,7 +14715,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -14677,7 +14793,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -14755,7 +14871,7 @@
             "https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49",
             "https://github.com/krb5/krb5/releases",
             "https://linux.oracle.com/cve/CVE-2021-37750.html",
-            "https://linux.oracle.com/errata/ELSA-2021-3576.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4788.html",
             "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MFCLW7D46E4VCREKKH453T5DA4XOLHU2/",
             "https://security.netapp.com/advisory/ntap-20210923-0002/",
@@ -15310,6 +15426,44 @@
           "LastModifiedDate": "2021-07-26T16:30:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "libmariadb-dev",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-2372",
           "PkgName": "libmariadb-dev-compat",
           "InstalledVersion": "1:10.3.29-0+deb10u1",
@@ -15391,6 +15545,44 @@
           "LastModifiedDate": "2021-07-26T16:30:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "libmariadb-dev-compat",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-2372",
           "PkgName": "libmariadb3",
           "InstalledVersion": "1:10.3.29-0+deb10u1",
@@ -15470,6 +15662,44 @@
           ],
           "PublishedDate": "2021-07-21T15:15:00Z",
           "LastModifiedDate": "2021-07-26T16:30:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "libmariadb3",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-37600",
@@ -15931,6 +16161,23 @@
           "LastModifiedDate": "2020-02-05T22:10:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2020-16156",
+          "PkgName": "libperl5.28",
+          "InstalledVersion": "5.28.1-6+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-16156",
+          "Description": "[Signature Verification Bypass]",
+          "Severity": "MEDIUM",
+          "References": [
+            "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+            "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16156"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2019-9193",
           "PkgName": "libpq5",
           "InstalledVersion": "11.12-0+deb10u1",
@@ -15977,7 +16224,7 @@
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23214",
           "Title": "postgresql: server processes unencrypted bytes from man-in-the-middle",
-          "Description": "No description is available for this CVE.",
+          "Description": "It was found that a PostgreSQL server could accept plain text data during the establishment of an SSL connection. When a user is requesting a certificate based authentication, an active Person in the Middle could use this flaw in order to inject arbitrary SQL commands.",
           "Severity": "HIGH",
           "CVSS": {
             "redhat": {
@@ -16641,7 +16888,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2018-1000654",
@@ -17160,7 +17407,7 @@
             "https://www.qualys.com/2021/07/20/cve-2021-33910/denial-of-service-systemd.txt"
           ],
           "PublishedDate": "2021-07-20T19:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:18:00Z"
+          "LastModifiedDate": "2021-11-23T21:44:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-25032",
@@ -18401,7 +18648,7 @@
             "https://git.kernel.org/linus/f5449e74802c1112dea984aec8af7a33c4516af1",
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f5449e74802c1112dea984aec8af7a33c4516af1",
             "https://linux.oracle.com/cve/CVE-2020-36385.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4056.html",
+            "https://linux.oracle.com/errata/ELSA-2021-4777.html",
             "https://sites.google.com/view/syzscope/kasan-use-after-free-read-in-ucma_close-2",
             "https://syzkaller.appspot.com/bug?id=457491c4672d7b52c1007db213d93e47c711fae6",
             "https://ubuntu.com/security/notices/USN-5136-1",
@@ -18810,7 +19057,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3653",
             "https://github.com/torvalds/linux/commit/3d6368ef580a",
             "https://linux.oracle.com/cve/CVE-2021-3653.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9453.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9565.html",
             "https://lists.debian.org/debian-lts-announce/2021/10/msg00010.html",
             "https://ubuntu.com/security/notices/USN-5062-1",
             "https://ubuntu.com/security/notices/USN-5070-1",
@@ -18848,7 +19095,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3656",
             "https://github.com/torvalds/linux/commit/89c8a4984fc9",
             "https://linux.oracle.com/cve/CVE-2021-3656.html",
-            "https://linux.oracle.com/errata/ELSA-2021-9453.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9565.html",
             "https://ubuntu.com/security/notices/USN-5070-1",
             "https://ubuntu.com/security/notices/USN-5071-1",
             "https://ubuntu.com/security/notices/USN-5071-2",
@@ -19216,7 +19463,7 @@
             "https://www.youtube.com/watch?v=d5f9xLK8Vhw"
           ],
           "PublishedDate": "2021-10-05T00:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-26T21:04:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-42252",
@@ -19280,16 +19527,18 @@
               "V3Score": 7.8
             },
             "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 7.8
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
             }
           },
           "References": [
             "https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git/commit/?id=b922f622592af76b57cbc566eaeccda0b31a3496",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X24M7KDC4OJOZNS3RDSYC7ELNELOLQ2N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YODMYMGZYDXQKGJGX7TJG4XV4L5YLLBD/",
             "https://lore.kernel.org/netdev/163698540868.13805.17800408021782408762.git-patchwork-notify@kernel.org/T/"
           ],
           "PublishedDate": "2021-11-17T17:15:00Z",
-          "LastModifiedDate": "2021-11-19T04:46:00Z"
+          "LastModifiedDate": "2021-11-27T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2004-0230",
@@ -21745,6 +21994,8 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3744",
             "https://kernel.googlesource.com/pub/scm/linux/kernel/git/herbert/crypto-2.6/+/505d9dcb0f7ddf9d075e729523a33d38642ae680%5E%21/#F0",
+            "https://linux.oracle.com/cve/CVE-2021-3744.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9565.html",
             "https://seclists.org/oss-sec/2021/q3/164",
             "https://ubuntu.com/security/notices/USN-5139-1",
             "https://ubuntu.com/security/notices/USN-5140-1"
@@ -22038,6 +22289,25 @@
           ]
         },
         {
+          "VulnerabilityID": "CVE-2021-4002",
+          "PkgName": "linux-libc-dev",
+          "InstalledVersion": "4.19.194-3",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4002",
+          "Title": "kernel: possible leak or coruption of data residing on hugetlbfs",
+          "Description": "No description is available for this CVE.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+              "V3Score": 4.4
+            }
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2021-42739",
           "PkgName": "linux-libc-dev",
           "InstalledVersion": "4.19.194-3",
@@ -22147,10 +22417,12 @@
             }
           },
           "References": [
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X24M7KDC4OJOZNS3RDSYC7ELNELOLQ2N/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YODMYMGZYDXQKGJGX7TJG4XV4L5YLLBD/",
             "https://patchwork.kernel.org/project/linux-wireless/patch/YX4CqjfRcTa6bVL+@Zekuns-MBP-16.fios-router.home/"
           ],
           "PublishedDate": "2021-11-17T17:15:00Z",
-          "LastModifiedDate": "2021-11-19T04:45:00Z"
+          "LastModifiedDate": "2021-11-27T03:15:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-19882",
@@ -22449,6 +22721,44 @@
           "LastModifiedDate": "2021-07-26T16:30:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "mariadb-client-10.3",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-2372",
           "PkgName": "mariadb-client-core-10.3",
           "InstalledVersion": "1:10.3.29-0+deb10u1",
@@ -22530,6 +22840,44 @@
           "LastModifiedDate": "2021-07-26T16:30:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "mariadb-client-core-10.3",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
+        },
+        {
           "VulnerabilityID": "CVE-2021-2372",
           "PkgName": "mariadb-common",
           "InstalledVersion": "1:10.3.29-0+deb10u1",
@@ -22609,6 +22957,44 @@
           ],
           "PublishedDate": "2021-07-21T15:15:00Z",
           "LastModifiedDate": "2021-07-26T16:30:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35604",
+          "PkgName": "mariadb-common",
+          "InstalledVersion": "1:10.3.29-0+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35604",
+          "Title": "mysql: InnoDB unspecified vulnerability (CPU Oct 2021)",
+          "Description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V2Score": 5.5,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5MLAXYFLUDC636S46X34USCLDZAOFBM2/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PRCU3RTIPVKPC3GMC76YW7DJEXUEY6FG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XF3ZFPL3JJ26YRUGXLXQZYJBLZV3WC2C/",
+            "https://security.netapp.com/advisory/ntap-20211022-0003/",
+            "https://ubuntu.com/security/notices/USN-5123-1",
+            "https://ubuntu.com/security/notices/USN-5123-2",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-10-20T11:17:00Z",
+          "LastModifiedDate": "2021-11-17T15:00:00Z"
         },
         {
           "VulnerabilityID": "CVE-2021-37600",
@@ -22710,7 +23096,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
             "https://linux.oracle.com/cve/CVE-2021-33574.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RBUUWUGXVILQXVWEOU7N42ICHPJNAEUP/",
             "https://security.gentoo.org/glsa/202107-07",
             "https://security.netapp.com/advisory/ntap-20210629-0005/",
@@ -22751,7 +23137,7 @@
           "References": [
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35942",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4358.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://security.netapp.com/advisory/ntap-20210827-0005/",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=28011",
             "https://sourceware.org/git/?p=glibc.git;a=commit;h=5adda61f62b77384718b4c0d8336ade8f2b4b35c",
@@ -23762,6 +24148,23 @@
           "LastModifiedDate": "2020-02-05T22:10:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2020-16156",
+          "PkgName": "perl",
+          "InstalledVersion": "5.28.1-6+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-16156",
+          "Description": "[Signature Verification Bypass]",
+          "Severity": "MEDIUM",
+          "References": [
+            "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+            "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16156"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2011-4116",
           "PkgName": "perl-base",
           "InstalledVersion": "5.28.1-6+deb10u1",
@@ -23800,6 +24203,23 @@
           "LastModifiedDate": "2020-02-05T22:10:00Z"
         },
         {
+          "VulnerabilityID": "CVE-2020-16156",
+          "PkgName": "perl-base",
+          "InstalledVersion": "5.28.1-6+deb10u1",
+          "Layer": {
+            "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
+            "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-16156",
+          "Description": "[Signature Verification Bypass]",
+          "Severity": "MEDIUM",
+          "References": [
+            "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+            "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16156"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2011-4116",
           "PkgName": "perl-modules-5.28",
           "InstalledVersion": "5.28.1-6+deb10u1",
@@ -23836,6 +24256,23 @@
           ],
           "PublishedDate": "2020-01-31T18:15:00Z",
           "LastModifiedDate": "2020-02-05T22:10:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-16156",
+          "PkgName": "perl-modules-5.28",
+          "InstalledVersion": "5.28.1-6+deb10u1",
+          "Layer": {
+            "Digest": "sha256:9acf2bd1a92f4864c95cf967d339f3df8582b1f4e153afdd3c7c11f1293b1646",
+            "DiffID": "sha256:732ef5169bfd82742f9b143d44cd0ef0abdd957769a4262f7044d9f7df1fc072"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-16156",
+          "Description": "[Signature Verification Bypass]",
+          "Severity": "MEDIUM",
+          "References": [
+            "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+            "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16156"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2005-2541",

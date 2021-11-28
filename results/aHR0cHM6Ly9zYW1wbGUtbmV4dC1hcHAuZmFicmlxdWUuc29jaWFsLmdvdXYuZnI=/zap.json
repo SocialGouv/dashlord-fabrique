@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 21 Nov 2021 01:55:24",
+	"@generated": "Sun, 28 Nov 2021 01:50:44",
 	"site":[ 
 		{
 			"@name": "https://sample-next-app.fabrique.social.gouv.fr",
@@ -161,7 +161,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "27"
+					"sourceid": "29"
 				},
 				{
 					"pluginid": "10110",
@@ -919,7 +919,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/polyfills-687e794d8e071078d3f3.js",
+							"uri": "https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-c32d10c98147f788e8b0.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
