@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az154-786:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az290-628:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2021-11-21 01:34:04        --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2021-11-28 01:30:47        --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -99,15 +99,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>046B2DCB75C1886FFB7C854E654861526113 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 4B1A75A891ACFC44F8E5B9814C613C65B2300EC4
-                              SHA256 8A5056E0749E63FC063EDC8211D32B47EB8052B00B50948A78823F1C0C67BFCD
+<span style="font-weight:bold;"> Serial                       </span>044A145CEF05D0E3F6E994544A7E3A905DB6 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 D6419517B014172639CE8018CBE8F59898C52251
+                              SHA256 3E0E134E8A462367F720A5837A9FD2A0B1FE2E965AF21C316B67FC7DEF2B4B49
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>monsuivipsy.fabrique.social.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>monsuivipsy.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 15 days (9)</span> (2021-09-01 20:42 --&gt; 2021-11-30 20:42)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2021-11-23 08:34 --&gt; 2022-02-21 08:34)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -165,7 +165,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=8A5056E0749E63FC063EDC8211D32B47EB8052B00B50948A78823F1C0C67BFCD" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=8A5056E0749E63FC063EDC8211D32B47EB8052B00B50948A78823F1C0C67BFCD</a> could help you to find out
+                                           <a href="https://censys.io/ipv4?q=3E0E134E8A462367F720A5837A9FD2A0B1FE2E965AF21C316B67FC7DEF2B4B49" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=3E0E134E8A462367F720A5837A9FD2A0B1FE2E965AF21C316B67FC7DEF2B4B49</a> could help you to find out
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -225,7 +225,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2021-11-21 01:35:32 [  91s] --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2021-11-28 01:32:57 [ 132s] --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
