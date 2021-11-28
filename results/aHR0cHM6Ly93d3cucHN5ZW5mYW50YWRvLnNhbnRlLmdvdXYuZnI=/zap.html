@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 21 Nov 2021 01:48:17
+		Generated on Sun, 28 Nov 2021 01:43:30
 	</h3>
 
 	
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +160,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>7</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -196,27 +196,47 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">5</td>
+				<td align="center">3</td>
+			</tr>
+			<tr>
+				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">5</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10108">Reverse Tabnabbing</a></td>
 				<td align="center" class="risk-2">Medium</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
+				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
+				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10011">Cookie Without Secure Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
+				<td align="center">8</td>
 			</tr>
 			<tr>
 				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
+				<td align="center">8</td>
+			</tr>
+			<tr>
+				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Incomplete or No Cache-control Header Set</a></td>
@@ -236,7 +256,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">638</td>
+				<td align="center">644</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -327,7 +347,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 					<tr>
@@ -353,59 +373,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies">https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/mentions-legales">https://www.psyenfantado.sante.gouv.fr/mentions-legales</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 					<tr>
@@ -431,12 +399,158 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">3</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
+							<br />
+						
+							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<br />
+						
+							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
+							<br />
+						
+							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<br />
+						
+							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
+							<br />
+						
+							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="10055"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">CSP: script-src unsafe-inline</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>script-src includes unsafe-inline.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr">https://www.psyenfantado.sante.gouv.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/">https://www.psyenfantado.sante.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -525,7 +639,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 					<tr>
@@ -551,59 +665,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies">https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/mentions-legales">https://www.psyenfantado.sante.gouv.fr/mentions-legales</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 					<tr>
@@ -629,12 +691,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data:;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
+						<td width="80%">default-src &#39;self&#39; https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src &#39;none&#39;;script-src &#39;self&#39; https://stats.data.gouv.fr/ https://forms.sbc08.com &#39;unsafe-inline&#39;;script-src-attr &#39;unsafe-inline&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -703,6 +765,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies">https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;a href=&quot;https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/faq">https://www.psyenfantado.sante.gouv.fr/faq</a></td>
 					</tr>
 					<tr>
@@ -728,7 +816,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -765,6 +853,236 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10108/">10108</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="90003"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">Sub Resource Integrity Attribute Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;https://forms.sbc08.com/form.js&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Provide a valid integrity attribute to the tag.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90003/">90003</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10202"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Absence of Anti-CSRF Tokens</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>No Anti-CSRF tokens were found in a HTML submission form.</div>
+							<br />
+						
+							<div>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</div>
+							<br />
+						
+							<div>CSRF attacks are effective in a number of situations, including:</div>
+							<br />
+						
+							<div>    * The victim has an active session on the target site.</div>
+							<br />
+						
+							<div>    * The victim is authenticated via HTTP auth on the target site.</div>
+							<br />
+						
+							<div>    * The victim is on the same local network as the target site.</div>
+							<br />
+						
+							<div>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;sb_form&quot;
+                      onsubmit=&quot;process2(
+    &#39;https://services.sarbacane.com/core/v1/forms/contacts/upsert?listID&amp;#x3D;gK9pKC6aT7ehlKKhbmLt9A&amp;amp;formID&amp;#x3D;hgLXy0uPQ0GSIAjQUj4hgQ&amp;amp;timezone&amp;#x3D;Europe/Paris&#39;, &#39;https://forms.sbc08.com/&#39;, &#39;5a5873edb85b530da84d23f7&#39;, &#39;false&#39;, &#39;message&#39;,
+    &#39;&#39;, &#39;https://services.sarbacane.com/core/v1/transactional/sendmessage/optin&#39;, &#39;Merci&#39;, &#39;Votre email a bien été enregistré.&#39;,
+    &#39;Vous allez recevoir un email&#39;, &#39;Vous devrez cliquer sur le lien de confirmation pour valider votre inscription&#39;, &#39;Erreur&#39;,
+    &#39;Une erreur inattendue s%27est produite.&#39;, &#39;Le formulaire est en cours d%27édition, veuillez patienter quelques minutes avant d%27essayer à nouveau.&#39;, &#39;&#39;,
+    &#39;&#39;, &#39;&#39;
+  );
+  return false;&quot;
+                      method=&quot;post&quot;&gt;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Phase: Architecture and Design</div>
+							<br />
+						
+							<div>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</div>
+							<br />
+						
+							<div>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</div>
+							<br />
+						
+							<div>Phase: Implementation</div>
+							<br />
+						
+							<div>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</div>
+							<br />
+						
+							<div>Phase: Architecture and Design</div>
+							<br />
+						
+							<div>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</div>
+							<br />
+						
+							<div>Note that this can be bypassed using XSS.</div>
+							<br />
+						
+							<div>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</div>
+							<br />
+						
+							<div>Note that this can be bypassed using XSS.</div>
+							<br />
+						
+							<div>Use the ESAPI Session Management control.</div>
+							<br />
+						
+							<div>This control includes a component for CSRF.</div>
+							<br />
+						
+							<div>Do not use the GET method for any request that triggers a state change.</div>
+							<br />
+						
+							<div>Phase: Implementation</div>
+							<br />
+						
+							<div>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a>
+							<br />
+						
+							<a href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10202/">10202</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -894,32 +1212,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/mentions-legales">https://www.psyenfantado.sante.gouv.fr/mentions-legales</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">connect.sid</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: connect.sid</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
 					</tr>
 					<tr>
@@ -947,32 +1239,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">connect.sid</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: connect.sid</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/sitemap.xml">https://www.psyenfantado.sante.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1049,7 +1315,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">8</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1207,32 +1473,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/mentions-legales">https://www.psyenfantado.sante.gouv.fr/mentions-legales</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">connect.sid</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: connect.sid</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
 					</tr>
 					<tr>
@@ -1260,32 +1500,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">connect.sid</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: connect.sid</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/sitemap.xml">https://www.psyenfantado.sante.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1362,7 +1576,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">8</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1391,6 +1605,82 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10054/">10054</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10017"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The page includes one or more script files from a third-party domain.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">https://forms.sbc08.com/form.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;https://forms.sbc08.com/form.js&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1940,7 +2230,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/static/js/build-psy-listing.js">https://www.psyenfantado.sante.gouv.fr/static/js/build-psy-listing.js</a></td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js">https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1966,12 +2256,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js">https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js</a></td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/psychologue">https://www.psyenfantado.sante.gouv.fr/psychologue</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Method</td>
-						<td width="80%">GET</td>
+						<td width="80%">POST</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2395,6 +2685,32 @@ td {
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0139193351</td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -3511,32 +3827,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">0603030698</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
 						<td width="80%">0603035569</td>
 					</tr>
 				
@@ -3772,6 +4062,32 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">0606473820</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0607083101</td>
 					</tr>
 				
 					<tr>
@@ -4188,6 +4504,32 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">0608649034</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0608676156</td>
 					</tr>
 				
 					<tr>
@@ -8815,6 +9157,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%">0637986126</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
 						<td width="80%">0638953093</td>
 					</tr>
 				
@@ -9804,6 +10172,32 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">0650906571</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0650942918</td>
 					</tr>
 				
 					<tr>
@@ -12325,6 +12719,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%">0670202525</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
 						<td width="80%">0670286993</td>
 					</tr>
 				
@@ -14068,6 +14488,32 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">0679968934</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/parent">https://www.psyenfantado.sante.gouv.fr/parent</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">0680085647</td>
 					</tr>
 				
 					<tr>
@@ -18986,7 +19432,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">638</td>
+					<td width="80%">644</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -19457,7 +19903,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">29f6-FMigLsZAEfmnNPKuR4Rfx/58/II</td>
+						<td width="80%">34aa-KlAA/A8sRgj0Qe2fp3jhkYQ+Tv8</td>
 					</tr>
 				
 					<tr>
@@ -19483,7 +19929,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">3A_wfUSOrKzDwm7d_u6JPZdZo7GEmzLvRw</td>
+						<td width="80%">3AiBsE8HSSOZz553hT79gNov1RG9Dpe9nL</td>
 					</tr>
 				
 					<tr>
@@ -19535,7 +19981,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">3AKCkqb9bC_ms-gDiRao2tTVQxWLRGmPSX</td>
+						<td width="80%">3AIRS1U32DTk9lrGeBiPzNl_kxo21cMqUu</td>
 					</tr>
 				
 					<tr>
@@ -19561,33 +20007,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2d17-BA/rf1Nifep8tp7kgYm8rTmXUeo</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/sitemap.xml">https://www.psyenfantado.sante.gouv.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">3AGUnT99gj0kTjrhi4eeW7Wz2zD4nT3QN2</td>
+						<td width="80%">374c-AmTof1F42Etph0TDShG7f6R7LVw</td>
 					</tr>
 				
 					<tr>
@@ -19613,7 +20033,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">3ABLR0mvI9e_3OrGFbejipMjtV21AlRE6n</td>
+						<td width="80%">3AO0Bet0bA_wKNmobCZeYrtfxZWVFi-IYx</td>
 					</tr>
 				
 					<tr>
@@ -19639,7 +20059,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">3A6vrlVL7YpD9nfawy2RaIu8PkzlOJl7MP</td>
+						<td width="80%">3AsGRy0t-T4qgdICKy_BUr8NMCjQTtfFyY</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.psyenfantado.sante.gouv.fr/static/documents/Guide-PsyEnfantAdo-Patients.pdf">https://www.psyenfantado.sante.gouv.fr/static/documents/Guide-PsyEnfantAdo-Patients.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">160/Type/FontDescriptor/XHeight</td>
 					</tr>
 				
 					<tr>

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 21 Nov 2021 01:48:18",
+	"@generated": "Sun, 28 Nov 2021 01:43:30",
 	"site":[ 
 		{
 			"@name": "https://www.psyenfantado.sante.gouv.fr",
@@ -23,38 +23,64 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						}
 					],
-					"count": "5",
+					"count": "3",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055",
+					"alert": "CSP: script-src unsafe-inline",
+					"name": "CSP: script-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>script-src includes unsafe-inline.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						}
+					],
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -77,38 +103,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data:;object-src 'none';script-src 'self' https://stats.data.gouv.fr/;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+							"evidence": "default-src 'self' https://stats.data.gouv.fr/ https://services.sarbacane.com;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://stats.data.gouv.fr/ data: https://forms.sbc08.com;object-src 'none';script-src 'self' https://stats.data.gouv.fr/ https://forms.sbc08.com 'unsafe-inline';script-src-attr 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -127,6 +139,13 @@
 					"desc": "<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces\" target=\"_blank\">ici</a>"
+						},
+						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/faq",
 							"method": "GET",
 							"param": "",
@@ -134,13 +153,65 @@
 							"evidence": "<a href=\"https://santepsy.etudiant.gouv.fr\" target=\"_blank\">santepsy.etudiant.gouv.fr</a>"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "42"
+					"sourceid": "37"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://forms.sbc08.com/form.js\"></script>"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "33"
+				},
+				{
+					"pluginid": "10202",
+					"alertRef": "10202",
+					"alert": "Absence of Anti-CSRF Tokens",
+					"name": "Absence of Anti-CSRF Tokens",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"sb_form\"\n                      onsubmit=\"process2(\n    'https://services.sarbacane.com/core/v1/forms/contacts/upsert?listID&#x3D;gK9pKC6aT7ehlKKhbmLt9A&amp;formID&#x3D;hgLXy0uPQ0GSIAjQUj4hgQ&amp;timezone&#x3D;Europe/Paris', 'https://forms.sbc08.com/', '5a5873edb85b530da84d23f7', 'false', 'message',\n    '', 'https://services.sarbacane.com/core/v1/transactional/sendmessage/optin', 'Merci', 'Votre email a bien \u00E9t\u00E9 enregistr\u00E9.',\n    'Vous allez recevoir un email', 'Vous devrez cliquer sur le lien de confirmation pour valider votre inscription', 'Erreur',\n    'Une erreur inattendue s%27est produite.', 'Le formulaire est en cours d%27\u00E9dition, veuillez patienter quelques minutes avant d%27essayer \u00E0 nouveau.', '',\n    '', ''\n  );\n  return false;\"\n                      method=\"post\">"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"input-email\" ].</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "33"
 				},
 				{
 					"pluginid": "10011",
@@ -181,13 +252,6 @@
 							"evidence": "Set-Cookie: connect.sid"
 						},
 						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
-							"method": "GET",
-							"param": "connect.sid",
-							"attack": "",
-							"evidence": "Set-Cookie: connect.sid"
-						},
-						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
 							"method": "GET",
 							"param": "connect.sid",
@@ -196,13 +260,6 @@
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
-							"method": "GET",
-							"param": "connect.sid",
-							"attack": "",
-							"evidence": "Set-Cookie: connect.sid"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "connect.sid",
 							"attack": "",
@@ -223,7 +280,7 @@
 							"evidence": "Set-Cookie: connect.sid"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -270,13 +327,6 @@
 							"evidence": "Set-Cookie: connect.sid"
 						},
 						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
-							"method": "GET",
-							"param": "connect.sid",
-							"attack": "",
-							"evidence": "Set-Cookie: connect.sid"
-						},
-						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
 							"method": "GET",
 							"param": "connect.sid",
@@ -285,13 +335,6 @@
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
-							"method": "GET",
-							"param": "connect.sid",
-							"attack": "",
-							"evidence": "Set-Cookie: connect.sid"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "connect.sid",
 							"attack": "",
@@ -312,13 +355,39 @@
 							"evidence": "Set-Cookie: connect.sid"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
+							"method": "GET",
+							"param": "https://forms.sbc08.com/form.js",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://forms.sbc08.com/form.js\"></script>"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "33"
 				},
 				{
 					"pluginid": "10015",
@@ -476,15 +545,15 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/static/js/build-psy-listing.js",
+							"uri": "https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/static/js/matomo.js",
-							"method": "GET",
+							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
+							"method": "POST",
 							"param": "",
 							"attack": "",
 							"evidence": ""
@@ -604,6 +673,13 @@
 					"riskdesc": "Low (Low)",
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0139193351"
+						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
 							"method": "GET",
@@ -903,13 +979,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "0603030698"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "0603035569"
 						},
 						{
@@ -974,6 +1043,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0606473820"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0607083101"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -1086,6 +1162,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0608649034"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0608676156"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -2331,6 +2414,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0637986126"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0638953093"
 						},
 						{
@@ -2598,6 +2688,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0650906571"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0650942918"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -3276,6 +3373,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "0670202525"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "0670286993"
 						},
 						{
@@ -3746,6 +3850,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "0679968934"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "0680085647"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/parent",
@@ -5071,13 +5182,13 @@
 							"evidence": "696061234"
 						}
 					],
-					"count": "638",
+					"count": "644",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>0143965714, which evaluates to: 1974-07-25 06:28:34</p>",
+					"otherinfo": "<p>0139193351, which evaluates to: 1974-05-31 00:49:11</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "37"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10021",
@@ -5204,14 +5315,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "29f6-FMigLsZAEfmnNPKuR4Rfx/58/II"
+							"evidence": "34aa-KlAA/A8sRgj0Qe2fp3jhkYQ+Tv8"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/faq",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3A_wfUSOrKzDwm7d_u6JPZdZo7GEmzLvRw"
+							"evidence": "3AiBsE8HSSOZz553hT79gNov1RG9Dpe9nL"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/mentions-legales",
@@ -5225,35 +5336,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AKCkqb9bC_ms-gDiRao2tTVQxWLRGmPSX"
+							"evidence": "3AIRS1U32DTk9lrGeBiPzNl_kxo21cMqUu"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/psychologue",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2d17-BA/rf1Nifep8tp7kgYm8rTmXUeo"
-						},
-						{
-							"uri": "https://www.psyenfantado.sante.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "3AGUnT99gj0kTjrhi4eeW7Wz2zD4nT3QN2"
+							"evidence": "374c-AmTof1F42Etph0TDShG7f6R7LVw"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3ABLR0mvI9e_3OrGFbejipMjtV21AlRE6n"
+							"evidence": "3AO0Bet0bA_wKNmobCZeYrtfxZWVFi-IYx"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/documents/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3A6vrlVL7YpD9nfawy2RaIu8PkzlOJl7MP"
+							"evidence": "3AsGRy0t-T4qgdICKy_BUr8NMCjQTtfFyY"
+						},
+						{
+							"uri": "https://www.psyenfantado.sante.gouv.fr/static/documents/Guide-PsyEnfantAdo-Patients.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "160/Type/FontDescriptor/XHeight"
 						},
 						{
 							"uri": "https://www.psyenfantado.sante.gouv.fr/static/gouvfr/css/dsfr.min.css",
@@ -5323,7 +5434,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "61"
 				},
 				{
 					"pluginid": "10109",
@@ -5349,7 +5460,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "42"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10049",
