@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 01:29:37",
+	"@generated": "Mon, 29 Nov 2021 17:20:12",
 	"site":[ 
 		{
 			"@name": "https://onvs.fabrique.social.gouv.fr",
@@ -222,7 +222,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "57"
+					"sourceid": "55"
 				},
 				{
 					"pluginid": "10015",
@@ -317,7 +317,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/framework-09a88f8e6a8ced89af74.js",
+							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/main-efb88bdc60ef7e1c718f.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -563,7 +563,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/framework-09a88f8e6a8ced89af74.js",
+							"uri": "https://onvs.fabrique.social.gouv.fr/_next/static/chunks/main-efb88bdc60ef7e1c718f.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -754,7 +754,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10027",
