@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 01:09:15",
+	"@generated": "Mon, 29 Nov 2021 16:58:18",
 	"site":[ 
 		{
 			"@name": "https://archifiltre.fabrique.social.gouv.fr",
@@ -135,7 +135,7 @@
 					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "58"
+					"sourceid": "41"
 				},
 				{
 					"pluginid": "90003",
@@ -464,42 +464,28 @@
 							"evidence": "712016698"
 						},
 						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
+							"uri": "https://archifiltre.fabrique.social.gouv.fr/faq",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2050432530"
 						},
 						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
+							"uri": "https://archifiltre.fabrique.social.gouv.fr/faq",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "712016698"
 						},
 						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/qui-sommes-nous",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "026967152"
-						},
-						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/qui-sommes-nous",
+							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2050432530"
 						},
 						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/qui-sommes-nous",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "34522444"
-						},
-						{
-							"uri": "https://archifiltre.fabrique.social.gouv.fr/qui-sommes-nous",
+							"uri": "https://archifiltre.fabrique.social.gouv.fr/produit",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -520,7 +506,7 @@
 							"evidence": "712016698"
 						}
 					],
-					"count": "12",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>2050432530, which evaluates to: 2034-12-22 20:35:30</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
