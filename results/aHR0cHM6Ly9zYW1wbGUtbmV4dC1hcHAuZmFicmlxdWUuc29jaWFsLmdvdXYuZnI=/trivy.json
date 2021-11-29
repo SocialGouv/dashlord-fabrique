@@ -13463,7 +13463,6 @@
           "VulnerabilityID": "CVE-2021-33560",
           "PkgName": "libgcrypt20",
           "InstalledVersion": "1.8.4-5",
-          "FixedVersion": "1.8.4-5+deb10u1",
           "Layer": {
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
@@ -13563,6 +13562,7 @@
           "VulnerabilityID": "CVE-2021-40528",
           "PkgName": "libgcrypt20",
           "InstalledVersion": "1.8.4-5",
+          "FixedVersion": "1.8.4-5+deb10u1",
           "Layer": {
             "Digest": "sha256:69692152171afee1fd341febc390747cfca2ff302f2881d8b394e786af605696",
             "DiffID": "sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33"
@@ -15291,7 +15291,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-02T13:15:00Z",
-          "LastModifiedDate": "2021-11-17T22:19:00Z"
+          "LastModifiedDate": "2021-11-28T23:23:00Z"
         },
         {
           "VulnerabilityID": "CVE-2019-17543",
@@ -22305,7 +22305,12 @@
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
               "V3Score": 4.4
             }
-          }
+          },
+          "References": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=13e4ad2ce8df6e058ef482a31fdd81c725b0f7ea",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a4a118f2eead1d6c49e00765de89878288d4b890",
+            "https://www.openwall.com/lists/oss-security/2021/11/25/1"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2021-42739",
