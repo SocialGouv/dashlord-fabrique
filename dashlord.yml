@@ -10,15 +10,15 @@ tools:
   testssl: true
   wappalyzer: true
   nuclei: true
-  zap: true
+  zap: false
   thirdparties: true
-  dependabot: true
-  codescan: true
+  dependabot: false
+  codescan: false
   updownio: true
   http: true
   nmap: false
   stats: true
-  trivy: true
+  trivy: false
   declaration-a11y: true
 urls:
   - url: https://archifiltre.fabrique.social.gouv.fr
