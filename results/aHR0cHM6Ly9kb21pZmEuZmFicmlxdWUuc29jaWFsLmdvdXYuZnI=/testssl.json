@@ -206,7 +206,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -353,7 +353,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "41 >= 30 days"
+              "finding"      : "36 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -619,7 +619,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' https://*.fabrique.social.gouv.fr; connect-src 'self' https://*.fabrique.social.gouv.fr; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://matomo.fabrique.social.gouv.fr/piwik.js; style-src 'self' 'unsafe-inline'"
+              "finding"      : "default-src 'self' https://*.fabrique.social.gouv.fr; connect-src 'self' https://*.fabrique.social.gouv.fr; font-src 'self'; img-src 'self'; media-src https://domifaprod2.blob.core.windows.net;script-src 'self' 'unsafe-eval' 'unsafe-inline' https://matomo.fabrique.social.gouv.fr/piwik.js; style-src 'self' 'unsafe-inline'"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1140,6 +1140,6 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "83"
+              "finding"      : "77"
           }
 ]
