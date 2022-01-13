@@ -61,7 +61,7 @@ jobs:
           url: ${{ matrix.sites.url }}
           output: scans/declaration-a11y.json
 
-      - uses: SocialGouv/dashlord-actions/save@v1
+      - uses: SocialGouv/dashlord-actions/save@a11y
         with:
           url: ${{ matrix.sites.url }}
 
