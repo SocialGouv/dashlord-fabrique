@@ -55,7 +55,7 @@ jobs:
 
       - name: Déclaration a11y
         continue-on-error: true
-        uses: "socialgouv/dashlord-actions/declaration-a11y@v1"
+        uses: "socialgouv/dashlord-actions/declaration-a11y@a11y"
         if: ${{ matrix.sites.tools['declaration-a11y'] }}
         with:
           url: ${{ matrix.sites.url }}
