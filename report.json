@@ -9737,32 +9737,32 @@
         "tok",
         "syd"
       ],
-      "last_check_at": "2022-01-13T11:40:44Z",
-      "next_check_at": "2022-01-13T11:41:43Z",
+      "last_check_at": "2022-01-13T14:13:57Z",
+      "next_check_at": "2022-01-13T14:14:57Z",
       "mute_until": null,
       "favicon_url": "https://code.travail.gouv.fr/favicon.ico",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-01-13T11:32:47Z",
+        "tested_at": "2022-01-13T14:11:58Z",
         "expires_at": "2022-02-21T08:35:27Z",
         "valid": true,
         "error": null
       },
       "metrics": {
-        "apdex": 0.97,
+        "apdex": 0.994,
         "timings": {
           "redirect": 0,
-          "namelookup": 26,
+          "namelookup": 25,
           "connection": 15,
-          "handshake": 41,
-          "response": 181,
-          "total": 263
+          "handshake": 47,
+          "response": 132,
+          "total": 219
         }
       },
       "uptimeGrade": "A",
-      "apdexGrade": "D"
+      "apdexGrade": "A"
     },
     "nmap": null,
     "dependabot": {
@@ -11915,7 +11915,7 @@
         "ip": "code.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1642073981"
+        "finding": "1642083174"
       },
       {
         "id": "HSTS_time",
@@ -12492,7 +12492,7 @@
         "ip": "code.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "82"
+        "finding": "90"
       }
     ],
     "thirdparties": {
@@ -12503,7 +12503,7 @@
           "value": "1",
           "domain": "code.travail.gouv.fr",
           "path": "/",
-          "expires": 1642075730,
+          "expires": 1642084917,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -12515,10 +12515,10 @@
         },
         {
           "name": "_pk_id.4.ef54",
-          "value": "79fdb699b12af2eb.1642073930.",
+          "value": "8831843951a99625.1642083117.",
           "domain": "code.travail.gouv.fr",
           "path": "/",
-          "expires": 1676029130,
+          "expires": 1676038317,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -12530,10 +12530,10 @@
         }
       ],
       "headers": {
-        "date": "Thu, 13 Jan 2022 11:38:48 GMT",
+        "date": "Thu, 13 Jan 2022 14:11:56 GMT",
         "content-type": "text/html; charset=utf-8",
         "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr;font-src 'self' data: blob:;frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com;img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net;script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com;style-src 'self' 'unsafe-inline'",
-        "etag": "\"32fbf-JyjmJgylqtUHjM/gu1gqkkvb+Hc\"",
+        "etag": "\"32fbf-2hanGyBTDcS4UlRL9oYsVBhWXec\"",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "vary": "Accept-Encoding",
         "content-encoding": "gzip",
@@ -12659,13 +12659,10 @@
         "https://code.travail.gouv.fr/information/covid-19-reagir-en-cas-de-contamination-dans-lentreprise-protocole-national": {
           "status": 200
         },
-        "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail": {
-          "status": 200
-        },
         "https://code.travail.gouv.fr/themes/salaire-et-remuneration": {
           "status": 200
         },
-        "https://code.travail.gouv.fr/outils/indemnite-licenciement": {
+        "https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail": {
           "status": 200
         },
         "https://code.travail.gouv.fr/information/pass-sanitaire-et-contrat-de-travail": {
@@ -12675,6 +12672,9 @@
           "status": 200
         },
         "https://code.travail.gouv.fr/information/vaccination-et-pass-sanitaire-les-dates-a-retenir": {
+          "status": 200
+        },
+        "https://code.travail.gouv.fr/modeles-de-courriers/demande-de-versement-de-lindemnite-inflation": {
           "status": 200
         },
         "https://code.travail.gouv.fr/information/covid-19-les-mesures-de-protection-en-entreprise-protocole-national": {
@@ -13398,7 +13398,7 @@
     "lhr": {
       "requestedUrl": "https://code.travail.gouv.fr/",
       "finalUrl": "https://code.travail.gouv.fr/",
-      "fetchTime": "2022-01-13T11:38:01.116Z",
+      "fetchTime": "2022-01-13T14:11:25.779Z",
       "runWarnings": [],
       "categories": {
         "performance": {
@@ -13440,53 +13440,53 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 6507,
+          "numericValue": 6565,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 1396,
-                "firstMeaningfulPaint": 1396,
-                "largestContentfulPaint": 1603,
-                "interactive": 6507,
-                "speedIndex": 2070,
-                "totalBlockingTime": 649,
-                "maxPotentialFID": 566,
-                "cumulativeLayoutShift": 0.010207939995659724,
-                "cumulativeLayoutShiftMainFrame": 0.010207939995659724,
-                "totalCumulativeLayoutShift": 0.010207939995659724,
+                "firstContentfulPaint": 1411,
+                "firstMeaningfulPaint": 1411,
+                "largestContentfulPaint": 2018,
+                "interactive": 6565,
+                "speedIndex": 2236,
+                "totalBlockingTime": 760,
+                "maxPotentialFID": 668,
+                "cumulativeLayoutShift": 0.010222899330986872,
+                "cumulativeLayoutShiftMainFrame": 0.010222899330986872,
+                "totalCumulativeLayoutShift": 0.010222899330986872,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 2209548054,
+                "observedTimeOriginTs": 2273501266,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 2209548054,
-                "observedFirstPaint": 665,
-                "observedFirstPaintTs": 2210213493,
-                "observedFirstContentfulPaint": 665,
-                "observedFirstContentfulPaintTs": 2210213493,
-                "observedFirstContentfulPaintAllFrames": 665,
-                "observedFirstContentfulPaintAllFramesTs": 2210213493,
-                "observedFirstMeaningfulPaint": 665,
-                "observedFirstMeaningfulPaintTs": 2210213493,
-                "observedLargestContentfulPaint": 665,
-                "observedLargestContentfulPaintTs": 2210213493,
-                "observedLargestContentfulPaintAllFrames": 665,
-                "observedLargestContentfulPaintAllFramesTs": 2210213493,
-                "observedTraceEnd": 4661,
-                "observedTraceEndTs": 2214209207,
-                "observedLoad": 1526,
-                "observedLoadTs": 2211074361,
-                "observedDomContentLoaded": 1000,
-                "observedDomContentLoadedTs": 2210547739,
-                "observedCumulativeLayoutShift": 0.010207939995659724,
-                "observedCumulativeLayoutShiftMainFrame": 0.010207939995659724,
-                "observedTotalCumulativeLayoutShift": 0.010207939995659724,
-                "observedFirstVisualChange": 663,
-                "observedFirstVisualChangeTs": 2210211054,
-                "observedLastVisualChange": 1680,
-                "observedLastVisualChangeTs": 2211228054,
-                "observedSpeedIndex": 693,
-                "observedSpeedIndexTs": 2210241420
+                "observedNavigationStartTs": 2273501266,
+                "observedFirstPaint": 781,
+                "observedFirstPaintTs": 2274282224,
+                "observedFirstContentfulPaint": 781,
+                "observedFirstContentfulPaintTs": 2274282224,
+                "observedFirstContentfulPaintAllFrames": 781,
+                "observedFirstContentfulPaintAllFramesTs": 2274282224,
+                "observedFirstMeaningfulPaint": 781,
+                "observedFirstMeaningfulPaintTs": 2274282224,
+                "observedLargestContentfulPaint": 781,
+                "observedLargestContentfulPaintTs": 2274282224,
+                "observedLargestContentfulPaintAllFrames": 781,
+                "observedLargestContentfulPaintAllFramesTs": 2274282224,
+                "observedTraceEnd": 4765,
+                "observedTraceEndTs": 2278266428,
+                "observedLoad": 1631,
+                "observedLoadTs": 2275132149,
+                "observedDomContentLoaded": 1103,
+                "observedDomContentLoadedTs": 2274604215,
+                "observedCumulativeLayoutShift": 0.010222899330986872,
+                "observedCumulativeLayoutShiftMainFrame": 0.010222899330986872,
+                "observedTotalCumulativeLayoutShift": 0.010222899330986872,
+                "observedFirstVisualChange": 774,
+                "observedFirstVisualChangeTs": 2274275266,
+                "observedLastVisualChange": 1774,
+                "observedLastVisualChangeTs": 2275275266,
+                "observedSpeedIndex": 798,
+                "observedSpeedIndexTs": 2274299191
               },
               {
                 "lcpInvalidated": false
@@ -13509,18 +13509,18 @@
                 "numStylesheets": 2,
                 "numFonts": 3,
                 "numTasks": 656,
-                "numTasksOver10ms": 9,
+                "numTasksOver10ms": 12,
                 "numTasksOver25ms": 3,
                 "numTasksOver50ms": 1,
                 "numTasksOver100ms": 1,
                 "numTasksOver500ms": 0,
-                "rtt": 82.93900000000001,
-                "throughput": 9424471.937521022,
-                "maxRtt": 83.466,
-                "maxServerLatency": 86.56600000000002,
-                "totalByteWeight": 774906,
-                "totalTaskTime": 478.41999999999996,
-                "mainDocumentTransferSize": 65994
+                "rtt": 82.619,
+                "throughput": 9046165.699223101,
+                "maxRtt": 83.36200000000001,
+                "maxServerLatency": 87.801,
+                "totalByteWeight": 774933,
+                "totalTaskTime": 552.1879999999995,
+                "mainDocumentTransferSize": 66003
               }
             ]
           }
@@ -14849,12 +14849,13 @@
       }
     ],
     "declaration-a11y": {
-      "declaration": "Accessibilité : partiellement conforme"
+      "mention": "Accessibilité : partiellement conforme",
+      "declarationUrl": "https://code.travail.gouv.fr/accessibilite"
     },
     "summary": {
       "httpGrade": "B",
-      "apdex": 0.97,
-      "apdexGrade": "D",
+      "apdex": 0.994,
+      "apdexGrade": "A",
       "uptime": 99.996,
       "uptimeGrade": "A",
       "dependabotGrade": "E",
@@ -14878,8 +14879,7 @@
       "lighthouse_pwaGrade": "D",
       "statsGrade": "A",
       "trivy": 179,
-      "trivyGrade": "F",
-      "declaration-a11y": "B"
+      "trivyGrade": "F"
     }
   },
   {
