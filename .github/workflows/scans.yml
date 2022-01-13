@@ -71,7 +71,6 @@ jobs:
 
       - name: Detect 404s
         continue-on-error: true
-        timeout-minutes: 10
         uses: "socialgouv/detect-404-action@master"
         if: ${{ matrix.sites.tools['404'] }}
         with:
@@ -90,7 +89,6 @@ jobs:
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         if: ${{ matrix.sites.tools.screenshot }}
-        timeout-minutes: 10
         continue-on-error: true
         with:
           source: "${{ matrix.sites.url }}"
