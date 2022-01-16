@@ -1,12 +1,33 @@
 {
-  "trackers": [],
+  "trackers": [
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/array.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1642297924273"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1642297924279"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/recorder.js?v=1.16.7"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1642297928216"
+    }
+  ],
   "cookies": [
     {
       "name": "_pk_ses.38.ac6f",
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1641695112,
+      "expires": 1642299725,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +39,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "ee2e682ee6b76ba1.1641693312.",
+      "value": "7ebedeaf0c45f13c.1642297925.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1675648512,
+      "expires": 1676253125,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,11 +54,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 09 Jan 2022 01:55:10 GMT",
+    "date": "Sun, 16 Jan 2022 01:52:03 GMT",
     "content-type": "text/html",
-    "last-modified": "Tue, 04 Jan 2022 12:13:20 GMT",
+    "last-modified": "Wed, 12 Jan 2022 18:08:37 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"61d439e0-3e68\"",
+    "etag": "W/\"61df1925-4296\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -104,7 +125,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "USA",
+            "de": "Vereinigte Staaten",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -137,6 +158,60 @@
             }
           }
         ]
+      }
+    },
+    {
+      "hostname": "lafabriquenumerique-posthog.cloud-ed.fr",
+      "ip": "154.41.70.5",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
       }
     }
   ]
