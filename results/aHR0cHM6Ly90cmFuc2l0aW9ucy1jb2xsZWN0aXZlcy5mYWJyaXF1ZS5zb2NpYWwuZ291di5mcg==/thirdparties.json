@@ -10,7 +10,31 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/www-player.css",
+      "url": "https://www.youtube.com/s/player/94ee882e/www-player.css",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/94ee882e/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/94ee882e/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/94ee882e/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -22,30 +46,6 @@
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/www-embed-player.vflset/www-embed-player.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/94ee882e/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -74,7 +74,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/acOqNvmZ61JVdT2KmRuLvLtvnnX1fXKpZEEPvjrw26I.js",
+      "url": "https://www.google.com/js/th/JJ4EQHlFCIgQDrtRJR_C48VAd2Eo_FTuaNmzwWUDu1c.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -82,18 +82,10 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/18da33ed/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/94ee882e/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "google analytics",
-      "url": "https://googleads.g.doubleclick.net/pagead/id?slf_rd=1",
-      "details": {
-        "id": "google analytics",
-        "message": "Use hosted Matomo instance"
       }
     },
     {
@@ -113,6 +105,14 @@
       }
     },
     {
+      "type": "google analytics",
+      "url": "https://googleads.g.doubleclick.net/pagead/id?slf_rd=1",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
       "type": "google",
       "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
       "details": {
@@ -122,7 +122,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?OeBbmQ",
+      "url": "https://www.youtube.com/generate_204?G923PQ",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -139,10 +139,10 @@
   ],
   "cookies": [],
   "headers": {
-    "date": "Sun, 16 Jan 2022 02:07:44 GMT",
+    "date": "Sun, 23 Jan 2022 02:02:48 GMT",
     "content-type": "text/html; charset=utf-8",
     "x-powered-by": "Next.js",
-    "etag": "\"4fb4-e4oOmZlVcHjPlaV44A/zpkpix5g\"",
+    "etag": "\"4f7f-s+c9A9z8q79hnIfxyHCklcwYE3Y\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
@@ -244,7 +244,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.250.217.78",
+      "ip": "172.217.2.110",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -298,7 +298,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.33.67",
+      "ip": "142.251.33.195",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -352,7 +352,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.33.66",
+      "ip": "142.250.188.34",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -406,7 +406,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.33.102",
+      "ip": "172.217.15.102",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -460,7 +460,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.217.14.228",
+      "ip": "142.251.16.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -514,7 +514,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.250.69.193",
+      "ip": "172.217.1.193",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -568,7 +568,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.251.33.118",
+      "ip": "142.251.45.118",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -622,7 +622,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.69.195",
+      "ip": "142.251.33.195",
       "geoip": {
         "continent": {
           "code": "NA",
