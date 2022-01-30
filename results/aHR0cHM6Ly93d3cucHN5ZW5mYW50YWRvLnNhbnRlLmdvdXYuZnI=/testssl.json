@@ -353,7 +353,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1642901946"
+              "finding"      : "1643506928"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1489,7 +1489,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1692,7 +1692,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1642902047"
+              "finding"      : "1643507017"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2276,6 +2276,6 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "201"
+              "finding"      : "181"
           }
 ]
