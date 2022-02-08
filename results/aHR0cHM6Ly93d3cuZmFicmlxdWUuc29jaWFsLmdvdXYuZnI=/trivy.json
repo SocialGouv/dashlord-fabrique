@@ -1,6 +1,280 @@
 [
   {
     "SchemaVersion": 2,
+    "ArtifactName": "ghcr.io/socialgouv/docker/nginx:latest",
+    "ArtifactType": "container_image",
+    "Metadata": {
+      "OS": {
+        "Family": "alpine",
+        "Name": "3.15.0"
+      },
+      "ImageID": "sha256:e66c863728b62c5cd0741b1ba4d9363836ae3c69000c1aa0e44c8b2c499770f0",
+      "DiffIDs": [
+        "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759",
+        "sha256:1c9c1e42aafaa6067e6591a2b3214b4d6c6c357b597377bd395486d9999209cd",
+        "sha256:3f87f0a06073927060d269480f2c55cd4ac978732291be1e900a0e834dbc0db0",
+        "sha256:5ee3266a70bd586778d7d3dc36fd1dbc2ab407d559615a1c3508697eac86142f",
+        "sha256:0e835d02c1b5a93d74af44edda6dc7b36938429847b13d0553a5ba4adab1e686",
+        "sha256:419df8b600324530e8b64cabca7b0e6b959efc8d41fb2b8253014a4099747501",
+        "sha256:b75b889bf7774470ecc97e2055784220f7d62186bb4dda7207034dffd53642c7",
+        "sha256:4f8c22e382c9d11de2fb142be9e5308fff7e292d68139208496d4681ab9598b9",
+        "sha256:7de32608d5327d805a053855a3bcd5a777a590b3d92018b315a7ead34c29a0fd",
+        "sha256:4c8975ad4a97377c68122edc38d01ad644482b34a2da5f8ab3e84850a5324e63",
+        "sha256:88567bc67866ed21066082f61c747e53bbab346fe7ece96b7f3a00a9e5af79a2",
+        "sha256:c559e55845122bde241824e621798c462ad3498761096e9b9cbf5e2be198513e"
+      ],
+      "RepoTags": [
+        "ghcr.io/socialgouv/docker/nginx:latest"
+      ],
+      "RepoDigests": [
+        "ghcr.io/socialgouv/docker/nginx@sha256:3314a1694196faa5426a61a0d6da6720315da9e43376c2b9fc8844c375b4ff90"
+      ],
+      "ImageConfig": {
+        "architecture": "amd64",
+        "created": "2022-01-19T08:58:41.265458778Z",
+        "history": [
+          {
+            "created": "2021-11-24T20:19:40.199700946Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:9233f6f2237d79659a9521f7e390df217cec49f1a8aa3a12147bbca1956acdb9 in / "
+          },
+          {
+            "created": "2021-11-24T20:19:40.483367546Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.16538557Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.390147627Z",
+            "created_by": "/bin/sh -c #(nop)  ENV NGINX_VERSION=1.21.5",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.577978445Z",
+            "created_by": "/bin/sh -c #(nop)  ENV NJS_VERSION=0.7.1",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.788037552Z",
+            "created_by": "/bin/sh -c #(nop)  ENV PKG_RELEASE=1",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:12.068582134Z",
+            "created_by": "/bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     \"     && apk add --no-cache --virtual .checksum-deps         openssl     && case \"$apkArch\" in         x86_64|aarch64)             set -x             && KEY_SHA512=\"e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin\"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ \"$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)\" = \"$KEY_SHA512\" ]; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 bash                 alpine-sdk                 findutils             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -O https://hg.nginx.org/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\\\"b0ed109a820a2e8921f313d653032b8e70d3020138d634039ebb9194dc3968493f6eb4d85bdbf18d2aea7229deddb98ca0f1d9825defcc5af45f68ee37845232 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 && if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del .checksum-deps     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -n \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n \"/etc/apk/keys/nginx_signing.rsa.pub\" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps=\"$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, \"\\nso:\", $2); print \"so:\" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )\"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && apk add --no-cache curl ca-certificates     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d"
+          },
+          {
+            "created": "2021-12-29T19:29:12.391644093Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:65504f71f5855ca017fb64d502ce873a31b2e0decd75297a8fb0a287f97acf92 in / "
+          },
+          {
+            "created": "2021-12-29T19:29:12.646096171Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:0b866ff3fc1ef5b03c4e6c8c513ae014f691fb05d530257dfffd07035c1b75da in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:12.866301243Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:0fd5fca330dcd6a7de297435e32af634f29f7132ed0550d342cad9fd20158258 in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:13.11583395Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:09a214a3e07c919af2fb2d7c749ccbc446b8c10eb217366e5a65640ee9edcc25 in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:13.304458527Z",
+            "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.487009533Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.689668979Z",
+            "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGQUIT",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.874392808Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-01-19T08:58:40.434535045Z",
+            "created_by": "COPY ./nginx.conf /etc/nginx/nginx.conf # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:40.443355422Z",
+            "created_by": "COPY ./entrypoint.sh /entrypoint.sh # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:40.454193939Z",
+            "created_by": "COPY ./envsub.sh /envsub.sh # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:40.488744931Z",
+            "created_by": "COPY ./404.html /usr/share/nginx/errors/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:41.201971407Z",
+            "created_by": "RUN /bin/sh -c chown -R nginx:nginx /usr/share/nginx/html && chmod -R 755 /usr/share/nginx/html &&         chown -R nginx:nginx /var/cache/nginx &&         chown -R nginx:nginx /var/log/nginx &&         chown -R nginx:nginx /etc/nginx # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:41.265458778Z",
+            "created_by": "RUN /bin/sh -c touch /var/run/nginx.pid &&         chown -R nginx:nginx /var/run/nginx.pid # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:41.265458778Z",
+            "created_by": "ENTRYPOINT [\"/entrypoint.sh\"]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759",
+            "sha256:1c9c1e42aafaa6067e6591a2b3214b4d6c6c357b597377bd395486d9999209cd",
+            "sha256:3f87f0a06073927060d269480f2c55cd4ac978732291be1e900a0e834dbc0db0",
+            "sha256:5ee3266a70bd586778d7d3dc36fd1dbc2ab407d559615a1c3508697eac86142f",
+            "sha256:0e835d02c1b5a93d74af44edda6dc7b36938429847b13d0553a5ba4adab1e686",
+            "sha256:419df8b600324530e8b64cabca7b0e6b959efc8d41fb2b8253014a4099747501",
+            "sha256:b75b889bf7774470ecc97e2055784220f7d62186bb4dda7207034dffd53642c7",
+            "sha256:4f8c22e382c9d11de2fb142be9e5308fff7e292d68139208496d4681ab9598b9",
+            "sha256:7de32608d5327d805a053855a3bcd5a777a590b3d92018b315a7ead34c29a0fd",
+            "sha256:4c8975ad4a97377c68122edc38d01ad644482b34a2da5f8ab3e84850a5324e63",
+            "sha256:88567bc67866ed21066082f61c747e53bbab346fe7ece96b7f3a00a9e5af79a2",
+            "sha256:c559e55845122bde241824e621798c462ad3498761096e9b9cbf5e2be198513e"
+          ]
+        },
+        "config": {
+          "Entrypoint": [
+            "/entrypoint.sh"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "NGINX_VERSION=1.21.5",
+            "NJS_VERSION=0.7.1",
+            "PKG_RELEASE=1"
+          ],
+          "Labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>",
+            "org.opencontainers.image.created": "2022-01-19T08:58:32.587Z",
+            "org.opencontainers.image.description": "Shared docker images",
+            "org.opencontainers.image.documentation": "https://github.com/SocialGouv/docker/tree/4bb40436a9323b4bbeafe77ebc6c6675c03af361/nginx",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "4bb40436a9323b4bbeafe77ebc6c6675c03af361",
+            "org.opencontainers.image.source": "https://github.com/SocialGouv/docker",
+            "org.opencontainers.image.title": "nginx",
+            "org.opencontainers.image.url": "https://github.com/SocialGouv/docker",
+            "org.opencontainers.image.version": "6.70.0"
+          },
+          "ExposedPorts": {
+            "80/tcp": {}
+          },
+          "StopSignal": "SIGQUIT"
+        }
+      }
+    },
+    "Results": [
+      {
+        "Target": "ghcr.io/socialgouv/docker/nginx:latest (alpine 3.15.0)",
+        "Class": "os-pkgs",
+        "Type": "alpine"
+      }
+    ]
+  },
+  {
+    "SchemaVersion": 2,
+    "ArtifactName": "ghcr.io/socialgouv/docker/psql:latest",
+    "ArtifactType": "container_image",
+    "Metadata": {
+      "OS": {
+        "Family": "alpine",
+        "Name": "3.14.3"
+      },
+      "ImageID": "sha256:2554f02e3661a2e48e731ea1bbad66e4aab93349d6b8dcefd18c00c6637d4f02",
+      "DiffIDs": [
+        "sha256:1a058d5342cc722ad5439cacae4b2b4eedde51d8fe8800fcf28444302355c16d",
+        "sha256:007a5adc9c32bf23d77baf8a29d9b8130663d8d848b251f4fd5f7ef2b02fcab6"
+      ],
+      "RepoTags": [
+        "ghcr.io/socialgouv/docker/psql:latest"
+      ],
+      "RepoDigests": [
+        "ghcr.io/socialgouv/docker/psql@sha256:c8a06a2d0d274cacc835a9ef09556e606753def3debba32a894d3ecafff6dd72"
+      ],
+      "ImageConfig": {
+        "architecture": "amd64",
+        "created": "2022-01-19T08:58:59.439301101Z",
+        "history": [
+          {
+            "created": "2021-11-12T17:19:44.795237917Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / "
+          },
+          {
+            "created": "2021-11-12T17:19:45.079013213Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-01-19T08:58:59.439301101Z",
+            "created_by": "RUN /bin/sh -c apk --no-cache add bash=5.1.4-r0 postgresql-client=13.5-r0 jq=1.6-r1 # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-19T08:58:59.439301101Z",
+            "created_by": "ENTRYPOINT []",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:1a058d5342cc722ad5439cacae4b2b4eedde51d8fe8800fcf28444302355c16d",
+            "sha256:007a5adc9c32bf23d77baf8a29d9b8130663d8d848b251f4fd5f7ef2b02fcab6"
+          ]
+        },
+        "config": {
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          ],
+          "Labels": {
+            "org.opencontainers.image.created": "2022-01-19T08:58:47.395Z",
+            "org.opencontainers.image.description": "Shared docker images",
+            "org.opencontainers.image.documentation": "https://github.com/SocialGouv/docker/tree/4bb40436a9323b4bbeafe77ebc6c6675c03af361/psql",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "4bb40436a9323b4bbeafe77ebc6c6675c03af361",
+            "org.opencontainers.image.source": "https://github.com/SocialGouv/docker",
+            "org.opencontainers.image.title": "psql",
+            "org.opencontainers.image.url": "https://github.com/SocialGouv/docker",
+            "org.opencontainers.image.version": "6.70.0"
+          }
+        }
+      }
+    },
+    "Results": [
+      {
+        "Target": "ghcr.io/socialgouv/docker/psql:latest (alpine 3.14.3)",
+        "Class": "os-pkgs",
+        "Type": "alpine"
+      }
+    ]
+  },
+  {
+    "SchemaVersion": 2,
     "ArtifactName": "ghcr.io/socialgouv/fabrique/www:latest",
     "ArtifactType": "container_image",
     "Metadata": {
