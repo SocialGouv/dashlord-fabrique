@@ -67,6 +67,10 @@ urls:
       - socialgouv/emjpm
   - url: https://www.fabrique.social.gouv.fr
     category: fabrique
+    docker:
+      - ghcr.io/socialgouv/fabrique/www
+      - ghcr.io/socialgouv/fabrique/nginx
+      - ghcr.io/socialgouv/fabrique/psql
     tags:
       - social
       - sante
