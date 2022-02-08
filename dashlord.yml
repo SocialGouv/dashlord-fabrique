@@ -69,8 +69,8 @@ urls:
     category: fabrique
     docker:
       - ghcr.io/socialgouv/fabrique/www
-      - ghcr.io/socialgouv/fabrique/nginx
-      - ghcr.io/socialgouv/fabrique/psql
+      - ghcr.io/socialgouv/docker/nginx
+      - ghcr.io/socialgouv/docker/psql
     tags:
       - social
       - sante
