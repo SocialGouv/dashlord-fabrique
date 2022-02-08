@@ -1,1114 +1,218 @@
 [
   {
-    "name": "fabrique/www",
-    "url": "https://github.com//orgs/SocialGouv/packages/container/package/fabrique%2Fwww",
-    "image": "ghcr.io/socialgouv/fabrique/www",
-    "trivy": {
-      "Target": "ghcr.io/socialgouv/fabrique/www:latest (alpine 3.14.2)",
-      "Class": "os-pkgs",
-      "Type": "alpine",
-      "Vulnerabilities": [
-        {
-          "VulnerabilityID": "CVE-2021-42378",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+    "SchemaVersion": 2,
+    "ArtifactName": "ghcr.io/socialgouv/fabrique/www:latest",
+    "ArtifactType": "container_image",
+    "Metadata": {
+      "OS": {
+        "Family": "alpine",
+        "Name": "3.15.0"
+      },
+      "ImageID": "sha256:b6ab8f6c6d91de4d9b1a0bad06d7e5ffdb616da6104381d373044b9a34df2fed",
+      "DiffIDs": [
+        "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759",
+        "sha256:1c9c1e42aafaa6067e6591a2b3214b4d6c6c357b597377bd395486d9999209cd",
+        "sha256:3f87f0a06073927060d269480f2c55cd4ac978732291be1e900a0e834dbc0db0",
+        "sha256:5ee3266a70bd586778d7d3dc36fd1dbc2ab407d559615a1c3508697eac86142f",
+        "sha256:0e835d02c1b5a93d74af44edda6dc7b36938429847b13d0553a5ba4adab1e686",
+        "sha256:419df8b600324530e8b64cabca7b0e6b959efc8d41fb2b8253014a4099747501",
+        "sha256:a546cea8cabf87ccfed2e36843290e8655a84ee12de15e3b79e402a6ce9dc438",
+        "sha256:b54e9abd943188379d581393881424e72fcf2ab5d65d7dd032780cac1bdeb8f8",
+        "sha256:c8652efc5592ec0fcec16bb390c0fcf5ebaa8a2be8e0485309010df9c37a73e9",
+        "sha256:f74f8e61adc4cc9994bceb0cc1d0b1c045eaad71b38843d836c81f941ed80c79",
+        "sha256:ec86793ee128c3500fc2a2b88c2a98d6593b49d077f61fbe235951cac8c409fe",
+        "sha256:d8d1d7beecf81441dac553f472f42655a5e07a0110aac4fa9cd004dbd4883062",
+        "sha256:d6be6c2d076873737e0d61941cf0e18e18f7b1aecf40d2ff4a6b3f3e40e95928"
+      ],
+      "RepoTags": [
+        "ghcr.io/socialgouv/fabrique/www:latest"
+      ],
+      "RepoDigests": [
+        "ghcr.io/socialgouv/fabrique/www@sha256:aa782e14dfba71bbebc6b0f2f2dd12658aca903a784297453fe303f236b531a6"
+      ],
+      "ImageConfig": {
+        "architecture": "amd64",
+        "created": "2022-02-07T23:48:31.587218165Z",
+        "history": [
+          {
+            "created": "2021-11-24T20:19:40.199700946Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:9233f6f2237d79659a9521f7e390df217cec49f1a8aa3a12147bbca1956acdb9 in / "
           },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42378",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
+          {
+            "created": "2021-11-24T20:19:40.483367546Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+            "empty_layer": true
           },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
+          {
+            "created": "2021-12-29T19:29:04.16538557Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.390147627Z",
+            "created_by": "/bin/sh -c #(nop)  ENV NGINX_VERSION=1.21.5",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.577978445Z",
+            "created_by": "/bin/sh -c #(nop)  ENV NJS_VERSION=0.7.1",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:04.788037552Z",
+            "created_by": "/bin/sh -c #(nop)  ENV PKG_RELEASE=1",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:12.068582134Z",
+            "created_by": "/bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     \"     && apk add --no-cache --virtual .checksum-deps         openssl     && case \"$apkArch\" in         x86_64|aarch64)             set -x             && KEY_SHA512=\"e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin\"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ \"$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)\" = \"$KEY_SHA512\" ]; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 bash                 alpine-sdk                 findutils             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -O https://hg.nginx.org/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\\\"b0ed109a820a2e8921f313d653032b8e70d3020138d634039ebb9194dc3968493f6eb4d85bdbf18d2aea7229deddb98ca0f1d9825defcc5af45f68ee37845232 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 && if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del .checksum-deps     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -n \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n \"/etc/apk/keys/nginx_signing.rsa.pub\" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps=\"$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, \"\\nso:\", $2); print \"so:\" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )\"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && apk add --no-cache curl ca-certificates     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d"
+          },
+          {
+            "created": "2021-12-29T19:29:12.391644093Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:65504f71f5855ca017fb64d502ce873a31b2e0decd75297a8fb0a287f97acf92 in / "
+          },
+          {
+            "created": "2021-12-29T19:29:12.646096171Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:0b866ff3fc1ef5b03c4e6c8c513ae014f691fb05d530257dfffd07035c1b75da in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:12.866301243Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:0fd5fca330dcd6a7de297435e32af634f29f7132ed0550d342cad9fd20158258 in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:13.11583395Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:09a214a3e07c919af2fb2d7c749ccbc446b8c10eb217366e5a65640ee9edcc25 in /docker-entrypoint.d "
+          },
+          {
+            "created": "2021-12-29T19:29:13.304458527Z",
+            "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.487009533Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.689668979Z",
+            "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGQUIT",
+            "empty_layer": true
+          },
+          {
+            "created": "2021-12-29T19:29:13.874392808Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-01-04T11:27:57.277481719Z",
+            "created_by": "COPY ./nginx.conf /etc/nginx/nginx.conf # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.285359231Z",
+            "created_by": "COPY ./entrypoint.sh /entrypoint.sh # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.294503461Z",
+            "created_by": "COPY ./envsub.sh /envsub.sh # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.303094583Z",
+            "created_by": "COPY ./404.html /usr/share/nginx/errors/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.801308865Z",
+            "created_by": "RUN /bin/sh -c chown -R nginx:nginx /usr/share/nginx/html && chmod -R 755 /usr/share/nginx/html &&         chown -R nginx:nginx /var/cache/nginx &&         chown -R nginx:nginx /var/log/nginx &&         chown -R nginx:nginx /etc/nginx # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.856695852Z",
+            "created_by": "RUN /bin/sh -c touch /var/run/nginx.pid &&         chown -R nginx:nginx /var/run/nginx.pid # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-01-04T11:27:57.856695852Z",
+            "created_by": "ENTRYPOINT [\"/entrypoint.sh\"]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-02-07T23:48:31.587218165Z",
+            "created_by": "USER 101",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-02-07T23:48:31.587218165Z",
+            "created_by": "ENV PORT=3000",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-02-07T23:48:31.587218165Z",
+            "created_by": "COPY /out /usr/share/nginx/html # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759",
+            "sha256:1c9c1e42aafaa6067e6591a2b3214b4d6c6c357b597377bd395486d9999209cd",
+            "sha256:3f87f0a06073927060d269480f2c55cd4ac978732291be1e900a0e834dbc0db0",
+            "sha256:5ee3266a70bd586778d7d3dc36fd1dbc2ab407d559615a1c3508697eac86142f",
+            "sha256:0e835d02c1b5a93d74af44edda6dc7b36938429847b13d0553a5ba4adab1e686",
+            "sha256:419df8b600324530e8b64cabca7b0e6b959efc8d41fb2b8253014a4099747501",
+            "sha256:a546cea8cabf87ccfed2e36843290e8655a84ee12de15e3b79e402a6ce9dc438",
+            "sha256:b54e9abd943188379d581393881424e72fcf2ab5d65d7dd032780cac1bdeb8f8",
+            "sha256:c8652efc5592ec0fcec16bb390c0fcf5ebaa8a2be8e0485309010df9c37a73e9",
+            "sha256:f74f8e61adc4cc9994bceb0cc1d0b1c045eaad71b38843d836c81f941ed80c79",
+            "sha256:ec86793ee128c3500fc2a2b88c2a98d6593b49d077f61fbe235951cac8c409fe",
+            "sha256:d8d1d7beecf81441dac553f472f42655a5e07a0110aac4fa9cd004dbd4883062",
+            "sha256:d6be6c2d076873737e0d61941cf0e18e18f7b1aecf40d2ff4a6b3f3e40e95928"
+          ]
         },
-        {
-          "VulnerabilityID": "CVE-2021-42379",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42379",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
+        "config": {
+          "Entrypoint": [
+            "/entrypoint.sh"
           ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "NGINX_VERSION=1.21.5",
+            "NJS_VERSION=0.7.1",
+            "PKG_RELEASE=1",
+            "PORT=3000"
           ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42380",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
+          "Labels": {
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>",
+            "org.opencontainers.image.created": "2022-02-07T23:47:20.568Z",
+            "org.opencontainers.image.description": "Site de la fabrique numérique des Ministères sociaux",
+            "org.opencontainers.image.documentation": "https://github.com/SocialGouv/www/tree/5e361d5cacba8177a7ed80cb604503ba2914af2e",
+            "org.opencontainers.image.licenses": "NOASSERTION",
+            "org.opencontainers.image.revision": "5e361d5cacba8177a7ed80cb604503ba2914af2e",
+            "org.opencontainers.image.source": "https://github.com/SocialGouv/www",
+            "org.opencontainers.image.title": "www",
+            "org.opencontainers.image.url": "https://github.com/SocialGouv/www",
+            "org.opencontainers.image.version": "2.33.25"
           },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42380",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
+          "User": "101",
+          "ExposedPorts": {
+            "80/tcp": {}
           },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42381",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42381",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42382",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42382",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42383",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42383",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42384",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42384",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42385",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42385",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42386",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42386",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42374",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r4",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42374",
-          "Title": "busybox: out-of-bounds read in unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed",
-          "Description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-125"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
-              "V2Score": 3.3,
-              "V3Score": 5.3
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
-              "V3Score": 5.7
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42375",
-          "PkgName": "busybox",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r5",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42375",
-          "Title": "busybox: incorrect handling of a special element in ash applet leads to denial of service when processing a crafted shell command",
-          "Description": "An incorrect handling of a special element in Busybox's ash applet leads to denial of service when processing a crafted shell command, due to the shell mistaking specific characters for reserved characters. This may be used for DoS under rare conditions of filtered command input.",
-          "Severity": "MEDIUM",
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V2Score": 1.9,
-              "V3Score": 5.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 4.1
-            }
-          },
-          "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22945",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
-          "Title": "curl: use-after-free and double-free in MQTT sending",
-          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
-          "Severity": "CRITICAL",
-          "CweIDs": [
-            "CWE-415"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V2Score": 5.8,
-              "V3Score": 9.1
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V3Score": 7.4
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22945.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
-            "https://hackerone.com/reports/1269242",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:13:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22946",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
-          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
-          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-319"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V2Score": 5,
-              "V3Score": 7.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22946.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
-            "https://hackerone.com/reports/1334111",
-            "https://linux.oracle.com/cve/CVE-2021-22946.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4059.html",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:12:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22947",
-          "PkgName": "curl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
-          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
-          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-345"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-              "V2Score": 4.3,
-              "V3Score": 5.9
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22947.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
-            "https://hackerone.com/reports/1334763",
-            "https://launchpad.net/bugs/1944120 (regression bug)",
-            "https://linux.oracle.com/cve/CVE-2021-22947.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4059.html",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:12:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22945",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22945",
-          "Title": "curl: use-after-free and double-free in MQTT sending",
-          "Description": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
-          "Severity": "CRITICAL",
-          "CweIDs": [
-            "CWE-415"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V2Score": 5.8,
-              "V3Score": 9.1
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
-              "V3Score": 7.4
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22945.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22945",
-            "https://hackerone.com/reports/1269242",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-23T13:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:13:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22946",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22946",
-          "Title": "curl: Requirement to use TLS not properly enforced for IMAP, POP3, and FTP protocols",
-          "Description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-319"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V2Score": 5,
-              "V3Score": 7.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 7.5
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22946.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22946",
-            "https://hackerone.com/reports/1334111",
-            "https://linux.oracle.com/cve/CVE-2021-22946.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4059.html",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:12:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-22947",
-          "PkgName": "libcurl",
-          "InstalledVersion": "7.78.0-r0",
-          "FixedVersion": "7.79.0-r0",
-          "Layer": {
-            "Digest": "sha256:4dd4efe90939ab5711aaf5fcd9fd8feb34307bab48ba93030e8b845f8312ed8e",
-            "DiffID": "sha256:e6d3cea19fef0752dc05de747d53678768e5442b7bc553da24c26843fb004991"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22947",
-          "Title": "curl: Server responses received before STARTTLS processed after TLS handshake",
-          "Description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-345"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-              "V2Score": 4.3,
-              "V3Score": 5.9
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
-              "V3Score": 6.1
-            }
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2021-22947.html",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22947",
-            "https://hackerone.com/reports/1334763",
-            "https://launchpad.net/bugs/1944120 (regression bug)",
-            "https://linux.oracle.com/cve/CVE-2021-22947.html",
-            "https://linux.oracle.com/errata/ELSA-2021-4059.html",
-            "https://lists.debian.org/debian-lts-announce/2021/09/msg00022.html",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APOAK4X73EJTAPTSVT7IRVDMUWVXNWGD/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RWLEC6YVEM2HWUBX67SDGPSY4CQB72OE/",
-            "https://security.netapp.com/advisory/ntap-20211029-0003/",
-            "https://ubuntu.com/security/notices/USN-5079-1",
-            "https://ubuntu.com/security/notices/USN-5079-2",
-            "https://ubuntu.com/security/notices/USN-5079-3",
-            "https://ubuntu.com/security/notices/USN-5079-4",
-            "https://www.oracle.com/security-alerts/cpuoct2021.html"
-          ],
-          "PublishedDate": "2021-09-29T20:15:00Z",
-          "LastModifiedDate": "2021-11-28T23:12:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42378",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42378",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42379",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42379",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42380",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42380",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the clrvar function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42381",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42381",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42382",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42382",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42383",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42383",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42384",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42384",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42385",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42385",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42386",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r6",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42386",
-          "Title": "busybox: use-after-free in awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc()",
-          "Description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V2Score": 6.5,
-              "V3Score": 7.2
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 6.6
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42374",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r4",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42374",
-          "Title": "busybox: out-of-bounds read in unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed",
-          "Description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-125"
-          ],
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
-              "V2Score": 3.3,
-              "V3Score": 5.3
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
-              "V3Score": 5.7
-            }
-          },
-          "References": [
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374",
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2021-42375",
-          "PkgName": "ssl_client",
-          "InstalledVersion": "1.33.1-r3",
-          "FixedVersion": "1.33.1-r5",
-          "Layer": {
-            "Digest": "sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e",
-            "DiffID": "sha256:e2eb06d8af8218cfec8210147357a68b7e13f7c485b991c288c2d01dc228bb68"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42375",
-          "Title": "busybox: incorrect handling of a special element in ash applet leads to denial of service when processing a crafted shell command",
-          "Description": "An incorrect handling of a special element in Busybox's ash applet leads to denial of service when processing a crafted shell command, due to the shell mistaking specific characters for reserved characters. This may be used for DoS under rare conditions of filtered command input.",
-          "Severity": "MEDIUM",
-          "CVSS": {
-            "nvd": {
-              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P",
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V2Score": 1.9,
-              "V3Score": 5.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 4.1
-            }
-          },
-          "References": [
-            "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
-            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/"
-          ],
-          "PublishedDate": "2021-11-15T21:15:00Z",
-          "LastModifiedDate": "2021-11-25T03:15:00Z"
+          "StopSignal": "SIGQUIT"
         }
-      ]
-    }
+      }
+    },
+    "Results": [
+      {
+        "Target": "ghcr.io/socialgouv/fabrique/www:latest (alpine 3.15.0)",
+        "Class": "os-pkgs",
+        "Type": "alpine"
+      }
+    ]
   }
 ]
