@@ -1,21 +1,12 @@
 {
-  "trackers": [
-    {
-      "type": "hotjar",
-      "url": "https://static.hotjar.com/c/hotjar-1712152.js?sv=6",
-      "details": {
-        "id": "hotjar",
-        "message": "Dont use HotJar"
-      }
-    }
-  ],
+  "trackers": [],
   "cookies": [
     {
       "name": "_pk_ses.21.2b29",
       "value": "1",
       "domain": "metropole-tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1645323530,
+      "expires": 1645928174,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +18,10 @@
     },
     {
       "name": "_pk_id.21.2b29",
-      "value": "1e162beb13798097.1645321730.",
+      "value": "cbdae7e20d40476a.1645926374.",
       "domain": "metropole-tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1679276930,
+      "expires": 1679881574,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -42,11 +33,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 20 Feb 2022 01:48:49 GMT",
+    "date": "Sun, 27 Feb 2022 01:46:13 GMT",
     "content-type": "text/html",
-    "last-modified": "Mon, 14 Feb 2022 16:38:33 GMT",
+    "last-modified": "Fri, 25 Feb 2022 18:37:07 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"620a8589-e64\"",
+    "etag": "W/\"621921d3-d17\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -146,60 +137,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "hostname": "static.hotjar.com",
-      "ip": "52.85.151.75",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
       }
     }
   ]
