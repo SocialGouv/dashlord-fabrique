@@ -2,49 +2,12 @@
   "trackers": [
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-sentry.cloud-ed.fr/api/27/envelope/?sentry_key=24f5b07f17a544b1b76ac0766ee68020&sentry_version=7"
+      "url": "https://browser.sentry-cdn.com/5.15.5/bundle.min.js"
     }
   ],
-  "cookies": [
-    {
-      "name": "_pk_ses.15.fec2",
-      "value": "1",
-      "domain": "sample-next-app.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1645928493,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.15.fec2",
-      "value": "26ccf58d9f29ed77.1645926693.",
-      "domain": "sample-next-app.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1679881893,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
-    "date": "Sun, 27 Feb 2022 01:51:32 GMT",
-    "content-type": "text/html; charset=utf-8",
-    "x-powered-by": "Next.js",
-    "etag": "\"bfd-s/oEbecjGrKQy6DwDcPC9eucx3w\"",
-    "vary": "Accept-Encoding",
-    "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "date": "Sun, 06 Mar 2022 01:54:46 GMT"
   },
   "endpoints": [
     {
@@ -142,8 +105,8 @@
       }
     },
     {
-      "hostname": "lafabriquenumerique-sentry.cloud-ed.fr",
-      "ip": "154.41.70.5",
+      "hostname": "browser.sentry-cdn.com",
+      "ip": "151.101.194.217",
       "geoip": {
         "continent": {
           "code": "NA",
