@@ -89,6 +89,7 @@ jobs:
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
         if: ${{ matrix.sites.tools.screenshot }}
+        timeout-minutes: 10
         continue-on-error: true
         with:
           source: "${{ matrix.sites.url }}"
