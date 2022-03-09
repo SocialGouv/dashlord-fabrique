@@ -1,0 +1,16 @@
+[
+         {
+              "id"           : "scanProblem",
+              "ip"           : "monpsy.fabrique.social.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "FATAL",
+              "finding"      : "No IPv4/IPv6 address(es) for 'monpsy.fabrique.social.gouv.fr' available"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "monpsy.fabrique.social.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "Scan interrupted"
+          }
+]
