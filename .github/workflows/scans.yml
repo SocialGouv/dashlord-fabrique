@@ -149,7 +149,7 @@ jobs:
         uses: SocialGouv/dashlord-actions/declaration-rgpd@v1
         if: ${{ matrix.sites.tools['declaration-rgpd'] }}
         with:
-          thirdparties: ${{ steps.thirdparties.outputs.thirdpartiesJson }}
+          thirdparties: ${{ steps.thirdparties.outputs.json }}
           url: ${{ matrix.sites.url }}
           output: scans/declaration-rgpd.json
 
