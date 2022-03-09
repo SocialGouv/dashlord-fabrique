@@ -23,6 +23,7 @@ tools:
   stats: true
   trivy: false
   declaration-a11y: true
+  declaration-rgpd: true
 urls:
   - url: https://archifiltre.fabrique.social.gouv.fr
     category: fabrique
