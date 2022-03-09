@@ -146,7 +146,7 @@ jobs:
 
       - name: Déclaration RGPD
         continue-on-error: true
-        uses: SocialGouv/dashlord-actions/declaration-rgpd@v1"
+        uses: SocialGouv/dashlord-actions/declaration-rgpd@v1
         if: ${{ matrix.sites.tools['declaration-rgpd'] }}
         with:
           thirdparties: ${{ steps.thirdparties.outputs.thirdpartiesJson }}
