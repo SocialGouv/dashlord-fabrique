@@ -10,7 +10,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/embed/YARhy56fwG4",
+      "url": "https://www.youtube.com/embed/tMa2_T7sewo",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -18,7 +18,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/2fd2ad45/www-player.css",
+      "url": "https://www.youtube.com/s/player/87b9576a/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -26,7 +26,23 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/2fd2ad45/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/87b9576a/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/87b9576a/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/87b9576a/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -38,22 +54,6 @@
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/2fd2ad45/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/2fd2ad45/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -74,7 +74,23 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/api/stats/qoe?cpn=P3a_xa49G14sONEY&el=embedded&ns=yt&fexp=23983296%2C24001373%2C24002022%2C24002025%2C24004644%2C24007246%2C24080738%2C24082662%2C24135310%2C24140277%2C24161568%2C24169726%2C24175559&cl=432817551&seq=1&event=streamingstats&docid=YARhy56fwG4&cbr=HeadlessChrome&cbrver=91.0.4469.0&c=WEB_EMBEDDED_PLAYER&cver=1.20220306.00.00&cplayer=UNIPLAYER&cos=X11&cplatform=DESKTOP&vps=0.000:N,0.000:ER&cmt=0.000:0.000,0.000:0.000&error=0.000:auth:0.000:0;a6s.0&vis=0.000:0&bh=0.000:0.000",
+      "url": "https://www.youtube.com/s/player/87b9576a/player_ias.vflset/en_US/remote.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://www.google.com/js/th/nZvBJ6n5TdZ62aCM6LFj0MJnwO5NiOq1Qq9v_oTz3HU.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/87b9576a/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -82,7 +98,15 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/2fd2ad45/player_ias.vflset/en_US/embed.js",
+      "url": "https://yt3.ggpht.com/CxSz0c9jDumZeOB71xT9UsV9gGfVo25EZFSSu9IC3BpiHikmAJ4Z4VYgzup_wJdtMJBZIMoG3g=s68-c-k-c0x00ffffff-no-rj",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://i.ytimg.com/vi_webp/tMa2_T7sewo/maxresdefault.webp",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -94,6 +118,22 @@
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/generate_204?1JQiEA",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -111,7 +151,7 @@
       "value": "1",
       "domain": "transitions-collectives.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1646819353,
+      "expires": 1647003213,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -123,10 +163,10 @@
     },
     {
       "name": "_pk_id.58.4da1",
-      "value": "39d3540e54d5b167.1646817554.",
+      "value": "641b43dc46e7190a.1647001413.",
       "domain": "transitions-collectives.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1680772754,
+      "expires": 1680956613,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -138,10 +178,10 @@
     }
   ],
   "headers": {
-    "date": "Wed, 09 Mar 2022 09:19:12 GMT",
+    "date": "Fri, 11 Mar 2022 12:23:31 GMT",
     "content-type": "text/html; charset=utf-8",
     "x-powered-by": "Next.js",
-    "etag": "\"5253-Wm3poHi5GzXw9TuKS0dRYyif2wI\"",
+    "etag": "\"51fe-/STPLJIEx9AYxFJAOYI1grkAs4A\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
@@ -248,7 +288,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "172.217.15.110",
+      "ip": "142.251.45.110",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -302,7 +342,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.217.164.131",
+      "ip": "142.251.45.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -356,7 +396,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.33.194",
+      "ip": "142.251.45.2",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -410,7 +450,223 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.33.198",
+      "ip": "142.250.81.198",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "www.google.com",
+      "ip": "172.217.15.68",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "yt3.ggpht.com",
+      "ip": "142.250.188.33",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "i.ytimg.com",
+      "ip": "172.217.13.246",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "www.gstatic.com",
+      "ip": "142.251.45.3",
       "geoip": {
         "continent": {
           "code": "NA",
