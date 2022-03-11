@@ -2,6 +2,14 @@
   "trackers": [
     {
       "type": "unknown",
+      "url": "https://dummyimage.com/190x300/188cf2/fff.png&text=logo+1"
+    },
+    {
+      "type": "unknown",
+      "url": "https://dummyimage.com/100x80/188cf2/fff.png&text=logo+1"
+    },
+    {
+      "type": "unknown",
       "url": "https://dummyimage.com/100x80/000/fff.png&text=logo+1"
     },
     {
@@ -19,7 +27,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1646819655,
+      "expires": 1647003257,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -31,10 +39,10 @@
     },
     {
       "name": "_pk_id.63.f7e2",
-      "value": "1bf22de492b4ea97.1646817856.",
+      "value": "e96f456a6dd61bfe.1647001457.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1680773056,
+      "expires": 1680956657,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -46,11 +54,11 @@
     }
   ],
   "headers": {
-    "date": "Wed, 09 Mar 2022 09:24:14 GMT",
+    "date": "Fri, 11 Mar 2022 12:24:16 GMT",
     "content-type": "text/html",
-    "last-modified": "Sat, 05 Mar 2022 00:06:22 GMT",
+    "last-modified": "Thu, 10 Mar 2022 14:31:26 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"6222a97e-2575\"",
+    "etag": "W/\"622a0bbe-3a35\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -154,57 +162,8 @@
     },
     {
       "hostname": "dummyimage.com",
-      "ip": "172.67.137.245",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
+      "ip": "104.21.78.230",
+      "geoip": null
     }
   ]
 }
