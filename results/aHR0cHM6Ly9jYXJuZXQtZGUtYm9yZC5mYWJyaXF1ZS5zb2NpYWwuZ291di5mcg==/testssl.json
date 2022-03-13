@@ -353,7 +353,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "86 >= 30 days"
+              "finding"      : "85 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1647000494"
+              "finding"      : "1647136965"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -612,7 +612,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr client.crisp.chat; connect-src 'self' *.fabrique.social.gouv.fr localhost:*; font-src 'self' data: blob: client.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr client.crisp.chat; style-src 'self' client.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr client.crisp.chat 'nonce-hs5FmX84e1hI9hJ+XKXiSw=='"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr client.crisp.chat; connect-src 'self' *.fabrique.social.gouv.fr localhost:*; font-src 'self' data: blob: client.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr client.crisp.chat; style-src 'self' client.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr client.crisp.chat 'nonce-CVn45eDd340LI3Gddr+0Tw=='"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -1133,6 +1133,6 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "85"
+              "finding"      : "129"
           }
 ]
