@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1647514469,
+      "expires": 1647542158,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.59.202d",
-      "value": "93641692307b80de.1647512669.",
+      "value": "20b1899ed4c5c4da.1647540358.",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1681467869,
+      "expires": 1681495558,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Thu, 17 Mar 2022 10:24:27 GMT",
+    "date": "Thu, 17 Mar 2022 18:05:57 GMT",
     "content-type": "text/html; charset=utf-8",
     "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr https://services.sarbacane.com;font-src 'self' data:;img-src 'self' data: https://forms.sbc08.com https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr https://*.sbc08.com;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
     "x-powered-by": "Next.js",
