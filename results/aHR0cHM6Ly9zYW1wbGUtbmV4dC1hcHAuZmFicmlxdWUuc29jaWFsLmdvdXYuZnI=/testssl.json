@@ -213,7 +213,7 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -276,7 +276,7 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "3A4F2046AA8E0D342EB7150B2C3268DD"
+              "finding"      : "9B54D15E799D1588C92F860E41E045D1"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "E68DF3F16D553EEC3EE08545B019C318B2B0CFFD"
+              "finding"      : "4B5BF454E44AD406841521629BC5CFA861293D3D"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0D44682CDD4863D9C3E2D9078D684AEE841ABA8C5367ECCF592250D2E294A5EC"
+              "finding"      : "281D2118F1F7FFAD2E46A4E66B1C449FCE788153E10B281A476B3F4C11443C2F"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIDbzCCAlegAwIBAgIQOk8gRqqODTQutxULLDJo3TANBgkqhkiG9w0BAQsFADBL MRAwDgYDVQQKEwdBY21lIENvMTcwNQYDVQQDEy5LdWJlcm5ldGVzIEluZ3Jlc3Mg Q29udHJvbGxlciBGYWtlIENlcnRpZmljYXRlMB4XDTIyMDExMjE4MDgxNVoXDTIz MDExMjE4MDgxNVowSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJu ZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTCCASIwDQYJ KoZIhvcNAQEBBQADggEPADCCAQoCggEBAL3mEB35o2WRMhaLWUMPYOr5uxuJ4MpR oYvz340aA0hSA57YA6Bh1hmzgjmyx56x+B51T454rlkcfrhKWWiekFaRczMtcAKR 36bV9j7KOhPG2uVu8s0V9uEgMmaNOfVfq2e/w4KeV9cD9Rh2vaM/4rNvXrcQKBGu sjRnUZACf/mXj43fZU+ZE3IhaaeQzJSWsus8Mq7Iamnb/G0ksZKVRJtL3EOCpD+f jDrnaDDqJZQcTX9afYlRQ9F+6ig091tyqkD5u6a8+TRXZeboCGcutbgcqlpdPNxg ySxG0nqWTlC1uybcgkeyorf8xO4eDPLTM6cJ0c1Ndd7z0dFs34ZAh4MCAwEAAaNP ME0wDgYDVR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB /wQCMAAwGAYDVR0RBBEwD4INaW5ncmVzcy5sb2NhbDANBgkqhkiG9w0BAQsFAAOC AQEAYCQkASBBpqdI/av5xnEPE9lzUPgRVGmRkzuJxzl6D7pyikHNkW8NWlQB0oSE zjU9Jz+r4UnQ4aI9Tg5ZG7tRcYBZa9X2obF+GZ4joUW2E4gY//wItqHbXCdDZ+7P XukHinxw9xgKxNJPmOEhVdy1ZB+kyXfAov0Y8susL9u3Ap2BBmJ7LlSkIUpMmUlT oaZTJpTQuhE3o0j6tfBX3ar4ak8ssVRBocxwvRl5oNNOnUuEUqMt08eHGrlXZI1Q VSu1AsRPHpOGousXOs0jwkijpUgO+f2HHyDXnrbRyUUCT0Vo9/c5AUzcyspezF3X YIeEXr4NaMIY4nRmSE1lZbPhCQ== -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIDcDCCAligAwIBAgIRAJtU0V55nRWIyS+GDkHgRdEwDQYJKoZIhvcNAQELBQAw SzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNz IENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTAeFw0yMjAzMTcwMTAyMDdaFw0y MzAzMTcwMTAyMDdaMEsxEDAOBgNVBAoTB0FjbWUgQ28xNzA1BgNVBAMTLkt1YmVy bmV0ZXMgSW5ncmVzcyBDb250cm9sbGVyIEZha2UgQ2VydGlmaWNhdGUwggEiMA0G CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDXgopkIl5KZK/oZf5L33IXGcSkQUhf myJ7Rgq03u6mRaO+oUt0AFg6NGIlHj/bJkwutXplMvFBqGcA3GogXJaDgOSOriIX kG3r6EKz34Ft2C1d+7tQc7SNo5lBSj8MlGpgnpTE+q8/nwHgC43jLZJXB+2kPjIS vmBSTq/6zZP4FBoTCETBThcyprQZjQbhEQkz9JVSWyJvPXkhLOemRXWzATBirTY1 WlK4MxmHpCzkf6Q8VWoFcvYD7DEbD7VyAIBgO7l8Dzgseb3GwSx+PX6DbDLmdA6L QbhELLVk0HDmmZEUYwfRo3ATvSrnOcsc/xueYHae7B0fkN3MYmmmco4ZAgMBAAGj TzBNMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMB Af8EAjAAMBgGA1UdEQQRMA+CDWluZ3Jlc3MubG9jYWwwDQYJKoZIhvcNAQELBQAD ggEBALXqp8R4XrfriWo/au4Chq+3VCgRh5yHqVvuZ5ZD2ae7AE/TPOgjT5eWF0Rw nvBeUnZWF8a6ZP45oiciEv1LZxCka6bVnqZ+8FZRW4/JcHECy4j8BQz52olJNz0K FBEZK5c67NulVaDZH4d4v8dVxl3U0oJ9m3sa7kc2PkV/meYUxQYp6/6sQjuPqt3W qRsuhV8RyNnhgz82ssZ1Nitor2/GvHgejUSEeGCr1zALO22pilSM/1JhacwIARCK 2rnMAUXaZppfLPyG55iQu0npkbQguPDriZWXYvPyFxNzV4rkk8CcWkFGfQDHYPtf L7A53AeiD/WvCDbraSq4l9vbJFo= -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "305 >= 60 days"
+              "finding"      : "364 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-01-12 18:08"
+              "finding"      : "2022-03-17 01:02"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-01-12 18:08"
+              "finding"      : "2023-03-17 01:02"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -479,7 +479,7 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1647137072"
+              "finding"      : "1647512100"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -666,7 +666,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=0D44682CDD4863D9C3E2D9078D684AEE841ABA8C5367ECCF592250D2E294A5EC"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=281D2118F1F7FFAD2E46A4E66B1C449FCE788153E10B281A476B3F4C11443C2F"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1063,6 +1063,6 @@
               "ip"           : "sample-next-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "82"
+              "finding"      : "124"
           }
 ]
