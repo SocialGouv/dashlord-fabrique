@@ -132,6 +132,13 @@
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
               "id"           : "cipher_order",
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -151,13 +158,6 @@
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "ECDHE-RSA-AES128-GCM-SHA256, 256 bit ECDH (P-256)"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1_2",
-              "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "FS",
@@ -213,7 +213,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +353,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "67 >= 30 days"
+              "finding"      : "60 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648345298"
+              "finding"      : "1648950417"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1126,6 +1126,6 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "87"
           }
 ]
