@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az399-739:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az504-908:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2022-04-03 02:03:00        --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-04-10 02:03:09        --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>04B9DA78B1B6D0ED6824CFD5CA485A0DD85D (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 3A05F40A40BDEDFA9E441AA42F6F50011314A685
-                              SHA256 C5027D244BF84FA6C80420BC69B99FB734E9B368912E55842029CFC8FE7B099A
+<span style="font-weight:bold;"> Serial                       </span>03FCC6BAFABB2CDC1BB032410BC973852BF6 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 027A6F3FD839479AD82A0EE25BE950816DB63046
+                              SHA256 489EF6CB7519CFE9FAC6A0AA367E4C91CB57DB6754A38F21E77F8F611BAEF0AF
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>monsuivipsy.fabrique.social.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>monsuivipsy.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">79 &gt;= 30 days</span> (2022-03-23 15:59 --&gt; 2022-06-21 15:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">84 &gt;= 30 days</span> (2022-04-05 00:45 --&gt; 2022-07-04 00:45)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -123,13 +123,26 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
 <span style="font-weight:bold;"> Application banner           </span><span style="color:#8a7237;font-weight:bold;">X-Powered-By</span>: Next.js
 <span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;)
-<span style="font-weight:bold;"> Security headers             </span><span style="color:#c05600;">--</span>
+<span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: deny
+                              <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;none&apos;;
+                                connect-src &apos;self&apos; https://*.gouv.fr; font-src
+                                &apos;self&apos;; media-src &apos;self&apos; https://*.gouv.fr;
+                                img-src &apos;self&apos; https://*.gouv.fr
+                                https://a.tile.openstreetmap.org
+                                https://b.tile.openstreetmap.org
+                                https://c.tile.openstreetmap.org; prefetch-src
+                                &apos;self&apos; https://*.gouv.fr; script-src &apos;self&apos;
+                                https://*.gouv.fr; frame-src &apos;self&apos;
+                                https://*.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;
+                              X-XSS-Protection: 1; mode=block
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
 
@@ -150,7 +163,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services
-                                           <a href="https://censys.io/ipv4?q=C5027D244BF84FA6C80420BC69B99FB734E9B368912E55842029CFC8FE7B099A" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=C5027D244BF84FA6C80420BC69B99FB734E9B368912E55842029CFC8FE7B099A</a> could help you to find out
+                                           <a href="https://censys.io/ipv4?q=489EF6CB7519CFE9FAC6A0AA367E4C91CB57DB6754A38F21E77F8F611BAEF0AF" style="color:black;text-decoration:none;">https://censys.io/ipv4?q=489EF6CB7519CFE9FAC6A0AA367E4C91CB57DB6754A38F21E77F8F611BAEF0AF</a> could help you to find out
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -210,7 +223,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2022-04-03 02:04:25 [  88s] --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2022-04-10 02:05:24 [ 137s] --&gt;&gt; 20.74.14.77:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
