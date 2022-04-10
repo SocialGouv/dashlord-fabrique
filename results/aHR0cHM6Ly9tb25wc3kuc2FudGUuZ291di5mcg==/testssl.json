@@ -353,7 +353,7 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "46 >= 30 days"
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +549,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648953426"
+              "finding"      : "1649558141"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -612,7 +612,7 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self';connect-src 'self' https://*.gouv.fr https://services.sarbacane.com;font-src 'self' data:;img-src 'self' data: https://forms.sbc08.com https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr https://*.sbc08.com;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'"
+              "finding"      : "default-src 'self';connect-src 'self' https://*.gouv.fr;font-src 'self' data:;img-src 'self' data: https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1126,6 +1126,6 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "130"
+              "finding"      : "141"
           }
 ]
