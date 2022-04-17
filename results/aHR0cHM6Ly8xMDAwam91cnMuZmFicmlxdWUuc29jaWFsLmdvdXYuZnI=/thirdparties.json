@@ -6,11 +6,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1649557411291"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1650163112866"
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1649557411296"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1650163112871"
     },
     {
       "type": "unknown",
@@ -18,7 +18,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1649557416242"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1650163116809"
     }
   ],
   "cookies": [
@@ -27,7 +27,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649559212,
+      "expires": 1650164913,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -39,10 +39,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "47814066b77ac93c.1649557412.",
+      "value": "d1cbc81ae2fd2ab4.1650163114.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683512612,
+      "expires": 1684118314,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -54,11 +54,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:23:30 GMT",
+    "date": "Sun, 17 Apr 2022 02:38:32 GMT",
     "content-type": "text/html",
-    "last-modified": "Sat, 09 Apr 2022 18:39:14 GMT",
+    "last-modified": "Fri, 15 Apr 2022 16:28:02 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"6251d2d2-452f\"",
+    "etag": "W/\"62599d12-452f\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -113,7 +113,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
