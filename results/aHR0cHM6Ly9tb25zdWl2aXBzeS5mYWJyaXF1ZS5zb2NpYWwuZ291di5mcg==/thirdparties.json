@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "monsuivipsy.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649557959,
+      "expires": 1650163501,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.33.4a6e",
-      "value": "02f2786ccaea3a60.1649556160.",
+      "value": "e181c2556eaf3670.1650161702.",
       "domain": "monsuivipsy.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683511360,
+      "expires": 1684116902,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:02:38 GMT",
+    "date": "Sun, 17 Apr 2022 02:15:00 GMT",
     "content-type": "text/html; charset=utf-8",
     "x-powered-by": "Next.js",
     "etag": "\"4229-A7kROtZkjDybYl1CJaBJ+KTrHdk\"",
@@ -93,7 +93,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
