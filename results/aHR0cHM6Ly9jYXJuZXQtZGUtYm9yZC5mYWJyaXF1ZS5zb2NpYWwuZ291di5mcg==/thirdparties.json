@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "carnet-de-bord.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649559333,
+      "expires": 1650165049,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.51.b6b8",
-      "value": "b29731f4abea83ad.1649557533.",
+      "value": "68cc774f404496a0.1650163250.",
       "domain": "carnet-de-bord.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683512733,
+      "expires": 1684118450,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,10 +33,10 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:25:32 GMT",
+    "date": "Sun, 17 Apr 2022 02:40:48 GMT",
     "content-type": "text/html",
-    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-01+zqfdfJ4TIZz53IKsoHw=='",
-    "etag": "\"b3f39x\"",
+    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-5BSzI3PYJE9wBfWu2oqe0A=='",
+    "etag": "\"18cqhx1\"",
     "permissions-policy": "interest-cohort=()",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
@@ -93,7 +93,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
