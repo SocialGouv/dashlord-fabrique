@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649556989,
+      "expires": 1650161896,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.20.0b0e",
-      "value": "feeea1fc5dd3b59a.1649555190.",
+      "value": "2205f22ff86c1c4a.1650160096.",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683510390,
+      "expires": 1684115296,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 01:46:29 GMT",
+    "date": "Sun, 17 Apr 2022 01:48:15 GMT",
     "content-type": "text/html",
     "last-modified": "Thu, 10 Mar 2022 09:07:29 GMT",
     "vary": "Accept-Encoding",
@@ -92,7 +92,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
