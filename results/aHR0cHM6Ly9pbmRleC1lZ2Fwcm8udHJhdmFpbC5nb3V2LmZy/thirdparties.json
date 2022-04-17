@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "index-egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1648952157,
+      "expires": 1650161871,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.11.78e9",
-      "value": "4387e019b8a40e1a.1648950357.",
+      "value": "eca69dfef4b1242b.1650160072.",
       "domain": "index-egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1682905557,
+      "expires": 1684115272,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 03 Apr 2022 01:45:55 GMT",
+    "date": "Sun, 17 Apr 2022 01:47:50 GMT",
     "content-type": "text/html; charset=utf-8",
     "vary": "Accept-Encoding",
     "last-modified": "Thu, 03 Mar 2022 15:47:21 GMT",
@@ -89,7 +89,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
