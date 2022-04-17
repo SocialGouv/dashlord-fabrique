@@ -27,7 +27,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649560324,
+      "expires": 1650166364,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -39,10 +39,10 @@
     },
     {
       "name": "_pk_id.63.f7e2",
-      "value": "72464f4be1efff8f.1649558525.",
+      "value": "87157951ac7c45a0.1650164565.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683513725,
+      "expires": 1684119765,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -54,7 +54,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:42:03 GMT",
+    "date": "Sun, 17 Apr 2022 03:02:43 GMT",
     "content-type": "text/html",
     "last-modified": "Wed, 30 Mar 2022 16:14:47 GMT",
     "vary": "Accept-Encoding",
@@ -113,7 +113,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
