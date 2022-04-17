@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1649559868,
+      "expires": 1650165663,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.59.202d",
-      "value": "c223498153461fc8.1649558068.",
+      "value": "ad8becfd8fb11e1d.1650163864.",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1683513268,
+      "expires": 1684119064,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,11 +33,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:34:26 GMT",
+    "date": "Sun, 17 Apr 2022 02:51:02 GMT",
     "content-type": "text/html; charset=utf-8",
     "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr;font-src 'self' data:;img-src 'self' data: https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
     "x-powered-by": "Next.js",
-    "etag": "\"32b8-1X33aX8eJdTwOWnLt9Ex1sM7bKQ\"",
+    "etag": "\"32b8-s1yMXig23K5TzqG4PlzdUMC0Md0\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
@@ -90,7 +90,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
