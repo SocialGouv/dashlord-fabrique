@@ -7,11 +7,11 @@
   ],
   "cookies": [],
   "headers": {
-    "date": "Sun, 10 Apr 2022 01:52:23 GMT",
+    "date": "Sun, 17 Apr 2022 01:58:08 GMT",
     "content-type": "text/html; charset=utf-8",
     "content-disposition": "inline; filename=\"index.html\"",
     "accept-ranges": "bytes",
-    "etag": "\"0ae47c06bea14d161fe5b8612443f727be95fbd9\"",
+    "etag": "\"5188c3a041cc2ad3ea1051d2e23f8e4535c821b2\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -68,7 +68,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
@@ -117,7 +117,7 @@
     },
     {
       "hostname": "api.tiles.mapbox.com",
-      "ip": "13.225.217.168",
+      "ip": "13.35.94.83",
       "geoip": {
         "continent": {
           "code": "NA",
