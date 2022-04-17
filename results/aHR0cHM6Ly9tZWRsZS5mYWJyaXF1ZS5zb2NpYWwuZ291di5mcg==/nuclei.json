@@ -1,0 +1,1151 @@
+[
+  {
+    "template": "technologies/tech-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+    "template-id": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "next.js",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:04 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:04.997844493Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/cname-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
+    "template-id": "cname-fingerprint",
+    "info": {
+      "name": "CNAME Fingerprint",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "cname"
+      ],
+      "description": "A CNAME DNS record was discovered.",
+      "reference": [
+        "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+        "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ],
+        "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+      }
+    },
+    "type": "dns",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "extracted-results": [
+      "medle.sante.gouv.fr.",
+      "dgos-medle.cegedim.cloud.",
+      "ip-185-194-82-223.infra.cegedim.org."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 64335\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 64335\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmedle.fabrique.social.gouv.fr.\t60\tIN\tCNAME\tmedle.sante.gouv.fr.\nmedle.sante.gouv.fr.\t21600\tIN\tCNAME\tdgos-medle.cegedim.cloud.\ndgos-medle.cegedim.cloud.\t3600\tIN\tCNAME\tip-185-194-82-223.infra.cegedim.org.\n\n;; AUTHORITY SECTION:\ninfra.cegedim.org.\t3600\tIN\tSOA\tns1.cegedim.fr. hostmaster.cegedim.fr. 2014104522 1200 300 1209600 3600\n",
+    "timestamp": "2022-04-17T02:10:09.98978802Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107460873Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107588874Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107639975Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107719375Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107767876Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107810476Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.107855076Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.109716291Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.112332812Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.116907048Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.121380383Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.125644617Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.125711618Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.125780618Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 17 Apr 2022 02:10:25 GMT\r\nKeep-Alive: timeout=5\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><script src=\"/polyfill.js\"></script><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Connexion - Medlé</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1d6eb040d2459511213e.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><link rel=\"preload\" href=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" as=\"script\"/><link rel=\"preload\" href=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" as=\"script\"/><style id=\"__jsx-131495782\">button.jsx-131495782{border:none;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}main.jsx-131495782{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.encadre.jsx-131495782{background-color:rgb(249,249,249);}.jsx-131495782::-webkit-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::-moz-placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;opacity:1;}.jsx-131495782::placeholder{color:#767676;opacity:1;}.jsx-131495782:-ms-input-placeholder{color:#767676;}.jsx-131495782::-ms-input-placeholder{color:#767676;}img[alt=\"logo\"].jsx-131495782{max-width:300px;object-fit:contain;}@media screen and (max-width:768px){img[alt=\"logo\"].jsx-131495782{width:100%;}}</style><style id=\"__jsx-1383723477\">footer.jsx-1383723477{background-color:#26353f;color:white;}footer.jsx-1383723477 a.jsx-1383723477{color:white;}footer.jsx-1383723477 a.jsx-1383723477:hover{color:lightgray;}footer.jsx-1383723477 b.jsx-1383723477{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}.service-title.jsx-1383723477{font-size:1.75rem;margin-bottom:0.5rem;font-family:Evolventa,\"Trebuchet MS\",sans-serif;font-weight:700;line-height:1.2;}</style></head><body><div id=\"__next\"><div class=\"d-flex flex-column justify-content-center align-items-center min-vh-100 container\" style=\"max-width:800px\"><div class=\"d-flex flex-column flex-md-row justify-content-center align-items-center\"><main role=\"main\" class=\"jsx-131495782\"><img src=\"/images/logo.png\" alt=\"Logo Medlé plateforme médecine légale\" style=\"max-height:6.5rem\" class=\"jsx-131495782 my-5\"/><div class=\"jsx-131495782\"><div class=\"jsx-131495782 encadre shadow border mx-4 px-3 py-4 rounded\"><form data-testid=\"authent-form\" method=\"post\" class=\"\"><div class=\"form-group\"><label for=\"email\" class=\"\">Adresse courriel</label><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\">@</span></div><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"adresse@mail.com\" autoComplete=\"email\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/></div></div><div class=\"form-group\"><label for=\"password\" class=\"\">Mot de passe</label><div class=\"jsx-131495782 float-right\"><a style=\"color:#376FE6\" class=\"jsx-131495782\" href=\"/forgot-password\">Mot de passe oublié ?</a></div><div class=\"input-group\"><input type=\"password\" name=\"password\" id=\"password\" placeholder=\"Mot de passe\" autoComplete=\"current-password\" aria-required=\"true\" class=\"jsx-131495782 form-control\"/><div style=\"background-color:#e9ecef\" class=\"input-group-append\"><button type=\"button\" aria-label=\"Afficher ou masquer le mot de passe\" class=\"jsx-131495782\"><span style=\"background-color:#e9ecef;border-color:#ced4da\" class=\"input-group-text\"><svg class=\"MuiSvgIcon-root\" focusable=\"true\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"24\" style=\"cursor:pointer\"><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"></path></svg></span></button></div></div></div><button class=\"d-flex justify-content-center align-items-center btn btn-secondary btn-block\">Se connecter </button></form></div></div></main></div></div><footer role=\"contentinfo\" class=\"jsx-1383723477 pt-4 pb-5 m-0\"><div class=\"container\"><div class=\"row\"><div class=\"mr-5 col\"><p class=\"jsx-1383723477 service-title\">Medle.fabrique.social.gouv.fr</p>Un service proposé par la<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" rel=\"noreferrer noopener\" id=\"footer\" href=\"https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-generale-de-l-offre-de-soins-dgos\" aria-label=\"DGOS (nouvelle fenêtre)\" class=\"jsx-1383723477\">DGOS</a></b> <!-- -->(ministère de la santé) et<!-- --> <b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://www.fabrique.social.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"Fabrique numérique des ministères sociaux (nouvelle fenêtre)\" class=\"jsx-1383723477\">la fabrique numérique des ministères sociaux</a></b> <!-- -->(<b class=\"jsx-1383723477\"><a target=\"_blank\" href=\"https://beta.gouv.fr/\" rel=\"noopener noreferrer\" aria-label=\"beta.gouv.fr (nouvelle fenêtre)\" class=\"jsx-1383723477\">beta.gouv.fr</a></b>)</div><div class=\"mt-4 mt-md-0 col\"><ul class=\"jsx-1383723477 pl-0 list-unstyled\"><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/mentions\">Mentions légales</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/politique-confidentialite\">Politique de confidentialité</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/cgu\">Conditions générales d&#x27;utilisation</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/faq\">Foire aux questions</a></li><li class=\"jsx-1383723477 mb-2\"><a class=\"jsx-1383723477\" href=\"/sitemap\">Plan du site</a></li><li class=\"jsx-1383723477 mb-2\"><a href=\"mailto:contact.medle@fabrique.social.gouv.fr\" class=\"jsx-1383723477\">Contactez‑nous</a></li></ul></div></div></div></footer></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"message\":\"\"}},\"page\":\"/\",\"query\":{},\"buildId\":\"MdNMazq-Iujsf_hqrxn4E\",\"runtimeConfig\":{\"API_URL\":\"https://medle.sante.gouv.fr/api\",\"FEATURE_FLAGS\":{\"administration\":true,\"directory\":false,\"export\":true,\"notification\":false,\"resources\":false}},\"isFallback\":false,\"gip\":true}</script><script nomodule=\"\" src=\"/_next/static/chunks/polyfills-6e054d56079d4b93ebe8.js\"></script><script src=\"/_next/static/chunks/webpack-75a40e96d15872bed5df.js\" async=\"\"></script><script src=\"/_next/static/chunks/framework-106d25c2ed81dc45938c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-fde3ad02ee40eed1dca4.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/_app-6569d608f283be03e2f4.js\" async=\"\"></script><script src=\"/_next/static/chunks/1107-ac0c6fac20cec5a4ec51.js\" async=\"\"></script><script src=\"/_next/static/chunks/8182-9ae62ba768eed1b52514.js\" async=\"\"></script><script src=\"/_next/static/chunks/6851-b092e43ebce47b8b1663.js\" async=\"\"></script><script src=\"/_next/static/chunks/pages/index-7ebd006910b3fdf86823.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_buildManifest.js\" async=\"\"></script><script src=\"/_next/static/MdNMazq-Iujsf_hqrxn4E/_ssgManifest.js\" async=\"\"></script></body></html>",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.125830618Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126151521Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126176021Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126194321Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126216722Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126228322Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126246722Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126258222Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126273922Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126285522Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126297722Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126314122Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126326822Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126337922Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126352723Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126363823Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.0 302 Moved Temporarily\r\nConnection: close\r\nLocation: https://medle.sante.gouv.fr/\r\nServer: BigIP\r\nContent-Length: 0\r\n\r\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:10:25.126377323Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://medle.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.sante.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "extracted-results": [
+      "medle.fabrique.social.gouv.fr",
+      "medle.sante.gouv.fr"
+    ],
+    "ip": "185.194.82.223",
+    "timestamp": "2022-04-17T02:12:04.233598946Z",
+    "matcher-status": true,
+    "matched-line": null
+  }
+]
