@@ -127,7 +127,7 @@
       "value": "1",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1649558298,
+      "expires": 1650164017,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -139,10 +139,10 @@
     },
     {
       "name": "_pk_id.34.6677",
-      "value": "74ec09cd5653521c.1649556499.",
+      "value": "e251d5f43a583fcc.1650162218.",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1683511699,
+      "expires": 1684117418,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -154,7 +154,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 02:08:17 GMT",
+    "date": "Sun, 17 Apr 2022 02:23:36 GMT",
     "content-type": "text/html",
     "last-modified": "Mon, 04 Apr 2022 00:43:38 GMT",
     "vary": "Accept-Encoding",
@@ -213,7 +213,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
@@ -307,7 +307,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
