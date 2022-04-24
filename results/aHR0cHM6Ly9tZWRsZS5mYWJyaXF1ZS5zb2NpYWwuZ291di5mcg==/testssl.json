@@ -346,7 +346,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "191 >= 60 days"
+              "finding"      : "184 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1063,6 +1063,6 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "128"
+              "finding"      : "82"
           }
 ]
