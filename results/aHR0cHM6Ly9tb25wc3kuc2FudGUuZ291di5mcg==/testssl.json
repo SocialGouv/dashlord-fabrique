@@ -52,8 +52,8 @@
               "id"           : "TLS1_3",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "not offered + downgraded to weaker protocol"
+              "severity"     : "OK",
+              "finding"      : "offered with final"
           }
 ,         {
               "id"           : "ALPN_HTTP2",
@@ -150,14 +150,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.2"
+              "finding"      : "Default protocol TLS1.3"
           }
 ,         {
               "id"           : "cipher_negotiated",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256, 256 bit ECDH (P-256)"
+              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
           }
 ,         {
               "id"           : "FS",
@@ -185,14 +185,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "valid for 600 seconds only (<daily)"
+              "finding"      : "no -- no lifetime advertised"
           }
 ,         {
               "id"           : "SSL_sessionID_support",
@@ -223,11 +223,11 @@
               "finding"      : "random"
           }
 ,         {
-              "id"           : "cert_compression",
+              "id"           : "certificate_compression",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "N/A"
+              "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
@@ -276,7 +276,7 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03623853B288EB7CBD39BDF2F1F2B0E87CC8"
+              "finding"      : "04BF3587EB9B48FEF8428891E5007D2B3982"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "15E7776F6EE2810314F771A721ED0DC3B8A72C88"
+              "finding"      : "8242A309212A115EE00A85E3F236E7893AAAF84B"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "DDE5E33BE179CCEAAE05730C37F9C08C10949CBAD69E217B5D70EFFF2E43342B"
+              "finding"      : "7B86064878CE6502F30926C78C71ACFE811438333664E587937E66A40B28D75D"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLTCCBBWgAwIBAgISA2I4U7KI63y9Ob3y8fKw6HzIMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAyMTgxOTE4MzJaFw0yMjA1MTkxOTE4MzFaMB8xHTAbBgNVBAMT FG1vbnBzeS5zYW50ZS5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAwk04+ygu5FmG8cay888jFC79FlsIpSLy8mz2N2BR24I4z44Qki5HVe6S sDQ8X9dwvxFCXD7vxSPdPf97u2XrF7fKlMKjp3LeSBeDg5MReAB7DdkbQV6/TNON XvTmpR8h7RWiPmXsPaQxl3ObM1AOOL7HwNYJAi4SLSfWIAFjjh41nj3Zk0/k8vBT mSc+AsCgC/WzFM4d2VoR7QDqajwPfLnv0rpgxcsXnvesrZnXHUHRXXDWiZ3g90Y6 hNemW0UxrjmZ2ijjmAl/CrMyonnHJe7V1QY6R5zLHk3uQilQ2Dv/yjZj2giXBk/P RkwhZq5BmOrjmhd9l/ffDxhxdFC8HwIDAQABo4ICTjCCAkowDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQoS/DxvhhFY3wDYlNAjGiiwAmp5TAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRtb25wc3kuc2FudGUuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABfw58eCgAAAQDAEYw RAIgQQwwOgS3ot3NdPhHIBiGV3oBMqFsqdkE060NdbGhigYCIFimqEpeC1J4RsGw HtjdcdyuWIiF3MRFKdIkXr7y9rJpAHYAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQAp Bo2yCJo32RMAAAF/Dnx47wAABAMARzBFAiAL7mlLkfyLfS0sYnd4wAsFQ73xnrpW C1+t57MyWEOcsQIhAMenptMPD13DNqWBFKEVP1pM9mY9v04ZCDU0Fk6U9cwuMA0G CSqGSIb3DQEBCwUAA4IBAQAT9be1irM0wJWtG9b5BmBy2PGj8+2tz6K6pMlkaA5q ajOWhaZLex8dZzirrKEvUuIq4ULp/nWgtM6WNvD61Vt6mdUe9bzN+zFhoEXtB7jx QZuOsMQRpX3V/l+m4H1v+t9E41qnrTnXlS7Ls+5PxAogGZKAnOHgmgSGdS2Bpkm3 7Iht/fctzClU/5soSNixe8PAgvuMQz0Oqe5h/yaHht+jSGTJ3RctE8tfbGPVTmV7 ASmKVKWGniOF26T5By1r2sNjGPJ/JZJXXOwda+TC1JdAjlx1suNsODLRsqWdG7dg CtrSeY5FQlwiKc3eC1bEluYbHNAd5UEWSmtE0Fiupawb -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLTCCBBWgAwIBAgISBL81h+ubSP74QoiR5QB9KzmCMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA0MTkxODE5MjJaFw0yMjA3MTgxODE5MjFaMB8xHTAbBgNVBAMT FG1vbnBzeS5zYW50ZS5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAwk04+ygu5FmG8cay888jFC79FlsIpSLy8mz2N2BR24I4z44Qki5HVe6S sDQ8X9dwvxFCXD7vxSPdPf97u2XrF7fKlMKjp3LeSBeDg5MReAB7DdkbQV6/TNON XvTmpR8h7RWiPmXsPaQxl3ObM1AOOL7HwNYJAi4SLSfWIAFjjh41nj3Zk0/k8vBT mSc+AsCgC/WzFM4d2VoR7QDqajwPfLnv0rpgxcsXnvesrZnXHUHRXXDWiZ3g90Y6 hNemW0UxrjmZ2ijjmAl/CrMyonnHJe7V1QY6R5zLHk3uQilQ2Dv/yjZj2giXBk/P RkwhZq5BmOrjmhd9l/ffDxhxdFC8HwIDAQABo4ICTjCCAkowDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQoS/DxvhhFY3wDYlNAjGiiwAmp5TAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRtb25wc3kuc2FudGUuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABgEND2/AAAAQDAEYw RAIgecm1t+hJNiqEd6EGoyq8spGl4gfn2dYiQzNIIa8t1S0CIC81rrVarnu+/QWt ogs10Ml2dMMSWTDL0uY/u/TUyCGzAHYAQcjKsd8iRkoQxqE6CUKHXk4xixsD6+tL x2jwkGKWBvYAAAGAQ0PcGQAABAMARzBFAiEAvHeMkPQSVDwa2pef4LheOJvAIlF8 0KOu6K48tEWD5fwCIHwJ/5yZQuwWofXihxp0MXtUbdq5bqaYf0RJJ8YcCuzuMA0G CSqGSIb3DQEBCwUAA4IBAQCD4VA6Sj76+00pDWAS+0jEsA4K1doKbNdwgeciTsi8 z79P1+fo3UuQ5mOr/XWWu4d8eizxO3ziNQtiYebFSkHh/K05yORDBwGWa6+o29nd 2jk8URG9JwfPI1YSUZv1M8jXfZRxjoHzOsUBo2MKj6TYfCw7V7WAbYg7Nj3pz4oI SR3ZbSZHqLtrSJSNYqBZFLg8FuYRKx3UPxB4vcvyBUzPiUGlvMnzkwi8KC8qM9tS UW2ZafGhgJkyrmk3LN+cVwigfY8MvW6B7r1Ef6pUy02xIrowqjGjijDngH1toG2y sQcpxErnbCV+s4qvAP4FOc52uwA+chdzDVlUhQ9ekcSX -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "finding"      : "85 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-02-18 19:18"
+              "finding"      : "2022-04-19 18:19"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-05-19 19:18"
+              "finding"      : "2022-07-18 18:19"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +556,7 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1650163929"
+              "finding"      : "1650768410"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -647,7 +647,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2016-9244",
               "cwe"          : "CWE-200",
-              "finding"      : "not vulnerable"
+              "finding"      : "no session ticket extension"
           }
 ,         {
               "id"           : "ROBOT",
@@ -743,7 +743,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=DDE5E33BE179CCEAAE05730C37F9C08C10949CBAD69E217B5D70EFFF2E43342B"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=7B86064878CE6502F30926C78C71ACFE811438333664E587937E66A40B28D75D"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -839,42 +839,42 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_74_win10",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_71_win10",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
@@ -944,7 +944,7 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_ios9",
@@ -972,14 +972,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-apple_ats_9_ios9",
@@ -1014,14 +1014,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1201",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
@@ -1042,14 +1042,14 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-thunderbird_68_3_1",
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "rating_spec",
@@ -1126,6 +1126,6 @@
               "ip"           : "monpsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "131"
+              "finding"      : "137"
           }
 ]
