@@ -52,8 +52,8 @@
               "id"           : "TLS1_3",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "not offered + downgraded to weaker protocol"
+              "severity"     : "OK",
+              "finding"      : "offered with final"
           }
 ,         {
               "id"           : "ALPN_HTTP2",
@@ -150,14 +150,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.2"
+              "finding"      : "Default protocol TLS1.3"
           }
 ,         {
               "id"           : "cipher_negotiated",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256, 256 bit ECDH (P-256)"
+              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
           }
 ,         {
               "id"           : "FS",
@@ -185,14 +185,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "valid for 600 seconds only (<daily)"
+              "finding"      : "no -- no lifetime advertised"
           }
 ,         {
               "id"           : "SSL_sessionID_support",
@@ -213,7 +213,7 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -223,11 +223,11 @@
               "finding"      : "random"
           }
 ,         {
-              "id"           : "cert_compression",
+              "id"           : "certificate_compression",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "N/A"
+              "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
@@ -276,7 +276,7 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04C7B2AE9A7B545670811C68738D4294DBAA"
+              "finding"      : "03559232279BF49124BF73ADC1ABE9F7A895"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "214C90D4E38B21BD0B0E9C9FDA3CB493AEF2CDB8"
+              "finding"      : "D7DFCC215733DB84A8D460812748BB32339B7D40"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "16AD451AA92697B43A0DB4353B107B268E95E331C6F4BFADEF1AB94CA51097CD"
+              "finding"      : "ACC0DF3889C3D41900E85586A14A66C8BA6736DA434AB51C01E496DDDD0CFC58"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFXTCCBEWgAwIBAgISBMeyrpp7VFZwgRxoc41ClNuqMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAxMzAwOTMzNTlaFw0yMjA0MzAwOTMzNThaMDcxNTAzBgNVBAMT LGVuZmFudHMtZHUtc3BlY3RhY2xlLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIB IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9Y6+PLT25l4DE8X//rTjvi75 OJNKmwSpVAdOrm3tzmyEvYIx6A1ZQ3fF+7imreAmsLu6hyJxVlDNIMvoDOp21W99 x6mczWEzAKrULyqw6OFF3bDGzoh2QORuAhbgT5pERnrqMTf9LkKsOdyfXbUEaSeh ztPskupnPX6wOLaIE1dPe9M8CyJt5MiCqV3b8ysJ/Bj7ygP9CsHe3BZ4ZiTI2rB0 0/yCKwLFQZbTJHUJHpoyDaowkHmel4d83YnqxnAx9R3VEwNOrw6TN/WJhS/jBycS 3UR3sw0s4gb3N/XQIBioDEhhx+nXy+HyflZvIjkTJectEptdX8hyVU+pFR3yuQID AQABo4ICZjCCAmIwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMB BggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRwBftAlJwYDkNkquGk 1BdisaNjUTAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEF BQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggr BgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzA3BgNVHREEMDAugixlbmZh bnRzLWR1LXNwZWN0YWNsZS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABfqqMd4MAAAQDAEYw RAIgJQ7VQqx+y/Fxdbq89OOe0E/B6e4nwhqestb9oZqdpEQCIFyUFLAAM66UUU72 c9nkoKQKwQShSxm/tvfyz1yRY4kTAHYAQcjKsd8iRkoQxqE6CUKHXk4xixsD6+tL x2jwkGKWBvYAAAF+qox5iQAABAMARzBFAiEA9EOJBsbPNA9f4R1nTJdGbTaHUoJE SqYRmmf66b1Kzo4CIGWpQgPBdLUd7TSK2M8s8zEVQKqj4gcXY+qJ8aHV3AbKMA0G CSqGSIb3DQEBCwUAA4IBAQChK6pPjKpKe8HGVWbgCIuyHf98aXF1GCrx1xRp5l/Q lBT5kivXOpzTeCpMUO7SmIp1xSx+JtRpskNpcOo1nAFr0LmyHTfA8a9+iKWxVFfN QnAFVBq8GohS9OLl3+kn6fkZp+1h0Ez9HFjKW0mk9+JnUlNzvHwnCpU/pDdwNY6/ OdGram3Xcw60pYdPnk/sFnO16Vr/DZGYgyQKeJOaCSPY2WiwJPa16n3/etX685WG 4vLRqcT9w5Qy1CAO9PGYSirdLydX+ytlZSrvGhmn1HNNHjcrJhM8JmMmcWdlHGrh +v+GRr/wSY5RS5PvIx07D0jJuZsvb1vhb9FMBmd+oOiY -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFXTCCBEWgAwIBAgISA1WSMieb9JEkv3Otwavp96iVMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA0MTkwODUzNTNaFw0yMjA3MTgwODUzNTJaMDcxNTAzBgNVBAMT LGVuZmFudHMtZHUtc3BlY3RhY2xlLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIB IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9Y6+PLT25l4DE8X//rTjvi75 OJNKmwSpVAdOrm3tzmyEvYIx6A1ZQ3fF+7imreAmsLu6hyJxVlDNIMvoDOp21W99 x6mczWEzAKrULyqw6OFF3bDGzoh2QORuAhbgT5pERnrqMTf9LkKsOdyfXbUEaSeh ztPskupnPX6wOLaIE1dPe9M8CyJt5MiCqV3b8ysJ/Bj7ygP9CsHe3BZ4ZiTI2rB0 0/yCKwLFQZbTJHUJHpoyDaowkHmel4d83YnqxnAx9R3VEwNOrw6TN/WJhS/jBycS 3UR3sw0s4gb3N/XQIBioDEhhx+nXy+HyflZvIjkTJectEptdX8hyVU+pFR3yuQID AQABo4ICZjCCAmIwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMB BggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRwBftAlJwYDkNkquGk 1BdisaNjUTAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEF BQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggr BgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzA3BgNVHREEMDAugixlbmZh bnRzLWR1LXNwZWN0YWNsZS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABgEE+Jj8AAAQDAEYw RAIgZp52FumM2w04VMYF2TIWUje1Pa5hUjf+4ljyQ3N0Xv0CIGf1f2YiM+LeD4xZ 7NIbQEC8rdmCGo8CjeL75wWSrN6kAHYAQcjKsd8iRkoQxqE6CUKHXk4xixsD6+tL x2jwkGKWBvYAAAGAQT4mngAABAMARzBFAiBY7p8QhSxZt5lDWqZBAgQCpAR00okM xk+PH+TBEu6JOAIhAJuuecRCYTIfEVezOOhdtZCq8sLxcyqJ+de5mDhT6yMfMA0G CSqGSIb3DQEBCwUAA4IBAQC5732MDRRpOmaNsSQUS4hq5mmTExE8G6lx1httxQDH 7Hy3suJqXaxlnxQwyS6ME2KQ6dEZ5KIG3Y+2AbYNK9py5+uqGZrLrYP2x7uE59GX G2rlZcb8L1UegytkkB7fZx1N/+U6zXzscemVQlophfzrthyIQ+vxv/h4D2AKOsln rNxoQQvsAVBXq2gyuV2DJYrlQrmF7xNyA6Yfi2RqMFociwAuNp17OyUrqiggOQ65 CO0uUPwhKzkQXSbjiIEm7lCuXUdCvpkXe/zVUi/Xjj7xz4yZmrPkb59wrduYc7Lu 63GX/XQeEh5xL7+tPz78AiXfbk9lfpPcCbJWhITB2mhP -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -352,22 +352,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 15 days (13)"
+              "severity"     : "OK",
+              "finding"      : "85 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-01-30 09:33"
+              "finding"      : "2022-04-19 08:53"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2022-04-30 09:33"
+              "severity"     : "OK",
+              "finding"      : "2022-07-18 08:53"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +556,7 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1650163453"
+              "finding"      : "1650767918"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -647,7 +647,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2016-9244",
               "cwe"          : "CWE-200",
-              "finding"      : "not vulnerable"
+              "finding"      : "no session ticket extension"
           }
 ,         {
               "id"           : "ROBOT",
@@ -743,7 +743,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=16AD451AA92697B43A0DB4353B107B268E95E331C6F4BFADEF1AB94CA51097CD"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=ACC0DF3889C3D41900E85586A14A66C8BA6736DA434AB51C01E496DDDD0CFC58"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -839,42 +839,42 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_74_win10",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_71_win10",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
@@ -944,7 +944,7 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_ios9",
@@ -972,14 +972,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-apple_ats_9_ios9",
@@ -1014,14 +1014,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1201",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
@@ -1042,14 +1042,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-thunderbird_68_3_1",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "rating_spec",
@@ -1126,6 +1126,6 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "94"
           }
 ]
