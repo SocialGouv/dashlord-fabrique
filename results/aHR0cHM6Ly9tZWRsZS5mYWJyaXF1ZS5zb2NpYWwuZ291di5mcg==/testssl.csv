@@ -47,7 +47,7 @@
 "cert_trust","medle.fabrique.social.gouv.fr/185.194.82.223","443","OK","Ok via SAN (same w/o SNI)","",""
 "cert_chain_of_trust","medle.fabrique.social.gouv.fr/185.194.82.223","443","CRITICAL","Some certificate trust checks failed -> Java (chain incomplete)  , OK -> Mozilla Microsoft Linux Apple","",""
 "cert_certificatePolicies_EV","medle.fabrique.social.gouv.fr/185.194.82.223","443","INFO","no","",""
-"cert_expirationStatus","medle.fabrique.social.gouv.fr/185.194.82.223","443","OK","184 >= 60 days","",""
+"cert_expirationStatus","medle.fabrique.social.gouv.fr/185.194.82.223","443","OK","177 >= 60 days","",""
 "cert_notBefore","medle.fabrique.social.gouv.fr/185.194.82.223","443","INFO","2021-10-25 22:00","",""
 "cert_notAfter","medle.fabrique.social.gouv.fr/185.194.82.223","443","OK","2022-10-25 21:59","",""
 "cert_extlifeSpan","medle.fabrique.social.gouv.fr/185.194.82.223","443","OK","certificate has no extended life time according to browser forum","",""
