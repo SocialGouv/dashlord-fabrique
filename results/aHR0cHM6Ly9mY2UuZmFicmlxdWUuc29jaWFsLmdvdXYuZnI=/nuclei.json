@@ -1,171 +1,40 @@
 [
   {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
+    "template": "technologies/waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
+    "template-id": "waf-detect",
     "info": {
-      "name": "HTTP Missing Security Headers",
+      "name": "WAF Detection",
       "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
+        "dwisiswant0",
+        "lu4nx"
       ],
       "tags": [
-        "misconfig",
-        "generic"
+        "waf",
+        "tech",
+        "misc"
       ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
+      "description": "A web application firewall was detected.",
+      "reference": [
+        "https://github.com/ekultek/whatwaf"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
     },
-    "matcher-name": "x-permitted-cross-domain-policies",
+    "matcher-name": "nginxgeneric",
     "type": "http",
     "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "matched-at": "https://fce.fabrique.social.gouv.fr/",
+    "request": "POST / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 173\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:10 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.12.2</center>\r\n</body>\r\n</html>\r\n",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.369847439Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.371338258Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.371379058Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.371404159Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.37152636Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "timestamp": "2022-05-15T03:02:10.881431561Z",
+    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -196,9 +65,9 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.37155096Z",
+    "timestamp": "2022-05-15T03:02:11.096346646Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -230,9 +99,77 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.371853764Z",
+    "timestamp": "2022-05-15T03:02:11.096430748Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096448649Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096470049Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -264,9 +201,43 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.372067067Z",
+    "timestamp": "2022-05-15T03:02:11.09648705Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.09650565Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -298,43 +269,9 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.372092767Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.37233777Z",
+    "timestamp": "2022-05-15T03:02:11.096535151Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -366,43 +303,9 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.372367371Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.372562473Z",
+    "timestamp": "2022-05-15T03:02:11.096552951Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -434,9 +337,145 @@
     "host": "https://fce.fabrique.social.gouv.fr",
     "matched-at": "https://fce.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:22 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:22.372770876Z",
+    "timestamp": "2022-05-15T03:02:11.096572752Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096588152Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096607252Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096625653Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://fce.fabrique.social.gouv.fr",
+    "matched-at": "https://fce.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 15 May 2022 03:02:11 GMT\r\nEtag: W/\"62723da3-231\"\r\nLast-Modified: Wed, 04 May 2022 08:47:31 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.c98b904e.js\"></script><link href=\"/static/css/main.9ed94b36.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-05-15T03:02:11.096641653Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -463,46 +502,7 @@
       "fce.fabrique.social.gouv.fr"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:29.736696363Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/waf-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-    "template-id": "waf-detect",
-    "info": {
-      "name": "WAF Detection",
-      "author": [
-        "dwisiswant0",
-        "lu4nx"
-      ],
-      "tags": [
-        "waf",
-        "tech",
-        "misc"
-      ],
-      "description": "A web application firewall was detected.",
-      "reference": [
-        "https://github.com/ekultek/whatwaf"
-      ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "nginxgeneric",
-    "type": "http",
-    "host": "https://fce.fabrique.social.gouv.fr",
-    "matched-at": "https://fce.fabrique.social.gouv.fr/",
-    "request": "POST / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 173\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 02:56:34 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.12.2</center>\r\n</body>\r\n</html>\r\n",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:56:34.124627114Z",
-    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/'",
+    "timestamp": "2022-05-15T03:02:21.084870701Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -528,7 +528,7 @@
       "TLS13"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-08T02:57:14.363447036Z",
+    "timestamp": "2022-05-15T03:02:33.384937843Z",
     "matcher-status": true,
     "matched-line": null
   }
