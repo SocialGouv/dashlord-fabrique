@@ -3,6 +3,30 @@
     {
       "type": "unknown",
       "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/array.js"
+    },
+    {
+      "type": "jQuery",
+      "url": "https://code.jquery.com/jquery-3.6.0.min.js",
+      "details": {
+        "id": "jQuery",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1653186989198"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1653186989203"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/recorder.js?v=1.16.7"
+    },
+    {
+      "type": "unknown",
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1653186993072"
     }
   ],
   "cookies": [
@@ -11,7 +35,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1652584855,
+      "expires": 1653188789,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -23,10 +47,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "0b4e4ad86d58e365.1652583055.",
+      "value": "cce919fc10297ea7.1653186990.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1686538255,
+      "expires": 1687142190,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -38,11 +62,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 15 May 2022 02:50:53 GMT",
+    "date": "Sun, 22 May 2022 02:36:28 GMT",
     "content-type": "text/html",
-    "last-modified": "Mon, 02 May 2022 14:42:13 GMT",
+    "last-modified": "Wed, 18 May 2022 15:10:56 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"626fedc5-452f\"",
+    "etag": "W/\"62850c80-452f\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -236,6 +260,60 @@
             }
           }
         ]
+      }
+    },
+    {
+      "hostname": "code.jquery.com",
+      "ip": "69.16.175.10",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
       }
     }
   ]
