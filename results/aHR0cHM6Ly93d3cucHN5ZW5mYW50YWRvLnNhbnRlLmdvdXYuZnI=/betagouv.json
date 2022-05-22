@@ -1,0 +1,39 @@
+{
+  "id": "psyenfantado",
+  "type": "startup",
+  "attributes": {
+    "name": "PsyEnfantAdo",
+    "pitch": "Permettre un accompagnement psychologique des enfants et ados",
+    "link": "https://www.psyenfantado.sante.gouv.fr/",
+    "repository": "https://github.com/betagouv/psy-enfant-ado",
+    "contact": "contact-psyenfantado@beta.gouv.fr",
+    "content_url_encoded_markdown": "%23%23%20Arr%C3%AAt%20du%20dispositif%0A%0A%0ALe%20dispositif%20PsyEnfantAdo%20s%E2%80%99est%20achev%C3%A9%20le%2031%20janvier%202022.%0A%0ADans%20un%20contexte%20de%20sortie%20de%20crise%20sanitaire%20li%C3%A9e%20au%20COVID%2C%20ce%20dispositif%20a%20constitu%C3%A9%20une%20premi%C3%A8re%20r%C3%A9ponse%20d%E2%80%99urgence%20%C3%A0%20la%20souffrance%20psychique%20des%20enfants%20et%20adolescents.%0A%0AIl%20a%20permis%2C%20durant%20la%20crise%2C%20d%27accompagner%20pr%C3%A8s%20de%203%20500%20enfants%20et%20adolescents%20en%20souffrance%0Apsychique.%20Les%20psychologues%20volontaires%20partenaires%20du%20dispositif%20ont%20r%C3%A9alis%C3%A9%2C%20dans%20ce%20cadre%2C%20pr%C3%A8s%20de%2025%20000%20s%C3%A9ances%20%28source%20%3A%20CNAM%20-%20chiffres%20non%20exhaustifs%20en%20date%20du%2028%2F02%2F22%29.%0A%0AUn%20nouveau%20dispositif%20%C3%A0%20partir%20de%203%20ans%20est%20mis%20en%20place%20au%20Printemps%202022%20%3A%20%5BMonPsy%5D%28https%3A%2F%2Fmonpsy.sante.gouv.fr%2F%29.%0A%0A%23%23%20Contexte%0A%0AEn%20raison%20de%20la%20crise%20sanitaire%2C%20la%20sant%C3%A9%20mentale%20des%20enfants%20et%20des%20adolescents%20se%20trouve%20d%C3%A9t%C3%A9rior%C3%A9e.%20Afin%20de%20lutter%20contre%20cela%2C%20le%20Minist%C3%A8re%20des%20Solidarit%C3%A9s%20et%20de%20la%20Sant%C3%A9%20met%20en%20place%20un%20dispositif%20d%E2%80%99accompagnement%20psychologique%20afin%20de%20permettre%20aux%20familles%20d%E2%80%99avoir%20acc%C3%A8s%20%C3%A0%20des%20consultations%20aupr%C3%A8s%20de%20psychologues%20agr%C3%A9%C3%A9s%2C%20gratuitement%20et%20sans%20avance%20de%20frais.%0A%0ALes%20enfants%20et%20les%20adolescents%20sont%20orient%C3%A9s%20par%20un%20m%C3%A9decin%20%28m%C3%A9decin%20traitant%2C%20m%C3%A9decin%20scolaire%2C%20m%C3%A9decin%20hospitalier...%29%20vers%20un%20accompagnement%20psychologique%20qui%20comprend%20jusqu%E2%80%99%C3%A0%2010%20s%C3%A9ances%20r%C3%A9alis%C3%A9es%20par%20un%20psychologue.%0A",
+    "events": [
+      {
+        "name": "end",
+        "date": "2022-01-31",
+        "comment": ""
+      }
+    ],
+    "phases": [
+      {
+        "name": "investigation",
+        "start": "2021-05-03",
+        "end": ""
+      },
+      {
+        "name": "alumni",
+        "start": "2022-01-31",
+        "end": ""
+      }
+    ]
+  },
+  "relationships": {
+    "incubator": {
+      "data": {
+        "type": "incubator",
+        "id": "sgmas"
+      }
+    }
+  }
+}

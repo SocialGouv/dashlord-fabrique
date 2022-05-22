@@ -1,0 +1,38 @@
+{
+  "id": "egalite.professionnelle",
+  "type": "startup",
+  "attributes": {
+    "name": "Egalité professionnelle",
+    "pitch": "Calculer et transmettre l'index d'égalité professionnelle aux entreprises",
+    "link": "https://index-egapro.travail.gouv.fr",
+    "repository": "https://github.com/SocialGouv/egapro",
+    "contact": "index@travail.gouv.fr",
+    "content_url_encoded_markdown": "%2A%2AProbl%C3%A8me%2A%2A%20%3A%20l%27%C3%A9cart%20salarial%20entre%20les%20femmes%20et%20les%20hommes%20au%20sein%20des%20entreprises%20fran%C3%A7aises%20est%20chiffr%C3%A9%20actuellement%20%C3%A0%2015%25%20en%20moyenne.%0A%0A%2A%2ASolution%2A%2A%20%3A%20Le%20Minist%C3%A8re%20du%20Travail%20a%20publi%C3%A9%20en%20janvier%202018%20un%20d%C3%A9cret%20qui%20oblige%20les%20entreprises%20fran%C3%A7aises%20%C3%A0%20calculer%20et%20transmettre%20l%27index%20d%27%C3%A9galit%C3%A9%20professionnelle%2C%20calcul%C3%A9%20gr%C3%A2ce%20%C3%A0%20des%20indicateurs%20concernant%20les%20r%C3%A9mun%C3%A9rations%2C%20les%20augmentations%20et%20promotions%2C%20le%20cong%C3%A9%20maternit%C3%A9%20et%20la%20r%C3%A9partition%20femmes-hommes%20parmi%20les%20plus%2010%20hauts%20salaires.%0A%0APour%20cela%2C%20la%20Fabrique%20num%C3%A9rique%20des%20minist%C3%A8res%20sociaux%20a%20d%C3%A9velopp%C3%A9%20le%20produit%20%22Index%20Egapro%22%20%28https%3A%2F%2Findex-egapro.travail.gouv.fr%29%2C%20lequel%20permet%20aux%2040%20000%20entreprises%20fran%C3%A7aises%20concern%C3%A9es%20par%20cette%20obligation%20de%20calculer%20et%20d%C3%A9clarer%20leur%20index%20%C3%A9galit%C3%A9%20professionnelle.%20Le%20produit%2C%20en%20production%20depuis%20juin%202018%2C%20continue%20encore%20d%27%C3%A9voluer%20avec%20des%20fonctionnalit%C3%A9s.%20%0A%0ALa%20page%20annexe%20https%3A%2F%2Findex-egapro.travail.gouv.fr%2Fconsulter-index%20permet%20au%20grand%20public%20de%20consulter%20les%20index%20publics%2C%20%C3%A0%20savoir%20ceux%20des%20entreprises%20de%20plus%20de%201000%20salari%C3%A9s%20%28ceux%20des%20entreprises%20de%20%2B250%20salari%C3%A9s%20seront%20rendus%20publics%20%C3%A0%20compter%20du%2001%2F01%2F21%29%0A%0A%5C%23%23%20Partenariat%20pass%C3%A9%0A%0ALe%20produit%20continue%20de%20fonctionner%20et%20s%27am%C3%A9liore%20en%20continu.%20Il%20est%20toujours%20port%C3%A9%20par%20la%20Fabrique%20des%20minist%C3%A8res%20sociaux.%0A",
+    "events": [],
+    "phases": [
+      {
+        "name": "investigation",
+        "start": "2019-01-01",
+        "end": "2019-02-28"
+      },
+      {
+        "name": "construction",
+        "start": "2019-03-01",
+        "end": ""
+      },
+      {
+        "name": "alumni",
+        "start": "2021-11-17",
+        "end": ""
+      }
+    ]
+  },
+  "relationships": {
+    "incubator": {
+      "data": {
+        "type": "incubator",
+        "id": "sgmas"
+      }
+    }
+  }
+}
