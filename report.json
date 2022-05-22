@@ -2791,7 +2791,66 @@
         "declarationUrl": "https://archifiltre.fabrique.social.gouv.fr/politique-de-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "archifiltre",
+      "type": "startup",
+      "attributes": {
+        "name": "Archifiltre",
+        "pitch": "Appréhender des ensembles volumineux de fichiers pour mieux les gérer, les trier et y retrouver de l'information",
+        "stats_url": "https://archifiltre.fabrique.social.gouv.fr/statistiques/",
+        "link": "https://archifiltre.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/archifiltre",
+        "contact": "archifiltre@sg.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%20Le%20contexte%0A%0ADepuis%20quelques%20ann%C3%A9es%2C%20la%20g%C3%A9n%C3%A9ralisation%20des%20outils%20informatiques%20et%20la%20multiplication%20des%20outils%20de%20partage%20et%20de%20stockage%20contribuent%20%C3%A0%20une%20explosion%20de%20la%20production%20de%20fichiers%20bureautiques.%20%0A%0A%23%20Le%20probl%C3%A8me%0A%0AFace%20%C3%A0%20ces%20volumes%20dont%20l%27ampleur%20est%20difficile%20%C3%A0%20mat%C3%A9rialiser%2C%20les%20organisations%20ne%20r%C3%A9alisent%20pas%20l%27accumulation%20et%20l%27engorgement%2C%20sur%20les%20serveurs%2C%20de%20fichiers%20tr%C3%A8s%20anciens%20voire%20obsol%C3%A8tes%20pour%20lesquels%20elles%20ne%20savent%20de%20toutes%20fa%C3%A7ons%20pas%20r%C3%A9aliser%20de%20tri.%0A%0ALes%20cons%C3%A9quences%20peuvent%20%C3%AAtre%20de%20diff%C3%A9rents%20ordres%20pour%20les%20agents%20des%20administrations%3A%20%0A-%20des%20espaces%20serveur%20surcharg%C3%A9s%20qui%20co%C3%BBtent%20inutilement%20en%20terme%20de%20stockage%20%28co%C3%BBt%20financier%20et%20%C3%A9cologique%29%2C%20%0A-%20une%20grande%20difficult%C3%A9%20%C3%A0%20retrouver%20des%20documents%20perdus%20dans%20une%20organisation%20difficile%20%C3%A0%20comprendre%20et%20souvent%20redondante%0A-%20un%20risque%20juridique%20%C3%A0%20ne%20pas%20retrouver%20l%27information%20pour%20les%20besoins%20de%20l%27administration%20ou%20des%20citoyens%20%0A-%20une%20conservation%20de%20donn%C3%A9es%20qui%20devraient%20%C3%AAtre%20d%C3%A9truites%20depuis%20longtemps.%0A%0A%23%20Notre%20cible%0A%0ALes%20professionnel%C2%B7le%C2%B7s%20de%20l%27information%20%28dont%20environ%205000%20archivistes%20exer%C3%A7ant%20dans%20le%20secteur%20public%29%20ont%20pour%20mission%20de%20traiter%20cette%20production%20exponentielle.%20Sans%20outil%20adapt%C3%A9%2C%20ils%2Felles%20%C3%A9taient%20dans%20l%27incapacit%C3%A9%20d%27appr%C3%A9hender%20et%20donc%20de%20traiter%20ces%20volumes%20d%27information%20pourtant%20potentiellement%20strat%C3%A9gique.%20Leur%20intervention%20consiste%20%C3%A0%20%C3%A9valuer%20la%20pertinence%20de%20l%27information%20et%20ainsi%20trier%2C%20am%C3%A9liorer%20des%20arborescences%20de%20fichiers%20mais%20%C3%A9galement%20accompagner%20les%20agents%20dans%20la%20r%C3%A9organisation%20ou%20encore%20la%20recherche%20de%20leurs%20documents.%0A%0A%23%20Notre%20solution%0A%0ANous%20avons%20con%C3%A7u%20un%20outil%20de%20visualisation%20permettant%20de%20comprendre%20puis%20d%27enrichir%20des%20arborescences%20de%20fichiers%2C%20de%20r%C3%A9aliser%20des%20audits%2C%20des%20r%C3%A9organisations%2C%20d%27identifier%20des%20doublons%20et%20de%20pouvoir%20exporter%20son%20travail%20dans%20des%20formats%20modifiables%20et%20interop%C3%A9rables.%0A%0AAvec%20Archifiltre%2C%20il%20est%20d%C3%A9sormais%20possible%20d%27auditer%20puis%20d%27identifier%20les%20tris%20%C3%A0%20r%C3%A9aliser%20sur%20un%20serveur%2C%20de%20r%C3%A9aliser%20un%20plan%20de%20classement%20efficace%20et%20%C3%A9galement%20de%20pr%C3%A9parer%20les%20paquets%20de%20documents%20%C3%A0%20conserver%20en%20archivage%20au%20format%20ad%C3%A9quat.%0A%0A%23%20Notre%20strat%C3%A9gie%0A%0ANotre%20strat%C3%A9gie%2C%20depuis%20les%20d%C3%A9buts%2C%20est%20de%20d%C3%A9velopper%20un%20outil%20libre%2C%20gratuit%2C%20au%20maximum%20intuitif%20afin%20de%20rendre%20son%20utilisation%20possible%20par%20tou%C2%B7te%C2%B7s%2C%20y%20compris%20les%20professionnel%C2%B7le%C2%B7s%20de%20l%27information.%20Des%20versions%20sont%20propos%C3%A9es%20r%C3%A9guli%C3%A8rement%20au%20t%C3%A9l%C3%A9chargement%20%28environ%20tous%20les%202%20%C3%A0%203%20mois%29%2C%20test%C3%A9es%20avec%20les%20utilisateur%C2%B7trice%C2%B7s%20et%20augment%C3%A9es%20de%20fonctionnalit%C3%A9s%20au%20fur%20et%20%C3%A0%20mesure.%20%0A%0APar%20ailleurs%2C%20la%20priorisation%20a%20toujours%20%C3%A9t%C3%A9%20r%C3%A9alis%C3%A9e%20%C3%A0%20partir%20des%20demandes%20d%27utilisateur%C2%B7trice%C2%B7s%20issu%C2%B7e%C2%B7s%20de%20contextes%20tr%C3%A8s%20vari%C3%A9s%20qui%20permettent%20de%20v%C3%A9rifier%2C%20en%20permanence%2C%20que%20les%20fonctionnalit%C3%A9s%20d%C3%A9velopp%C3%A9es%20sont%20adapt%C3%A9es%20au%20plus%20grand%20nombre%20%28tant%20dans%20les%20administrations%20de%20l%27Etat%20que%20dans%20les%20collectivit%C3%A9s%2C%20chez%20des%20op%C3%A9rateurs%20nationaux%20ou%20locaux%2C%20comme%20dans%20des%20entreprises%20ou%20des%20associations%29%20gr%C3%A2ce%20aux%20nombreux%20retours%20utilisateurs%20re%C3%A7us%20lors%20des%20openlabs%20et%20sessions%20d%27%C3%A9changes%20%28pr%C3%A9sentations%2C%20webinaires%2C%20communication%20r%C3%A9alis%C3%A9e%20lors%20des%20sorties%20de%20versions%29%20ou%20encore%20via%20le%20questionnaire%20mis%20en%20place%20pour%20recueillir%20les%20attentes.%0A",
+        "events": [
+          {
+            "name": "other",
+            "date": "2018-01-07",
+            "comment": "Démarrage du défi EIG (2ème promotion)"
+          },
+          {
+            "name": "product_launch",
+            "date": "2018-03-02",
+            "comment": "Sortie de la 1ère version Abstract Antilop d'Archifiltre"
+          },
+          {
+            "name": "other",
+            "date": "2019-04-03",
+            "comment": "Intégration d'Archifiltre en tant que startup d'Etat à l'incubateur des ministères sociaux"
+          },
+          {
+            "name": "other",
+            "date": "2019-11-29",
+            "comment": "1er openlab d'Archifiltre"
+          },
+          {
+            "name": "committee",
+            "date": "2020-06-25",
+            "comment": "Passage en comité d'investissement de la Fabrique numérique entérinant le soutien du service interministériel des archives de France"
+          }
+        ],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2018-01-07",
+            "end": "2018-03-01"
+          },
+          {
+            "name": "construction",
+            "start": "2018-03-02",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": 15,
       "httpGrade": "B",
@@ -5292,7 +5351,44 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "egalite.professionnelle",
+      "type": "startup",
+      "attributes": {
+        "name": "Egalité professionnelle",
+        "pitch": "Calculer et transmettre l'index d'égalité professionnelle aux entreprises",
+        "link": "https://index-egapro.travail.gouv.fr",
+        "repository": "https://github.com/SocialGouv/egapro",
+        "contact": "index@travail.gouv.fr",
+        "content_url_encoded_markdown": "%2A%2AProbl%C3%A8me%2A%2A%20%3A%20l%27%C3%A9cart%20salarial%20entre%20les%20femmes%20et%20les%20hommes%20au%20sein%20des%20entreprises%20fran%C3%A7aises%20est%20chiffr%C3%A9%20actuellement%20%C3%A0%2015%25%20en%20moyenne.%0A%0A%2A%2ASolution%2A%2A%20%3A%20Le%20Minist%C3%A8re%20du%20Travail%20a%20publi%C3%A9%20en%20janvier%202018%20un%20d%C3%A9cret%20qui%20oblige%20les%20entreprises%20fran%C3%A7aises%20%C3%A0%20calculer%20et%20transmettre%20l%27index%20d%27%C3%A9galit%C3%A9%20professionnelle%2C%20calcul%C3%A9%20gr%C3%A2ce%20%C3%A0%20des%20indicateurs%20concernant%20les%20r%C3%A9mun%C3%A9rations%2C%20les%20augmentations%20et%20promotions%2C%20le%20cong%C3%A9%20maternit%C3%A9%20et%20la%20r%C3%A9partition%20femmes-hommes%20parmi%20les%20plus%2010%20hauts%20salaires.%0A%0APour%20cela%2C%20la%20Fabrique%20num%C3%A9rique%20des%20minist%C3%A8res%20sociaux%20a%20d%C3%A9velopp%C3%A9%20le%20produit%20%22Index%20Egapro%22%20%28https%3A%2F%2Findex-egapro.travail.gouv.fr%29%2C%20lequel%20permet%20aux%2040%20000%20entreprises%20fran%C3%A7aises%20concern%C3%A9es%20par%20cette%20obligation%20de%20calculer%20et%20d%C3%A9clarer%20leur%20index%20%C3%A9galit%C3%A9%20professionnelle.%20Le%20produit%2C%20en%20production%20depuis%20juin%202018%2C%20continue%20encore%20d%27%C3%A9voluer%20avec%20des%20fonctionnalit%C3%A9s.%20%0A%0ALa%20page%20annexe%20https%3A%2F%2Findex-egapro.travail.gouv.fr%2Fconsulter-index%20permet%20au%20grand%20public%20de%20consulter%20les%20index%20publics%2C%20%C3%A0%20savoir%20ceux%20des%20entreprises%20de%20plus%20de%201000%20salari%C3%A9s%20%28ceux%20des%20entreprises%20de%20%2B250%20salari%C3%A9s%20seront%20rendus%20publics%20%C3%A0%20compter%20du%2001%2F01%2F21%29%0A%0A%5C%23%23%20Partenariat%20pass%C3%A9%0A%0ALe%20produit%20continue%20de%20fonctionner%20et%20s%27am%C3%A9liore%20en%20continu.%20Il%20est%20toujours%20port%C3%A9%20par%20la%20Fabrique%20des%20minist%C3%A8res%20sociaux.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-01-01",
+            "end": "2019-02-28"
+          },
+          {
+            "name": "construction",
+            "start": "2019-03-01",
+            "end": ""
+          },
+          {
+            "name": "alumni",
+            "start": "2021-11-17",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "D+",
@@ -7877,7 +7973,44 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "egalite.professionnelle",
+      "type": "startup",
+      "attributes": {
+        "name": "Egalité professionnelle",
+        "pitch": "Calculer et transmettre l'index d'égalité professionnelle aux entreprises",
+        "link": "https://index-egapro.travail.gouv.fr",
+        "repository": "https://github.com/SocialGouv/egapro",
+        "contact": "index@travail.gouv.fr",
+        "content_url_encoded_markdown": "%2A%2AProbl%C3%A8me%2A%2A%20%3A%20l%27%C3%A9cart%20salarial%20entre%20les%20femmes%20et%20les%20hommes%20au%20sein%20des%20entreprises%20fran%C3%A7aises%20est%20chiffr%C3%A9%20actuellement%20%C3%A0%2015%25%20en%20moyenne.%0A%0A%2A%2ASolution%2A%2A%20%3A%20Le%20Minist%C3%A8re%20du%20Travail%20a%20publi%C3%A9%20en%20janvier%202018%20un%20d%C3%A9cret%20qui%20oblige%20les%20entreprises%20fran%C3%A7aises%20%C3%A0%20calculer%20et%20transmettre%20l%27index%20d%27%C3%A9galit%C3%A9%20professionnelle%2C%20calcul%C3%A9%20gr%C3%A2ce%20%C3%A0%20des%20indicateurs%20concernant%20les%20r%C3%A9mun%C3%A9rations%2C%20les%20augmentations%20et%20promotions%2C%20le%20cong%C3%A9%20maternit%C3%A9%20et%20la%20r%C3%A9partition%20femmes-hommes%20parmi%20les%20plus%2010%20hauts%20salaires.%0A%0APour%20cela%2C%20la%20Fabrique%20num%C3%A9rique%20des%20minist%C3%A8res%20sociaux%20a%20d%C3%A9velopp%C3%A9%20le%20produit%20%22Index%20Egapro%22%20%28https%3A%2F%2Findex-egapro.travail.gouv.fr%29%2C%20lequel%20permet%20aux%2040%20000%20entreprises%20fran%C3%A7aises%20concern%C3%A9es%20par%20cette%20obligation%20de%20calculer%20et%20d%C3%A9clarer%20leur%20index%20%C3%A9galit%C3%A9%20professionnelle.%20Le%20produit%2C%20en%20production%20depuis%20juin%202018%2C%20continue%20encore%20d%27%C3%A9voluer%20avec%20des%20fonctionnalit%C3%A9s.%20%0A%0ALa%20page%20annexe%20https%3A%2F%2Findex-egapro.travail.gouv.fr%2Fconsulter-index%20permet%20au%20grand%20public%20de%20consulter%20les%20index%20publics%2C%20%C3%A0%20savoir%20ceux%20des%20entreprises%20de%20plus%20de%201000%20salari%C3%A9s%20%28ceux%20des%20entreprises%20de%20%2B250%20salari%C3%A9s%20seront%20rendus%20publics%20%C3%A0%20compter%20du%2001%2F01%2F21%29%0A%0A%5C%23%23%20Partenariat%20pass%C3%A9%0A%0ALe%20produit%20continue%20de%20fonctionner%20et%20s%27am%C3%A9liore%20en%20continu.%20Il%20est%20toujours%20port%C3%A9%20par%20la%20Fabrique%20des%20minist%C3%A8res%20sociaux.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-01-01",
+            "end": "2019-02-28"
+          },
+          {
+            "name": "construction",
+            "start": "2019-03-01",
+            "end": ""
+          },
+          {
+            "name": "alumni",
+            "start": "2021-11-17",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "D+",
@@ -10665,7 +10798,50 @@
         "declarationUrl": "https://code.travail.gouv.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "codedutravail",
+      "type": "startup",
+      "attributes": {
+        "name": "Code du travail numérique",
+        "pitch": "Faciliter l'accès au droit du travail pour les entreprises et les employés.",
+        "stats_url": "https://code.travail.gouv.fr/stats",
+        "link": "https://code.travail.gouv.fr",
+        "repository": "https://github.com/SocialGouv/code-du-travail-numerique",
+        "contact": "codedutravailnumerique@travail.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Qu%E2%80%99est-ce%20que%20le%20Code%20du%20travail%20num%C3%A9rique%C2%A0%3F%0A%0ALe%20Code%20du%20travail%20num%C3%A9rique%20est%20un%20service%20public%20en%20ligne%20et%20gratuit%20vous%20permettant%20d%E2%80%99obtenir%20des%20r%C3%A9ponses%20personnalis%C3%A9es%20sur%20le%20droit%20de%20travail.%0A%0AL%E2%80%99ouverture%20officielle%20du%20site%20a%20eu%20lieu%20le%201er%20janvier%202020.%0A%0A%23%23%23%20Pourquoi%20le%20Code%20du%20travail%20num%C3%A9rique%C2%A0%3F%0A%0AAujourd%E2%80%99hui%2C%20seul%20un%20public%20expert%20ma%C3%AEtrise%20la%20complexit%C3%A9%20du%20droit%20du%20travail%20et%20de%20ses%20diff%C3%A9rentes%20sources%20%28code%20du%20travail%2C%20conventions%20collectives%2C%20accords%20d%E2%80%99entreprises%2C%20etc.%29.%20La%20technicit%C3%A9%20du%20sujet%20le%20rend%20%C3%A9galement%20peu%20accessible%20pour%20les%20salari%C3%A9s%20et%20les%20employeurs.%20Or%2C%20le%20droit%20est%20d%E2%80%99autant%20plus%20facilement%20appliqu%C3%A9%20et%20respect%C3%A9%20qu%E2%80%99il%20est%20connu%20et%20compris.%0A%0ALa%20d%C3%A9cision%20de%20cr%C3%A9er%20le%20Code%20du%20travail%20num%C3%A9rique%20a%20donc%20%C3%A9t%C3%A9%20prise%20et%20inscrite%20dans%20%5Bles%20ordonnances%20sur%20le%20renforcement%20du%20dialogue%20social%20de%202017%5D%28https%3A%2F%2Fwww.legifrance.gouv.fr%2FaffichTexteArticle.do%3Bjsessionid%3DF175675A5AF37BD5745391E7C64C2FAB.tplgfr41s_3%3FcidTexte%3DJORFTEXT000035607388%26idArticle%3DLEGIARTI000036762196%26dateTexte%3D20191129%26categorieLien%3Did%23LEGIARTI000036762196%29.%0A%0A%23%23%23%20%C3%80%20qui%20ce%20service%20s%27adresse-t-il%C2%A0%3F%0A%0ALe%20Code%20du%20travail%20num%C3%A9rique%20s%E2%80%99adresse%20%C3%A0%20tous%20les%20salari%C3%A9s%20et%20employeurs%20de%20droit%20priv%C3%A9%20relevant%20du%20code%20du%20travail%20%28plus%20de%2025%20millions%20de%20personnes%20en%20France%29.%20Les%20fonctionnaires%20et%20les%20ind%C3%A9pendants%20ne%20sont%20par%20exemple%20pas%20concern%C3%A9s.%0A%0A%23%23%23%20Que%20peut-on%20trouver%20sur%20le%20site%C2%A0%3F%0A%0ALe%20Code%20du%20travail%20num%C3%A9rique%20rassemble%20diff%C3%A9rents%20contenus%20sur%20le%20droit%20du%20travail%20ainsi%20que%20des%20r%C3%A9ponses%20personnalis%C3%A9es%20selon%20votre%20situation.%0A%0APlus%20pr%C3%A9cis%C3%A9ment%2C%20vous%20retrouverez%20sur%20le%20site%C2%A0%3A%0A-%20des%20r%C3%A9ponses%20g%C3%A9n%C3%A9riques%20sur%20le%20droit%20du%20travail%20dans%20un%20langage%20accessible%C2%A0%3B%0A-%20des%20r%C3%A9ponses%20personnalis%C3%A9es%20selon%20votre%20convention%20collective%C2%A0%3B%0A-%20des%20simulateurs%20permettant%20d%E2%80%99estimer%20des%20dur%C3%A9es%20de%20pr%C3%A9avis%2C%20des%20montants%20d%E2%80%99indemnit%C3%A9s%E2%80%A6%C2%A0%3B%0A-%20des%20mod%C3%A8les%20de%20courrier.%0A%0A%23%23%20Qui%20sommes-nous%C2%A0%3F%0A%0A%23%23%23%20Notre%20%C3%A9quipe%0A%0ANous%20sommes%20une%20%C3%A9quipe%20pluridisciplinaire%20d%E2%80%99une%20dizaine%20de%20personnes%20compos%C3%A9e%20de%20d%C3%A9veloppeurs%20web%2C%20designers%20d%E2%80%99interface%20et%20d%E2%80%99exp%C3%A9rience%2C%20juristes%2C%20inspecteurs%20du%20travail%2C%20sp%C3%A9cialistes%20de%20la%20donn%C3%A9e%E2%80%A6%20L%E2%80%99ensemble%20des%20agents%20du%20minist%C3%A8re%20du%20Travail%20contribue%20%C3%A9galement%20au%20produit%20en%20r%C3%A9digeant%20des%20contenus%20et%20en%20assurant%20la%20validit%C3%A9%20juridique%20des%20r%C3%A9ponses.%0A%0ALe%20Code%20du%20travail%20num%C3%A9rique%20est%20un%20service%20public%20initi%C3%A9%20par%20%5Ble%20minist%C3%A8re%20du%20Travail%5D%28https%3A%2F%2Ftravail-emploi.gouv.fr%2Fministere%2Forganisation%2Farticle%2Fdgt-direction-generale-du-travail%29%2C%20con%C3%A7u%20et%20d%C3%A9velopp%C3%A9%20au%20sein%20de%20%5Bl%E2%80%99incubateur%20des%20minist%C3%A8res%20sociaux%5D%28https%3A%2F%2Fincubateur.social.gouv.fr%2F%29%20en%20partenariat%20avec%20la%20communaut%C3%A9%20beta.gouv.fr.%0A%0A%23%23%23%20Notre%20m%C3%A9thode%0A%0ALe%20service%20est%20d%C3%A9velopp%C3%A9%20en%20lien%20%C3%A9troit%20avec%20les%20utilisateurs%20%28employeurs%20et%20salari%C3%A9s%29%20et%20les%20praticiens%20du%20droit%20du%20travail%20%28services%20du%20minist%C3%A8re%20du%20Travail%20en%20r%C3%A9gion%2C%20conseillers%20du%20salari%C3%A9%2C%20maisons%20d%E2%80%99acc%C3%A8s%20au%20droit%2C%20professeurs%20en%20droit%20du%20travail...%29.%0A%0ALe%20site%20est%20en%20%C3%A9volution%20continue%20et%20s%E2%80%99enrichit%20r%C3%A9guli%C3%A8rement%20de%20nouveaux%20contenus%20et%20de%20nouvelles%20fonctionnalit%C3%A9s.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2017-12-01",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2017-12-01",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2019-01-01",
+            "end": ""
+          },
+          {
+            "name": "success",
+            "start": "2021-01-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -10673,7 +10849,7 @@
       "apdexGrade": "B",
       "uptime": 100,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-06-21T06:38:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "B",
@@ -13106,7 +13282,45 @@
         "declarationUrl": "https://domifa.fabrique.social.gouv.fr/confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "domifa",
+      "type": "startup",
+      "attributes": {
+        "name": "DomiFa",
+        "pitch": "Faciliter l'accès aux droits pour les personnes sans domicile stable, en simplifiant la gestion de la domiciliation",
+        "stats_url": "https://domifa.fabrique.social.gouv.fr",
+        "link": "https://domifa.fabrique.social.gouv.fr",
+        "repository": "https://github.com/SocialGouv/domifa",
+        "contact": "contact.domifa@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Qu%E2%80%99est-ce%20que%20la%20domiciliation%20%3F%20%0A%0A%2A%2ALa%20domiciliation%20est%20un%20premier%20pas%20vers%20l%E2%80%99acc%C3%A8s%20aux%20droits%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0AElle%20leur%20permet%20de%20disposer%20d%27une%20adresse%20administrative%20o%C3%B9%20recevoir%20leur%20courrier%20et%20de%20faire%20valoir%20leurs%20droits%20civils%2C%20civiques%20et%20sociaux%20%28comme%20la%20d%C3%A9livrance%20d%E2%80%99un%20titre%20national%20d%E2%80%99identit%C3%A9%2C%20l%E2%80%99inscription%20sur%20les%20listes%20%C3%A9lectorales%2C%20l%E2%80%99acc%C3%A8s%20%C3%A0%20des%20aides%20sociales%E2%80%A6%29.%0A%0A%2A%2ACe%20sont%20les%20communes%2C%20les%20centres%20communaux%20ou%20intercommunaux%20d%E2%80%99action%20sociale%20%28CCAS%20ou%20CIAS%29%20et%20les%20associations%20agr%C3%A9%C3%A9es%20qui%20r%C3%A9alisent%20la%20domiciliation.%2A%2A%20Apr%C3%A8s%20avoir%20recueilli%20et%20instruit%20la%20demande%20du%20requ%C3%A9rant%2C%20l%E2%80%99organisme%20v%C3%A9rifie%20qu%E2%80%99il%20satisfait%20aux%20conditions%20de%20d%C3%A9livrance%20et%20%C3%A9met%20une%20attestation%20de%20domicile.%0A%0ACette%20attestation%20est%20valable%20un%20an.%20Elle%20est%20soumise%20%C3%A0%20la%20manifestation%20r%C3%A9guli%C3%A8re%20du%20domicili%C3%A9%20aupr%C3%A8s%20de%20la%20structure%20et%20son%20renouvellement%20suppose%20qu%E2%80%99une%20demande%20en%20ce%20sens%20soit%20formul%C3%A9e%20avant%20le%20terme.%0A%0A%23%23%20Un%20processus%20complexe%20qui%20pose%20des%20probl%C3%A8mes%20de%20prise%20en%20charge%0A%0A%2A%2ALe%20processus%20de%20domiciliation%20pose%20plusieurs%20difficult%C3%A9s%20li%C3%A9es%20%C3%A0%20l%E2%80%99absence%20d%E2%80%99outil%20de%20suivi%20commun.%2A%2A%20Du%20point%20de%20vue%20des%20structures%2C%20il%20est%20chronophage%20et%20se%20r%C3%A9sume%20pour%20l%E2%80%99essentiel%20%C3%A0%20des%20t%C3%A2ches%20de%20gestion%20des%20courriers%20comme%20des%20domiciliations.%20%0A%0ACertaines%20structures%20rencontrent%20%C3%A9galement%20d%E2%80%99important%20probl%C3%A8me%20de%20surcharge%20avec%20une%20augmentation%20continue%20du%20nombre%20de%20demandes.%20%0A%0A%23%23%20DomiFa%20%3A%20une%20Startup%20d%E2%80%99Etat%20qui%20permet%20de%20s%C3%A9curiser%20le%20processus%20de%20domiciliation%20et%20de%20lib%C3%A9rer%20du%20temps%20pour%20l%E2%80%99accompagnement%20social%0A%0A%2A%2AGr%C3%A2ce%20%C3%A0%20DomiFa%2C%20les%20structures%20en%20charge%20de%20la%20domiciliation%20peuvent%20suivre%20les%20dossiers%20plus%20facilement%20dans%20l%E2%80%99int%C3%A9r%C3%AAt%20final%20des%20b%C3%A9n%C3%A9ficiaires.%2A%2A%0A%0ALa%20solution%20permet%20actuellement%20de%20d%C3%A9mat%C3%A9rialiser%20une%20partie%20de%20la%20proc%C3%A9dure%20de%20domiciliation%20et%20d%E2%80%99automatiser%20le%20suivi%20des%20dossiers.%20Elle%20s%E2%80%99adresse%20d%E2%80%99abord%20aux%20structures%20qui%20n%E2%80%99ont%20pas%20d%E2%80%99outils%20de%20suivi%20et%20rencontrent%20des%20probl%C3%A8mes%20de%20surcharge.%0A%0A%23%23%20Quelles%20sont%20les%20fonctionnalit%C3%A9s%20disponibles%20sur%20DomiFa%20%3F%0A%0ADomiFa%20permet%20aux%20structures%20de%20r%C3%A9aliser%20les%20fonctionnalit%C3%A9s%20qui%20sont%20au%20c%C5%93ur%20de%20la%20domiciliation%20%3A%0A-%20Instruction%20et%20validation%20des%20demandes%0A-%20Enregistrement%20des%20passages%20et%20des%20interactions%20%0A-%20Suivi%20du%20courrier%20re%C3%A7u%20et%20distribu%C3%A9%0A-%20Gestion%20des%20domiciliations%20et%20des%20%C3%A9ch%C3%A9ances%20associ%C3%A9es%0A%0AA%20plus%20long%20terme%2C%20la%20solution%20int%C3%A9grera%20d%E2%80%99autres%20services%20%28communication%20avec%20les%20domicili%C3%A9s%2C%20gestion%20des%20courriers%2C%20recherche%20statistiques%E2%80%A6%29.%20%0A%0A%23%23%20Comment%20fonctionne%20DomiFa%20%3F%0A%0A%2A%2ADomiFa%20est%20un%20outil%20num%C3%A9rique%20permettant%20aux%20organismes%20domiciliataires%20de%20simplifier%20la%20gestion%20de%20la%20domiciliation%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0A%0ALa%20facilit%C3%A9%20d%E2%80%99utilisation%20et%20la%20s%C3%A9curit%C3%A9%20sont%20primordiales%20pour%20DomiFa.%20%0ADomiFa%20est%20accessible%20via%20une%20plateforme%20Web%20s%C3%A9curis%C3%A9e%20sur%20Google%20Chrome%20ou%20Firefox%20et%20est%20disponible%20gratuitement.%20Aucun%20logiciel%20suppl%C3%A9mentaire%20n%E2%80%99est%20%C3%A0%20installer.%20La%20connexion%20est%20personnelle%20et%20confidentielle%20%3A%20seules%20les%20personnes%20autoris%C3%A9es%20ayant%20cr%C3%A9%C3%A9%20un%20compte%20utilisateur%20ont%20acc%C3%A8s%20%C3%A0%20son%20contenu%20et%20aux%20informations%20personnelles%20concernant%20les%20domicili%C3%A9s%20de%20leur%20structure.%0A%0A%23%23%20%20Vous%20souhaitez%20rejoindre%20DomiFa%20%3F%0A%0AVous%20%C3%AAtes%20un%20CCAS%2C%20un%20CIAS%2C%20une%20association%20agr%C3%A9%C3%A9e%20r%C3%A9alisant%20de%20la%20domiciliation%20%3F%0A%0AVous%20souhaitez%20vous%20inscrire%20sur%20DomiFa%20%3F%20Obtenir%20des%20renseignements%20sur%20la%20plateforme%20%3F%0A%0A%2A%2A%5BContactez-nous%5D%28mailto%3Acontact.domifa%40fabrique.social.gouv.fr%29%2A%2A%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2019-01-15",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -15606,7 +15820,50 @@
         "declarationUrl": "https://emjpm.fabrique.social.gouv.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "e-mjpm",
+      "type": "startup",
+      "attributes": {
+        "name": "e-MJPM",
+        "pitch": "Trouver rapidement le bon professionnel pour les majeurs à protéger",
+        "stats_url": "https://emjpm.fabrique.social.gouv.fr/stats",
+        "link": "https://emjpm.fabrique.social.gouv.fr",
+        "repository": "https://github.com/SocialGouv/emjpm",
+        "contact": "support.emjpm@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%23%20Simplifier%20la%20relation%20entre%20les%20magistrats%20et%20professionnels%20de%20la%20protection%20juridique%20des%20majeurs%0A%0ALa%20France%20compte%20entre%20800%20000%20et%201%20million%20de%20personnes%20sous%20mesure%20de%20protection%20%28tutelle%2C%20curatelle%2C%20sauvegarde%20de%20justice%29.%20Chaque%20ann%C3%A9e%20plusieurs%20milliers%20de%20personnes%20majeures%20sont%20nouvellement%20concern%C3%A9s.%20Ces%20derni%C3%A8res%2C%20dans%20l%E2%80%99impossibilit%C3%A9%20de%20pourvoir%20seules%20%C3%A0%20leurs%20int%C3%A9r%C3%AAts%20%28%C3%A0%20cause%20d%E2%80%99une%20alt%C3%A9ration%20de%20leur%20facult%C3%A9%20mentale%20ou%20corporelle%29%20ont%20besoin%20d%E2%80%99%C3%AAtre%20assist%C3%A9es%20ou%20repr%C3%A9sent%C3%A9es%20par%20un%20proche%20ou%20un%20professionnel.%0A%0AAujourd%27hui%2C%20les%20juges%20attribuent%20les%20mesures%20de%20protection%20sans%20avoir%20connaissance%20en%20temps%20r%C3%A9el%20de%20l%E2%80%99activit%C3%A9%20des%20travailleurs%20sociaux%20et%20de%20leur%20zone%20d%E2%80%99intervention%20g%C3%A9ographique.%20La%20personne%20%C3%A0%20prot%C3%A9ger%20n%E2%80%99a%20donc%20pas%20syst%C3%A9matiquement%20une%20prise%20en%20charge%20optimale%20%3A%20un%20travailleur%20social%20peut%20passer%20trop%20de%20temps%20pour%20se%20rendre%20chez%20la%20personne%20au%20d%C3%A9triment%20de%20son%20accompagnement%2C%20un%20professionnel%20surcharg%C3%A9%20peut%20%C3%AAtre%20mobilis%C3%A9%20pour%20un%20accompagnement%20alors%20qu%E2%80%99un%20homologue%20plus%20pr%C3%A8s%20de%20la%20personne%20serait%20disponible.%0A%0ALe%20rapport%20de%20la%20Cour%20des%20Comptes%202016%20sur%20la%20protection%20juridique%20des%20majeurs%20confirme%20l%E2%80%99insuffisance%20des%20outils%20actuels%20dans%20la%20gestion%20des%20mesures%20de%20protection.%0A%0A%23%23%23%20e-MJPM%20%3A%20trouver%20rapidement%20le%20bon%20professionnel%20pour%20les%20majeurs%20%C3%A0%20prot%C3%A9ger%0A%0AAvec%20e-MJPM%2C%20le%20magistrat%20peut%20choisir%20au%20mieux%20le%20professionnel%20qui%20sera%20en%20charge%20de%20la%20mesure%20sur%20la%20base%20d%E2%80%99un%20r%C3%A9f%C3%A9rentiel%20de%20mandataires%20contr%C3%B4l%C3%A9%20et%20valid%C3%A9%20par%20les%20agents%20du%20minist%C3%A8re.%20%0A%0ACe%20service%20consolide%20ainsi%20une%20base%20de%20donn%C3%A9es%20des%20mesures%20en%20cours%20sur%20le%20territoire.%20Ces%20donn%C3%A9es%20ont%20une%20valeur%20essentielle%20dans%20le%20pilotage%20de%20la%20politique%20publique%20de%20la%20protection%20juridique%20des%20majeurs%20%28conna%C3%AEtre%20le%20profil%20des%20personnes%20sous%20protection%2C%20adapter%20l%E2%80%99offre%20des%20tuteurs%20aux%20sp%C3%A9cificit%C3%A9s%20du%20territoire%2C%20identifier%20les%20mesures%20familiales%20et%20adapter%20l%E2%80%99information%20et%20le%20soutien%20propos%C3%A9%E2%80%A6%29.%0A%0AAvec%20e-MJPM%2C%20les%20mandataires%20ont%20un%20suivi%20en%20temps%20r%C3%A9el%20des%20mesures%20qui%20leur%20ont%20%C3%A9t%C3%A9%20assign%C3%A9s%20par%20les%20magistrats.%20%0A%0ALe%20produit%20est%20aujourd%27hui%20d%C3%A9ploy%C3%A9%20et%20utilis%C3%A9%20sur%20le%20d%C3%A9partement%20des%20Hauts%20de%20France%20et%20Paris%20et%20poursuit%20sont%20d%C3%A9ploiement%20sur%20tout%20le%20territoire%20national%2C%20en%20partenariat%20avec%20le%20minist%C3%A8re%20de%20la%20Justice.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2018-01-14",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2018-04-01",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-01-13",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2020-09-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B+",
@@ -20802,7 +21059,45 @@
         "declarationUrl": "https://monsuivipsy.fabrique.social.gouv.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "monsuivipsy",
+      "type": "startup",
+      "attributes": {
+        "name": "Mon Suivi Psy",
+        "pitch": "Mieux connaître ses symptômes pour un meilleur accompagnement médical",
+        "stats_url": "https://matomo-metabase-monsuivipsy.fabrique.social.gouv.fr/public/dashboard/5c48ca1a-0c1e-4d8b-90b1-d474ce379758",
+        "link": "https://monsuivipsy.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/monsuivipsy",
+        "contact": "monsuivipsy@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "Les%20troubles%20psychiatriques%20touchent%20plus%20de%2020%20%25%20de%20la%20population%2C%20%C3%A0%20un%20moment%20de%20la%20vie.%C2%A0Et%20trouver%20le%20bon%20traitement%20peut%20prendre%20plusieurs%20ann%C3%A9es.%20Pendant%20ce%20temps-l%C3%A0%2C%20les%20sympt%C3%B4mes%20%C3%A9voluent%2C%20peuvent%20devenir%20chroniques%20et%20l%E2%80%99%C3%A9tat%20du%20patient%20s%E2%80%99aggrave.%20L%E2%80%99impact%20peut%20%C3%AAtre%20dramatique.%C2%A0%0A%0A%2A%2AComment%20en%20arrive-t-on%20l%C3%A0%20%3F%2A%2A%0A%0ALe%20m%C3%A9decin%20choisit%20ou%20modifie%20un%20traitement%20en%20se%20basant%20sur%20ce%20que%20lui%20rapporte%20la%20personne%C2%A0%20durant%20la%20consultation.%20Mais%20le%20m%C3%A9decin%20n%E2%80%99a%20que%20peu%20de%20temps%20avec%20la%20personne%20concern%C3%A9e%20et%C2%A0les%20informations%20rapport%C3%A9es%20ne%20sont%20pas%20fiables.%C2%A0%0A%0ALes%20jeunes%20que%20nous%20avons%20interrog%C3%A9s%20rapportent%20en%20effet%20avoir%20du%20mal%20%C3%A0%20dire%20tout%20ce%20qu%E2%80%99ils%20souhaitent%20en%20consultation%20et%20expliquent%20repartir%20en%20ayant%20bien%20souvent%20omis%20de%20transmettre%20une%20ou%20plusieurs%20informations%20importantes.%C2%A0%0A%0AC%E2%80%99est%20qu%E2%80%99il%20est%20tr%C3%A8s%20difficile%20de%20donner%20une%20repr%C3%A9sentation%20fiable%20de%20ses%20sympt%C3%B4mes%20et%20de%20l%E2%80%99%C3%A9volution%20de%20ceux-ci.%C2%A0%0A%0A%2A%2APourquoi%20%3F%2A%2A%20Car%20aucun%20humain%20n%E2%80%99est%20capable%20de%20se%20souvenir%20fid%C3%A8lement%20de%20l%E2%80%99%C3%A9volution%20de%20son%20%C3%A9tat%20psychique%20sur%20une%20dur%C3%A9e%20trop%20longue.%C2%A0%0A%0AIl%20est%20par%20exemple%20quasiment%20impossible%20de%20se%20rappeler%20la%20qualit%C3%A9%20de%20son%20sommeil%203%20semaines%20auparavant%2C%20d%E2%80%99%C3%AAtre%20suffisamment%20pr%C3%A9cis%20sur%20le%20nombre%20de%20crise%20d%E2%80%99angoisse%20survenues%20le%20mois%20dernier%2C%20l%E2%80%99intensit%C3%A9%20de%20celles-ci%20et%20leur%20impact%20sur%20notre%20quotidien%2C%20ou%20encore%20de%20se%20rappeler%20de%20ces%20jours%20o%C3%B9%20%C3%A7a%20allait%20vraiment%20bien%2C%20alors%20que%20les%20jours%20pr%C3%A9c%C3%A9dant%20le%20rendez-vous%2C%20la%20tristesse%20nous%20a%20envahit%E2%80%A6%0A%0A%2A%2AMon%20Suivi%20Psy%20est%20fait%20pour%20%C3%A7a%20%21%2A%2A%0A%0APlus%20les%20informations%20concernant%20mes%20sympt%C3%B4mes%20sont%20proches%20de%20la%20r%C3%A9alit%C3%A9%2C%20de%20ce%20que%20je%20vis%2C%20plus%20mon%20m%C3%A9decin%20sera%20en%20mesure%20de%20me%20prescrire%20le%20bon%20traitement%2C%20celui%20qui%20sera%20le%20plus%20efficace%20possible%20avec%20le%20moins%20d%E2%80%99effets%20ind%C3%A9sirables.%0A%0AMon%20Suivi%20Psy%2C%20c%E2%80%99est%20une%20aide%20pour%20un%20dialogue%20continu%2C%20qui%20s%E2%80%99adresse%20%C3%A0%20tous%2C%20co-construite%20avec%20les%20usagers%2C%20comprenant%C2%A0%3A%0A%0A%2A%20La%20possibilit%C3%A9%20de%20s%C3%A9lectionner%20les%20sympt%C3%B4mes%20et%20les%20effets%20ind%C3%A9sirables%20des%20traitements%20m%C3%A9dicamenteux%20%C3%A0%20suivre%C2%A0%0A%2A%20Un%20rappel%20quotidien%20pour%20m%E2%80%99aider%20%C3%A0%20y%20penser%0A%2A%20Des%20%C3%A9crans%20simples%20permettant%20une%20saisie%20rapide%0A%2A%20Une%20synth%C3%A8se%20de%20l%E2%80%99%C3%A9volution%20de%20l%E2%80%99intensit%C3%A9%20des%20sympt%C3%B4mes%20au%20cours%20du%20temps%0A%2A%20Un%20acc%C3%A8s%20%C3%A0%20des%20donn%C3%A9es%20informatives%20concernant%20les%20sympt%C3%B4mes%20suivis%0A%2A%20Un%20parcours%20motivationnel%20dans%20la%20participation%20%C3%A0%20son%20suivi%0A%0AMon%20Suivi%20Psy%2C%20c%E2%80%99est%20permettre%20aux%20personnes%20suivies%20de%20rester%20au%20plus%20pr%C3%A8s%20de%20leur%20exp%C3%A9rience%20et%20d%E2%80%99en%20rendre%20compte%20le%20plus%20fid%C3%A8lement%20possible%20au%20m%C3%A9decin%2C%20pour%20lui%20permettre%20de%20participer%20%C3%A0%20soulager%20la%20souffrance%20gr%C3%A2ce%20%C3%A0%20une%20intervention%20m%C3%A9dicamenteuse%20ad%C3%A9quate%2C%20personnalis%C3%A9e%20et%20rapide.%0A%0A%2A%2AMesure%20d%E2%80%99impact%20et%20objectifs%2A%2A%0A%0ALes%20deux%20indicateurs%20permettant%20de%20mesurer%20l%E2%80%99impact%20du%20services%20sont%20%3A%C2%A0%0A%0A%2A%20Le%20nombre%20d%E2%80%99utilisateurs%20engag%C3%A9s%2C%20c%E2%80%99est-%C3%A0-dire%20le%20nombre%20d%E2%80%99utilisateurs%20saisissant%20des%20donn%C3%A9es%20sur%20au%20moins%202%20semaines%20glissantes%20avec%203%20saisies%20ou%20plus%20par%20semaine%0A%2A%20Le%20nombre%20de%20praticiens%20engag%C3%A9s%2C%20c%E2%80%99est-%C3%A0-dire%20le%20nombre%20de%20praticiens%20d%C3%A9clarant%20que%20le%20service%20les%20a%20aid%C3%A9s%20dans%20l%E2%80%99orientation%20de%20la%20prise%20en%20charge%20de%20la%20personne%20suivie%20et%2C%20que%20cela%20soit%20d%E2%80%99un%20point%20du%20vue%20diagnostic%2C%20th%C3%A9rapeutique%20ou%20de%20soins%20plus%20globalement.%C2%A0%0A%0ANous%20estimons%20que%20cette%20premi%C3%A8re%20phase%20d%E2%80%99exp%C3%A9rimentation%20sera%20un%20succ%C3%A8s%20si%20au%20bout%20des%206%20premiers%20mois%20nous%20avons%20%3A%C2%A0%0A%0A%2A%20200%20utilisateurs%20engag%C3%A9s%20et%0A%2A%2050%20praticiens%20engag%C3%A9s%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2020-09-22",
+            "end": "2020-11-01"
+          },
+          {
+            "name": "construction",
+            "start": "2020-11-01",
+            "end": "2021-05-01"
+          },
+          {
+            "name": "acceleration",
+            "start": "2021-06-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": 2,
       "httpGrade": "A+",
@@ -23425,7 +23720,40 @@
         "declarationUrl": "https://ozensemble.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "ozensemble",
+      "type": "startup",
+      "attributes": {
+        "name": "Oz Ensemble",
+        "pitch": "Offrir à tous un accès simple aux soins en addictologie",
+        "stats_url": "https://www.ozensemble.fr//stats",
+        "link": "https://www.ozensemble.fr/",
+        "repository": "https://github.com/SocialGouv/ozensemble",
+        "contact": "contact@ozensemble.fr",
+        "content_url_encoded_markdown": "%23%23%20%20%20Le%20d%C3%A9faut%20d%27acc%C3%A8s%20aux%20soins%20condamne%20les%20personnes%20souffrant%20de%20conduites%20addictives%0A%0AAujourd%E2%80%99hui%20en%20France%2C%205%20millions%20de%20personnes%20souffrent%20d%E2%80%99une%20d%C3%A9pendance%20%C3%A0%20l%E2%80%99alcool%20qui%20reste%20la%20deuxi%C3%A8me%20cause%20de%20mortalit%C3%A9%20pr%C3%A9matur%C3%A9e%20%C3%A9vitable%20apr%C3%A8s%20le%20tabac.%20%20%0A%0ASelon%20le%20rapport%202018%20de%20la%20MILDECA%2C%20seuls%205%20%25%20des%20personnes%20d%C3%A9pendantes%20%C3%A0%20l%E2%80%99alcool%20font%0Al%E2%80%99objet%20d%E2%80%99un%20suivi%20r%C3%A9gulier.%20Ainsi%20sur%20le%20seul%20d%C3%A9partement%20de%20la%20Seine-Saint-Denis%2C%20180%C2%A0000%0Apersonnes%20%C3%A9chapperaient%20aux%20soins.%0A%0AApr%C3%A8s%20enqu%C3%AAte%20aupr%C3%A8s%20de%20personnes%20pr%C3%A9sentant%20un%20trouble%20identifi%C3%A9%20par%20des%20structures%20de%20soins%20partenaires%20%28m%C3%A9decin%20de%20ville%2C%20CMS%29%20mais%20non%20suivies%2C%20les%20principaux%20probl%C3%A8mes%20auxquels%20ces%20personnes%20font%20face%20sont%20%3A%0A-%20Je%20n%E2%80%99arrive%20pas%20%C3%A0%20m%E2%80%99approprier%20mon%20trouble%0A-%20Je%20ne%20suis%20pas%20acteur%20de%20mon%20parcours%0A-%20Personne%20n%E2%80%99est%20pas%20l%C3%A0%20pour%20moi%20au%20moment%20o%C3%B9%20j%E2%80%99en%20ressent%20le%20plus%20le%20besoin%0A%0A%23%23%20Oz%20Ensemble%20%3A%20Etre%20soutenu%20dans%20la%20ma%C3%AEtrise%20de%20sa%20consommation%20et%20acc%C3%A9der%20aux%20soins%20simplement%0A%0AOz%20Ensemble%20est%20une%20plateforme%20d%E2%80%99addictologie%20d%C3%A9mat%C3%A9rialis%C3%A9e%20s%E2%80%99adressant%20%C3%A0%20tous.%0ALa%20plateforme%20s%E2%80%99appuie%20d%E2%80%99une%20part%20sur%20une%20application%20mobile%2C%20co-construite%20avec%20les%20usagers%2C%20alliant%20pour%20la%20premi%C3%A8re%20fois%20%3A%0A-%20Un%20module%20de%20rep%C3%A9rage%20pr%C3%A9coce%20sous%20la%20forme%20d%E2%80%99un%20bilan%20et%20d%E2%80%99un%20agenda%20de%20consommation%20num%C3%A9riques%20et%20interactifs.%0A-%20Un%20point%20d%E2%80%99acc%C3%A8s%20%C3%A0%20un%20professionnel%20du%20soins%20sous%2048h.%0A-%20Un%20parcours%20motivationnel%20valorisant%20le%20patient%20dans%20la%20r%C3%A9duction%20de%20sa%20consommation%0A%0AD%E2%80%99autre%20part%2C%20la%20plateforme%20int%C3%A8gre%20un%20parcours%20de%20soins%20adapt%C3%A9%20%C3%A0%20la%20gravit%C3%A9%20du%20trouble%20et%20aux%20contraintes%20de%20l%E2%80%99usager%2C%20l%E2%80%99orientant%20vers%20les%20structures%20de%20soins%20existantes%20le%20cas%20%C3%A9ch%C3%A9ant.%0A%0AAinsi%2C%20nous%20souhaitons%20favoriser%20le%20passage%20vers%20une%20d%C3%A9marche%20de%20soin%20en%20s%27appuyant%20sur%20la%20motivation%20du%20patient%20quand%20il%20pourra%20par%20lui-m%C3%AAme%20constater%20son%20probl%C3%A8me%20sur%20la%20p%C3%A9riode%20dont%20il%20aura%20besoin%20pour%20assurer%20cette%20prise%20de%20conscience.%0ACet%20outil%20s%27int%C3%A9gre%20dans%20l%27arsenal%20des%20orienteurs%20et%20est%20particuli%C3%A8rement%20pl%C3%A9biscit%C3%A9%20par%20ceux-ci.%20En%20effet%2C%20pour%20d%27autres%20pathologies%2C%20la%20mise%20%C3%A0%20disposition%20d%27un%20outil%20d%27automesure%20a%20d%C3%A9montr%C3%A9%20l%27efficacit%C3%A9%20sur%20la%20prise%20de%20conscience%20des%20troubles%20par%20les%20patients.%0ALa%20combinaison%20avec%20l%27orientation%20vers%20des%20structures%20adapt%C3%A9es%20permettra%20une%20identification%20facile%20des%20centres%20par%20le%20patient%20le%20jour%20o%C3%B9%20il%20sera%20pr%C3%AAt.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2020-01-01",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2020-02-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": 3,
       "httpGrade": "B",
@@ -26016,7 +26344,50 @@
         "declarationUrl": "https://pjm.social.gouv.fr/politique-de-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "e-mjpm",
+      "type": "startup",
+      "attributes": {
+        "name": "e-MJPM",
+        "pitch": "Trouver rapidement le bon professionnel pour les majeurs à protéger",
+        "stats_url": "https://emjpm.fabrique.social.gouv.fr/stats",
+        "link": "https://emjpm.fabrique.social.gouv.fr",
+        "repository": "https://github.com/SocialGouv/emjpm",
+        "contact": "support.emjpm@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%23%20Simplifier%20la%20relation%20entre%20les%20magistrats%20et%20professionnels%20de%20la%20protection%20juridique%20des%20majeurs%0A%0ALa%20France%20compte%20entre%20800%20000%20et%201%20million%20de%20personnes%20sous%20mesure%20de%20protection%20%28tutelle%2C%20curatelle%2C%20sauvegarde%20de%20justice%29.%20Chaque%20ann%C3%A9e%20plusieurs%20milliers%20de%20personnes%20majeures%20sont%20nouvellement%20concern%C3%A9s.%20Ces%20derni%C3%A8res%2C%20dans%20l%E2%80%99impossibilit%C3%A9%20de%20pourvoir%20seules%20%C3%A0%20leurs%20int%C3%A9r%C3%AAts%20%28%C3%A0%20cause%20d%E2%80%99une%20alt%C3%A9ration%20de%20leur%20facult%C3%A9%20mentale%20ou%20corporelle%29%20ont%20besoin%20d%E2%80%99%C3%AAtre%20assist%C3%A9es%20ou%20repr%C3%A9sent%C3%A9es%20par%20un%20proche%20ou%20un%20professionnel.%0A%0AAujourd%27hui%2C%20les%20juges%20attribuent%20les%20mesures%20de%20protection%20sans%20avoir%20connaissance%20en%20temps%20r%C3%A9el%20de%20l%E2%80%99activit%C3%A9%20des%20travailleurs%20sociaux%20et%20de%20leur%20zone%20d%E2%80%99intervention%20g%C3%A9ographique.%20La%20personne%20%C3%A0%20prot%C3%A9ger%20n%E2%80%99a%20donc%20pas%20syst%C3%A9matiquement%20une%20prise%20en%20charge%20optimale%20%3A%20un%20travailleur%20social%20peut%20passer%20trop%20de%20temps%20pour%20se%20rendre%20chez%20la%20personne%20au%20d%C3%A9triment%20de%20son%20accompagnement%2C%20un%20professionnel%20surcharg%C3%A9%20peut%20%C3%AAtre%20mobilis%C3%A9%20pour%20un%20accompagnement%20alors%20qu%E2%80%99un%20homologue%20plus%20pr%C3%A8s%20de%20la%20personne%20serait%20disponible.%0A%0ALe%20rapport%20de%20la%20Cour%20des%20Comptes%202016%20sur%20la%20protection%20juridique%20des%20majeurs%20confirme%20l%E2%80%99insuffisance%20des%20outils%20actuels%20dans%20la%20gestion%20des%20mesures%20de%20protection.%0A%0A%23%23%23%20e-MJPM%20%3A%20trouver%20rapidement%20le%20bon%20professionnel%20pour%20les%20majeurs%20%C3%A0%20prot%C3%A9ger%0A%0AAvec%20e-MJPM%2C%20le%20magistrat%20peut%20choisir%20au%20mieux%20le%20professionnel%20qui%20sera%20en%20charge%20de%20la%20mesure%20sur%20la%20base%20d%E2%80%99un%20r%C3%A9f%C3%A9rentiel%20de%20mandataires%20contr%C3%B4l%C3%A9%20et%20valid%C3%A9%20par%20les%20agents%20du%20minist%C3%A8re.%20%0A%0ACe%20service%20consolide%20ainsi%20une%20base%20de%20donn%C3%A9es%20des%20mesures%20en%20cours%20sur%20le%20territoire.%20Ces%20donn%C3%A9es%20ont%20une%20valeur%20essentielle%20dans%20le%20pilotage%20de%20la%20politique%20publique%20de%20la%20protection%20juridique%20des%20majeurs%20%28conna%C3%AEtre%20le%20profil%20des%20personnes%20sous%20protection%2C%20adapter%20l%E2%80%99offre%20des%20tuteurs%20aux%20sp%C3%A9cificit%C3%A9s%20du%20territoire%2C%20identifier%20les%20mesures%20familiales%20et%20adapter%20l%E2%80%99information%20et%20le%20soutien%20propos%C3%A9%E2%80%A6%29.%0A%0AAvec%20e-MJPM%2C%20les%20mandataires%20ont%20un%20suivi%20en%20temps%20r%C3%A9el%20des%20mesures%20qui%20leur%20ont%20%C3%A9t%C3%A9%20assign%C3%A9s%20par%20les%20magistrats.%20%0A%0ALe%20produit%20est%20aujourd%27hui%20d%C3%A9ploy%C3%A9%20et%20utilis%C3%A9%20sur%20le%20d%C3%A9partement%20des%20Hauts%20de%20France%20et%20Paris%20et%20poursuit%20sont%20d%C3%A9ploiement%20sur%20tout%20le%20territoire%20national%2C%20en%20partenariat%20avec%20le%20minist%C3%A8re%20de%20la%20Justice.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2018-01-14",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2018-04-01",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-01-13",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2020-09-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -26024,7 +26395,7 @@
       "apdexGrade": "A",
       "uptime": 100,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-06-21T06:39:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "A",
@@ -28312,7 +28683,44 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "tumeplay",
+      "type": "startup",
+      "attributes": {
+        "name": "TuMePlay",
+        "pitch": "Améliorer la prévention sexuelle pour les jeunes de moins de 25 ans",
+        "link": "https://tumeplay.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/tumeplay",
+        "contact": "yowa.muzadi@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%20Nos%20constats%0A%0A%2A%2A1.%20Une%20recrudescence%20des%20IST%20%3A%2A%2A%0AEntre%202012%20et%202016%2C%20le%20nombre%20de%20nouveaux%20diagnostics%20d%E2%80%99infections%20sexuellement%20transmissibles%20a%20tripl%C3%A9%20chez%20les%2015-24%20ans%2C%20d%27apr%C3%A8s%20les%20r%C3%A9sultats%20de%20%5Bl%27enqu%C3%AAte%20Labo%20IST1%20publi%C3%A9e%20par%20Sant%C3%A9%20Publique%20France%5D%28https%3A%2F%2Fwww.santepubliquefrance.fr%2Fles-actualites%2F2019%2Fbarometre-de-sante-publique-france-2019-lancement-de-l-enquete%29.%0ALa%20hausse%20des%20infections%20sexuellement%20transmissibles%20chez%20les%20jeunes%20s%27explique%20notamment%20par%20une%20diminution%20de%20l%27utilisation%20du%20pr%C3%A9servatif%2C%20pas%20lors%20de%20la%20premi%C3%A8re%20relation%20sexuelle%20mais%20au%20cours%20des%20ann%C3%A9es%20qui%20suivent.%0A%0A%2A%2A2.%20Un%20manque%20d%27attrait%20des%20moyens%20de%20pr%C3%A9vention%20et%20de%20sant%C3%A9%20sexuelle%20%3A%2A%2A%0ALe%20pr%C3%A9servatif%20externe%20%28ou%20masculin%29%20souffre%20d%27un%20manque%20d%27attrait%20aupr%C3%A8s%20des%20jeunes.%20Il%20reste%20dans%20bien%20des%20cas%20mal%20utilis%C3%A9%20pour%20diverses%20raisons%20%28mauvais%20choix%20de%20pr%C3%A9servatif%2C%20mauvaise%20pose%2C%20mauvaise%20utilisation%2C%20perceptions%20et%20croyances%20erron%C3%A9es%29.%0A%0ALe%20pr%C3%A9servatif%20interne%20%28ou%20f%C3%A9minin%29%20n%27est%20que%20tr%C3%A8s%20peu%20utilis%C3%A9%20et%20connu.%20Pour%20les%20jeunes%2C%20il%20reste%20cher%2C%20peu%20accessible%20et%20trop%20compliqu%C3%A9%20%C3%A0%20utiliser.%0A%0ALes%20jeunes%20ne%20pratiquent%20pas%20suffisamment%20de%20d%C3%A9pistages.%20Par%20ailleurs%2C%20on%20constate%20au%20sein%20de%20leur%20population%20une%20mauvaise%20connaissance%20des%20moyens%20de%20transmission%20des%20IST%20et%20de%20pr%C3%A9vention%20des%20IST.%0A%0A%2A%2A3.%20Un%20manque%20de%20connaissances%20et%20de%20comp%C3%A9tences%20en%20%C3%A9ducation%20sexuelle%20%3A%2A%2A%0ASelon%20le%20%5Bbarom%C3%A8tre%20r%C3%A9alis%C3%A9%20par%20le%20Haut%20Conseil%20%C3%A0%20l%E2%80%99%C3%89galit%C3%A9%5D%28http%3A%2F%2Fwww.haut-conseil-egalite.gouv.fr%2FIMG%2Fpdf%2Fhce_rapport_education_a_la_sexualite_2016_06_15-4.pdf%29%2C%2025%25%20des%20%C3%A9coles%20d%C3%A9clarent%20n%E2%80%99avoir%20mis%20en%20place%20aucune%20action%20d%27%C3%A9ducation%20%C3%A0%20la%20sexualit%C3%A9%20malgr%C3%A9%20l%E2%80%99obligation%20l%C3%A9gale.%0A%0ALe%20r%C3%B4le%20de%20l%27%C3%A9cole%20dans%20la%20pr%C3%A9vention%20sexuelle%20des%20jeunes%20diminue.%0A%0A%23%20Nos%20convictions%0A%0ALe%20num%C3%A9rique%20offre%20une%20opportunit%C3%A9%20pour%20l%27%C3%A9ducation%20%C3%A0%20la%20sexualit%C3%A9.%20Il%20est%20important%20de%20l%27investir%20avec%20des%20outils%20ad%C3%A9quats%20qui%20permettent%20aux%20jeunes%20de%20monter%20en%20comp%C3%A9tence%20de%20mani%C3%A8re%20individuelle%2C%20de%20se%20responsabiliser%20et%20trouver%20ensuite%20les%20relais%20physiques%20susceptibles%20de%20l%27accompagner%0A%0ALa%20promotion%20du%20pr%C3%A9servatif%20reste%20essentielle%20dans%20la%20pr%C3%A9vention%20des%20IST%2C%20ainsi%20que%20des%20grossesses%20non%20d%C3%A9sir%C3%A9es.%20Il%20faut%20assurer%20leur%20mise%20%C3%A0%20disposition%20aupr%C3%A8s%20des%20jeunes%20et%20promouvoir%20leur%20utilisation%20dans%20le%20cadre%20d%E2%80%99une%20%C3%A9ducation%20sexuelle%20positive%20et%20pr%C3%A9ventive.%0A%0ALes%20jeunes%20devraient%20pouvoir%20b%C3%A9n%C3%A9ficier%20de%20plus%20d%27offres%20d%C3%A9mat%C3%A9rialis%C3%A9es%20pour%20des%20d%C3%A9pistages%20hors%20des%20circuits%20habituels.%0A%0A%23%20Notre%20challenge%0A%0AAugmenter%20les%20connaissances%20et%20comp%C3%A9tences%20des%20jeunes%20en%20mati%C3%A8re%20de%20sant%C3%A9%20sexuelle%20pour%20encourager%20les%20comportements%20responsables%20et%20am%C3%A9liorer%2C%20in%20fine%2C%20les%20indicateurs%20de%20sant%C3%A9%20sexuelle%20chez%20les%20jeunes.%0A%0ACela%20passe%20par%20des%20%E2%80%9Ctests%20de%20connaissances%E2%80%9D.%20Ces%20tests%20permettent%20au%20jeune%20d%E2%80%99avoir%20acc%C3%A8s%20%C3%A0%20des%20paniers%20%28les%20%E2%80%9Cbox%E2%80%9D%29%20contenant%20une%20offre%20de%20produits%2C%20informations%20et%20services%20en%20sant%C3%A9%20sexuelle.%20En%20particulier%2C%20les%20jeunes%20pourront%20avoir%20acc%C3%A8s%20%C3%A0%20des%20pr%C3%A9servatifs%20et%20du%20lubrifiant%20gratuitement.%20Ces%20produit%20seront%20regroup%C3%A9s%20dans%20des%20box%20th%C3%A9matiques%2C%20qu%E2%80%99ils%20pourront%20commander%20et%20recevoir%20apr%C3%A8s%20avoir%20obtenu%20des%20points%20aux%20diff%C3%A9rents%20tests.%0A%0A%23%20Notre%20solution%0A%0ANotre%20solution%20se%20pr%C3%A9sente%20sous%20la%20forme%20d%E2%80%99un%20produit%20num%C3%A9rique%20%28une%20web-app%29.%0A%0AElle%20repose%20sur%20trois%20grands%20axes%20%3A%0A%0A1.%20Une%20information%20ludique%2C%20syst%C3%A9mique%20et%20adapt%C3%A9e%20avec%20%3A%0A%0A-%20l%27utilisation%20originale%20des%20r%C3%A9seaux%20sociaux%20pour%20diffuser%20des%20contenus%20p%C3%A9dagogiques%20fiables%20et%20ludiques%2C%20ainsi%20que%20constituer%20une%20communaut%C3%A9%20d%E2%80%99utilisateurs%0A-%20la%20pr%C3%A9sence%20de%20ces%20m%C3%AAmes%20informations%20sur%20la%20web-app%0A%0A2.%20Un%20parcours%20de%20connaissance%20%3A%20une%20auto-%C3%A9valuation%20gr%C3%A2ce%20%C3%A0%20des%20jeux%20%3A%0A%0A-%20des%20questionnaires%20ou%20jeux%20qui%20permettent%20de%20gagner%20des%20points%0A-%20des%20points%20qui%20peuvent%20ensuite%20%C3%AAtre%20%C3%A9chang%C3%A9s%20contre%20des%20paniers%20dans%20le%20catalogue%0A%0A3.%20Un%20catalogue%20en%20ligne%20donnant%20acc%C3%A8s%20%C3%A0%20des%20paniers%20ou%20%E2%80%9Cbox%E2%80%9D%20contre%20des%20points.%20Les%20box%20contiennent%20notamment%20des%20pr%C3%A9servatifs%20qui%20seront%20gratuits%20pour%20le%20jeune.%20Ces%20box%20sont%20con%C3%A7ues%20pour%20%3A%0A%0A-%20am%C3%A9liorer%20l%27image%20et%20la%20perception%20des%20moyens%20de%20pr%C3%A9vention%20et%20de%20sant%C3%A9%20sexuelle%20chez%20les%20jeunes%2C%20en%20particulier%20celles%20des%20pr%C3%A9servatifs%20et%20lubrifiants%0A-%20promouvoir%20l%27utilisation%20des%20moyens%20de%20pr%C3%A9vention%20et%20des%20d%C3%A9pistages%0A%0APlusieurs%20modes%20de%20distribution%20sont%20envisag%C3%A9s%20pour%20les%20%E2%80%9Cbox%E2%80%9D%20%3A%0A%0A-%20la%20pharmacie%0A-%20le%20point%20relais%0A-%20la%20livraison%20chez%20un%20partenaire%20%28mission%20locale%2C%20association%20locale%2C%20etc.%29%0A%0ANotre%20%5Bcompte%20Instagram%5D%28https%3A%2F%2Fwww.instagram.com%2Ftumeplay%2F%29.%0A%0A%23%20Notre%20%C3%A9cosyst%C3%A8me%0A%0ATrois%20ARS%20partenaires%20qui%20repr%C3%A9sentent%20nos%20territoires%20d%27exp%C3%A9rimentation%20%3A%20Guyane%2C%20Ile-de-France%2C%20Nouvelle-Aquitaine.%0A%0ADes%20partenaires%20de%20distribution%2C%20qui%20constituent%20nos%20relais%20physiques%20apr%C3%A8s%20la%20commande%20via%20l%27e-shop%20%3A%0A%0A-%20Un%20r%C3%A9seau%20de%20pharmacies%20partenaires%0A-%20Des%20points%20relais%20de%20type%20supermarch%C3%A9s%2C%20ou%20autre%0A-%20Des%20acteurs%20locaux%20de%20type%20missions%20locales%20ou%20infirmi%C3%A8res%20scolaires%20en%20fonction%20des%20territoires%0A-%20Des%20partenaires%20%22sachants%22%2Fexperts%2C%20les%20associations%2C%20centres%20de%20sant%C3%A9%20et%20autres%20qui%20prendront%20le%20relais%20sur%20les%20domaines%20qui%20ne%20rel%C3%A8vent%20pas%20de%20notre%20comp%C3%A9tence%2C%20afin%20de%20cr%C3%A9er%20un%20v%C3%A9ritable%20maillage.%0A%0A%23%20Nos%20indicateurs%20de%20performance%0A%0AIl%20est%20tr%C3%A8s%20difficile%20de%20mesurer%20avec%20exactitude%20le%20taux%20d%E2%80%99IST%20sur%20un%20territoire%20donn%C3%A9%20c%E2%80%99est%20pourquoi%20nous%20comptons%20%C3%A9valuer%20l%E2%80%99%C3%A9volution%20des%20connaissances%20du%20jeune.%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-07-01",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-09-01",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2021-01-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -28320,7 +28728,7 @@
       "apdexGrade": "A",
       "uptime": 99.993,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-06-21T06:36:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "B",
@@ -31898,7 +32306,45 @@
         "declarationUrl": "https://www.psyenfantado.sante.gouv.fr/donnees-personnelles-et-gestion-des-cookies"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "psyenfantado",
+      "type": "startup",
+      "attributes": {
+        "name": "PsyEnfantAdo",
+        "pitch": "Permettre un accompagnement psychologique des enfants et ados",
+        "link": "https://www.psyenfantado.sante.gouv.fr/",
+        "repository": "https://github.com/betagouv/psy-enfant-ado",
+        "contact": "contact-psyenfantado@beta.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Arr%C3%AAt%20du%20dispositif%0A%0A%0ALe%20dispositif%20PsyEnfantAdo%20s%E2%80%99est%20achev%C3%A9%20le%2031%20janvier%202022.%0A%0ADans%20un%20contexte%20de%20sortie%20de%20crise%20sanitaire%20li%C3%A9e%20au%20COVID%2C%20ce%20dispositif%20a%20constitu%C3%A9%20une%20premi%C3%A8re%20r%C3%A9ponse%20d%E2%80%99urgence%20%C3%A0%20la%20souffrance%20psychique%20des%20enfants%20et%20adolescents.%0A%0AIl%20a%20permis%2C%20durant%20la%20crise%2C%20d%27accompagner%20pr%C3%A8s%20de%203%20500%20enfants%20et%20adolescents%20en%20souffrance%0Apsychique.%20Les%20psychologues%20volontaires%20partenaires%20du%20dispositif%20ont%20r%C3%A9alis%C3%A9%2C%20dans%20ce%20cadre%2C%20pr%C3%A8s%20de%2025%20000%20s%C3%A9ances%20%28source%20%3A%20CNAM%20-%20chiffres%20non%20exhaustifs%20en%20date%20du%2028%2F02%2F22%29.%0A%0AUn%20nouveau%20dispositif%20%C3%A0%20partir%20de%203%20ans%20est%20mis%20en%20place%20au%20Printemps%202022%20%3A%20%5BMonPsy%5D%28https%3A%2F%2Fmonpsy.sante.gouv.fr%2F%29.%0A%0A%23%23%20Contexte%0A%0AEn%20raison%20de%20la%20crise%20sanitaire%2C%20la%20sant%C3%A9%20mentale%20des%20enfants%20et%20des%20adolescents%20se%20trouve%20d%C3%A9t%C3%A9rior%C3%A9e.%20Afin%20de%20lutter%20contre%20cela%2C%20le%20Minist%C3%A8re%20des%20Solidarit%C3%A9s%20et%20de%20la%20Sant%C3%A9%20met%20en%20place%20un%20dispositif%20d%E2%80%99accompagnement%20psychologique%20afin%20de%20permettre%20aux%20familles%20d%E2%80%99avoir%20acc%C3%A8s%20%C3%A0%20des%20consultations%20aupr%C3%A8s%20de%20psychologues%20agr%C3%A9%C3%A9s%2C%20gratuitement%20et%20sans%20avance%20de%20frais.%0A%0ALes%20enfants%20et%20les%20adolescents%20sont%20orient%C3%A9s%20par%20un%20m%C3%A9decin%20%28m%C3%A9decin%20traitant%2C%20m%C3%A9decin%20scolaire%2C%20m%C3%A9decin%20hospitalier...%29%20vers%20un%20accompagnement%20psychologique%20qui%20comprend%20jusqu%E2%80%99%C3%A0%2010%20s%C3%A9ances%20r%C3%A9alis%C3%A9es%20par%20un%20psychologue.%0A",
+        "events": [
+          {
+            "name": "end",
+            "date": "2022-01-31",
+            "comment": ""
+          }
+        ],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2021-05-03",
+            "end": ""
+          },
+          {
+            "name": "alumni",
+            "start": "2022-01-31",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "C+",
@@ -37197,7 +37643,40 @@
         "declarationUrl": "https://1000jours.fabrique.social.gouv.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "1000.jours",
+      "type": "startup",
+      "attributes": {
+        "name": "1000 premiers jours",
+        "pitch": "Accompagner les parents les 1000 premiers jours de l’enfant",
+        "stats_url": "https://1000jours.fabrique.social.gouv.fr/stats",
+        "link": "https://1000jours.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/1000jours",
+        "contact": "love.andrieu@social.gouv.fr",
+        "content_url_encoded_markdown": "%23%20DPP%C2%A01000J%20%28Api%20ou%20webservice%20%29%0A%0A%23%23%20Contexte%C2%A0%0A%0ALa%20d%C3%A9pression%20%22post-partum%20touche%2010%20%C3%A0%2015%20%25%20des%20femmes%20de%20notre%20pays%22%C2%A0-%20et%20sans%20doute%20le%20double%20en%20comptant%20celles%20non%20rep%C3%A9r%C3%A9es%20-%2C%20deux%20dates%20correspondent%20aux%20%22pics%20de%20d%C3%A9pression%22%20la%201%C3%A8re%20semaine%20apr%C3%A8s%20la%20naissance%2C%20et%20la%206e%20semaine.%0A%0ALes%20%C3%A9tudes%20rapportent%20d%E2%80%99ailleurs%20que%20les%20p%C3%A8res%20peuvent%20aussi%20d%C3%A9velopper%20des%20sympt%C3%B4mes%20d%C3%A9pressifs%20en%20post-partum.%20Au%20cours%20des%20trois%20premiers%20mois%20suivant%20l%E2%80%99accouchement%2C%20environ%207%20%25%20d%E2%80%99entre%20eux%20pr%C3%A9sentent%20des%20sympt%C3%B4mes%20d%C3%A9pressifs%2C%20et%20ce%20taux%20atteint%20environ%2025%20%25%20trois%20%C3%A0%20six%20mois%20apr%C3%A8s%20la%20naissance%20de%20leur%20enfant.%0A%0ADans%20un%20parcours%20de%20grossesse%2C%20la%20DPP%20devrait%20pouvoir%20se%20pr%C3%A9venir%20d%C3%A8s%20la%20conception%20de%20l%E2%80%99enfant%20mais%20actuellement%20il%20y%20a%20tr%C3%A8s%20peu%20des%20ressources%20en%20commun%20visibles%20par%20et%20pour%20le%20professionnels%20et%20les%20parents%20tant%20pour%20la%20pr%C3%A9vention%20que%20pour%20le%20traitement.%0A%0ALe%20test%20de%20d%C3%A9pistage%20EPDS%20%28_Edinburgh%20Postpartum%20Depression%20Scale_%2C%20en%20fran%C3%A7ais%20l%E2%80%99%C3%A9chelle%20de%20d%C3%A9pression%20post-partum%20d%E2%80%99%C3%89dimbourg%29%20sous-utilis%C3%A9%20en%20France%20d%C3%A9tecte%20et%20quantifie%20certains%20sympt%C3%B4mes%20d%C3%A9pressifs%20et%20renseigne%20sur%20la%20probabilit%C3%A9%20de%20la%20maladie.%20Le%20diagnostic%20doit%20ensuite%20%C3%AAtre%20confirm%C3%A9%20ou%20infirm%C3%A9%20par%20une%20%C3%A9valuation%20clinique%20sp%C3%A9cialis%C3%A9e.%0A%0AEncore%20tabou%2C%20les%20associations%20parlent%20de%20la%20d%C3%A9pression%20comme%20une%20d%C3%A9pression%20heureuse%20parce%20que%20les%20parents%20font%20fa%C3%A7ade%20%21%20le%20probl%C3%A8me%20a%20%C3%A9t%C3%A9%20longtemps%20masqu%C3%A9%20et%20peu%20connu%2C%20d%27o%C3%B9%20le%20manque%20de%20moyens%20syst%C3%A9miques%20en%20place%20pour%20y%20faire%20face.%0A%0A%23%23%20Probl%C3%A8me%0A%0A%2A%E2%80%9CEn%20tant%20que%C2%A0nouvelle%20maman%20submerg%C3%A9e%2C%20isol%C3%A9e%2C%C2%A0je%20rentre%20%C3%A0%20la%20maison%20apr%C3%A8s%20l%E2%80%99accouchement%20et%20je%20me%20sens%20seule%20face%20%C3%A0%20mon%20b%C3%A9b%C3%A9%20et%20%C3%A0%20nos%20besoins.%20Je%20commence%20%C3%A0%C2%A0d%C3%A9velopper%20des%20signes%20de%20d%C3%A9pression%20ou%20de%20d%C3%A9prime%2C%20qui%20me%20d%C3%A9tournent%20petit%20%C3%A0%20petit%20de%20mon%20enfant%2C%20et%20qui%20provoquent%C2%A0des%20gestes%20et%20des%20attitudes%20anxiog%C3%A8nes%20envers%20lui%20ou%20moi%20%E2%80%9D%2A%0A%0A%23%23%20La%20solution%0A%0AUne%20solution%20num%C3%A9rique%20pour%20garder%20le%20lien%20entre%20le%20professionnel%20et%20la%20patiente%20entre%20les%20deux%20pics%20de%20d%C3%A9pression%2C%20afin%20de%20faire%20le%20n%C3%A9cessaire%20pour%20que%20les%20difficult%C3%A9s%20maternelles%20ou%20la%20d%C3%A9pression%20soient%20trait%C3%A9es.%20Pendant%20le%20premier%20pic%2C%20la%20maman%20peut%20%C3%AAtre%20encore%20%C3%A0%20l%E2%80%99h%C3%B4pital%2C%20alors%20que%20pendant%20le%20second%20pic%20la%20maman%20rejoint%20la%20maison.%20La%20solution%20mettra%20%C3%A0%20disposition%20des%20professionnels%20et%20des%20parents%20le%20test%20EPDS%20comme%20outil%20de%20d%C3%A9pistage%2C%20partage%20de%20constat%20et%20alerte%20pour%20le%20professionnel%2C%20afin%20de%20reprendre%20contact%20avec%20les%20parents.%20Cet%20outil%20nous%20permettra%20non%20seulement%20d%E2%80%99avoir%20des%20donn%C3%A9es%20sur%20ces%20difficult%C3%A9s%C2%A0encore%20m%C3%A9connues%2C%20mais%20aussi%20de%20s%E2%80%99assurer%20que%20les%20parents%20en%20souffrance%20re%C3%A7oivent%20le%20traitement%20adapt%C3%A9.%20%28Inclusif%2C%20l%E2%80%99outil%20s%E2%80%99adresse%20aux%20deux%20parents.%29%0A%0ADans%20sa%20premi%C3%A8re%20version%20minimale%2C%20l%E2%80%99outil%20mettra%20en%20place%20le%20d%C3%A9pistage%20en%20ligne%20et%20des%20alertes%20entre%20le%20professionnel%20de%20confiance%20et%20le%20parent%20en%20fragilit%C3%A9.%C2%A0%0A%0AL%E2%80%99application%20mobile%201000%20jours%20sera%20un%20canal%20d%E2%80%99acquisition%20pour%20ce%20module%2C%20mais%20celui-ci%20pourra%20%C3%AAtre%20utilis%C3%A9%20%C3%A9galement%20par%20les%20professionnels%20et%20partenaires%20qui%20souhaitent%20l%E2%80%99int%C3%A9grer%20%C3%A0%20leur%20dispositifs%20num%C3%A9riques.%0A%0A%23%23%20La%20strat%C3%A9gie%0A%0A%2A%20La%20PMI%20du%20Pas-de-Calais%2C%20de%20Moselle%20et%20l%E2%80%99H%C3%B4pital%20Saint-Joseph%20%C3%A0%20Paris%20seront%20dans%20un%20premier%20temps%20notre%20territoire%20d%E2%80%99exp%C3%A9rimentation%20pour%20mieux%20d%C3%A9tecter%20les%20parcours%20des%20parents%2C%20des%20professionnels%20et%20leurs%20besoins%20pour%20mieux%20ajuster%20l%E2%80%99outil.%20Nous%20souhaitons%20leur%20offrir%20une%20v%C3%A9ritable%20solution%20en%20fonction%20de%20leurs%20usages%2C%20afin%20de%20les%20engager%20durablement%20sur%20la%20suite%20du%20produit.%0A%2A%20Nous%20comptons%20nous%20appuyer%20sur%20les%20professionnels%20comme%20premier%20vecteur%20de%20recommandation%20de%20l%E2%80%99application.%0A%2A%20Open%20source%20%3A%20l%E2%80%99API%20sera%20%C3%A9galement%20propos%C3%A9e%20%C3%A0%20tout%20site%2C%20association%20et%20h%C3%B4pital%20qui%20souhaite%20profiter%20de%20l%E2%80%99outil.%0A%2A%20Nous%20avons%20constitu%C3%A9%20un%20panel%20de%201200%20parents%20volontaires%20pour%20tester%20les%20deux%20produits%201000J%20depuis%20le%20mois%20de%20novembre%202020.%20Nous%20les%20avons%20impliqu%C3%A9s%C2%A0pour%20la%20construction%20de%20l%E2%80%99outil%20et%20nous%20souhaitons%20%C3%A9galement%20les%20inviter%20%C3%A0%20le%20tester%20et%20partager.%0A%2A%20L%E2%80%99application%201000J%20est%20un%20outil%20d%E2%80%99acquisition%20de%20parents%20pour%20ce%20module%20DPP.%0A%0A%23%23%20L%E2%80%99impact%20recherch%C3%A9%20%C3%A0%206%20mois%20%3A%0A%0ANous%20souhaitons%20mettre%20en%20place%20des%20indicateurs%20d%E2%80%99impact%20humains.%0A%0ANous%20visons%201000%20parents%20ayant%20pass%C3%A9%20le%20test%20EPDS%2C%20pour%20chercher%20%C3%A0%20apprendre%C2%A0%3A%0A%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20de%20m%C3%A8res%20ont%20pass%C3%A9%20le%20test%20%3F%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20de%20p%C3%A8res%C2%A0ont%20pass%C3%A9%20le%20test%20%3F%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20ont%20%C3%A9t%C3%A9%20soign%C3%A9es%20%3F%0A%0ANous%20visons%20250%C2%A0professionnels%20de%20sant%C3%A9%20ayant%20utilis%C3%A9%20le%20test%20dans%20les%206%20mois%2C%20pour%20chercher%20%C3%A0%20apprendre%C2%A0%3A%0A%0A%2A%20Sur%20ces%20250%20professionnels%20interrog%C3%A9s%2C%20combien%20recommandent%20le%20module%20%C3%A0%20un%20coll%C3%A8gue%20%3F%C2%A0%0A%2A%20Sur%20ces%20250%20professionnels%20interrog%C3%A9s%2C%20combien%20ont%20trouv%C3%A9%20le%20module%20utile%20pour%20garder%20le%20lien%20avec%20le%20patient%20et%20contribuer%20%C3%A0%20sa%20gu%C3%A9rison%20%3F%0A%0A%0A%0A%23%20Les%20premiers%201000J%20%28App%20mobile%29%0A%0A%23%23%20Contexte%C2%A0%0A%0ADans%20la%20continuit%C3%A9%20du%20%5Brapport%20des%201000%20jours%5D%28https%3A%2F%2Fsolidarites-sante.gouv.fr%2Faffaires-sociales%2Ffamilles-enfance%2Fpacte-pour-l-enfance%2F1000jours%2Farticle%2Fle-rapport-des-1000-premiers-jours-une-commission-d-experts-a-l-appui%23%3A~%3Atext%3Dde%2520soins%2520num%25C3%25A9riques%2522-%2CLe%2520rapport%2520des%25201000%2520premiers%2520jours%2520%253A%2520une%2Cd%27experts%2520%25C3%25A0%2520l%27appui%26text%3DLa%2520pr%25C3%25A9paration%2520du%2520parcours%25201000%2Cpar%2520le%2520neuropsychiatre%2520Boris%2520Cyrulnik.%29%2C%20la%20nouvelle%20politique%20d%E2%80%99accompagnement%20des%20parents%20articul%C3%A9e%20autour%20d%E2%80%99un%20parcours%20se%20caract%C3%A9rise%20par%20un%20volet%20num%C3%A9rique%20qui%20doit%20constituer%20une%20mesure%20%C2%AB%20pivot%20%C2%BB%20visant%20%C3%A0%20rendre%20plus%20lisible%20l%E2%80%99ensemble%20de%20la%20politique%20publique%20des%201000%20jours.%20Central%2C%20cet%20axe%20num%C3%A9rique%20qui%20participe%20au%20renouvellement%20de%20l%E2%80%99accompagnement%20des%20parents%20doit%20%C3%A9galement%20%C3%AAtre%20en%20mesure%20de%20satisfaire%20des%20besoins%20exprim%C3%A9s%20par%20les%20parents.%20C%E2%80%99est%20dans%20cette%20perspective%20que%20la%20phase%20d%E2%80%99investigation%2C%20construite%20autour%20d%E2%80%99un%20questionnaire%2C%20d%E2%80%99interviews%20et%20de%20consultations%20partenariales%2C%20a%20%C3%A9t%C3%A9%20lanc%C3%A9e%20pour%20clairement%20faire%20%C3%A9merger%20ces%20besoins.%C2%A0%0A%0ALe%20cabinet%20travaille%20sur%2024%20mesures%20li%C3%A9es%20au%20rapport%C2%A01000%20jours%20%28visites%20%C3%A0%20domicile%2C%20cr%C3%A8ches%2C%20groupe%20de%20parents%2C%20formation%20de%20professionnels%2C%20etc.%29%2C%20chacune%20de%20ces%20mesures%20avec%20une%20dimension%20et%20des%20%C3%A9quipes%20diff%C3%A9rentes.%20L%E2%80%99application%201000%20jours%20va%2C%20entre%20autres%2C%C2%A0donner%20de%20la%20visibilit%C3%A9%20et%20centraliser%20l%E2%80%99acc%C3%A8s%20%C3%A0%20toutes%20les%20mesures%20et%20les%20sites%20institutionnels%20existants.%C2%A0%0A%0A%23%23%20Probl%C3%A8me%0A%0A%2A%E2%80%9CEn%20tant%20que%C2%A0futur%20parent%20submerg%C3%A9%2C%20j%E2%80%99ai%20du%20mal%20%C3%A0%20trouver%20des%20informations.%20Face%20%C3%A0%20un%20nuage%20flou%20d%E2%80%99informations%20%C3%A9parpill%C3%A9es%2C%20difficile%20de%20se%20rep%C3%A9rer%20et%20faire%20les%20bons%20choix%20en%20terme%20de%20pr%C3%A9vention%20psycho%20et%20physique%20pour%20moi%20et%20mon%20b%C3%A9b%C3%A9.%E2%80%9D%2A%0A%0A%2A%20Les%20institutions%20%C3%A9tatiques%20en%20lien%20avec%20la%20petite%20enfance%C2%A0proposent%20toutes%20des%20informations%20dans%20les%20contours%20de%20leurs%20p%C3%A9rim%C3%A8tres%20respectifs.%20Pour%20avoir%20une%20vision%20360%C2%B0%2C%20les%20parent%20passent%20un%20temps%20important%20pour%20composer%20avec%20les%20informations.%0A%2A%2024%20mesures%20en%20lien%20avec%20le%20parcours%201000%20jours%20verront%20le%20jour%20dans%20les%20mois%20%C3%A0%20venir%2C%20elle%20concernent%20toutes%20une%20partie%20du%20parcours%20de%20parents.%0A%2A%20Les%20rendez-vous%20m%C3%A9dicaux%20de%20pr%C3%A9vention%20principaux%2C%20comme%20l%E2%80%99entretien%20pr%C3%A9natal%20pr%C3%A9coce%2C%20sont%20aujourd%E2%80%99hui%20dilu%C3%A9s%20dans%20la%20quantit%C3%A9%20d%E2%80%99information%20et%20seules%2028%20%25%20des%20femmes%20le%20r%C3%A9alisent.%0A%2A%20Selon%20le%20moment%20de%20vie%2C%20d%C3%A8s%20la%20conception%20jusqu%E2%80%99%C3%A0%202%20ans%20de%20l%E2%80%99enfant%2C%20les%20besoin%20du%20parent%20et%20des%20b%C3%A9b%C3%A9s%20ne%20sont%20pas%20les%20m%C3%AAmes.%0A%2A%20Les%20mamans%20souhaitent%20inclure%20davantage%20le%20co-parent%20dans%20la%20gestion%20du%20quotidien%20du%20b%C3%A9b%C3%A9.%0A%0A%23%23%20Solution%0A%0AUne%20solution%20num%C3%A9rique%20personnalis%C3%A9e%20en%20fonction%20de%20la%20date%20de%20conception%20du%20b%C3%A9b%C3%A9%2C%20cette%20application%20centralise%20les%20informations%20de%20diff%C3%A9rents%20partenaires%20%C3%A9tatiques%2C%20ainsi%20que%20les%2024%20mesures%20en%20cours%2C%20et%20les%20organise%20en%20fonction%20du%20moment%20de%20vie%20du%20parent%20et%20de%20l%E2%80%99enfant.%0A%0ADot%C3%A9e%20d%E2%80%99un%20calendrier%20interactif%2C%20la%20solution%20assiste%20les%20deux%20parents%2C%20sur%20les%20dates%20et%20rendez-vous%20%C3%A0%20ne%20pas%20manquer%2C%20comme%20l%E2%80%99entretien%20pr%C3%A9natal%20pr%C3%A9coce%20et%20l%E2%80%99entretien%20post-natal.%0A%0ANous%20avons%20fait%20le%20choix%20d%E2%80%99inclure%20des%20%C3%A9l%C3%A9ments%20de%20langage%20rassurants%2C%20pour%20donner%20autonomie%20et%20confiance%20aux%20parents%20autant%20que%20possible.%0A%0A%23%23%20Strat%C3%A9gie%0A%0A%2A%20L%E2%80%99application%20sera%20cit%C3%A9e%20par%20tous%20les%20partenaires%20institutionnels%20%3B%0A%2A%20Un%20plan%20de%20communication%20est%20en%20cours%20par%20le%20cabinet%20%3B%0A%2A%20Nous%20avons%20constitu%C3%A9%20un%20panel%20de%201200%20parents%20volontaires%20pour%20tester%20les%20deux%20produits%201000J%20depuis%20le%20mois%20de%20novembre%202020%2C%20nous%20les%20avons%20impliqu%C3%A9s%C2%A0pour%20la%20construction%20de%20l%E2%80%99outil%20et%20nous%20souhaitons%20%C3%A9galement%20les%20inviter%20%C3%A0%20le%20tester%20et%20partager.%0A%0AConcernant%20nos%20indicateurs%20d%E2%80%99impact%2C%20sur%20environ%20800%20000%20naissances%20par%20an.%0A%0ANous%20cherchons%20%C3%A0%20attendre%20%C3%A0%206%20mois%208%20000%20t%C3%A9l%C3%A9chargements.%0A%0A%2A%20Sur%20ces%208%20000%20t%C3%A9l%C3%A9chargements%2C%20nous%20visons%20un%20taux%20de%20r%C3%A9tention%20de%2010%20%25.%20Le%20taux%20de%20r%C3%A9tention%20correspond%20au%20pourcentage%20d%E2%80%99utilisateurs%20actifs%20%28dans%20une%20p%C3%A9riode%20d%C3%A9finie%20dans%20le%20temps%29%20sur%20le%20nombre%20de%20t%C3%A9l%C3%A9chargements.%0A%2A%20Sur%20le%20nombre%20de%20visiteurs%20actifs%2C%20nous%20souhaitons%20conna%C3%AEtre%20combien%20de%20parents%20sont%20engag%C3%A9s%20et%20reviennent%20sur%20l%E2%80%99application%20plus%20de%205%20fois%20par%20mois.%0A%2A%20Nous%20souhaitons%20savoir%20combien%20de%20parents%20recommandent%20l%E2%80%99application.%0A%0ANous%20souhaiterions%20aussi%20avoir%20un%20indicateur%20d%E2%80%99impact%20li%C3%A9%20au%20bien-%C3%AAtre%20et%20au%20soulagement%20que%20l%E2%80%99utilisation%20de%20l%E2%80%99application%20procure%20aux%20parents%20%3A%0A%0APour%20les%20parents%20engag%C3%A9s%20sur%20l%E2%80%99application%20nous%20allons%20chercher%20%C3%A0%20conna%C3%AEtre%C2%A0%3A%0A%0A%2A%20Comment%20se%20sentent-ils%20apr%C3%A8s%20l%E2%80%99utilisation%20de%20cette%20application%C2%A0%3F%0A%2A%20Comment%20priorisent-ils%20ces%20informations%20par%20rapport%20%C3%A0%20d%E2%80%99autres%20sources%20%3F%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2020-10-15",
+            "end": "2021-02-28"
+          },
+          {
+            "name": "construction",
+            "start": "2021-03-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": 4,
       "httpGrade": "B",
@@ -39640,7 +40119,40 @@
       "mention": null
     },
     "declaration-rgpd": {},
-    "betagouv": null,
+    "betagouv": {
+      "id": "1000.jours",
+      "type": "startup",
+      "attributes": {
+        "name": "1000 premiers jours",
+        "pitch": "Accompagner les parents les 1000 premiers jours de l’enfant",
+        "stats_url": "https://1000jours.fabrique.social.gouv.fr/stats",
+        "link": "https://1000jours.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/1000jours",
+        "contact": "love.andrieu@social.gouv.fr",
+        "content_url_encoded_markdown": "%23%20DPP%C2%A01000J%20%28Api%20ou%20webservice%20%29%0A%0A%23%23%20Contexte%C2%A0%0A%0ALa%20d%C3%A9pression%20%22post-partum%20touche%2010%20%C3%A0%2015%20%25%20des%20femmes%20de%20notre%20pays%22%C2%A0-%20et%20sans%20doute%20le%20double%20en%20comptant%20celles%20non%20rep%C3%A9r%C3%A9es%20-%2C%20deux%20dates%20correspondent%20aux%20%22pics%20de%20d%C3%A9pression%22%20la%201%C3%A8re%20semaine%20apr%C3%A8s%20la%20naissance%2C%20et%20la%206e%20semaine.%0A%0ALes%20%C3%A9tudes%20rapportent%20d%E2%80%99ailleurs%20que%20les%20p%C3%A8res%20peuvent%20aussi%20d%C3%A9velopper%20des%20sympt%C3%B4mes%20d%C3%A9pressifs%20en%20post-partum.%20Au%20cours%20des%20trois%20premiers%20mois%20suivant%20l%E2%80%99accouchement%2C%20environ%207%20%25%20d%E2%80%99entre%20eux%20pr%C3%A9sentent%20des%20sympt%C3%B4mes%20d%C3%A9pressifs%2C%20et%20ce%20taux%20atteint%20environ%2025%20%25%20trois%20%C3%A0%20six%20mois%20apr%C3%A8s%20la%20naissance%20de%20leur%20enfant.%0A%0ADans%20un%20parcours%20de%20grossesse%2C%20la%20DPP%20devrait%20pouvoir%20se%20pr%C3%A9venir%20d%C3%A8s%20la%20conception%20de%20l%E2%80%99enfant%20mais%20actuellement%20il%20y%20a%20tr%C3%A8s%20peu%20des%20ressources%20en%20commun%20visibles%20par%20et%20pour%20le%20professionnels%20et%20les%20parents%20tant%20pour%20la%20pr%C3%A9vention%20que%20pour%20le%20traitement.%0A%0ALe%20test%20de%20d%C3%A9pistage%20EPDS%20%28_Edinburgh%20Postpartum%20Depression%20Scale_%2C%20en%20fran%C3%A7ais%20l%E2%80%99%C3%A9chelle%20de%20d%C3%A9pression%20post-partum%20d%E2%80%99%C3%89dimbourg%29%20sous-utilis%C3%A9%20en%20France%20d%C3%A9tecte%20et%20quantifie%20certains%20sympt%C3%B4mes%20d%C3%A9pressifs%20et%20renseigne%20sur%20la%20probabilit%C3%A9%20de%20la%20maladie.%20Le%20diagnostic%20doit%20ensuite%20%C3%AAtre%20confirm%C3%A9%20ou%20infirm%C3%A9%20par%20une%20%C3%A9valuation%20clinique%20sp%C3%A9cialis%C3%A9e.%0A%0AEncore%20tabou%2C%20les%20associations%20parlent%20de%20la%20d%C3%A9pression%20comme%20une%20d%C3%A9pression%20heureuse%20parce%20que%20les%20parents%20font%20fa%C3%A7ade%20%21%20le%20probl%C3%A8me%20a%20%C3%A9t%C3%A9%20longtemps%20masqu%C3%A9%20et%20peu%20connu%2C%20d%27o%C3%B9%20le%20manque%20de%20moyens%20syst%C3%A9miques%20en%20place%20pour%20y%20faire%20face.%0A%0A%23%23%20Probl%C3%A8me%0A%0A%2A%E2%80%9CEn%20tant%20que%C2%A0nouvelle%20maman%20submerg%C3%A9e%2C%20isol%C3%A9e%2C%C2%A0je%20rentre%20%C3%A0%20la%20maison%20apr%C3%A8s%20l%E2%80%99accouchement%20et%20je%20me%20sens%20seule%20face%20%C3%A0%20mon%20b%C3%A9b%C3%A9%20et%20%C3%A0%20nos%20besoins.%20Je%20commence%20%C3%A0%C2%A0d%C3%A9velopper%20des%20signes%20de%20d%C3%A9pression%20ou%20de%20d%C3%A9prime%2C%20qui%20me%20d%C3%A9tournent%20petit%20%C3%A0%20petit%20de%20mon%20enfant%2C%20et%20qui%20provoquent%C2%A0des%20gestes%20et%20des%20attitudes%20anxiog%C3%A8nes%20envers%20lui%20ou%20moi%20%E2%80%9D%2A%0A%0A%23%23%20La%20solution%0A%0AUne%20solution%20num%C3%A9rique%20pour%20garder%20le%20lien%20entre%20le%20professionnel%20et%20la%20patiente%20entre%20les%20deux%20pics%20de%20d%C3%A9pression%2C%20afin%20de%20faire%20le%20n%C3%A9cessaire%20pour%20que%20les%20difficult%C3%A9s%20maternelles%20ou%20la%20d%C3%A9pression%20soient%20trait%C3%A9es.%20Pendant%20le%20premier%20pic%2C%20la%20maman%20peut%20%C3%AAtre%20encore%20%C3%A0%20l%E2%80%99h%C3%B4pital%2C%20alors%20que%20pendant%20le%20second%20pic%20la%20maman%20rejoint%20la%20maison.%20La%20solution%20mettra%20%C3%A0%20disposition%20des%20professionnels%20et%20des%20parents%20le%20test%20EPDS%20comme%20outil%20de%20d%C3%A9pistage%2C%20partage%20de%20constat%20et%20alerte%20pour%20le%20professionnel%2C%20afin%20de%20reprendre%20contact%20avec%20les%20parents.%20Cet%20outil%20nous%20permettra%20non%20seulement%20d%E2%80%99avoir%20des%20donn%C3%A9es%20sur%20ces%20difficult%C3%A9s%C2%A0encore%20m%C3%A9connues%2C%20mais%20aussi%20de%20s%E2%80%99assurer%20que%20les%20parents%20en%20souffrance%20re%C3%A7oivent%20le%20traitement%20adapt%C3%A9.%20%28Inclusif%2C%20l%E2%80%99outil%20s%E2%80%99adresse%20aux%20deux%20parents.%29%0A%0ADans%20sa%20premi%C3%A8re%20version%20minimale%2C%20l%E2%80%99outil%20mettra%20en%20place%20le%20d%C3%A9pistage%20en%20ligne%20et%20des%20alertes%20entre%20le%20professionnel%20de%20confiance%20et%20le%20parent%20en%20fragilit%C3%A9.%C2%A0%0A%0AL%E2%80%99application%20mobile%201000%20jours%20sera%20un%20canal%20d%E2%80%99acquisition%20pour%20ce%20module%2C%20mais%20celui-ci%20pourra%20%C3%AAtre%20utilis%C3%A9%20%C3%A9galement%20par%20les%20professionnels%20et%20partenaires%20qui%20souhaitent%20l%E2%80%99int%C3%A9grer%20%C3%A0%20leur%20dispositifs%20num%C3%A9riques.%0A%0A%23%23%20La%20strat%C3%A9gie%0A%0A%2A%20La%20PMI%20du%20Pas-de-Calais%2C%20de%20Moselle%20et%20l%E2%80%99H%C3%B4pital%20Saint-Joseph%20%C3%A0%20Paris%20seront%20dans%20un%20premier%20temps%20notre%20territoire%20d%E2%80%99exp%C3%A9rimentation%20pour%20mieux%20d%C3%A9tecter%20les%20parcours%20des%20parents%2C%20des%20professionnels%20et%20leurs%20besoins%20pour%20mieux%20ajuster%20l%E2%80%99outil.%20Nous%20souhaitons%20leur%20offrir%20une%20v%C3%A9ritable%20solution%20en%20fonction%20de%20leurs%20usages%2C%20afin%20de%20les%20engager%20durablement%20sur%20la%20suite%20du%20produit.%0A%2A%20Nous%20comptons%20nous%20appuyer%20sur%20les%20professionnels%20comme%20premier%20vecteur%20de%20recommandation%20de%20l%E2%80%99application.%0A%2A%20Open%20source%20%3A%20l%E2%80%99API%20sera%20%C3%A9galement%20propos%C3%A9e%20%C3%A0%20tout%20site%2C%20association%20et%20h%C3%B4pital%20qui%20souhaite%20profiter%20de%20l%E2%80%99outil.%0A%2A%20Nous%20avons%20constitu%C3%A9%20un%20panel%20de%201200%20parents%20volontaires%20pour%20tester%20les%20deux%20produits%201000J%20depuis%20le%20mois%20de%20novembre%202020.%20Nous%20les%20avons%20impliqu%C3%A9s%C2%A0pour%20la%20construction%20de%20l%E2%80%99outil%20et%20nous%20souhaitons%20%C3%A9galement%20les%20inviter%20%C3%A0%20le%20tester%20et%20partager.%0A%2A%20L%E2%80%99application%201000J%20est%20un%20outil%20d%E2%80%99acquisition%20de%20parents%20pour%20ce%20module%20DPP.%0A%0A%23%23%20L%E2%80%99impact%20recherch%C3%A9%20%C3%A0%206%20mois%20%3A%0A%0ANous%20souhaitons%20mettre%20en%20place%20des%20indicateurs%20d%E2%80%99impact%20humains.%0A%0ANous%20visons%201000%20parents%20ayant%20pass%C3%A9%20le%20test%20EPDS%2C%20pour%20chercher%20%C3%A0%20apprendre%C2%A0%3A%0A%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20de%20m%C3%A8res%20ont%20pass%C3%A9%20le%20test%20%3F%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20de%20p%C3%A8res%C2%A0ont%20pass%C3%A9%20le%20test%20%3F%0A%2A%20Sur%20les%201000%20personnes%20interrog%C3%A9es%2C%20combien%20ont%20%C3%A9t%C3%A9%20soign%C3%A9es%20%3F%0A%0ANous%20visons%20250%C2%A0professionnels%20de%20sant%C3%A9%20ayant%20utilis%C3%A9%20le%20test%20dans%20les%206%20mois%2C%20pour%20chercher%20%C3%A0%20apprendre%C2%A0%3A%0A%0A%2A%20Sur%20ces%20250%20professionnels%20interrog%C3%A9s%2C%20combien%20recommandent%20le%20module%20%C3%A0%20un%20coll%C3%A8gue%20%3F%C2%A0%0A%2A%20Sur%20ces%20250%20professionnels%20interrog%C3%A9s%2C%20combien%20ont%20trouv%C3%A9%20le%20module%20utile%20pour%20garder%20le%20lien%20avec%20le%20patient%20et%20contribuer%20%C3%A0%20sa%20gu%C3%A9rison%20%3F%0A%0A%0A%0A%23%20Les%20premiers%201000J%20%28App%20mobile%29%0A%0A%23%23%20Contexte%C2%A0%0A%0ADans%20la%20continuit%C3%A9%20du%20%5Brapport%20des%201000%20jours%5D%28https%3A%2F%2Fsolidarites-sante.gouv.fr%2Faffaires-sociales%2Ffamilles-enfance%2Fpacte-pour-l-enfance%2F1000jours%2Farticle%2Fle-rapport-des-1000-premiers-jours-une-commission-d-experts-a-l-appui%23%3A~%3Atext%3Dde%2520soins%2520num%25C3%25A9riques%2522-%2CLe%2520rapport%2520des%25201000%2520premiers%2520jours%2520%253A%2520une%2Cd%27experts%2520%25C3%25A0%2520l%27appui%26text%3DLa%2520pr%25C3%25A9paration%2520du%2520parcours%25201000%2Cpar%2520le%2520neuropsychiatre%2520Boris%2520Cyrulnik.%29%2C%20la%20nouvelle%20politique%20d%E2%80%99accompagnement%20des%20parents%20articul%C3%A9e%20autour%20d%E2%80%99un%20parcours%20se%20caract%C3%A9rise%20par%20un%20volet%20num%C3%A9rique%20qui%20doit%20constituer%20une%20mesure%20%C2%AB%20pivot%20%C2%BB%20visant%20%C3%A0%20rendre%20plus%20lisible%20l%E2%80%99ensemble%20de%20la%20politique%20publique%20des%201000%20jours.%20Central%2C%20cet%20axe%20num%C3%A9rique%20qui%20participe%20au%20renouvellement%20de%20l%E2%80%99accompagnement%20des%20parents%20doit%20%C3%A9galement%20%C3%AAtre%20en%20mesure%20de%20satisfaire%20des%20besoins%20exprim%C3%A9s%20par%20les%20parents.%20C%E2%80%99est%20dans%20cette%20perspective%20que%20la%20phase%20d%E2%80%99investigation%2C%20construite%20autour%20d%E2%80%99un%20questionnaire%2C%20d%E2%80%99interviews%20et%20de%20consultations%20partenariales%2C%20a%20%C3%A9t%C3%A9%20lanc%C3%A9e%20pour%20clairement%20faire%20%C3%A9merger%20ces%20besoins.%C2%A0%0A%0ALe%20cabinet%20travaille%20sur%2024%20mesures%20li%C3%A9es%20au%20rapport%C2%A01000%20jours%20%28visites%20%C3%A0%20domicile%2C%20cr%C3%A8ches%2C%20groupe%20de%20parents%2C%20formation%20de%20professionnels%2C%20etc.%29%2C%20chacune%20de%20ces%20mesures%20avec%20une%20dimension%20et%20des%20%C3%A9quipes%20diff%C3%A9rentes.%20L%E2%80%99application%201000%20jours%20va%2C%20entre%20autres%2C%C2%A0donner%20de%20la%20visibilit%C3%A9%20et%20centraliser%20l%E2%80%99acc%C3%A8s%20%C3%A0%20toutes%20les%20mesures%20et%20les%20sites%20institutionnels%20existants.%C2%A0%0A%0A%23%23%20Probl%C3%A8me%0A%0A%2A%E2%80%9CEn%20tant%20que%C2%A0futur%20parent%20submerg%C3%A9%2C%20j%E2%80%99ai%20du%20mal%20%C3%A0%20trouver%20des%20informations.%20Face%20%C3%A0%20un%20nuage%20flou%20d%E2%80%99informations%20%C3%A9parpill%C3%A9es%2C%20difficile%20de%20se%20rep%C3%A9rer%20et%20faire%20les%20bons%20choix%20en%20terme%20de%20pr%C3%A9vention%20psycho%20et%20physique%20pour%20moi%20et%20mon%20b%C3%A9b%C3%A9.%E2%80%9D%2A%0A%0A%2A%20Les%20institutions%20%C3%A9tatiques%20en%20lien%20avec%20la%20petite%20enfance%C2%A0proposent%20toutes%20des%20informations%20dans%20les%20contours%20de%20leurs%20p%C3%A9rim%C3%A8tres%20respectifs.%20Pour%20avoir%20une%20vision%20360%C2%B0%2C%20les%20parent%20passent%20un%20temps%20important%20pour%20composer%20avec%20les%20informations.%0A%2A%2024%20mesures%20en%20lien%20avec%20le%20parcours%201000%20jours%20verront%20le%20jour%20dans%20les%20mois%20%C3%A0%20venir%2C%20elle%20concernent%20toutes%20une%20partie%20du%20parcours%20de%20parents.%0A%2A%20Les%20rendez-vous%20m%C3%A9dicaux%20de%20pr%C3%A9vention%20principaux%2C%20comme%20l%E2%80%99entretien%20pr%C3%A9natal%20pr%C3%A9coce%2C%20sont%20aujourd%E2%80%99hui%20dilu%C3%A9s%20dans%20la%20quantit%C3%A9%20d%E2%80%99information%20et%20seules%2028%20%25%20des%20femmes%20le%20r%C3%A9alisent.%0A%2A%20Selon%20le%20moment%20de%20vie%2C%20d%C3%A8s%20la%20conception%20jusqu%E2%80%99%C3%A0%202%20ans%20de%20l%E2%80%99enfant%2C%20les%20besoin%20du%20parent%20et%20des%20b%C3%A9b%C3%A9s%20ne%20sont%20pas%20les%20m%C3%AAmes.%0A%2A%20Les%20mamans%20souhaitent%20inclure%20davantage%20le%20co-parent%20dans%20la%20gestion%20du%20quotidien%20du%20b%C3%A9b%C3%A9.%0A%0A%23%23%20Solution%0A%0AUne%20solution%20num%C3%A9rique%20personnalis%C3%A9e%20en%20fonction%20de%20la%20date%20de%20conception%20du%20b%C3%A9b%C3%A9%2C%20cette%20application%20centralise%20les%20informations%20de%20diff%C3%A9rents%20partenaires%20%C3%A9tatiques%2C%20ainsi%20que%20les%2024%20mesures%20en%20cours%2C%20et%20les%20organise%20en%20fonction%20du%20moment%20de%20vie%20du%20parent%20et%20de%20l%E2%80%99enfant.%0A%0ADot%C3%A9e%20d%E2%80%99un%20calendrier%20interactif%2C%20la%20solution%20assiste%20les%20deux%20parents%2C%20sur%20les%20dates%20et%20rendez-vous%20%C3%A0%20ne%20pas%20manquer%2C%20comme%20l%E2%80%99entretien%20pr%C3%A9natal%20pr%C3%A9coce%20et%20l%E2%80%99entretien%20post-natal.%0A%0ANous%20avons%20fait%20le%20choix%20d%E2%80%99inclure%20des%20%C3%A9l%C3%A9ments%20de%20langage%20rassurants%2C%20pour%20donner%20autonomie%20et%20confiance%20aux%20parents%20autant%20que%20possible.%0A%0A%23%23%20Strat%C3%A9gie%0A%0A%2A%20L%E2%80%99application%20sera%20cit%C3%A9e%20par%20tous%20les%20partenaires%20institutionnels%20%3B%0A%2A%20Un%20plan%20de%20communication%20est%20en%20cours%20par%20le%20cabinet%20%3B%0A%2A%20Nous%20avons%20constitu%C3%A9%20un%20panel%20de%201200%20parents%20volontaires%20pour%20tester%20les%20deux%20produits%201000J%20depuis%20le%20mois%20de%20novembre%202020%2C%20nous%20les%20avons%20impliqu%C3%A9s%C2%A0pour%20la%20construction%20de%20l%E2%80%99outil%20et%20nous%20souhaitons%20%C3%A9galement%20les%20inviter%20%C3%A0%20le%20tester%20et%20partager.%0A%0AConcernant%20nos%20indicateurs%20d%E2%80%99impact%2C%20sur%20environ%20800%20000%20naissances%20par%20an.%0A%0ANous%20cherchons%20%C3%A0%20attendre%20%C3%A0%206%20mois%208%20000%20t%C3%A9l%C3%A9chargements.%0A%0A%2A%20Sur%20ces%208%20000%20t%C3%A9l%C3%A9chargements%2C%20nous%20visons%20un%20taux%20de%20r%C3%A9tention%20de%2010%20%25.%20Le%20taux%20de%20r%C3%A9tention%20correspond%20au%20pourcentage%20d%E2%80%99utilisateurs%20actifs%20%28dans%20une%20p%C3%A9riode%20d%C3%A9finie%20dans%20le%20temps%29%20sur%20le%20nombre%20de%20t%C3%A9l%C3%A9chargements.%0A%2A%20Sur%20le%20nombre%20de%20visiteurs%20actifs%2C%20nous%20souhaitons%20conna%C3%AEtre%20combien%20de%20parents%20sont%20engag%C3%A9s%20et%20reviennent%20sur%20l%E2%80%99application%20plus%20de%205%20fois%20par%20mois.%0A%2A%20Nous%20souhaitons%20savoir%20combien%20de%20parents%20recommandent%20l%E2%80%99application.%0A%0ANous%20souhaiterions%20aussi%20avoir%20un%20indicateur%20d%E2%80%99impact%20li%C3%A9%20au%20bien-%C3%AAtre%20et%20au%20soulagement%20que%20l%E2%80%99utilisation%20de%20l%E2%80%99application%20procure%20aux%20parents%20%3A%0A%0APour%20les%20parents%20engag%C3%A9s%20sur%20l%E2%80%99application%20nous%20allons%20chercher%20%C3%A0%20conna%C3%AEtre%C2%A0%3A%0A%0A%2A%20Comment%20se%20sentent-ils%20apr%C3%A8s%20l%E2%80%99utilisation%20de%20cette%20application%C2%A0%3F%0A%2A%20Comment%20priorisent-ils%20ces%20informations%20par%20rapport%20%C3%A0%20d%E2%80%99autres%20sources%20%3F%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2020-10-15",
+            "end": "2021-02-28"
+          },
+          {
+            "name": "construction",
+            "start": "2021-03-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "D+",
@@ -42114,7 +42626,45 @@
         "declarationUrl": "https://carnet-de-bord.fabrique.social.gouv.fr/politique-confidentialite"
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "carnet.de.bord",
+      "type": "startup",
+      "attributes": {
+        "name": "Carnet de bord",
+        "pitch": "Faciliter la vie des personnes en insertion et de celles et ceux qui les accompagnent ",
+        "stats_url": "https://sites.google.com/view/deploiement-carnet-de-bord/accueil",
+        "link": "https://carnet-de-bord.fabrique.social.gouv.fr/",
+        "repository": "https://github.com/SocialGouv/carnet-de-bord",
+        "contact": "contact.carnet-de-bord@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Le%20probl%C3%A8me%0A%0ALe%20champ%20de%20l%E2%80%99insertion%20sociale%20et%20professionnelle%2C%20et%20en%20particulier%20le%20domaine%20de%20l%E2%80%99accompagnement%20des%20usagers%2C%20se%20caract%C3%A9rise%20par%20une%20multiplicit%C3%A9%20et%20une%20grande%20diversit%C3%A9%20d%E2%80%99acteurs.%20La%20mauvaise%20connaissance%20et%20l%27absence%20de%20partage%20de%20certaines%20donn%C3%A9es%20ne%20permettent%20pas%20aux%20professionnels%20de%20proc%C3%A9der%20%C3%A0%20une%20bonne%20%C3%A9valuation%20des%20situations%20des%20usagers%20et%20un%20suivi%20optimal%20des%20parcours.%20Plus%20pr%C3%A9cis%C3%A9ment%2C%20deux%20probl%C3%A9matiques%20%C3%A9mergent%20%3A%20%0A%0A1.%20L%E2%80%99impossibilit%C3%A9%20pour%20les%20accompagnateurs%20d%E2%80%99avoir%20une%20information%20claire%20sur%20les%20personnes%C2%A0%3B%0A2.%20La%20difficult%C3%A9%20pour%20les%20personnes%20%C3%A0%20comprendre%20et%20%C3%A0%20transmettre%20les%20informations%20sur%20leur%20parcours.%0A%0ADans%20ce%20contexte%2C%20comment%20amplifier%20la%20coordination%20des%20professionnels%20autour%20du%20parcours%20de%20la%20personne%20en%20insertion%20pour%20rendre%20plus%20efficient%20son%20accompagnement%C2%A0%3F%0A%0A%23%23%20Notre%20solution%0A%0AD%C3%A9velopp%C3%A9%20dans%20le%20cadre%20du%20volet%20num%C3%A9rique%20du%20projet%20de%20%5BService%20Public%20de%20l%27Insertion%20et%20de%20l%27Emploi%5D%28https%3A%2F%2Fforum.inclusion.beta.gouv.fr%2Ft%2Fle-spie-cest-quoi%2F2324%29%2C%20l%27outil%20Carnet%20de%20bord%20est%20un%20service%20public%20qui%20centralise%20les%20donn%C3%A9es%20essentielles%20du%20parcours%20en%20une%20seule%20page.%20Il%20regroupe%20l%E2%80%99information%20dans%20un%20espace%20s%C3%A9curis%C3%A9%20permettant%20un%20%C3%A9change%20accru%20des%20donn%C3%A9es%20essentielles%2C%20entre%20les%20accompagnateurs%20et%20le%20b%C3%A9n%C3%A9ficiaire%20afin%20d%E2%80%99amplifier%20la%20coordination%20et%20fluidifier%20le%20parcours%20d%E2%80%99un%20usager%20%21%0A%0A%2A%2AQui%20sont%20les%20usagers%20en%20insertion%20concern%C3%A9s%20par%20l%27outil%20%3F%2A%2A%20Carnet%20de%20bord%20propose%20la%20cr%C3%A9ation%20de%20%22carnets%22%20d%27usagers%20relevant%20de%20diff%C3%A9rents%20publics%20en%20insertion%20%C3%A0%20l%27instar%20des%20b%C3%A9n%C3%A9ficiaires%20du%20RSA%2C%20des%20demandeurs%20d%27emploi%20%28notamment%20longue%20dur%C3%A9e%2C%20accompagnement%20global%20ou%20concern%C3%A9s%20par%20la%20modalit%C3%A9%20d%27accompagnement%20%22expert%20handicap%22%29%2C%20des%20jeunes%20NEET%2C%20etc.%20%0A%0A%2A%2AQui%20sont%20les%20professionnels%20concern%C3%A9s%20par%20l%27outil%20%3F%2A%2A%20Tous%20les%20accompagnateurs%20des%20personnes%20en%20insertion%20sont%20en%20mesure%20de%20b%C3%A9n%C3%A9ficier%20d%27un%20acc%C3%A8s%20aux%20carnets%20des%20usagers%20qu%27ils%20accompagnent.%20Cela%20concerne%20tant%20les%20accompagnateurs%20publics%20%28P%C3%B4le%20emploi%2C%20Conseils%20d%C3%A9partementaux%2C%20CCAS%2FCIAS%2C%20missions%20locales%2C%20Cap%20emploi%2C%20etc.%29%20que%20les%20acteurs%20priv%C3%A9s%20de%20l%27insertion%20comme%2C%20par%20exemple%2C%20les%20structures%20associatives%20d%C3%A9l%C3%A9gu%C3%A9es%20pour%20l%27accompagnement%20de%20b%C3%A9n%C3%A9ficiaires%20du%20RSA.%20L%27acc%C3%A8s%20de%20tous%20ces%20acteurs%20%C3%A0%20l%27outil%20a%20%C3%A9t%C3%A9%20rendu%20possible%20par%20un%20travail%20juridique%2C%20notamment%20concr%C3%A9tis%C3%A9%20par%20l%27entr%C3%A9e%20en%20vigueur%20de%20l%27%5Barticle%20168%5D%28https%3A%2F%2Fwww.legifrance.gouv.fr%2Fjorf%2Farticle_jo%2FJORFARTI000045197621%23%3A~%3Atext%3D%25C2%25AB%2520La%2520personne%2520dont%2520les%2520informations%2C%25C3%25A0%2520la%2520poursuite%2520du%2520traitement%29%20de%20la%20loi%20du%2021%20f%C3%A9vrier%202022%20relative%20%C3%A0%20la%20diff%C3%A9renciation%2C%20la%20d%C3%A9centralisation%2C%20la%20d%C3%A9concentration%20et%20portant%20diverses%20mesures%20de%20simplification%20de%20l%27action%20publique%20locale%20dont%20nous%20attendons%20la%20parution%20du%20d%C3%A9cret%20d%27application%20en%20Conseil%20d%27%C3%89tat.%20%0A%0A%2A%2AD%C3%A9couvrez%20Carnet%20de%20bord%20en%20vid%C3%A9o%20%5Bici%5D%28https%3A%2F%2Fyoutu.be%2FkWiOKSg1G8Y%29%20%21%2A%2A%20%0A%2A%2AD%C3%A9couvrez%20l%27utilisation%20de%20carnet%20de%20bord%20sur%20le%20territoire%20%5Bici%5D%28Utilisation%20de%20Carnet%20de%20bord%20sur%20le%20territoire%5D%2A%2A%0A%0A%0A%23%23%20Notre%20ambition%0A%0ACanet%20de%20Bord%20aura%20r%C3%A9ussi%20sa%20mission%20si%20pour%20l%E2%80%99accompagnateur%20de%20la%20personne%20en%20insertion%2C%20l%27outil%20permet%20de%20%3A%20%0A%0A%2A%20D%C3%A9bloquer%20l%E2%80%99acc%C3%A8s%20%C3%A0%20des%20informations%20critiques%20pour%20mieux%20aider%2C%20mieux%20prescrire%20et%20mieux%20se%20coordonner%20entre%20professionnels%20%3B%20%0A%2A%20Favoriser%20l%E2%80%99inter-connaissance%20du%20parcours%20de%20l%E2%80%99usager%20pour%20mieux%20conna%C3%AEtre%20la%20personne%20en%20insertion%20et%20mieux%20l%E2%80%99accompagner%C2%A0%3B%20%0A%2A%20Lib%C3%A9rer%20du%20temps%20administratif%20%28p%C3%AAche%20aux%20informations%29%20pour%20le%20r%C3%A9investir%20dans%20leur%20coeur%20de%20m%C3%A9tier.%0A%0ANous%20esp%C3%A9rons%20aussi%20que%20notre%20outil%20permette%20%C3%A0%20l%27usager%20de%20retrouver%20la%20ma%C3%AEtrise%20de%20son%20parcours%20avec%20un%20acc%C3%A8s%20d%C3%A9cloisonn%C3%A9%20%C3%A0%20ses%20informations%20essentielles%20%28droits%2C%20accompagnement%2C%20etc.%29.%20Nous%20mettons%20enfin%20l%27accent%20dans%20nos%20travaux%20sur%20deux%20aspects%20importants%20pour%20l%27usager%20en%20insertion%20%3A%20%0A%0A%2A%20Le%20respect%20de%20la%20logique%20du%20%C2%AB%20dites-le%20nous%20une%20fois%20%C2%BB%20pour%20%C3%A9viter%20le%20d%C3%A9couragement%20des%20usagers%20%3B%0A%2A%20La%20prise%20en%20compte%20de%20la%20fracture%20num%C3%A9rique%20avec%20des%20%C3%A9volutions%20fonctionnelles%20en%20continu%20pilot%C3%A9es%20par%20l%E2%80%99impact.%0A%0A%23%23%20Feuille%20de%20route%0A%0A%2A%2AD%27ici%20fin%202022%2C%20nous%20visons%20les%20objectifs%20suivants%20%3A%2A%2A%20%0A%0A%2A%20R%C3%A9aliser%20l%E2%80%99accompagnement%20des%20BRSA%20de%20bout%20en%20bout%20sur%C2%A02%20d%C3%A9partements%20%28de%20la%20phase%20d%27orientation%20jusqu%27aux%20fins%20de%20mandat%20%2F%20cas%20de%20r%C3%A9orientation%2C%20en%20passant%20par%20la%20pose%20du%20diagnostic%20et%20la%20signature%20du%20CER%29%20%3B%20%0A%2A%20Couvrir%20de%20nouveaux%20cas%20d%E2%80%99usage%20du%20SPIE%20%28ex%20%3A%20accompagnement%20du%20public%20de%20Cap%20emploi%2C%20cr%C3%A9ation%20de%20carnet%20pour%20les%20demandeurs%20d%E2%80%99emploi%20longue%20dur%C3%A9e%2C%20public%20concern%C3%A9%20par%20l%27accompagnement%20global%2C%20etc%E2%80%A6%29%20sur%C2%A03%20d%C3%A9partements%20%3B%20%0A%2A%20Poursuivre%20des%20exp%C3%A9rimentations%20en%20visant%20une%20dizaine%20de%20territoires%20testant%20l%27outil%20sur%20diff%C3%A9rents%20cas%20d%27usage.%20%0A%0A%2A%2AAfin%20d%27atteindre%20ces%20objectifs%2C%20nous%20allons%20%C5%93uvrer%20%C3%A0%20%3A%2A%2A%0A%0A%2A%20Permettre%20l%E2%80%99articulation%20des%20fonctions%20%C2%AB%C2%A0d%E2%80%99orientation%C2%A0%C2%BB%20%2C%20de%20%C2%AB%C2%A0diagnostic%C2%A0%C2%BB%C2%A0et%20d%E2%80%99accompagnement%20pour%20que%20Carnet%20de%20bord%20permette%20la%20prise%20en%20charge%20et%20l%27accompagnement%20des%20b%C3%A9n%C3%A9ficiaires%20%C2%AB%20de%20bout%20en%20bout%20%C2%BB%20%3B%20%0A%2A%20Enrichir%20les%20fonctionnalit%C3%A9%20de%20Carnet%20de%20bord%20avec%20les%20offres%20des%20startups%20d%E2%80%99%C3%89tat%20du%20SPIE%20%28notamment%20Dora%20sur%20la%20cartographie%20de%20l%27offre%2C%20Immersion%20facilit%C3%A9e%20sur%20les%20PMSMP%20ou%20RDV-Insertion%20sur%20l%27invitation%20%C3%A0%20prendre%20rendez-vous%20des%20BRSA%29%20%3B%20%0A%2A%20Favoriser%20l%E2%80%99autonomie%20et%20le%20pouvoir%20d%E2%80%99agir%20des%20personnes%20accompagn%C3%A9es%2C%20ce%20chantier%20se%20traduisant%20notamment%20par%20l%27ouverture%20et%20l%27enrichissement%20de%20%C2%AB%C2%A0l%27entr%C3%A9e%20usager%C2%A0%C2%BB%20%28chaque%20usager%20va%20pouvoir%20%C3%AAtre%20acteur%20de%20son%20parcours%20gr%C3%A2ce%20%C3%A0%20sa%20propre%20interface%20Carnet%20de%20bord%29.%0A%0A%23%23%20Adoptez%20Carnet%20de%20bord%20dans%20votre%20territoire%0A%0AVous%20voulez%20tester%20Carnet%20de%20bord%20sur%20votre%20territoire%20%3F%20Vous%20souhaitez%20savoir%20comment%20op%C3%A9rer%20concr%C3%A8tement%20le%20service%20%3F%C2%A0Nous%20sommes%20%C3%A0%20votre%20disposition%20%21%20%0A%0A%3E%20%23%23%23%20%2A%2ADemandez%20une%20d%C3%A9mo%20en%20%5Bcliquant%20ici%20%5D%28https%3A%2F%2F1p7fjf837yx.typeform.com%2Fto%2FE9ABo0TG%29%2A%2A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2021-01-25",
+            "end": "2021-05-06"
+          },
+          {
+            "name": "construction",
+            "start": "2021-05-06",
+            "end": "2021-10-31"
+          },
+          {
+            "name": "acceleration",
+            "start": "2021-11-01",
+            "end": "2022-04-30"
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "A+",
@@ -44541,7 +45091,38 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "enfants-du-spectacle",
+      "type": "startup",
+      "attributes": {
+        "name": "Enfants Du Spectacle",
+        "pitch": "Simplifier les demandes d’emploi pour renforcer la protection des enfants",
+        "repository": "https://github.com/SocialGouv/enfants-du-spectacle",
+        "contact": "enfantsduspectacle@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Le%20contexte%0A%0AChaque%20ann%C3%A9e%2C%20plus%20de%2013%20000%20demandes%20d%E2%80%99autorisation%20d%E2%80%99emploi%20pour%20des%20enfants%20du%20spectacle%20sont%20d%C3%A9pos%C3%A9es%20dans%20la%20r%C3%A9gion%20%C3%8Ele-de-France.%20Les%20domaines%20concern%C3%A9s%20sont%20le%20cin%C3%A9ma%2C%20la%20t%C3%A9l%C3%A9vision%2C%20la%20radio%2C%20le%20spectacle%20vivant%20et%20l%E2%80%99e-sport.%0A%0AL%27instruction%20des%20dossiers%20se%20fait%20en%20deux%20%C3%A9tapes%20%3A%0A%0A-%20%2A%2AInstruction%20par%20la%20Mission%20protection%20de%20l%E2%80%99enfance%2A%2A%20de%20l%E2%80%99unit%C3%A9%20d%C3%A9partementale%20de%20Paris%20de%20la%20DRIEETS%20d%E2%80%99%C3%8Ele-de-France.%20Elle%20implique%20aussi%20le%20rectorat%20et%20la%20m%C3%A9decine%20du%20travail.%0A-%20%2A%2ASoumission%20aux%20commissions%20d%C3%A9partementales%2A%2A%20des%20enfants%20du%20spectacle.%20Ces%20commissions%20rassemblent%20des%20repr%C3%A9sentants%20de%20la%20DRIEETS%2C%20de%20la%20Justice%2C%20de%20l%E2%80%99%C3%89ducation%20Nationale%20et%20de%20la%20Culture.%0A%0A%23%23%20La%20probl%C3%A9matique%0A%0ADeux%20probl%C3%A9matiques%20ont%20%C3%A9t%C3%A9%20identifi%C3%A9es%20%3A%0A%0A-%20%2A%2ALa%20r%C3%A9partition%20g%C3%A9ographique%20des%20dossiers%20%C3%A0%20traiter%20est%20tr%C3%A8s%20d%C3%A9s%C3%A9quilibr%C3%A9e%2A%2A.%20La%20majorit%C3%A9%20des%20dossiers%20se%20concentre%20%C3%A0%20Paris%20%28plus%20de%2050%25%29%20et%20la%20petite%20couronne%20%28plus%20de%2095%25%20cumul%C3%A9s%29.%20Cela%20conduit%20%C3%A0%20des%20in%C3%A9galit%C3%A9s%20de%20traitements%20entre%20d%C3%A9partements.%0A-%20%2A%2ALa%20proc%C3%A9dure%20actuelle%20est%20fastidieuse%2A%2A.%20Les%20demandeurs%20doivent%20faire%20parvenir%20de%20nombreux%20documents%20papier%20%C3%A0%20plusieurs%20organismes.%20Pour%20les%20administrations%2C%20c%E2%80%99est%20autant%20de%20documents%20%C3%A0%20classer%2C%20archiver%2C%20trier%2C%20puis%20d%C3%A9truire%20en%20temps%20voulu.%0A%0A%23%23%20Le%20projet%0A%0ALa%20mise%20en%20place%20d%E2%80%99un%20service%20unique%20d%E2%80%99instruction%20s%E2%80%99accompagnera%20d%E2%80%99une%20nouvelle%20application%20de%20gestion%20num%C3%A9rique.%20La%20proc%C3%A9dure%20d%27instruction%20sera%20alors%20plus%20rapide%20et%20plus%20simple%20%C3%A0%20g%C3%A9rer.%20Les%20demandeurs%2C%20familles%20et%20employeurs%20des%20enfants%20du%20spectacle%20seront%20mieux%20inform%C3%A9s.%0A%0AUne%20attention%20particuli%C3%A8re%20sera%20apport%C3%A9e%20%C3%A0%20la%20protection%20des%20donn%C3%A9es%20des%20enfants.%0A%0A%23%23%20Objectifs%0A%0ALes%20agents%20instructeurs%20b%C3%A9n%C3%A9ficieront%20de%20la%20plateforme%20%3A%0A%0A-%09%2A%2A%C3%89conomie%20du%20temps%20de%20saisie%2A%2A%20des%20dossiers%20de%20demande%0A-%09%2A%2AMeilleure%20instruction%20des%20dossiers%2A%2A%20gr%C3%A2ce%20%C3%A0%20une%20plateforme%20adapt%C3%A9e%20aux%20besoins%0A-%09%2A%2AMeilleur%20suivi%2A%2A%20des%20flux%20de%20traitement%0A-%09%2A%2ATravail%20en%20%C3%A9quipe%2A%2A%2C%20dans%20un%20cadre%20pluridisciplinaire%0A%0ALe%20travail%20des%20agents%20sera%20ainsi%20facilit%C3%A9%20et%20centr%C3%A9%20sur%20son%20objectif%20premier%2C%20la%20protection%20des%20enfants.%0A%0ADe%20leur%20c%C3%B4t%C3%A9%2C%20les%20soci%C3%A9t%C3%A9s%20de%20productions%20d%C3%A9posant%20des%20demandes%20d%27emploi%20d%27enfants%20b%C3%A9n%C3%A9ficieront%20des%20avantages%20de%20la%20plateforme%20%3A%0A%0A-%09%2A%2AFacilitation%20et%20d%C3%A9mat%C3%A9rialisation%2A%2A%20du%20d%C3%A9p%C3%B4t%20des%20demandes%0A-%09%2A%2A%C3%89conomies%20sur%20l%E2%80%99envoi%20du%20dossier%2A%2A%20%28pas%20d%E2%80%99envoi%20mat%C3%A9riel%20aux%20administrations%2C%20%C3%A0%20l%E2%80%99exception%20d%E2%80%99un%20seul%20exemplaire%20du%20sc%C3%A9nario%29%0A-%09%2A%2AFluidification%20des%20relations%2A%2A%20avec%20le%20service%20instructeur%0A-%09%2A%2APossibilit%C3%A9%20de%20suivre%2A%2A%20l%E2%80%99avancement%20de%20l%E2%80%99instruction%0A-%09%2A%2ANotification%20acc%C3%A9l%C3%A9r%C3%A9e%2A%2A%20de%20la%20d%C3%A9cision%20prise%0A-%09Possibilit%C3%A9%20d%E2%80%99acc%C3%A9der%20%C3%A0%20une%20base%20d%E2%80%99information%20de%20qualit%C3%A9%20sur%20la%20proc%C3%A9dure%20et%20les%20dispositions%20applicables%0A%0A%23%23%20L%27historique%20du%20projet%0A%0A-%20%2A%2AOctobre%202020%2A%2A%20%3A%20le%20projet%20est%20laur%C3%A9at%20du%20Fonds%20pour%20la%20%20transformation%20de%20l%E2%80%99action%20publique%20%28FTAP%29.%20200%20000%20euros%20lui%20sont%20%20allou%C3%A9s%0A-%20%2A%2AF%C3%A9vrier%202021%2A%2A%20%3A%20le%20projet%20est%20pris%20en%20charge%20par%20la%20Fabrique%20num%C3%A9rique%20des%20minist%C3%A8res%20sociaux%20%3A%0A%20%20%20-%20Engagement%20sur%20sa%20conception%20et%20sa%20r%C3%A9alisation%0A%20%20%20-%20D%C3%A9marrage%20d%27une%20phase%20d%E2%80%99investigation%20aupr%C3%A8s%20des%20acteurs%20et%20leurs%20repr%C3%A9sentants%0A-%20%2A%2AMars%20%C3%A0%20mai%202021%2A%2A%20%3A%20entretiens%20exploratoires%20avec%20les%20personnes%20concern%C3%A9es%20%3A%20soci%C3%A9t%C3%A9s%20de%20production%2C%20institutions%20sc%C3%A9niques%2C%20agences%20de%20%20mannequins%2C%20organisations%20professionnelles%2C%20parents%20d%E2%80%99enfants%E2%80%A6%0A-%20%2A%2AJuin%202021%2A%2A%20%3A%20travail%20d%E2%80%99analyse%20et%20de%20priorisation%20des%20besoins%20utilisateurs%0A-%20%2A%2AJuillet%202021%2A%2A%20%3A%20comit%C3%A9%20de%20fin%20d%E2%80%99investigation%20et%20lancement%20de%20la%20phase%20de%20construction%0A-%20%2A%2ASeptembre%202021%2A%2A%20%3A%20d%C3%A9finition%20de%20l%E2%80%99architecture%20de%20l%E2%80%99application%20%3B%20recrutement%20des%20membres%20de%20l%E2%80%99%C3%A9quipe%0A-%20%2A%2AOctobre%202021%2A%2A%20%3A%20d%C3%A9marrage%20du%20d%C3%A9veloppement%20%3B%20tests%20utilisateurs%20sur%20maquettes%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2021-02-01",
+            "end": "2021-07-01"
+          },
+          {
+            "name": "construction",
+            "start": "2021-07-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "D+",
@@ -47035,7 +47616,44 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "mano",
+      "type": "startup",
+      "attributes": {
+        "name": "MANO",
+        "pitch": "Service de soutien aux équipes mobiles visant à améliorer la vie des populations en rue et à favoriser leur réinsertion.",
+        "stats_url": "https://metabase-mano.fabrique.social.gouv.fr/public/dashboard/825cc4ad-b502-4483-aa78-c2af56032bc9",
+        "repository": "https://github.com/SocialGouv/mano/",
+        "contact": "caroline.de_kerhor@beta.gouv.fr",
+        "content_url_encoded_markdown": "%23%20%2A%2ALe%20probl%C3%A8me%2A%2A%0A%0ALes%20personnes%20vivant%20%C3%A0%20la%20rue%20pr%C3%A9sentent%20de%20grandes%20probl%C3%A9matiques%20sociales%20et%20m%C3%A9dicales.%20Elles%20y%20souffrent%20de%20pathologies%20importantes%2C%20et%20elles%20y%20meurent.%20C%E2%80%99est%20le%20lot%20de%20100%20000%20%C3%A0%20800%20000%20personnes%20en%20France%20%28source%20%3A%20observatoire%20des%20in%C3%A9galit%C3%A9s%29.%0A%0ALes%20maraudes%20sont%20le%20dernier%20lien%20avec%20ces%20usagers%20pour%20les%20aider%20%C3%A0%20vivre%20et%20%C3%A0%20am%C3%A9liorer%20leur%20situation.%20Les%20maraudes%20vont%20%C3%A0%20la%20rencontre%20des%20usagers%20dans%20la%20rue%20pour%20leur%20prodiguer%20des%20soins%2C%20les%20aider%20dans%20leurs%20d%C3%A9marches%20de%20droits%20communs%2C%20les%20orienter%20vers%20des%20structures%20d%27accueil%2C%20des%20lieux%20ou%20trouver%20%C3%A0%20manger%20et%20une%20maraude%2C%20c%E2%80%99est%20la%20perspective%20d%E2%80%99une%20%C3%A9ventuelle%20r%C3%A9insertion.%0A%0AUne%20Maraude%20c%E2%80%99est%20plusieurs%20heures%20en%20rue%20sans%20acc%C3%A8s%20%C3%A0%20un%20ordinateur.%20C%E2%80%99est%20plusieurs%20%C3%A9quipes%20qui%20se%20relaient%20toute%20la%20semaine%20et%20qui%20doivent%20%C3%A9changer%20des%20informations%2C%20c%E2%80%99est%20plusieurs%20centaines%20d%E2%80%99usagers%20avec%20des%20probl%C3%A9matiques%20individuelles%20complexes%20%C3%A0%20accompagner%20dans%20la%20dur%C3%A9e.%0A%0AEt%20une%20maraude%20r%C3%A9ussie%2C%20c%E2%80%99est%20quand%20on%20a%20rappel%C3%A9%20ou%20accompagn%C3%A9%20Jean%20%C3%A0%20son%20audience%20car%20il%20avait%20oubli%C3%A9%20qu%E2%80%99il%20risquait%20de%20perdre%20sa%20libert%C3%A9.%20C%E2%80%99est%20quand%20on%20retrouve%20Ir%C3%A8ne%20pour%20refaire%20le%20pansement%20de%20sa%20plaie%20ouverte%20et%20pour%20reparler%20de%20sa%20proc%C3%A9dure%20de%20logement%2C%20c%E2%80%99est%20quand%20%C3%A0%20la%20fin%20on%20a%20transmis%20%C3%A0%20ses%20coll%C3%A8gues%20les%20dizaines%20d%E2%80%99actions%20%C3%A0%20faire%20le%20lendemain%20ou%20dans%205%20jours%20quand%20ils%20seront%20sur%20le%20terrain.%0A%0AEt%20le%20probl%C3%A8me%2C%20c%E2%80%99est%20que%20les%20Maraude%20n%E2%80%99ont%20pas%20d%E2%80%99outil%20pour%20cela.%0A%0A%23%20%2A%2ALa%20solution%2A%2A%0A%0AMANO%20a%20%C3%A9t%C3%A9%20cr%C3%A9%C3%A9%20pour%20offrir%20aux%20Maraudes%20les%20moyens%20d%E2%80%99avoir%20un%20plus%20grand%20impact%20sur%20leur%20public%2C%20en%20les%20aidant%20%C3%A0%20organiser%20leurs%20maraudes%2C%20en%20am%C3%A9liorant%20l%E2%80%99accompagnement%20des%20personnes%20rencontr%C3%A9es%20en%20rue%2C%20et%20en%20enrichissant%20la%20connaissance%20du%20territoire%20sur%20lequel%20ces%20maraudes%20interviennent.%0A%0A%5C%0AL%E2%80%99application%20MANO%C2%A0%20permet%20d%E2%80%99avoir%20acc%C3%A8s%20%C3%A0%20%3A%0A%0A%5C-%20Un%20%E2%80%9Cdossier%20usager%E2%80%9D%20permettant%20de%20conna%C3%AEtre%20la%20situation%20sociale%20et%20m%C3%A9dicale%20de%20la%5C%0Apersonne%2C%20et%20ainsi%20d%E2%80%99aller%20vers%20une%20prise%20en%20charge%20globale%20et%20sans%20perte%20d%E2%80%99information%0A%0A%5C-%20Un%20planificateur%20de%20t%C3%A2ches%20reli%C3%A9%20aux%20%E2%80%9Cdossiers%20usager%E2%80%9D%20qui%20permet%20d%E2%80%99avoir%20une%5C%0Avisibilit%C3%A9%20sur%20les%20actions%20du%20jour%20et%20%C3%A0%20venir%2C%20afin%20de%20pouvoir%20prioriser%20les%20actions%2C%20ne%20pas%20oublier%20d%E2%80%99action%20%C3%A0%20r%C3%A9aliser%2C%20et%20de%20gagner%20en%20efficacit%C3%A9%0A%0A%5C-%20Un%20acc%C3%A8s%20%C3%A0%20une%20liste%20de%20structures%20sp%C3%A9cifiques%20sur%20lesquelles%20orienter%20la%20personne%20en%20rue%20le%20plus%20simplement%20possible%0A%0A%C2%A0%0A%0AL%E2%80%99interface%20Web%20permet%20%C3%A0%20chaque%20maraude%20%3A%0A%0A%5C-%20de%20Param%C3%A9trer%20%E2%80%9Cson%20MANO%E2%80%9D%20pour%20l%E2%80%99adapter%20au%20mieux%20%C3%A0%20son%20activit%C3%A9%20propre%0A%0A%5C-%20de%20cr%C3%A9er%20des%20compte%20rendu%20de%20fin%20de%20maraude%0A%0A%5C-%20de%20consolider%20automatiquement%20des%20indicateurs%20pour%20les%20financeurs%0A%0A%C2%A0%0A%0A%23%20%2A%2ALa%20mesure%20d%E2%80%99impact%20et%20les%20objectifs%2A%2A%0A%0A%C2%A0Les%20deux%20indicateurs%20retenus%20pour%20mesurer%20l%E2%80%99impact%20du%20services%20sont%20%3A%0A%0A%5C-%20Le%20taux%20de%20maraudeur%20utilisant%20MANO%20quotidiennement%20au%20sein%20des%20maraudes%20%C3%A9quip%C3%A9es.%20Nous%20partons%20de%20l%E2%80%99hypoth%C3%A8se%20que%20si%20l%E2%80%99outil%20est%20utilis%C3%A9%20au%20quotidien%2C%20c%E2%80%99est%20qu%E2%80%99il%20r%C3%A9pond%20%C3%A0%20un%20besoin%20r%C3%A9el.%0A%0A%5C-%20Le%20nombre%20d%E2%80%99usager%20suivi%20via%20MANO%0A%0ANous%20estimons%20que%20cette%20premi%C3%A8re%20phase%20d%E2%80%99exp%C3%A9rimentation%20sera%20un%20succ%C3%A8s%20si%20au%20bout%20des%206%20premiers%20mois%20si%20nous%20avons%20%3A%0A%0A%5C-%20Un%20taux%20d%E2%80%99utilisation%20au%20quotidien%20de%20l%E2%80%99outil%20par%2090%25%20des%20maraudeurs%20%C3%A9quip%C3%A9es%0A%0A%5C-%20500%20usagers%20suivi%20via%20l%E2%80%99application%0A%0A%23%20%2A%2ALa%20d%C3%A9marche%20pour%20y%20arriver%20et%20point%20d%E2%80%99%C3%A9tape%2A%2A%0A%0AMANO%20na%C3%AEt%20de%20la%20volont%C3%A9%20du%20CAARUD%20EGO%20Aurore%20et%20de%20sa%20maraude%2C%20d%E2%80%99avoir%20plus%20d%E2%80%99impact%20aupr%C3%A8s%20des%20usagers%20de%20drogues%20en%20grande%20pr%C3%A9carit%C3%A9.%20C%E2%80%99est%20pourquoi%20MANO%20fait%20ses%20premiers%20pas%20dans%20la%20maraude%20d%E2%80%99EGO.%0A%0ALa%20strat%C3%A9gie%20de%20cette%20premi%C3%A8re%20phase%20est%20par%20la%20suite%20de%20d%C3%A9ployer%20MANO%20dans%203%20autres%20structures%20pour%20valider%20le%20besoin%2C%20identifier%20des%20corrections%20pour%20le%20MVP%20et%20commencer%20%C3%A0%20l%E2%80%99enrichir.%20D%C3%A8s%20que%20la%20validation%20du%20besoin%20est%20r%C3%A9alis%C3%A9e%2C%20MANO%20sera%20d%C3%A9ploy%C3%A9%20plus%20largement.%0A%0ALe%20service%20MANO%20manipulant%20des%20donn%C3%A9es%20de%20sant%C3%A9%2C%20une%20analyse%20d%E2%80%99impact%20%28EIVP%29%20a%20%C3%A9t%C3%A9%20r%C3%A9alis%C3%A9e%20par%20les%20services%20comp%C3%A9tents%20de%20la%20Fabrique%20du%20Num%C3%A9rique%20du%20minist%C3%A8re%20des%20solidarit%C3%A9s%20et%20de%20la%20sant%C3%A9%20et%20un%20h%C3%A9bergement%20HDS%20ad%C3%A9quat%20a%20%C3%A9t%C3%A9%20mis%20en%20oeuvre%20%28dans%20le%20centre%20Microsoft%20Azure%20de%20Paris%29.%0A%0A%0A%0A%23%23%20Principaux%20%C3%A9v%C3%A8nements%20%3A%0A%0A%5C-%201er%20Ao%C3%BBt%20%3A%20lancement%20de%20la%20SE%0A%0A%5C-%20Fin%20aout%20%3A%20premi%C3%A8re%20version%20de%20l%E2%80%99application%0A%0A%5C-%20D%C3%A9but%20septembre%20%3A%20premier%20test%20de%20l%E2%80%99outil%20au%20sein%20de%20EGO-%0A%0A%5C-%20Fin%20septembre%20%3A%20D%C3%A9ploiement%20sur%20la%20maraude%20de%20la%20coordination%20toxicomanie%0A%0A%5C-%20Au%203%20novembre%20%3A%20100%20usagers%20suivis%0A%0A%5C-%20Mi-novembre%20%3A%20D%C3%A9ploiement%20sur%20les%20maraudes%20Aurore%20Est%20et%20Ouest%0A%0A%5C-%20A%201er%20D%C3%A9cembre%20%3A%20284%20usagers%20suivis%0A%0A%5C-%20Fin%20d%C3%A9cembre%20%3A%20premi%C3%A8re%20version%20de%20l%E2%80%99interface%20web%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2020-08-01",
+            "end": "2020-08-30"
+          },
+          {
+            "name": "construction",
+            "start": "2020-09-01",
+            "end": "2021-07-31"
+          },
+          {
+            "name": "acceleration",
+            "start": "2021-08-01",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -47043,7 +47661,7 @@
       "apdexGrade": "A",
       "uptime": 99.832,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2022-06-21T06:36:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "B",
@@ -58185,7 +58803,45 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "domifa",
+      "type": "startup",
+      "attributes": {
+        "name": "DomiFa",
+        "pitch": "Faciliter l'accès aux droits pour les personnes sans domicile stable, en simplifiant la gestion de la domiciliation",
+        "stats_url": "https://domifa.fabrique.social.gouv.fr",
+        "link": "https://domifa.fabrique.social.gouv.fr",
+        "repository": "https://github.com/SocialGouv/domifa",
+        "contact": "contact.domifa@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Qu%E2%80%99est-ce%20que%20la%20domiciliation%20%3F%20%0A%0A%2A%2ALa%20domiciliation%20est%20un%20premier%20pas%20vers%20l%E2%80%99acc%C3%A8s%20aux%20droits%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0AElle%20leur%20permet%20de%20disposer%20d%27une%20adresse%20administrative%20o%C3%B9%20recevoir%20leur%20courrier%20et%20de%20faire%20valoir%20leurs%20droits%20civils%2C%20civiques%20et%20sociaux%20%28comme%20la%20d%C3%A9livrance%20d%E2%80%99un%20titre%20national%20d%E2%80%99identit%C3%A9%2C%20l%E2%80%99inscription%20sur%20les%20listes%20%C3%A9lectorales%2C%20l%E2%80%99acc%C3%A8s%20%C3%A0%20des%20aides%20sociales%E2%80%A6%29.%0A%0A%2A%2ACe%20sont%20les%20communes%2C%20les%20centres%20communaux%20ou%20intercommunaux%20d%E2%80%99action%20sociale%20%28CCAS%20ou%20CIAS%29%20et%20les%20associations%20agr%C3%A9%C3%A9es%20qui%20r%C3%A9alisent%20la%20domiciliation.%2A%2A%20Apr%C3%A8s%20avoir%20recueilli%20et%20instruit%20la%20demande%20du%20requ%C3%A9rant%2C%20l%E2%80%99organisme%20v%C3%A9rifie%20qu%E2%80%99il%20satisfait%20aux%20conditions%20de%20d%C3%A9livrance%20et%20%C3%A9met%20une%20attestation%20de%20domicile.%0A%0ACette%20attestation%20est%20valable%20un%20an.%20Elle%20est%20soumise%20%C3%A0%20la%20manifestation%20r%C3%A9guli%C3%A8re%20du%20domicili%C3%A9%20aupr%C3%A8s%20de%20la%20structure%20et%20son%20renouvellement%20suppose%20qu%E2%80%99une%20demande%20en%20ce%20sens%20soit%20formul%C3%A9e%20avant%20le%20terme.%0A%0A%23%23%20Un%20processus%20complexe%20qui%20pose%20des%20probl%C3%A8mes%20de%20prise%20en%20charge%0A%0A%2A%2ALe%20processus%20de%20domiciliation%20pose%20plusieurs%20difficult%C3%A9s%20li%C3%A9es%20%C3%A0%20l%E2%80%99absence%20d%E2%80%99outil%20de%20suivi%20commun.%2A%2A%20Du%20point%20de%20vue%20des%20structures%2C%20il%20est%20chronophage%20et%20se%20r%C3%A9sume%20pour%20l%E2%80%99essentiel%20%C3%A0%20des%20t%C3%A2ches%20de%20gestion%20des%20courriers%20comme%20des%20domiciliations.%20%0A%0ACertaines%20structures%20rencontrent%20%C3%A9galement%20d%E2%80%99important%20probl%C3%A8me%20de%20surcharge%20avec%20une%20augmentation%20continue%20du%20nombre%20de%20demandes.%20%0A%0A%23%23%20DomiFa%20%3A%20une%20Startup%20d%E2%80%99Etat%20qui%20permet%20de%20s%C3%A9curiser%20le%20processus%20de%20domiciliation%20et%20de%20lib%C3%A9rer%20du%20temps%20pour%20l%E2%80%99accompagnement%20social%0A%0A%2A%2AGr%C3%A2ce%20%C3%A0%20DomiFa%2C%20les%20structures%20en%20charge%20de%20la%20domiciliation%20peuvent%20suivre%20les%20dossiers%20plus%20facilement%20dans%20l%E2%80%99int%C3%A9r%C3%AAt%20final%20des%20b%C3%A9n%C3%A9ficiaires.%2A%2A%0A%0ALa%20solution%20permet%20actuellement%20de%20d%C3%A9mat%C3%A9rialiser%20une%20partie%20de%20la%20proc%C3%A9dure%20de%20domiciliation%20et%20d%E2%80%99automatiser%20le%20suivi%20des%20dossiers.%20Elle%20s%E2%80%99adresse%20d%E2%80%99abord%20aux%20structures%20qui%20n%E2%80%99ont%20pas%20d%E2%80%99outils%20de%20suivi%20et%20rencontrent%20des%20probl%C3%A8mes%20de%20surcharge.%0A%0A%23%23%20Quelles%20sont%20les%20fonctionnalit%C3%A9s%20disponibles%20sur%20DomiFa%20%3F%0A%0ADomiFa%20permet%20aux%20structures%20de%20r%C3%A9aliser%20les%20fonctionnalit%C3%A9s%20qui%20sont%20au%20c%C5%93ur%20de%20la%20domiciliation%20%3A%0A-%20Instruction%20et%20validation%20des%20demandes%0A-%20Enregistrement%20des%20passages%20et%20des%20interactions%20%0A-%20Suivi%20du%20courrier%20re%C3%A7u%20et%20distribu%C3%A9%0A-%20Gestion%20des%20domiciliations%20et%20des%20%C3%A9ch%C3%A9ances%20associ%C3%A9es%0A%0AA%20plus%20long%20terme%2C%20la%20solution%20int%C3%A9grera%20d%E2%80%99autres%20services%20%28communication%20avec%20les%20domicili%C3%A9s%2C%20gestion%20des%20courriers%2C%20recherche%20statistiques%E2%80%A6%29.%20%0A%0A%23%23%20Comment%20fonctionne%20DomiFa%20%3F%0A%0A%2A%2ADomiFa%20est%20un%20outil%20num%C3%A9rique%20permettant%20aux%20organismes%20domiciliataires%20de%20simplifier%20la%20gestion%20de%20la%20domiciliation%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0A%0ALa%20facilit%C3%A9%20d%E2%80%99utilisation%20et%20la%20s%C3%A9curit%C3%A9%20sont%20primordiales%20pour%20DomiFa.%20%0ADomiFa%20est%20accessible%20via%20une%20plateforme%20Web%20s%C3%A9curis%C3%A9e%20sur%20Google%20Chrome%20ou%20Firefox%20et%20est%20disponible%20gratuitement.%20Aucun%20logiciel%20suppl%C3%A9mentaire%20n%E2%80%99est%20%C3%A0%20installer.%20La%20connexion%20est%20personnelle%20et%20confidentielle%20%3A%20seules%20les%20personnes%20autoris%C3%A9es%20ayant%20cr%C3%A9%C3%A9%20un%20compte%20utilisateur%20ont%20acc%C3%A8s%20%C3%A0%20son%20contenu%20et%20aux%20informations%20personnelles%20concernant%20les%20domicili%C3%A9s%20de%20leur%20structure.%0A%0A%23%23%20%20Vous%20souhaitez%20rejoindre%20DomiFa%20%3F%0A%0AVous%20%C3%AAtes%20un%20CCAS%2C%20un%20CIAS%2C%20une%20association%20agr%C3%A9%C3%A9e%20r%C3%A9alisant%20de%20la%20domiciliation%20%3F%0A%0AVous%20souhaitez%20vous%20inscrire%20sur%20DomiFa%20%3F%20Obtenir%20des%20renseignements%20sur%20la%20plateforme%20%3F%0A%0A%2A%2A%5BContactez-nous%5D%28mailto%3Acontact.domifa%40fabrique.social.gouv.fr%29%2A%2A%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2019-01-15",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
@@ -60546,7 +61202,45 @@
         "missingTrackers": []
       }
     ],
-    "betagouv": null,
+    "betagouv": {
+      "id": "domifa",
+      "type": "startup",
+      "attributes": {
+        "name": "DomiFa",
+        "pitch": "Faciliter l'accès aux droits pour les personnes sans domicile stable, en simplifiant la gestion de la domiciliation",
+        "stats_url": "https://domifa.fabrique.social.gouv.fr",
+        "link": "https://domifa.fabrique.social.gouv.fr",
+        "repository": "https://github.com/SocialGouv/domifa",
+        "contact": "contact.domifa@fabrique.social.gouv.fr",
+        "content_url_encoded_markdown": "%23%23%20Qu%E2%80%99est-ce%20que%20la%20domiciliation%20%3F%20%0A%0A%2A%2ALa%20domiciliation%20est%20un%20premier%20pas%20vers%20l%E2%80%99acc%C3%A8s%20aux%20droits%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0AElle%20leur%20permet%20de%20disposer%20d%27une%20adresse%20administrative%20o%C3%B9%20recevoir%20leur%20courrier%20et%20de%20faire%20valoir%20leurs%20droits%20civils%2C%20civiques%20et%20sociaux%20%28comme%20la%20d%C3%A9livrance%20d%E2%80%99un%20titre%20national%20d%E2%80%99identit%C3%A9%2C%20l%E2%80%99inscription%20sur%20les%20listes%20%C3%A9lectorales%2C%20l%E2%80%99acc%C3%A8s%20%C3%A0%20des%20aides%20sociales%E2%80%A6%29.%0A%0A%2A%2ACe%20sont%20les%20communes%2C%20les%20centres%20communaux%20ou%20intercommunaux%20d%E2%80%99action%20sociale%20%28CCAS%20ou%20CIAS%29%20et%20les%20associations%20agr%C3%A9%C3%A9es%20qui%20r%C3%A9alisent%20la%20domiciliation.%2A%2A%20Apr%C3%A8s%20avoir%20recueilli%20et%20instruit%20la%20demande%20du%20requ%C3%A9rant%2C%20l%E2%80%99organisme%20v%C3%A9rifie%20qu%E2%80%99il%20satisfait%20aux%20conditions%20de%20d%C3%A9livrance%20et%20%C3%A9met%20une%20attestation%20de%20domicile.%0A%0ACette%20attestation%20est%20valable%20un%20an.%20Elle%20est%20soumise%20%C3%A0%20la%20manifestation%20r%C3%A9guli%C3%A8re%20du%20domicili%C3%A9%20aupr%C3%A8s%20de%20la%20structure%20et%20son%20renouvellement%20suppose%20qu%E2%80%99une%20demande%20en%20ce%20sens%20soit%20formul%C3%A9e%20avant%20le%20terme.%0A%0A%23%23%20Un%20processus%20complexe%20qui%20pose%20des%20probl%C3%A8mes%20de%20prise%20en%20charge%0A%0A%2A%2ALe%20processus%20de%20domiciliation%20pose%20plusieurs%20difficult%C3%A9s%20li%C3%A9es%20%C3%A0%20l%E2%80%99absence%20d%E2%80%99outil%20de%20suivi%20commun.%2A%2A%20Du%20point%20de%20vue%20des%20structures%2C%20il%20est%20chronophage%20et%20se%20r%C3%A9sume%20pour%20l%E2%80%99essentiel%20%C3%A0%20des%20t%C3%A2ches%20de%20gestion%20des%20courriers%20comme%20des%20domiciliations.%20%0A%0ACertaines%20structures%20rencontrent%20%C3%A9galement%20d%E2%80%99important%20probl%C3%A8me%20de%20surcharge%20avec%20une%20augmentation%20continue%20du%20nombre%20de%20demandes.%20%0A%0A%23%23%20DomiFa%20%3A%20une%20Startup%20d%E2%80%99Etat%20qui%20permet%20de%20s%C3%A9curiser%20le%20processus%20de%20domiciliation%20et%20de%20lib%C3%A9rer%20du%20temps%20pour%20l%E2%80%99accompagnement%20social%0A%0A%2A%2AGr%C3%A2ce%20%C3%A0%20DomiFa%2C%20les%20structures%20en%20charge%20de%20la%20domiciliation%20peuvent%20suivre%20les%20dossiers%20plus%20facilement%20dans%20l%E2%80%99int%C3%A9r%C3%AAt%20final%20des%20b%C3%A9n%C3%A9ficiaires.%2A%2A%0A%0ALa%20solution%20permet%20actuellement%20de%20d%C3%A9mat%C3%A9rialiser%20une%20partie%20de%20la%20proc%C3%A9dure%20de%20domiciliation%20et%20d%E2%80%99automatiser%20le%20suivi%20des%20dossiers.%20Elle%20s%E2%80%99adresse%20d%E2%80%99abord%20aux%20structures%20qui%20n%E2%80%99ont%20pas%20d%E2%80%99outils%20de%20suivi%20et%20rencontrent%20des%20probl%C3%A8mes%20de%20surcharge.%0A%0A%23%23%20Quelles%20sont%20les%20fonctionnalit%C3%A9s%20disponibles%20sur%20DomiFa%20%3F%0A%0ADomiFa%20permet%20aux%20structures%20de%20r%C3%A9aliser%20les%20fonctionnalit%C3%A9s%20qui%20sont%20au%20c%C5%93ur%20de%20la%20domiciliation%20%3A%0A-%20Instruction%20et%20validation%20des%20demandes%0A-%20Enregistrement%20des%20passages%20et%20des%20interactions%20%0A-%20Suivi%20du%20courrier%20re%C3%A7u%20et%20distribu%C3%A9%0A-%20Gestion%20des%20domiciliations%20et%20des%20%C3%A9ch%C3%A9ances%20associ%C3%A9es%0A%0AA%20plus%20long%20terme%2C%20la%20solution%20int%C3%A9grera%20d%E2%80%99autres%20services%20%28communication%20avec%20les%20domicili%C3%A9s%2C%20gestion%20des%20courriers%2C%20recherche%20statistiques%E2%80%A6%29.%20%0A%0A%23%23%20Comment%20fonctionne%20DomiFa%20%3F%0A%0A%2A%2ADomiFa%20est%20un%20outil%20num%C3%A9rique%20permettant%20aux%20organismes%20domiciliataires%20de%20simplifier%20la%20gestion%20de%20la%20domiciliation%20des%20personnes%20sans%20domicile%20stable.%2A%2A%0A%0ALa%20facilit%C3%A9%20d%E2%80%99utilisation%20et%20la%20s%C3%A9curit%C3%A9%20sont%20primordiales%20pour%20DomiFa.%20%0ADomiFa%20est%20accessible%20via%20une%20plateforme%20Web%20s%C3%A9curis%C3%A9e%20sur%20Google%20Chrome%20ou%20Firefox%20et%20est%20disponible%20gratuitement.%20Aucun%20logiciel%20suppl%C3%A9mentaire%20n%E2%80%99est%20%C3%A0%20installer.%20La%20connexion%20est%20personnelle%20et%20confidentielle%20%3A%20seules%20les%20personnes%20autoris%C3%A9es%20ayant%20cr%C3%A9%C3%A9%20un%20compte%20utilisateur%20ont%20acc%C3%A8s%20%C3%A0%20son%20contenu%20et%20aux%20informations%20personnelles%20concernant%20les%20domicili%C3%A9s%20de%20leur%20structure.%0A%0A%23%23%20%20Vous%20souhaitez%20rejoindre%20DomiFa%20%3F%0A%0AVous%20%C3%AAtes%20un%20CCAS%2C%20un%20CIAS%2C%20une%20association%20agr%C3%A9%C3%A9e%20r%C3%A9alisant%20de%20la%20domiciliation%20%3F%0A%0AVous%20souhaitez%20vous%20inscrire%20sur%20DomiFa%20%3F%20Obtenir%20des%20renseignements%20sur%20la%20plateforme%20%3F%0A%0A%2A%2A%5BContactez-nous%5D%28mailto%3Acontact.domifa%40fabrique.social.gouv.fr%29%2A%2A%0A",
+        "events": [],
+        "phases": [
+          {
+            "name": "investigation",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "construction",
+            "start": "2019-01-15",
+            "end": ""
+          },
+          {
+            "name": "acceleration",
+            "start": "2019-01-15",
+            "end": ""
+          }
+        ]
+      },
+      "relationships": {
+        "incubator": {
+          "data": {
+            "type": "incubator",
+            "id": "sgmas"
+          }
+        }
+      }
+    },
     "summary": {
       "404": "A+",
       "httpGrade": "B",
