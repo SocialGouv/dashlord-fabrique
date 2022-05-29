@@ -27,7 +27,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1653796583,
+      "expires": 1653866200,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -39,10 +39,10 @@
     },
     {
       "name": "_pk_id.63.f7e2",
-      "value": "bd87475b85b85634.1653794784.",
+      "value": "1ac914605101b2fe.1653864401.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1687749984,
+      "expires": 1687819601,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -54,7 +54,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 03:26:22 GMT",
+    "date": "Sun, 29 May 2022 22:46:38 GMT",
     "content-type": "text/html",
     "last-modified": "Tue, 10 May 2022 14:38:42 GMT",
     "vary": "Accept-Encoding",
@@ -162,57 +162,8 @@
     },
     {
       "hostname": "dummyimage.com",
-      "ip": "172.67.137.245",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
+      "ip": "104.21.78.230",
+      "geoip": null
     }
   ]
 }
