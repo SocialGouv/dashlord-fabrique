@@ -276,7 +276,7 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0463E8B76754BC62F029AE747E901C64979A"
+              "finding"      : "04D6ADACCD3C4D194D0E434F8948C23BFEC2"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "7E7E37A33CF42715011722D45773EC7AB1CAE8F6"
+              "finding"      : "9DF199F692D88747BA49FE7BB4721A4E7114DAB8"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "D8F4A64F8E70909EBFB4976600690227A7175C57AD6B46B6DB2E3796D76AB124"
+              "finding"      : "58685F18C4199117996052389F81410AD93EDAE8257595058716A8D2613A6D39"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLjCCBBagAwIBAgISBGPot2dUvGLwKa50fpAcZJeaMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMjMwNjM4MDdaFw0yMjA2MjEwNjM4MDZaMB8xHTAbBgNVBAMT FGNvZGUudHJhdmFpbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAvVO48SGwi9ZR3Bfhs/AQJvmBF6deNwZFwxLYSw+jvTIwL9amUiuxMUFW a6IMyOOkOII3bk8iuyImR05K/Fdcq/02Mp76cRyuzAfFpnlVV8XzDAg2BdnqW/lS vCSMocArjEnOEb7aVeod1oU1F/ynijcqW36cCfWta1Gckpu8RwCLb2DotcG/+EhU 1D/HqgweiZhHb1pZxFZOS6SOU3YMghBIyHe2gez+Tm15zJjGHL0t9YRA2qPfAEaV Cu/VPgAA9O4RhEf9oh/ojjBWqOCfIueJyozC6FNbi0bZrUaJNnPtCQA7lOcYykPU YFOMzs/Hus2xpXbR/GE3i8flG9jG2wIDAQABo4ICTzCCAkswDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBTpy4w7DpDp8/XHwx84Rx3n/bsLATAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRjb2RlLnRyYXZhaWwuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB3 AN+lXqtogk8fbK3uuF9OPlrqzaISpGpejjsSwCBEXCpzAAABf7W2JVAAAAQDAEgw RgIhAJ+gl+olG+UkIm/XLtMdZVOoCzVuENPgXVsZGPNGZKFQAiEA/aCvzTGt69Vl m4YRtB4T5mGiUeWdd2LQ0dq66/4sjQsAdQApeb7wnjk5IfBWc59jpXflvld9nGAK +PlNXSZcJV3HhAAAAX+1tiV9AAAEAwBGMEQCIFtA6g/xTLX3DYiCTQeSbHC0XqSa Gd5tafU8K4yaow1tAiAgqxhQJr953GL2RlJu0WCSf537cljGDtNMMtgfGAhdSjAN BgkqhkiG9w0BAQsFAAOCAQEAbl9rOcljoaJ3p7Qu78KopWIJFmwuFdhIQAxFuRod GlLuzGx9QLpPF2sDXd1dcDtdvvdAg5nZkefkoAHmRXuXD1dPKow5IB2q2S/8YAVb Jix8xYsZuol0/Tl4cw75lnlObZTrTslLT/liSpV4qBB/AdksDwuF9QbWJaKU7gAO yJTJfvGvwzWl9Z/KHNgrNfgvFFPCEBXPoBT3Oa/lQ7iqg9UzafelxOMTrQaT9DH8 vcnHShvg4Ql9Xj4et8BKobUbh3FWmwVIaY39wpG6z/U26VIk9hBdY3bWxTmQH08Y KTGPffZWQYsxuY+OIq9+TVytbmKvFM2aTM54B1jQhynMTA== -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLTCCBBWgAwIBAgISBNatrM08TRlNDkNPiUjCO/7CMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA1MjIwNTM4NTVaFw0yMjA4MjAwNTM4NTRaMB8xHTAbBgNVBAMT FGNvZGUudHJhdmFpbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAvVO48SGwi9ZR3Bfhs/AQJvmBF6deNwZFwxLYSw+jvTIwL9amUiuxMUFW a6IMyOOkOII3bk8iuyImR05K/Fdcq/02Mp76cRyuzAfFpnlVV8XzDAg2BdnqW/lS vCSMocArjEnOEb7aVeod1oU1F/ynijcqW36cCfWta1Gckpu8RwCLb2DotcG/+EhU 1D/HqgweiZhHb1pZxFZOS6SOU3YMghBIyHe2gez+Tm15zJjGHL0t9YRA2qPfAEaV Cu/VPgAA9O4RhEf9oh/ojjBWqOCfIueJyozC6FNbi0bZrUaJNnPtCQA7lOcYykPU YFOMzs/Hus2xpXbR/GE3i8flG9jG2wIDAQABo4ICTjCCAkowDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBTpy4w7DpDp8/XHwx84Rx3n/bsLATAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRjb2RlLnRyYXZhaWwuZ291di5mcjBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABgOp9gWwAAAQDAEYw RAIgDlB3j9bGxPLGnIiobDSU/4t81ENj20zp07tUQxrujuYCIG+M9W4GhViaGHg3 e5+vH2txn7+JC1QCgFIPYhvDQ+3JAHYA36Veq2iCTx9sre64X04+WurNohKkal6O OxLAIERcKnMAAAGA6n2DPQAABAMARzBFAiEAphPQDzaxL6SByZl9o8ejQZ3oGWAk LtI0MDv/dL5SVbwCICXh1zzHrlZyu2WjLNjfYpi+ogN18lY60Fv/bl/2MrzQMA0G CSqGSIb3DQEBCwUAA4IBAQAwI9y5kHnUxSHn3RznVV7GU5sf1V0rY28yGuYNdiCy l4/qcoXkxRwj5aJSjlEtMY/6C1wFOIv0DZgf0TZNdQiUxsdN++2bTNPGbNgAsSNX k9Fv2diZJ3uSVoXXmXTyjKPbNeouWJ1oyFODfJGpIIg9wQ+Fh7bn8cibMHaQtpOd pBFfnGTpgMC4Q3qb/nwW0N9D/21yZ7WaSa7YqrZLWo8wTlZyPKxfbZC2lI/Im19t T9xlswzN/bt2zFUIPQfr++bfhq7gmAD0eKlKiByJ0b6pibsvh2XPBnaodFH9hMsk gbvE5gh9sY3IsJj0NjtbZec19Rs4e2IPKK45STyQz34l -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "30 >= 30 days"
+              "finding"      : "83 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-03-23 06:38"
+              "finding"      : "2022-05-22 05:38"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-06-21 06:38"
+              "finding"      : "2022-08-20 05:38"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -549,14 +549,14 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1653186633"
+              "finding"      : "1653792610"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -750,7 +750,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D8F4A64F8E70909EBFB4976600690227A7175C57AD6B46B6DB2E3796D76AB124"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=58685F18C4199117996052389F81410AD93EDAE8257595058716A8D2613A6D39"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1133,6 +1133,6 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "143"
+              "finding"      : "144"
           }
 ]
