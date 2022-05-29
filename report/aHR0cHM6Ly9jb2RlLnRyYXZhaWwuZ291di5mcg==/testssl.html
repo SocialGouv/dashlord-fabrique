@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az131-856:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az130-703:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2022-05-22 02:29:34        --&gt;&gt; 20.74.14.77:443 (code.travail.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-05-29 02:49:12        --&gt;&gt; 20.74.14.77:443 (code.travail.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -99,15 +99,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>0463E8B76754BC62F029AE747E901C64979A (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 7E7E37A33CF42715011722D45773EC7AB1CAE8F6
-                              SHA256 D8F4A64F8E70909EBFB4976600690227A7175C57AD6B46B6DB2E3796D76AB124
+<span style="font-weight:bold;"> Serial                       </span>04D6ADACCD3C4D194D0E434F8948C23BFEC2 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 9DF199F692D88747BA49FE7BB4721A4E7114DAB8
+                              SHA256 58685F18C4199117996052389F81410AD93EDAE8257595058716A8D2613A6D39
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>code.travail.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>code.travail.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">30 &gt;= 30 days</span> (2022-03-23 06:38 --&gt; 2022-06-21 06:38)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">83 &gt;= 30 days</span> (2022-05-22 05:38 --&gt; 2022-08-20 05:38)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -125,7 +125,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -170,7 +170,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D8F4A64F8E70909EBFB4976600690227A7175C57AD6B46B6DB2E3796D76AB124" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D8F4A64F8E70909EBFB4976600690227A7175C57AD6B46B6DB2E3796D76AB124</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=58685F18C4199117996052389F81410AD93EDAE8257595058716A8D2613A6D39" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=58685F18C4199117996052389F81410AD93EDAE8257595058716A8D2613A6D39</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -230,7 +230,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2022-05-22 02:31:56 [ 143s] --&gt;&gt; 20.74.14.77:443 (code.travail.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2022-05-29 02:51:34 [ 144s] --&gt;&gt; 20.74.14.77:443 (code.travail.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
