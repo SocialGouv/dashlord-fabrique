@@ -19,359 +19,9 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:46 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:25 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:46.560283285Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.330857625Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.330987627Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.331031627Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336618798Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336673099Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336708799Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336746799Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.3367817Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-headers",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.3368148Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336842601Z",
+    "timestamp": "2022-06-05T02:53:25.718502733Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -404,9 +54,9 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336879001Z",
+    "timestamp": "2022-06-05T02:53:28.851972259Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -439,9 +89,44 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.336907601Z",
+    "timestamp": "2022-06-05T02:53:28.852246454Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852350852Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -474,44 +159,9 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.340088742Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://sample-next-app.fabrique.social.gouv.fr",
-    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.340485647Z",
+    "timestamp": "2022-06-05T02:53:28.852396952Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -544,9 +194,149 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.34076665Z",
+    "timestamp": "2022-06-05T02:53:28.852436451Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852637248Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852681247Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852723346Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852899143Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -579,9 +369,219 @@
     "host": "https://sample-next-app.fabrique.social.gouv.fr",
     "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 29 May 2022 22:19:54 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:54.341068754Z",
+    "timestamp": "2022-06-05T02:53:28.852935142Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.852972542Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.855014706Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.855293802Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.8553552Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.855772693Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: sample-next-app.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 05 Jun 2022 02:53:28 GMT\r\nEtag: \"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Powered-By: Next.js\r\n\r\n<!DOCTYPE html><html><head><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta charSet=\"utf-8\"/><title>Home | sample-next-app</title><meta name=\"next-head-count\" content=\"3\"/><link rel=\"preload\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/83437f2f1dc3f226c2bc.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-687e794d8e071078d3f3.js\"></script><script src=\"/_next/static/chunks/webpack-c32d10c98147f788e8b0.js\" defer=\"\"></script><script src=\"/_next/static/chunks/framework-09a88f8e6a8ced89af74.js\" defer=\"\"></script><script src=\"/_next/static/chunks/main-efb88bdc60ef7e1c718f.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/_app-d2ec99772375789e8bda.js\" defer=\"\"></script><script src=\"/_next/static/chunks/pages/index-87c18bbc5340e47560bc.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_buildManifest.js\" defer=\"\"></script><script src=\"/_next/static/uOEjvxZJ7dNxpFKyIm4xg/_ssgManifest.js\" defer=\"\"></script></head><body><div id=\"__next\"><nav class=\"navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light\"><div class=\"sgb-marianne\"></div><div class=\"navbar-brand\"><a href=\"/\">sample-next-app</a><div class=\"navbar-baseline\" href=\"#\">Application standard</div></div><button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div id=\"navbarSupportedContent\" class=\"navbar-collapse collapse\"><ul class=\"navbar-nav mr-auto\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/admin\">admin</a></li></ul><ul class=\"navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link\" href=\"/login\">login</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://github.com/SocialGouv/sample-next-app\">Page 2</a></li><li class=\"nav-item\"><a target=\"_blank\" class=\"nav-link\" rel=\"noopener noreferrer\" href=\"https://github.com/SocialGouv/sample-next-app\">GitHub</a></li></ul></div></nav><div class=\"container\"><div class=\"jumbotron\" style=\"margin-top:40px\"><h1 class=\"display-4\">Hello, SocialGouv!</h1><p class=\"lead\">Welcome to this Next.js sample project</p></div><div class=\"row\"><div class=\"col\"><p><a href=\"/page2\">Go to page 2</a></p><p><a href=\"/page3\">Go to unknown page</a></p><p><button class=\"btn btn-primary\">trigger api call to /api/answer/anything</button></p><p><button class=\"btn btn-primary\">trigger api call to /api/faulty</button></p><p><button class=\"btn btn-primary\">trigger Matomo event</button></p><p><button class=\"btn btn-warning\">trigger client-side error</button></p>Version: <!-- -->3.6.1</div></div></div></div><script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"uOEjvxZJ7dNxpFKyIm4xg\",\"nextExport\":true,\"autoExport\":true,\"isFallback\":false,\"scriptLoader\":[]}</script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:28.855842592Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sample-next-app.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -608,7 +608,7 @@
       "TLS13"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:19:55.978363238Z",
+    "timestamp": "2022-06-05T02:53:35.912912927Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -634,7 +634,30 @@
       "sample-next-app.fabrique.social.gouv.fr"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-05-29T22:20:43.334511606Z",
+    "timestamp": "2022-06-05T02:53:57.049942548Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/expired-ssl.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/expired-ssl.yaml",
+    "template-id": "expired-ssl",
+    "info": {
+      "name": "Expired SSL Certificate",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "low"
+    },
+    "type": "ssl",
+    "host": "https://sample-next-app.fabrique.social.gouv.fr",
+    "matched-at": "https://sample-next-app.fabrique.social.gouv.fr",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-06-05T02:53:58.87118162Z",
     "matcher-status": true,
     "matched-line": null
   }

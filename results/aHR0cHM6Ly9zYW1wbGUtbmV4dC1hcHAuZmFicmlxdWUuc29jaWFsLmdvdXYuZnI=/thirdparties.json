@@ -11,7 +11,7 @@
       "value": "1",
       "domain": "sample-next-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1653864399,
+      "expires": 1654399182,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -23,10 +23,10 @@
     },
     {
       "name": "_pk_id.15.fec2",
-      "value": "edfccbd8384d7b91.1653862600.",
+      "value": "b1662cbc04a30707.1654397382.",
       "domain": "sample-next-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1687817800,
+      "expires": 1688352582,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -38,13 +38,13 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 22:16:38 GMT",
-    "content-type": "text/html; charset=utf-8",
-    "x-powered-by": "Next.js",
-    "etag": "\"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"",
-    "vary": "Accept-Encoding",
     "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 05 Jun 2022 02:49:40 GMT",
+    "etag": "\"bfd-6jGc9s7mVcPqVZdNHulvTqiFa+U\"",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-powered-by": "Next.js"
   },
   "endpoints": [
     {
