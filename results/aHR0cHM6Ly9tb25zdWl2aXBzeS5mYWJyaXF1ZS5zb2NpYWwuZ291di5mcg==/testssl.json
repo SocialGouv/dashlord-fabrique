@@ -276,7 +276,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03FCC6BAFABB2CDC1BB032410BC973852BF6"
+              "finding"      : "030F19DCC7634178104A0E76E0ABADD0CCAF"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "027A6F3FD839479AD82A0EE25BE950816DB63046"
+              "finding"      : "9F32ED7923D941057B06D6FBFF1A93B7E9F1A1C4"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "489EF6CB7519CFE9FAC6A0AA367E4C91CB57DB6754A38F21E77F8F611BAEF0AF"
+              "finding"      : "66269FFF0938902B3801042EB49C7B3A6CDEFC5B6331526EBA99305835A9187F"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFTTCCBDWgAwIBAgISA/zGuvq7LNwbsDJBC8lzhSv2MA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA0MDUwMDQ1MzZaFw0yMjA3MDQwMDQ1MzVaMC4xLDAqBgNVBAMT I21vbnN1aXZpcHN5LmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG 9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZctBxEcX5sMpEAXsX6zrPUVaBuZbHcTFNvu MQVrDUATtE0lYELt+J8aELPK2sOfoRdMrmM8QIcCwj/mQqdMcMs6vA+/Xm+xfOFO js58lq0tWTfJEwlFWWBT7io1r0/j5joX8ueqi2JZ5MQ0gj9xeseL+F9k99nmNrpJ pGL2kdAoNjfcZKq+xucnw0VyWKZEMvyBqjykdsSlRhu81TpVx9FwIKKIvxsZQCJ0 t1TNiCv63bIRTQa59KRtZL6wBrFQdxZZrntjoD49S7REMfTpnJ3TVD0ecpeoLk5Q F8+FdXzome0fCDJfPbcYGkH5uz53Ab4j1skByfKh1YxUd3lpCwIDAQABo4ICXzCC AlswDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD AjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS2pL5Y8/aB3EJvaae+or26ATNxljAf BgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcw IQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYW aHR0cDovL3IzLmkubGVuY3Iub3JnLzAuBgNVHREEJzAlgiNtb25zdWl2aXBzeS5m YWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3Bgsr BgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0 Lm9yZzCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2ACl5vvCeOTkh8FZzn2Old+W+ V32cYAr4+U1dJlwlXceEAAABf/dmEmcAAAQDAEcwRQIhANBwYoGE5aJJTM4EZEYs fQ8JRI/6m9Kt09IMKrtfO6DVAiBO8+bg7WI9X8MxnmmQK/TcED0Kp1iTHIYB8eWp IduscAB3AN+lXqtogk8fbK3uuF9OPlrqzaISpGpejjsSwCBEXCpzAAABf/dmEukA AAQDAEgwRgIhAKGRHqZZSrhcJE9R37SYKfiI7CckD/3kS0EYdd2mLDxjAiEAk07G OTby/01nQYQgFf7zIyK8cwM39gv3jC5OMyRIpvQwDQYJKoZIhvcNAQELBQADggEB AKn6ZRBmIV6kVemGJ6esdEoSy+uib2rEUcrBOgc1S+VRSEKNThVq4c0MTmBhRjaC oG5BJkzN5qEM1tnrw4rW/EHu1z3moz4wJAr9N/+OT6ENRhlOg9d05sUpcXB57X36 ZfCWwOl2N3R1tliE8AQfiQ+GBVuu51xFsnbcMU5uxiUJ4vSZFDG9YivT0MWG9eEb HxoL5Tmos1sWq/UVqM6HP7oCZwD7VcvdMSAUB9dkgCIVr0snAYRTAgPJ2mpJ6aRe T6z0MeF2plMRubJzH6ZFiCyejHo8zcgjXB8yyCKBe/yqGeaWtVZJNNs2ZEkPjGxk mbP3JvSnpRrJ7sOKxM8W1fs= -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFTTCCBDWgAwIBAgISAw8Z3MdjQXgQSg524Kut0MyvMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA2MDMyMzQ2MjVaFw0yMjA5MDEyMzQ2MjRaMC4xLDAqBgNVBAMT I21vbnN1aXZpcHN5LmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG 9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZctBxEcX5sMpEAXsX6zrPUVaBuZbHcTFNvu MQVrDUATtE0lYELt+J8aELPK2sOfoRdMrmM8QIcCwj/mQqdMcMs6vA+/Xm+xfOFO js58lq0tWTfJEwlFWWBT7io1r0/j5joX8ueqi2JZ5MQ0gj9xeseL+F9k99nmNrpJ pGL2kdAoNjfcZKq+xucnw0VyWKZEMvyBqjykdsSlRhu81TpVx9FwIKKIvxsZQCJ0 t1TNiCv63bIRTQa59KRtZL6wBrFQdxZZrntjoD49S7REMfTpnJ3TVD0ecpeoLk5Q F8+FdXzome0fCDJfPbcYGkH5uz53Ab4j1skByfKh1YxUd3lpCwIDAQABo4ICXzCC AlswDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD AjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS2pL5Y8/aB3EJvaae+or26ATNxljAf BgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcw IQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYW aHR0cDovL3IzLmkubGVuY3Iub3JnLzAuBgNVHREEJzAlgiNtb25zdWl2aXBzeS5m YWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3Bgsr BgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0 Lm9yZzCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB3AEHIyrHfIkZKEMahOglCh15O MYsbA+vrS8do8JBilgb2AAABgSwtdBYAAAQDAEgwRgIhAP9TDnJ5CE/irdcZqWwT cC5th7K7atK+wWfQizVZB5TZAiEAi9H4r+Si4EFKgpFXdik4xv6WEkxcNRdUMsTN emljfmAAdgBGpVXrdfqRIDC1oolp9PN9ESxBdL79SbiFq/L8cP5tRwAAAYEsLXQ5 AAAEAwBHMEUCIAjV2WOAXtyMYeg8CsenEIP4aeNtTaIIrkluYUOFlj2ZAiEAlhtH 9TMpN+soT8Bl3O8mQQ4UdNzykQeqrhg+m12v0G4wDQYJKoZIhvcNAQELBQADggEB ACApBrNWyNMw9Mi6K+NiFL2OmBE6hlzyaFrYKsxKDo0wLMY4QVJmk+rNpblSOQNQ 67Xo75U3C+OPLsgsmc2+3jkatzvpBvnmPP70Lmq7iD5vi8AEC5OWSgf9vtGdgy6I jx2eOBmmMimA1OUcf8n0p98bwqJYuShgtpGbNEk95v0bU0s8vxAT7j+qs4aBGqzl EM9PUIx4QWqTK0zl4SfCS3/974TZVseAzfYUrsa+QwzOxmPIGpn4dYty00UCjaKx sIGv8mW4OQyntG/Hox9Wklq3R6Xk2JrYy/4XtpFe04SEWZkoHRUEXBvG52VvZbgv VTb42AKd9NI+Pdj+rMmKXe8= -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "35 >= 30 days"
+              "finding"      : "88 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-04-05 00:45"
+              "finding"      : "2022-06-03 23:46"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-07-04 00:45"
+              "finding"      : "2022-09-01 23:46"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -549,14 +549,14 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1653861276"
+              "finding"      : "1654395535"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -764,7 +764,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=489EF6CB7519CFE9FAC6A0AA367E4C91CB57DB6754A38F21E77F8F611BAEF0AF"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=66269FFF0938902B3801042EB49C7B3A6CDEFC5B6331526EBA99305835A9187F"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -821,20 +821,6 @@
               "finding"      : "not vulnerable"
           }
 ,         {
-              "id"           : "clientsimulation-android_442",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-android_500",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
               "id"           : "clientsimulation-android_60",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -870,7 +856,14 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-chrome_74_win10",
+              "id"           : "clientsimulation-android_11",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-android_12",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
@@ -884,6 +877,13 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
+              "id"           : "clientsimulation-chrome_101_win10",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -891,7 +891,7 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-firefox_71_win10",
+              "id"           : "clientsimulation-firefox_100_win10",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
@@ -954,39 +954,11 @@
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
-              "id"           : "clientsimulation-edge_17_win10",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-opera_66_win10",
+              "id"           : "clientsimulation-edge_101_win10_21h2",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_ios9",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_osx1011",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-safari_10_osx1012",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
@@ -1003,18 +975,11 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-apple_ats_9_ios9",
+              "id"           : "clientsimulation-safari_154_osx_1231",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-java_6u45",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
@@ -1038,11 +1003,25 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-java1201",
+              "id"           : "clientsimulation-java1703",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-go_1178",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-libressl_283",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
@@ -1066,7 +1045,21 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-thunderbird_68_3_1",
+              "id"           : "clientsimulation-openssl_303",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-apple_mail_16_0",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_91_9",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1147,6 +1140,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "144"
+              "finding"      : "95"
           }
 ]
