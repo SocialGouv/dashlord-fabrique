@@ -12,7 +12,7 @@ tools:
   lighthouse: true
   testssl: true
   wappalyzer: true
-  nuclei: true
+  nuclei: false
   zap: false
   thirdparties: true
   dependabot: false
