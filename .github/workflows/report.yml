@@ -29,7 +29,7 @@ jobs:
 
       # build the report
       - id: dashlord-report
-        uses: SocialGouv/dashlord-actions/report@v1
+        uses: SocialGouv/dashlord-actions/report@tristanrobert/issue144
         with:
           base-path: /dashlord-fabrique
 
