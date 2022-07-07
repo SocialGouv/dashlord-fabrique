@@ -221,10 +221,24 @@ jobs:
       - uses: SocialGouv/dashlord-actions/save@v1
         with:
           url: ${{ matrix.sites.url }}
-
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: '["results"]'
-          author_name: ${{ secrets.SOCIALGROOVYBOT_NAME }}
-          author_email: ${{ secrets.SOCIALGROOVYBOT_EMAIL }}
-          message: "update: ${{ matrix.sites.url }}"
+          
+      - name: "Commit"
+        id: commit1
+        continue-on-error: true
+        run: |
+          git config --global user.email ${{ secrets.SOCIALGROOVYBOT_NAME }}
+          git config --global user.name ${{ secrets.SOCIALGROOVYBOT_NAME }}
+          git add "results"
+          git commit -m "update: ${{ matrix.sites.url }}"
+          git pull --rebase --no-ff origin main
+          git push
+          
+      - name: "Commit retry"
+        if: steps.commit1.outcome=='failure'
+        run: |
+          git config --global user.email ${{ secrets.SOCIALGROOVYBOT_NAME }}
+          git config --global user.name ${{ secrets.SOCIALGROOVYBOT_NAME }}
+          git add "results"
+          git commit -m "update: ${{ matrix.sites.url }}"
+          git pull --rebase --no-ff origin main
+          git push
