@@ -17,14 +17,6 @@
       }
     },
     {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
-      "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
       "type": "youtube",
       "url": "https://www.youtube.com/s/player/0e7373c2/www-player.css",
       "details": {
@@ -54,6 +46,14 @@
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "details": {
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/J2emzC8d85kgNtjD0Htzz20VzjSuiYYSR5w3ljkWX7o.js",
+      "url": "https://www.google.com/js/th/_6JGikIJDGnoceIgf8090U3lCzEDV-VFv0r5pHrhB2Y.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -129,6 +129,14 @@
       }
     },
     {
+      "type": "google",
+      "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
       "type": "youtube",
       "url": "https://yt3.ggpht.com/CxSz0c9jDumZeOB71xT9UsV9gGfVo25EZFSSu9IC3BpiHikmAJ4Z4VYgzup_wJdtMJBZIMoG3g=s68-c-k-c0x00ffffff-no-rj",
       "details": {
@@ -145,16 +153,8 @@
       }
     },
     {
-      "type": "google",
-      "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?kecm6Q",
+      "url": "https://www.youtube.com/generate_204?go4bOQ",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -191,7 +191,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1656818742,
+      "expires": 1657235306,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -203,10 +203,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "438f2c5f325ac7a8.1656816942.",
+      "value": "8b29b70e2ea7e3e0.1657233506.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1690772142,
+      "expires": 1691188706,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -220,7 +220,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 03 Jul 2022 02:55:41 GMT",
+    "date": "Thu, 07 Jul 2022 22:38:24 GMT",
     "etag": "\"5115-WbECNwhd81Ihl64QulWOewSkVJY\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -323,12 +323,12 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.89.20",
+      "ip": "104.16.86.20",
       "geoip": null
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "172.217.164.174",
+      "ip": "142.250.189.206",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -382,7 +382,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.250.189.195",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -436,7 +436,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "172.253.63.155",
+      "ip": "142.251.214.130",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -490,7 +490,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.16.148",
+      "ip": "142.251.214.134",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -544,7 +544,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "172.253.115.95",
+      "ip": "142.251.46.170",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -598,115 +598,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.16.99",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "yt3.ggpht.com",
-      "ip": "172.217.1.193",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "i.ytimg.com",
-      "ip": "172.253.63.119",
+      "ip": "142.251.46.164",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -760,7 +652,115 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.251.214.131",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "yt3.ggpht.com",
+      "ip": "142.251.32.33",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "i.ytimg.com",
+      "ip": "142.250.188.22",
       "geoip": {
         "continent": {
           "code": "NA",
