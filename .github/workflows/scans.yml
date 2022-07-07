@@ -133,9 +133,9 @@ jobs:
       - name: Lighthouse scan
         if: ${{ matrix.sites.tools.lighthouse }}
         continue-on-error: true
-        uses: treosh/lighthouse-ci-action@v8
+        uses: treosh/lighthouse-ci-action@v9
         with:
-          urls: "${{ matrix.sites.url }}"
+          urls: "${{ join(matrix.sites.subpages, '\n') }}"
           uploadArtifacts: false
           temporaryPublicStorage: false
           configPath: "./lighthouserc.json"
