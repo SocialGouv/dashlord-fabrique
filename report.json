@@ -1963,7 +1963,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.94
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2199,6 +2199,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "B",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -3860,7 +3870,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.53
+            "score": 0.8540063858032226
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4069,6 +4079,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.8540063858032226,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "B",
       "declaration-rgpd-ml": "A",
@@ -5770,7 +5790,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.88
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5976,6 +5996,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -7877,7 +7907,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.77
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -8097,6 +8127,16 @@
       "cookiesCount": 2,
       "trackersGrade": "B",
       "trackersCount": 1,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.96,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.99,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "A",
       "declaration-a11y": "B",
       "declaration-rgpd-ml": "A",
@@ -8121,7 +8161,7 @@
     "http": {
       "url": "https://domifa.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 03 Jul 2022 01:08:25 GMT",
+      "end_time": "Thu, 07 Jul 2022 16:59:40 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -8129,7 +8169,7 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 03 Jul 2022 01:08:23 GMT",
+        "Date": "Thu, 07 Jul 2022 16:59:39 GMT",
         "ETag": "W/\"62b2fa39-1882\"",
         "Last-Modified": "Wed, 22 Jun 2022 11:17:13 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -8139,9 +8179,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 27542678,
+      "scan_id": 27659435,
       "score": 75,
-      "start_time": "Sun, 03 Jul 2022 01:08:21 GMT",
+      "start_time": "Thu, 07 Jul 2022 16:59:36 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -8332,15 +8372,15 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2022-07-03T02:22:10Z",
-      "next_check_at": "2022-07-03T02:23:10Z",
+      "last_check_at": "2022-07-07T17:02:39Z",
+      "next_check_at": "2022-07-07T17:03:39Z",
       "mute_until": null,
       "favicon_url": "https://domifa.fabrique.social.gouv.fr/assets/favicon/favicon-32x32.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-07-03T02:18:12Z",
+        "tested_at": "2022-07-07T16:58:41Z",
         "expires_at": "2022-09-30T09:59:52Z",
         "valid": true,
         "error": null
@@ -8349,11 +8389,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 19,
-          "connection": 15,
-          "handshake": 26,
-          "response": 17,
-          "total": 78
+          "namelookup": 23,
+          "connection": 17,
+          "handshake": 25,
+          "response": 20,
+          "total": 84
         }
       },
       "uptimeGrade": "A",
@@ -8717,7 +8757,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "89 >= 30 days"
+        "finding": "84 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -8920,7 +8960,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1656814850"
+        "finding": "1657213336"
       },
       {
         "id": "HSTS_time",
@@ -9497,7 +9537,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "146"
+        "finding": "137"
       }
     ],
     "thirdparties": {
@@ -9508,7 +9548,7 @@
           "value": "1",
           "domain": "domifa.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1656816537,
+          "expires": 1657215026,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -9520,10 +9560,10 @@
         },
         {
           "name": "_pk_id.17.b1ca",
-          "value": "d22ee073d6868444.1656814737.",
+          "value": "4554019c9fed0637.1657213226.",
           "domain": "domifa.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1690769937,
+          "expires": 1691168426,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -9537,7 +9577,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Sun, 03 Jul 2022 02:18:55 GMT",
+        "date": "Thu, 07 Jul 2022 17:00:24 GMT",
         "etag": "W/\"62b2fa39-1882\"",
         "last-modified": "Wed, 22 Jun 2022 11:17:13 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -9802,39 +9842,60 @@
       {
         "requestedUrl": "https://domifa.fabrique.social.gouv.fr/",
         "finalUrl": "https://domifa.fabrique.social.gouv.fr/",
-        "fetchTime": "2022-07-03T02:18:20.207Z",
+        "fetchTime": "2022-07-07T16:59:22.640Z",
         "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.44
+            "score": 0.9869087219238282
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
             "score": 0.99
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.87
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.92
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.83
+            "score": 0.8
           }
         },
         "audits": {
@@ -9844,53 +9905,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5751,
+            "numericValue": 5609,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3885,
-                  "firstMeaningfulPaint": 4410,
-                  "largestContentfulPaint": 4110,
-                  "interactive": 5751,
-                  "speedIndex": 5191,
-                  "totalBlockingTime": 922,
-                  "maxPotentialFID": 951,
-                  "cumulativeLayoutShift": 0.2504421172671848,
-                  "cumulativeLayoutShiftMainFrame": 0.2504421172671848,
-                  "totalCumulativeLayoutShift": 0.2504421172671848,
+                  "firstContentfulPaint": 3809,
+                  "firstMeaningfulPaint": 4351,
+                  "largestContentfulPaint": 4041,
+                  "interactive": 5609,
+                  "speedIndex": 4901,
+                  "totalBlockingTime": 804,
+                  "maxPotentialFID": 845,
+                  "cumulativeLayoutShift": 0.13552912775675455,
+                  "cumulativeLayoutShiftMainFrame": 0.13552912775675455,
+                  "totalCumulativeLayoutShift": 0.13552912775675455,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 292503205,
+                  "observedTimeOriginTs": 155320519,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 292503205,
-                  "observedFirstPaint": 1650,
-                  "observedFirstPaintTs": 294153109,
-                  "observedFirstContentfulPaint": 1650,
-                  "observedFirstContentfulPaintTs": 294153109,
-                  "observedFirstContentfulPaintAllFrames": 1650,
-                  "observedFirstContentfulPaintAllFramesTs": 294153109,
-                  "observedFirstMeaningfulPaint": 1955,
-                  "observedFirstMeaningfulPaintTs": 294458265,
-                  "observedLargestContentfulPaint": 1650,
-                  "observedLargestContentfulPaintTs": 294153109,
-                  "observedLargestContentfulPaintAllFrames": 1650,
-                  "observedLargestContentfulPaintAllFramesTs": 294153109,
-                  "observedTraceEnd": 4603,
-                  "observedTraceEndTs": 297106175,
-                  "observedLoad": 2285,
-                  "observedLoadTs": 294788569,
-                  "observedDomContentLoaded": 1600,
-                  "observedDomContentLoadedTs": 294103251,
-                  "observedCumulativeLayoutShift": 0.2504421172671848,
-                  "observedCumulativeLayoutShiftMainFrame": 0.2504421172671848,
-                  "observedTotalCumulativeLayoutShift": 0.2504421172671848,
-                  "observedFirstVisualChange": 1651,
-                  "observedFirstVisualChangeTs": 294154205,
-                  "observedLastVisualChange": 1985,
-                  "observedLastVisualChangeTs": 294488205,
-                  "observedSpeedIndex": 1720,
-                  "observedSpeedIndexTs": 294223397
+                  "observedNavigationStartTs": 155320519,
+                  "observedFirstPaint": 1527,
+                  "observedFirstPaintTs": 156847988,
+                  "observedFirstContentfulPaint": 1527,
+                  "observedFirstContentfulPaintTs": 156847988,
+                  "observedFirstContentfulPaintAllFrames": 1527,
+                  "observedFirstContentfulPaintAllFramesTs": 156847988,
+                  "observedFirstMeaningfulPaint": 1793,
+                  "observedFirstMeaningfulPaintTs": 157113633,
+                  "observedLargestContentfulPaint": 1527,
+                  "observedLargestContentfulPaintTs": 156847988,
+                  "observedLargestContentfulPaintAllFrames": 1527,
+                  "observedLargestContentfulPaintAllFramesTs": 156847988,
+                  "observedTraceEnd": 4493,
+                  "observedTraceEndTs": 159813210,
+                  "observedLoad": 2182,
+                  "observedLoadTs": 157502715,
+                  "observedDomContentLoaded": 1486,
+                  "observedDomContentLoadedTs": 156806191,
+                  "observedCumulativeLayoutShift": 0.13552912775675455,
+                  "observedCumulativeLayoutShiftMainFrame": 0.13552912775675455,
+                  "observedTotalCumulativeLayoutShift": 0.13552912775675455,
+                  "observedFirstVisualChange": 1539,
+                  "observedFirstVisualChangeTs": 156859519,
+                  "observedLastVisualChange": 1823,
+                  "observedLastVisualChangeTs": 157143519,
+                  "observedSpeedIndex": 1593,
+                  "observedSpeedIndexTs": 156913390
                 },
                 {
                   "lcpInvalidated": false
@@ -9912,18 +9973,18 @@
                   "numScripts": 4,
                   "numStylesheets": 1,
                   "numFonts": 3,
-                  "numTasks": 1042,
+                  "numTasks": 1038,
                   "numTasksOver10ms": 6,
-                  "numTasksOver25ms": 4,
+                  "numTasksOver25ms": 3,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 141.234,
-                  "throughput": 7603301.004405684,
-                  "maxRtt": 148.98600000000002,
-                  "maxServerLatency": 135.467,
-                  "totalByteWeight": 1117230,
-                  "totalTaskTime": 859.8200000000007,
+                  "rtt": 128.46300000000002,
+                  "throughput": 8060285.555563964,
+                  "maxRtt": 148.195,
+                  "maxServerLatency": 107.21800000000002,
+                  "totalByteWeight": 1117212,
+                  "totalTaskTime": 764.9110000000002,
                   "mainDocumentTransferSize": 2444
                 }
               ]
@@ -10018,6 +10079,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.9869087219238282,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.99,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.92,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.8,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "C",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -11874,7 +11945,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.5
+            "score": 0.9581184387207031
           },
           "accessibility": {
             "title": "Accessibility",
@@ -12089,6 +12160,16 @@
       "cookiesCount": 0,
       "trackersGrade": "B",
       "trackersCount": 1,
+      "lighthouse_performance": 0.9581184387207031,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.87,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.67,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "A",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -12524,15 +12605,15 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2022-07-07T16:09:53Z",
-      "next_check_at": "2022-07-07T16:10:53Z",
+      "last_check_at": "2022-07-07T17:03:37Z",
+      "next_check_at": "2022-07-07T17:04:37Z",
       "mute_until": null,
       "favicon_url": "https://www.fabrique.social.gouv.fr/images/favicons/favicon-16x16.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-07-07T16:09:53Z",
+        "tested_at": "2022-07-07T16:59:38Z",
         "expires_at": "2022-09-16T05:24:43Z",
         "valid": true,
         "error": null
@@ -12541,11 +12622,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 21,
-          "connection": 15,
-          "handshake": 24,
-          "response": 15,
-          "total": 75
+          "namelookup": 17,
+          "connection": 16,
+          "handshake": 25,
+          "response": 16,
+          "total": 74
         }
       },
       "uptimeGrade": "A",
@@ -13112,7 +13193,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1657210170"
+        "finding": "1657213367"
       },
       {
         "id": "HSTS_time",
@@ -13696,7 +13777,7 @@
         "ip": "www.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "100"
+        "finding": "140"
       }
     ],
     "thirdparties": {
@@ -13707,7 +13788,7 @@
           "value": "1",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1657211871,
+          "expires": 1657215062,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -13719,10 +13800,10 @@
         },
         {
           "name": "_pk_id.2.6321",
-          "value": "1bb2ea9d571caa3b.1657210072.",
+          "value": "df44d0867adb3bff.1657213262.",
           "domain": "www.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1691165272,
+          "expires": 1691168462,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -13737,7 +13818,7 @@
         "content-encoding": "gzip",
         "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; img-src 'self'; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
         "content-type": "text/html",
-        "date": "Thu, 07 Jul 2022 16:07:50 GMT",
+        "date": "Thu, 07 Jul 2022 17:01:00 GMT",
         "etag": "W/\"62c58595-6f67\"",
         "last-modified": "Wed, 06 Jul 2022 12:52:37 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -14017,39 +14098,60 @@
       {
         "requestedUrl": "https://www.fabrique.social.gouv.fr/",
         "finalUrl": "https://www.fabrique.social.gouv.fr/",
-        "fetchTime": "2022-07-07T16:06:50.168Z",
+        "fetchTime": "2022-07-07T16:59:51.183Z",
         "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.96
+            "score": 0.35
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
             "score": 0.96
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.93
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.9
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.42
+            "score": 0.3
           }
         },
         "audits": {
@@ -14059,53 +14161,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3153,
+            "numericValue": 2741,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1136,
-                  "firstMeaningfulPaint": 1136,
-                  "largestContentfulPaint": 2656,
-                  "interactive": 3153,
-                  "speedIndex": 1709,
-                  "totalBlockingTime": 67,
-                  "maxPotentialFID": 170,
+                  "firstContentfulPaint": 1159,
+                  "firstMeaningfulPaint": 1416,
+                  "largestContentfulPaint": 2659,
+                  "interactive": 2741,
+                  "speedIndex": 2400,
+                  "totalBlockingTime": 100,
+                  "maxPotentialFID": 218,
                   "cumulativeLayoutShift": 0.000828776741532922,
                   "cumulativeLayoutShiftMainFrame": 0.000828776741532922,
                   "totalCumulativeLayoutShift": 0.000828776741532922,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 1087891033,
+                  "observedTimeOriginTs": 2163678081,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 1087891033,
-                  "observedFirstPaint": 486,
-                  "observedFirstPaintTs": 1088377155,
-                  "observedFirstContentfulPaint": 486,
-                  "observedFirstContentfulPaintTs": 1088377155,
-                  "observedFirstContentfulPaintAllFrames": 486,
-                  "observedFirstContentfulPaintAllFramesTs": 1088377155,
-                  "observedFirstMeaningfulPaint": 815,
-                  "observedFirstMeaningfulPaintTs": 1088706095,
-                  "observedLargestContentfulPaint": 953,
-                  "observedLargestContentfulPaintTs": 1088843663,
-                  "observedLargestContentfulPaintAllFrames": 953,
-                  "observedLargestContentfulPaintAllFramesTs": 1088843663,
-                  "observedTraceEnd": 3685,
-                  "observedTraceEndTs": 1091575964,
-                  "observedLoad": 1375,
-                  "observedLoadTs": 1089266060,
-                  "observedDomContentLoaded": 903,
-                  "observedDomContentLoadedTs": 1088793885,
+                  "observedNavigationStartTs": 2163678081,
+                  "observedFirstPaint": 632,
+                  "observedFirstPaintTs": 2164309640,
+                  "observedFirstContentfulPaint": 632,
+                  "observedFirstContentfulPaintTs": 2164309640,
+                  "observedFirstContentfulPaintAllFrames": 632,
+                  "observedFirstContentfulPaintAllFramesTs": 2164309640,
+                  "observedFirstMeaningfulPaint": 1107,
+                  "observedFirstMeaningfulPaintTs": 2164784902,
+                  "observedLargestContentfulPaint": 1131,
+                  "observedLargestContentfulPaintTs": 2164809358,
+                  "observedLargestContentfulPaintAllFrames": 1131,
+                  "observedLargestContentfulPaintAllFramesTs": 2164809358,
+                  "observedTraceEnd": 3934,
+                  "observedTraceEndTs": 2167611925,
+                  "observedLoad": 1612,
+                  "observedLoadTs": 2165290410,
+                  "observedDomContentLoaded": 994,
+                  "observedDomContentLoadedTs": 2164671960,
                   "observedCumulativeLayoutShift": 0.000828776741532922,
                   "observedCumulativeLayoutShiftMainFrame": 0.000828776741532922,
                   "observedTotalCumulativeLayoutShift": 0.000828776741532922,
-                  "observedFirstVisualChange": 498,
-                  "observedFirstVisualChangeTs": 1088389033,
-                  "observedLastVisualChange": 2898,
-                  "observedLastVisualChangeTs": 1090789033,
-                  "observedSpeedIndex": 872,
-                  "observedSpeedIndexTs": 1088762948
+                  "observedFirstVisualChange": 635,
+                  "observedFirstVisualChangeTs": 2164313081,
+                  "observedLastVisualChange": 2985,
+                  "observedLastVisualChangeTs": 2166663081,
+                  "observedSpeedIndex": 1092,
+                  "observedSpeedIndexTs": 2164769906
                 },
                 {
                   "lcpInvalidated": false
@@ -14127,18 +14229,18 @@
                   "numScripts": 14,
                   "numStylesheets": 1,
                   "numFonts": 3,
-                  "numTasks": 1363,
-                  "numTasksOver10ms": 5,
+                  "numTasks": 1384,
+                  "numTasksOver10ms": 8,
                   "numTasksOver25ms": 2,
-                  "numTasksOver50ms": 0,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 83.302,
-                  "throughput": 73853256.04176947,
-                  "maxRtt": 88.164,
-                  "maxServerLatency": 85.847,
-                  "totalByteWeight": 7887777,
-                  "totalTaskTime": 491.72100000000063,
+                  "rtt": 112.193,
+                  "throughput": 63351657.42033939,
+                  "maxRtt": 118.634,
+                  "maxServerLatency": 108.979,
+                  "totalByteWeight": 7887804,
+                  "totalTaskTime": 670.446999999999,
                   "mainDocumentTransferSize": 8253
                 }
               ]
@@ -14149,39 +14251,60 @@
       {
         "requestedUrl": "https://www.fabrique.social.gouv.fr/actus",
         "finalUrl": "https://www.fabrique.social.gouv.fr/actus",
-        "fetchTime": "2022-07-07T16:07:05.610Z",
+        "fetchTime": "2022-07-07T17:00:08.659Z",
         "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.96
+            "score": 0.95
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
             "score": 0.93
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.87
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.9
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.42
+            "score": 0.3
           }
         },
         "audits": {
@@ -14191,53 +14314,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2399,
+            "numericValue": 3304,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1064,
-                  "firstMeaningfulPaint": 1076,
-                  "largestContentfulPaint": 2699,
-                  "interactive": 2399,
-                  "speedIndex": 1705,
-                  "totalBlockingTime": 44,
-                  "maxPotentialFID": 135,
+                  "firstContentfulPaint": 1147,
+                  "firstMeaningfulPaint": 1222,
+                  "largestContentfulPaint": 2656,
+                  "interactive": 3304,
+                  "speedIndex": 1955,
+                  "totalBlockingTime": 96,
+                  "maxPotentialFID": 234,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 1103322825,
+                  "observedTimeOriginTs": 2181139694,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 1103322825,
-                  "observedFirstPaint": 629,
-                  "observedFirstPaintTs": 1103951546,
-                  "observedFirstContentfulPaint": 629,
-                  "observedFirstContentfulPaintTs": 1103951546,
-                  "observedFirstContentfulPaintAllFrames": 629,
-                  "observedFirstContentfulPaintAllFramesTs": 1103951546,
-                  "observedFirstMeaningfulPaint": 933,
-                  "observedFirstMeaningfulPaintTs": 1104255386,
-                  "observedLargestContentfulPaint": 933,
-                  "observedLargestContentfulPaintTs": 1104255386,
-                  "observedLargestContentfulPaintAllFrames": 933,
-                  "observedLargestContentfulPaintAllFramesTs": 1104255386,
-                  "observedTraceEnd": 3630,
-                  "observedTraceEndTs": 1106953127,
-                  "observedLoad": 1316,
-                  "observedLoadTs": 1104639132,
-                  "observedDomContentLoaded": 859,
-                  "observedDomContentLoadedTs": 1104181337,
+                  "observedNavigationStartTs": 2181139694,
+                  "observedFirstPaint": 621,
+                  "observedFirstPaintTs": 2181760585,
+                  "observedFirstContentfulPaint": 621,
+                  "observedFirstContentfulPaintTs": 2181760585,
+                  "observedFirstContentfulPaintAllFrames": 621,
+                  "observedFirstContentfulPaintAllFramesTs": 2181760585,
+                  "observedFirstMeaningfulPaint": 1099,
+                  "observedFirstMeaningfulPaintTs": 2182239009,
+                  "observedLargestContentfulPaint": 1099,
+                  "observedLargestContentfulPaintTs": 2182239009,
+                  "observedLargestContentfulPaintAllFrames": 1099,
+                  "observedLargestContentfulPaintAllFramesTs": 2182239009,
+                  "observedTraceEnd": 4067,
+                  "observedTraceEndTs": 2185206240,
+                  "observedLoad": 1751,
+                  "observedLoadTs": 2182890282,
+                  "observedDomContentLoaded": 1135,
+                  "observedDomContentLoadedTs": 2182274334,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 633,
-                  "observedFirstVisualChangeTs": 1103955825,
-                  "observedLastVisualChange": 933,
-                  "observedLastVisualChangeTs": 1104255825,
-                  "observedSpeedIndex": 898,
-                  "observedSpeedIndexTs": 1104220829
+                  "observedFirstVisualChange": 623,
+                  "observedFirstVisualChangeTs": 2181762694,
+                  "observedLastVisualChange": 1106,
+                  "observedLastVisualChangeTs": 2182245694,
+                  "observedSpeedIndex": 1038,
+                  "observedSpeedIndexTs": 2182177376
                 },
                 {
                   "lcpInvalidated": false
@@ -14259,18 +14382,18 @@
                   "numScripts": 14,
                   "numStylesheets": 1,
                   "numFonts": 4,
-                  "numTasks": 461,
-                  "numTasksOver10ms": 5,
-                  "numTasksOver25ms": 2,
-                  "numTasksOver50ms": 1,
-                  "numTasksOver100ms": 1,
+                  "numTasks": 488,
+                  "numTasksOver10ms": 7,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 2,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 86.083,
-                  "throughput": 11299537.006504156,
-                  "maxRtt": 88.42099999999999,
-                  "maxServerLatency": 14.215000000000003,
-                  "totalByteWeight": 878289,
-                  "totalTaskTime": 318.62999999999965,
+                  "rtt": 112.1,
+                  "throughput": 8582130.171165314,
+                  "maxRtt": 119.418,
+                  "maxServerLatency": 96.53300000000002,
+                  "totalByteWeight": 878248,
+                  "totalTaskTime": 402.19399999999996,
                   "mainDocumentTransferSize": 10779
                 }
               ]
@@ -14281,39 +14404,60 @@
       {
         "requestedUrl": "https://www.fabrique.social.gouv.fr/members",
         "finalUrl": "https://www.fabrique.social.gouv.fr/members",
-        "fetchTime": "2022-07-07T16:07:16.938Z",
+        "fetchTime": "2022-07-07T17:00:21.023Z",
         "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.94
+            "score": 0.92
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
             "score": 0.95
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.93
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.9
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.42
+            "score": 0.3
           }
         },
         "audits": {
@@ -14323,53 +14467,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2635,
+            "numericValue": 3613,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1155,
-                  "firstMeaningfulPaint": 1155,
-                  "largestContentfulPaint": 3010,
-                  "interactive": 2635,
-                  "speedIndex": 1774,
-                  "totalBlockingTime": 78,
-                  "maxPotentialFID": 205,
+                  "firstContentfulPaint": 1144,
+                  "firstMeaningfulPaint": 1219,
+                  "largestContentfulPaint": 2889,
+                  "interactive": 3613,
+                  "speedIndex": 2163,
+                  "totalBlockingTime": 154,
+                  "maxPotentialFID": 320,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 1114655614,
+                  "observedTimeOriginTs": 2193500984,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 1114655614,
-                  "observedFirstPaint": 500,
-                  "observedFirstPaintTs": 1115155708,
-                  "observedFirstContentfulPaint": 500,
-                  "observedFirstContentfulPaintTs": 1115155708,
-                  "observedFirstContentfulPaintAllFrames": 500,
-                  "observedFirstContentfulPaintAllFramesTs": 1115155708,
-                  "observedFirstMeaningfulPaint": 886,
-                  "observedFirstMeaningfulPaintTs": 1115541495,
-                  "observedLargestContentfulPaint": 1003,
-                  "observedLargestContentfulPaintTs": 1115658972,
-                  "observedLargestContentfulPaintAllFrames": 1003,
-                  "observedLargestContentfulPaintAllFramesTs": 1115658972,
-                  "observedTraceEnd": 3517,
-                  "observedTraceEndTs": 1118172428,
-                  "observedLoad": 1205,
-                  "observedLoadTs": 1115860326,
-                  "observedDomContentLoaded": 746,
-                  "observedDomContentLoadedTs": 1115401929,
+                  "observedNavigationStartTs": 2193500984,
+                  "observedFirstPaint": 627,
+                  "observedFirstPaintTs": 2194128322,
+                  "observedFirstContentfulPaint": 627,
+                  "observedFirstContentfulPaintTs": 2194128322,
+                  "observedFirstContentfulPaintAllFrames": 627,
+                  "observedFirstContentfulPaintAllFramesTs": 2194128322,
+                  "observedFirstMeaningfulPaint": 1189,
+                  "observedFirstMeaningfulPaintTs": 2194689650,
+                  "observedLargestContentfulPaint": 1347,
+                  "observedLargestContentfulPaintTs": 2194848465,
+                  "observedLargestContentfulPaintAllFrames": 1347,
+                  "observedLargestContentfulPaintAllFramesTs": 2194848465,
+                  "observedTraceEnd": 4216,
+                  "observedTraceEndTs": 2197717054,
+                  "observedLoad": 1896,
+                  "observedLoadTs": 2195396810,
+                  "observedDomContentLoaded": 1279,
+                  "observedDomContentLoadedTs": 2194780467,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 499,
-                  "observedFirstVisualChangeTs": 1115154614,
-                  "observedLastVisualChange": 1016,
-                  "observedLastVisualChangeTs": 1115671614,
-                  "observedSpeedIndex": 909,
-                  "observedSpeedIndexTs": 1115565042
+                  "observedFirstVisualChange": 627,
+                  "observedFirstVisualChangeTs": 2194127984,
+                  "observedLastVisualChange": 1344,
+                  "observedLastVisualChangeTs": 2194844984,
+                  "observedSpeedIndex": 1191,
+                  "observedSpeedIndexTs": 2194692042
                 },
                 {
                   "lcpInvalidated": false
@@ -14391,18 +14535,18 @@
                   "numScripts": 14,
                   "numStylesheets": 1,
                   "numFonts": 2,
-                  "numTasks": 1522,
-                  "numTasksOver10ms": 8,
+                  "numTasks": 1309,
+                  "numTasksOver10ms": 12,
                   "numTasksOver25ms": 2,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 82.87700000000001,
-                  "throughput": 40236373.31626812,
-                  "maxRtt": 88.068,
-                  "maxServerLatency": 105.173,
-                  "totalByteWeight": 3778799,
-                  "totalTaskTime": 398.6299999999982,
+                  "rtt": 112.339,
+                  "throughput": 29419778.773912996,
+                  "maxRtt": 118.75999999999999,
+                  "maxServerLatency": 94.10100000000003,
+                  "totalByteWeight": 3778772,
+                  "totalTaskTime": 533.3519999999983,
                   "mainDocumentTransferSize": 11324
                 }
               ]
@@ -14458,6 +14602,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.35,
+      "lighthouse_performanceGrade": "D",
+      "lighthouse_accessibility": 0.96,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.92,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.9,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.3,
+      "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -16208,7 +16362,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.98
+            "score": 0.9688943862915039
           },
           "accessibility": {
             "title": "Accessibility",
@@ -16417,6 +16571,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.9688943862915039,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.75,
+      "lighthouse_accessibilityGrade": "B",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.83,
+      "lighthouse_seoGrade": "B",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "C",
       "declaration-a11y": "D",
       "declaration-rgpd-ml": "A",
@@ -18180,7 +18344,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.91
+            "score": 0.8840160369873047
           },
           "accessibility": {
             "title": "Accessibility",
@@ -18385,6 +18549,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.8840160369873047,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.94,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.87,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.88,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -20166,7 +20340,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.88
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -20382,6 +20556,16 @@
       "cookiesCount": 0,
       "trackersGrade": "C",
       "trackersCount": 6,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.98,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "A",
       "declaration-a11y": "D",
       "declaration-rgpd-ml": "A",
@@ -21942,7 +22126,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.46
+            "score": 0.9623834609985351
           },
           "accessibility": {
             "title": "Accessibility",
@@ -22148,6 +22332,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.9623834609985351,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.87,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.85,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.75,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "F",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -23758,7 +23952,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.94
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -23968,6 +24162,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.33,
+      "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -25735,7 +25939,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.94
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -25904,6 +26108,16 @@
       "cookiesCount": 2,
       "trackersGrade": "B",
       "trackersCount": 1,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.97,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.91,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.33,
+      "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -27847,7 +28061,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.46
+            "score": 0.1907217025756836
           },
           "accessibility": {
             "title": "Accessibility",
@@ -28059,6 +28273,16 @@
       "cookiesCount": 2,
       "trackersGrade": "C",
       "trackersCount": 6,
+      "lighthouse_performance": 0.1907217025756836,
+      "lighthouse_performanceGrade": "E",
+      "lighthouse_accessibility": 0.83,
+      "lighthouse_accessibilityGrade": "B",
+      "lighthouse_best-practices": 0.73,
+      "lighthouse_best-practicesGrade": "B",
+      "lighthouse_seo": 0.87,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.33,
+      "lighthouse_pwaGrade": "E",
       "statsGrade": "A",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -29692,7 +29916,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.82
+            "score": 0.9641559600830079
           },
           "accessibility": {
             "title": "Accessibility",
@@ -29901,6 +30125,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.9641559600830079,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.95,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "A",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "A",
@@ -31614,7 +31848,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.83
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -31821,6 +32055,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.91,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "C",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "A"
@@ -33457,7 +33701,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.9
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -33658,6 +33902,16 @@
       "cookiesCount": 0,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.85,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "A",
@@ -35332,7 +35586,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.72
+            "score": 0.801869010925293
           },
           "accessibility": {
             "title": "Accessibility",
@@ -35546,6 +35800,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 0.801869010925293,
+      "lighthouse_performanceGrade": "B",
+      "lighthouse_accessibility": 0.8,
+      "lighthouse_accessibilityGrade": "B",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "C",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -37293,7 +37557,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.97
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -37465,6 +37729,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.33,
+      "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -39552,7 +39826,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.78
+            "score": 0.7749992370605469
           },
           "accessibility": {
             "title": "Accessibility",
@@ -39723,6 +39997,16 @@
       "cookiesCount": 0,
       "trackersGrade": "B",
       "trackersCount": 2,
+      "lighthouse_performance": 0.7749992370605469,
+      "lighthouse_performanceGrade": "B",
+      "lighthouse_accessibility": 0.91,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.93,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.67,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "F",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "A",
@@ -41946,7 +42230,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.34
+            "score": 0.45176448822021487
           },
           "accessibility": {
             "title": "Accessibility",
@@ -42117,6 +42401,16 @@
       "cookiesCount": 2,
       "trackersGrade": "F",
       "trackersCount": 23,
+      "lighthouse_performance": 0.45176448822021487,
+      "lighthouse_performanceGrade": "D",
+      "lighthouse_accessibility": 0.88,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.92,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
@@ -43824,7 +44118,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.91
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -44031,6 +44325,16 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.85,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.83,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "C",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -45691,7 +45995,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.92
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -45898,6 +46202,16 @@
       "cookiesCount": 0,
       "trackersGrade": "A",
       "trackersCount": 0,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 1,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.85,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.83,
+      "lighthouse_pwaGrade": "B",
       "statsGrade": "C",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -47668,7 +47982,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.94
+            "score": 1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -47845,6 +48159,16 @@
       "cookiesCount": 4,
       "trackersGrade": "C",
       "trackersCount": 5,
+      "lighthouse_performance": 1,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.85,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 1,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 1,
+      "lighthouse_seoGrade": "A",
+      "lighthouse_pwa": 0.42,
+      "lighthouse_pwaGrade": "D",
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "D",
