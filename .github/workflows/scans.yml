@@ -135,7 +135,7 @@ jobs:
         continue-on-error: true
         uses: treosh/lighthouse-ci-action@v8
         with:
-          urls: "${{ matrix.sites.url }}"
+          urls: "${{ matrix.sites.subpages }}"
           uploadArtifacts: false
           temporaryPublicStorage: false
           configPath: "./lighthouserc.json"
