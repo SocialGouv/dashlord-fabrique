@@ -26,7 +26,7 @@ jobs:
       sites: ${{ steps.init.outputs.sites }}
       config: ${{ steps.init.outputs.config }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - id: init
         uses: "SocialGouv/dashlord-actions/init@v1"
         with:
@@ -43,7 +43,7 @@ jobs:
       matrix:
         sites: ${{ fromJson(needs.init.outputs.sites) }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - run: |
           mkdir scans
