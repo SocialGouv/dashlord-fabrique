@@ -135,7 +135,10 @@ jobs:
         continue-on-error: true
         uses: treosh/lighthouse-ci-action@v9
         with:
-          url: "${{ join(matrix.sites.subpages, ',') }}"
+          urls: "${{ join(matrix.sites.subpages, '\n') }}"
+          uploadArtifacts: false
+          temporaryPublicStorage: false
+          configPath: "./lighthouserc.json"
 
       - name: Mozilla HTTP Observatory
         if: ${{ matrix.sites.tools.http }}
