@@ -133,12 +133,9 @@ jobs:
       - name: Lighthouse scan
         if: ${{ matrix.sites.tools.lighthouse }}
         continue-on-error: true
-        uses: treosh/lighthouse-ci-action@v9
+        uses: socialgouv/dashlord-actions/lhci@v1
         with:
-          urls: "${{ join(matrix.sites.subpages, '\n') }}"
-          uploadArtifacts: false
-          temporaryPublicStorage: false
-          configPath: "./lighthouserc.json"
+          url: "${{ join(matrix.sites.subpages, ',') }}"
 
       - name: Mozilla HTTP Observatory
         if: ${{ matrix.sites.tools.http }}
