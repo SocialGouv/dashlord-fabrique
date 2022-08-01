@@ -33440,7 +33440,7 @@
     "http": {
       "url": "https://mano-app.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 31 Jul 2022 02:05:37 GMT",
+      "end_time": "Mon, 01 Aug 2022 15:18:11 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -33448,7 +33448,7 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html",
-        "Date": "Sun, 31 Jul 2022 02:05:34 GMT",
+        "Date": "Mon, 01 Aug 2022 15:18:09 GMT",
         "ETag": "W/\"62e3f58c-6146\"",
         "Last-Modified": "Fri, 29 Jul 2022 14:58:20 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -33458,9 +33458,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 28307702,
+      "scan_id": 28361138,
       "score": 75,
-      "start_time": "Sun, 31 Jul 2022 02:05:32 GMT",
+      "start_time": "Mon, 01 Aug 2022 15:18:07 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -33651,15 +33651,15 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2022-07-31T03:01:11Z",
-      "next_check_at": "2022-07-31T03:02:11Z",
+      "last_check_at": "2022-08-01T17:04:45Z",
+      "next_check_at": "2022-08-01T17:05:44Z",
       "mute_until": null,
       "favicon_url": "https://mano-app.fabrique.social.gouv.fr/logo-green.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-07-31T02:54:13Z",
+        "tested_at": "2022-08-01T17:03:45Z",
         "expires_at": "2022-10-19T04:37:43Z",
         "valid": true,
         "error": null
@@ -33668,11 +33668,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 20,
-          "connection": 14,
-          "handshake": 25,
+          "namelookup": 22,
+          "connection": 13,
+          "handshake": 28,
           "response": 17,
-          "total": 77
+          "total": 80
         }
       },
       "uptimeGrade": "A",
@@ -34036,7 +34036,7 @@
         "ip": "mano-app.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "80 >= 30 days"
+        "finding": "78 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -34239,7 +34239,7 @@
         "ip": "mano-app.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1659236480"
+        "finding": "1659373459"
       },
       {
         "id": "HSTS_time",
@@ -34827,7 +34827,7 @@
           "value": "1",
           "domain": "mano-app.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1659238191,
+          "expires": 1659375182,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -34839,10 +34839,10 @@
         },
         {
           "name": "_pk_id.44.f1b8",
-          "value": "3a0ec81d5db56504.1659236392.",
+          "value": "eec280e1e3050ff8.1659373382.",
           "domain": "mano-app.fabrique.social.gouv.fr",
           "path": "/",
-          "expires": 1693191592,
+          "expires": 1693328582,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -34856,7 +34856,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Sun, 31 Jul 2022 02:59:50 GMT",
+        "date": "Mon, 01 Aug 2022 17:03:01 GMT",
         "etag": "W/\"62e3f58c-6146\"",
         "last-modified": "Fri, 29 Jul 2022 14:58:20 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -35089,7 +35089,7 @@
       {
         "requestedUrl": "https://mano-app.fabrique.social.gouv.fr/",
         "finalUrl": "https://mano-app.fabrique.social.gouv.fr/",
-        "fetchTime": "2022-07-31T02:59:22.796Z",
+        "fetchTime": "2022-08-01T17:02:33.976Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -35100,7 +35100,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.8018671035766601
+            "score": 0.8018608093261719
           },
           "accessibility": {
             "title": "Accessibility",
@@ -35152,53 +35152,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5833,
+            "numericValue": 7616,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 948,
-                  "firstMeaningfulPaint": 948,
-                  "largestContentfulPaint": 9965,
-                  "interactive": 5833,
-                  "speedIndex": 1658,
-                  "totalBlockingTime": 67,
-                  "maxPotentialFID": 139,
-                  "cumulativeLayoutShift": 0.0037658420138888885,
-                  "cumulativeLayoutShiftMainFrame": 0.0037658420138888885,
-                  "totalCumulativeLayoutShift": 0.0037658420138888885,
+                  "firstContentfulPaint": 951,
+                  "firstMeaningfulPaint": 951,
+                  "largestContentfulPaint": 10507,
+                  "interactive": 7616,
+                  "speedIndex": 1595,
+                  "totalBlockingTime": 254,
+                  "maxPotentialFID": 327,
+                  "cumulativeLayoutShift": 0.0009463704427083333,
+                  "cumulativeLayoutShiftMainFrame": 0.0009463704427083333,
+                  "totalCumulativeLayoutShift": 0.0009463704427083333,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 306965792,
+                  "observedTimeOriginTs": 107352929,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 306965792,
-                  "observedFirstPaint": 410,
-                  "observedFirstPaintTs": 307376018,
-                  "observedFirstContentfulPaint": 410,
-                  "observedFirstContentfulPaintTs": 307376018,
-                  "observedFirstContentfulPaintAllFrames": 410,
-                  "observedFirstContentfulPaintAllFramesTs": 307376018,
-                  "observedFirstMeaningfulPaint": 410,
-                  "observedFirstMeaningfulPaintTs": 307376018,
-                  "observedLargestContentfulPaint": 1062,
-                  "observedLargestContentfulPaintTs": 308027443,
-                  "observedLargestContentfulPaintAllFrames": 1062,
-                  "observedLargestContentfulPaintAllFramesTs": 308027443,
-                  "observedTraceEnd": 4432,
-                  "observedTraceEndTs": 311397529,
-                  "observedLoad": 1374,
-                  "observedLoadTs": 308339367,
-                  "observedDomContentLoaded": 920,
-                  "observedDomContentLoadedTs": 307886188,
-                  "observedCumulativeLayoutShift": 0.0037658420138888885,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0037658420138888885,
-                  "observedTotalCumulativeLayoutShift": 0.0037658420138888885,
-                  "observedFirstVisualChange": 421,
-                  "observedFirstVisualChangeTs": 307386792,
-                  "observedLastVisualChange": 1071,
-                  "observedLastVisualChangeTs": 308036792,
-                  "observedSpeedIndex": 923,
-                  "observedSpeedIndexTs": 307888684
+                  "observedNavigationStartTs": 107352929,
+                  "observedFirstPaint": 394,
+                  "observedFirstPaintTs": 107747326,
+                  "observedFirstContentfulPaint": 394,
+                  "observedFirstContentfulPaintTs": 107747326,
+                  "observedFirstContentfulPaintAllFrames": 394,
+                  "observedFirstContentfulPaintAllFramesTs": 107747326,
+                  "observedFirstMeaningfulPaint": 394,
+                  "observedFirstMeaningfulPaintTs": 107747326,
+                  "observedLargestContentfulPaint": 1021,
+                  "observedLargestContentfulPaintTs": 108373929,
+                  "observedLargestContentfulPaintAllFrames": 1021,
+                  "observedLargestContentfulPaintAllFramesTs": 108373929,
+                  "observedTraceEnd": 4027,
+                  "observedTraceEndTs": 111379841,
+                  "observedLoad": 1161,
+                  "observedLoadTs": 108514237,
+                  "observedDomContentLoaded": 651,
+                  "observedDomContentLoadedTs": 108003864,
+                  "observedCumulativeLayoutShift": 0.0009463704427083333,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0009463704427083333,
+                  "observedTotalCumulativeLayoutShift": 0.0009463704427083333,
+                  "observedFirstVisualChange": 392,
+                  "observedFirstVisualChangeTs": 107744929,
+                  "observedLastVisualChange": 1026,
+                  "observedLastVisualChangeTs": 108378929,
+                  "observedSpeedIndex": 876,
+                  "observedSpeedIndexTs": 108229337
                 },
                 {
                   "lcpInvalidated": false
@@ -35220,18 +35220,18 @@
                   "numScripts": 13,
                   "numStylesheets": 1,
                   "numFonts": 4,
-                  "numTasks": 588,
+                  "numTasks": 593,
                   "numTasksOver10ms": 4,
-                  "numTasksOver25ms": 1,
-                  "numTasksOver50ms": 0,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 85.698,
-                  "throughput": 27192704.711810794,
-                  "maxRtt": 87.69,
-                  "maxServerLatency": 140.26799999999997,
-                  "totalByteWeight": 2087363,
-                  "totalTaskTime": 224.71399999999994,
+                  "rtt": 81.57,
+                  "throughput": 25749697.387430556,
+                  "maxRtt": 84.768,
+                  "maxServerLatency": 133.68599999999998,
+                  "totalByteWeight": 2087396,
+                  "totalTaskTime": 303.1869999999999,
                   "mainDocumentTransferSize": 6371
                 }
               ]
@@ -35266,14 +35266,9 @@
       {
         "slug": "pc",
         "mention": "Politique de confidentialité",
-        "maxScore": 4,
+        "maxScore": 0,
         "score": 0,
-        "missingWords": [
-          "@",
-          "finalité",
-          "durée de conservation",
-          "sous-traitants (ou) sous traitants"
-        ],
+        "missingWords": [],
         "missingTrackers": [],
         "declarationUrl": "https://mano-app.fabrique.social.gouv.fr/privacy.pdf"
       }
@@ -35330,7 +35325,7 @@
       "cookiesCount": 2,
       "trackersGrade": "A",
       "trackersCount": 0,
-      "lighthouse_performance": 0.8018671035766601,
+      "lighthouse_performance": 0.8018608093261719,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.8,
       "lighthouse_accessibilityGrade": "B",
@@ -35343,7 +35338,7 @@
       "statsGrade": "C",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
-      "declaration-rgpd-pc": "D"
+      "declaration-rgpd-pc": "A"
     }
   },
   {
