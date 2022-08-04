@@ -93,7 +93,7 @@ jobs:
         uses: "betagouv/check-url-action@main"
         if: ${{ matrix.sites.tools.stats }}
         with:
-          url: ${{ steps.betagouv.outputs.stats_url }}
+          url: ${{ steps.betagouv.outputs.stats_url || matrix.sites.url }}
           output: scans/stats.json
           minExpectedRegex: ^stat
           exactExpectedRegex: ^stats$
