@@ -353,7 +353,7 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "45 >= 30 days"
+              "finding"      : "38 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +549,14 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1659235357"
+              "finding"      : "1659839369"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "136"
+              "finding"      : "141"
           }
 ]
