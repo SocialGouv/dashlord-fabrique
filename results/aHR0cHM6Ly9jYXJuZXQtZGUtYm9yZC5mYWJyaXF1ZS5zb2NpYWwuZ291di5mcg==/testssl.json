@@ -353,7 +353,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "65 >= 30 days"
+              "finding"      : "58 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1659236480"
+              "finding"      : "1659840284"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -626,7 +626,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-wI8wQRv9z1D05Ha9BoJ6Ow=='"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-30buLrhE73OI10/nOQYQ7w=='"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -1147,6 +1147,6 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "141"
+              "finding"      : "95"
           }
 ]
