@@ -353,7 +353,7 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +549,14 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1661656812"
+              "finding"      : "1662261322"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "144"
           }
 ]
