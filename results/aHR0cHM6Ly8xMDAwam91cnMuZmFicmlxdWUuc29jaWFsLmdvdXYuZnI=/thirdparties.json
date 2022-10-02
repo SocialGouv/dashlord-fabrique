@@ -14,11 +14,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1664074960945"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1664680438839"
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1664074960950"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1664680438844"
     },
     {
       "type": "unknown",
@@ -26,7 +26,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1664074965295"
+      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1664680442859"
     }
   ],
   "cookies": [
@@ -35,7 +35,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1664076762,
+      "expires": 1664682239,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -47,10 +47,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "009ea4f19ea422ea.1664074962.",
+      "value": "3e3926a5b20caefb.1664680440.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1698030162,
+      "expires": 1698635640,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -64,7 +64,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 25 Sep 2022 03:02:40 GMT",
+    "date": "Sun, 02 Oct 2022 03:13:58 GMT",
     "etag": "W/\"62c3fc72-452f\"",
     "last-modified": "Tue, 05 Jul 2022 08:55:14 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -215,7 +215,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 100,
+          "accuracy_radius": 50,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
