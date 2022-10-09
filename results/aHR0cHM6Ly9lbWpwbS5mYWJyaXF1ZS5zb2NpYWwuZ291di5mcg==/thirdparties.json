@@ -12,8 +12,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src https://matomo.fabrique.social.gouv.fr/; connect-src *.dev.fabrique.social.gouv.fr https://api-emjpm.fabrique.social.gouv.fr/api/ https://emjpm.fabrique.social.gouv.fr https://hasura-emjpm.fabrique.social.gouv.fr/v1/graphql https://matomo.fabrique.social.gouv.fr/ https://openmaptiles.geo.data.gouv.fr/ https://openmaptiles.github.io/ https://api-adresse.data.gouv.fr https://entreprise.data.gouv.fr https://nominatim.openstreetmap.org; font-src 'self'; img-src  https://openmaptiles.github.io/ https://api.mapbox.com/ 'self' data: blob:; script-src https://matomo.fabrique.social.gouv.fr/ blob: 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://api.tiles.mapbox.com/; manifest-src 'self';",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 02 Oct 2022 02:49:49 GMT",
-    "etag": "\"3778a0983912f56aed46443b738894e0a2143aa9\"",
+    "date": "Sun, 09 Oct 2022 02:41:27 GMT",
+    "etag": "\"139702b79a756f3d53b4fcf5662aa0a2ce7cdc6d\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -117,7 +117,7 @@
     },
     {
       "hostname": "api.tiles.mapbox.com",
-      "ip": "108.138.247.186",
+      "ip": "13.226.137.179",
       "geoip": {
         "continent": {
           "code": "NA",
