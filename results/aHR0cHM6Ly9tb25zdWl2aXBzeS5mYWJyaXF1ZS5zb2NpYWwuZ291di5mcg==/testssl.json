@@ -132,6 +132,13 @@
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
               "id"           : "cipherorder_TLSv1_2",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -353,7 +360,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "64 >= 30 days"
+              "finding"      : "57 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +556,14 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1665889066"
+              "finding"      : "1666493332"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1140,6 +1147,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "139"
           }
 ]
