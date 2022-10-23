@@ -132,6 +132,13 @@
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
               "id"           : "cipherorder_TLSv1_2",
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -353,7 +360,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "69 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +563,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1665888397"
+              "finding"      : "1666492617"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1140,6 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "95"
+              "finding"      : "140"
           }
 ]
