@@ -3,14 +3,6 @@
     {
       "type": "unknown",
       "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/array.js"
-    },
-    {
-      "type": "jQuery",
-      "url": "https://code.jquery.com/jquery-3.6.0.min.js",
-      "details": {
-        "id": "jQuery",
-        "message": "Hosts files directly"
-      }
     }
   ],
   "cookies": [
@@ -19,7 +11,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1665891613,
+      "expires": 1666496049,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -31,10 +23,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "6e947664123aa654.1665889813.",
+      "value": "897befbaaeb2092c.1666494250.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1699845013,
+      "expires": 1700449450,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -48,7 +40,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 16 Oct 2022 03:10:12 GMT",
+    "date": "Sun, 23 Oct 2022 03:04:08 GMT",
     "etag": "W/\"62c3fc72-452f\"",
     "last-modified": "Tue, 05 Jul 2022 08:55:14 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -244,60 +236,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "hostname": "code.jquery.com",
-      "ip": "69.16.175.42",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
       }
     }
   ]
