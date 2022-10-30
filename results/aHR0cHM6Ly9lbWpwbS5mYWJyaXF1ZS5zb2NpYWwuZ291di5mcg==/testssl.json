@@ -360,7 +360,7 @@
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "77 >= 30 days"
+              "finding"      : "70 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -563,7 +563,7 @@
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1666492978"
+              "finding"      : "1667097563"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1147,6 +1147,6 @@
               "ip"           : "emjpm.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "144"
+              "finding"      : "142"
           }
 ]
