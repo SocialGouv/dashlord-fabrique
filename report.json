@@ -20826,84 +20826,7 @@
     }
   },
   {
-    "404": [
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "tumeplay.fabrique.social.gouv.fr",
-          "port": null,
-          "hostname": "tumeplay.fabrique.social.gouv.fr",
-          "hash": null,
-          "search": null,
-          "query": null,
-          "pathname": "/a11y",
-          "path": "/a11y",
-          "href": "https://tumeplay.fabrique.social.gouv.fr/a11y"
-        },
-        "link": "https://tumeplay.fabrique.social.gouv.fr/a11y",
-        "line": "https://tumeplay.fabrique.social.gouv.fr/a11y",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "tumeplay.fabrique.social.gouv.fr",
-          "port": null,
-          "hostname": "tumeplay.fabrique.social.gouv.fr",
-          "hash": null,
-          "search": null,
-          "query": null,
-          "pathname": "/stats",
-          "path": "/stats",
-          "href": "https://tumeplay.fabrique.social.gouv.fr/stats"
-        },
-        "link": "https://tumeplay.fabrique.social.gouv.fr/stats",
-        "line": "https://tumeplay.fabrique.social.gouv.fr/stats",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "tumeplay.fabrique.social.gouv.fr",
-          "port": null,
-          "hostname": "tumeplay.fabrique.social.gouv.fr",
-          "hash": null,
-          "search": null,
-          "query": null,
-          "pathname": "/legal/web",
-          "path": "/legal/web",
-          "href": "https://tumeplay.fabrique.social.gouv.fr/legal/web"
-        },
-        "link": "https://tumeplay.fabrique.social.gouv.fr/legal/web",
-        "line": "https://tumeplay.fabrique.social.gouv.fr/legal/web",
-        "broken": true
-      },
-      {
-        "url": {
-          "protocol": "https:",
-          "slashes": true,
-          "auth": null,
-          "host": "tumeplay.fabrique.social.gouv.fr",
-          "port": null,
-          "hostname": "tumeplay.fabrique.social.gouv.fr",
-          "hash": null,
-          "search": null,
-          "query": null,
-          "pathname": "/confidentiality",
-          "path": "/confidentiality",
-          "href": "https://tumeplay.fabrique.social.gouv.fr/confidentiality"
-        },
-        "link": "https://tumeplay.fabrique.social.gouv.fr/confidentiality",
-        "line": "https://tumeplay.fabrique.social.gouv.fr/confidentiality",
-        "broken": true
-      }
-    ],
+    "404": [],
     "url": "https://tumeplay.fabrique.social.gouv.fr",
     "betaId": "tumeplay",
     "category": "fabrique",
@@ -21134,32 +21057,32 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2022-11-04T15:20:06Z",
-      "next_check_at": "2022-11-04T15:21:06Z",
+      "last_check_at": "2022-11-04T19:27:57Z",
+      "next_check_at": "2022-11-04T19:28:57Z",
       "mute_until": null,
       "favicon_url": "https://tumeplay.fabrique.social.gouv.fr/favicon.ico",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-11-04T15:11:10Z",
+        "tested_at": "2022-11-04T19:19:59Z",
         "expires_at": "2022-12-21T10:44:11Z",
         "valid": true,
         "error": null
       },
       "metrics": {
-        "apdex": 0.946,
+        "apdex": 0.954,
         "timings": {
           "redirect": 0,
-          "namelookup": 11,
-          "connection": 16,
+          "namelookup": 10,
+          "connection": 24,
           "handshake": 27,
-          "response": 300,
-          "total": 354
+          "response": 282,
+          "total": 343
         }
       },
       "uptimeGrade": "A",
-      "apdexGrade": "F"
+      "apdexGrade": "E"
     },
     "nmap": null,
     "dependabot": null,
@@ -21722,14 +21645,14 @@
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667575129"
+        "finding": "1667590044"
       },
       {
         "id": "HSTS_time",
@@ -22292,7 +22215,7 @@
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "163"
+        "finding": "148"
       }
     ],
     "thirdparties": {
@@ -22307,7 +22230,7 @@
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Fri, 04 Nov 2022 15:16:51 GMT",
+        "date": "Fri, 04 Nov 2022 19:25:31 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
         "vary": "Accept-Encoding",
         "x-powered-by": "Next.js"
@@ -22409,7 +22332,7 @@
         },
         {
           "hostname": "ipapi.co",
-          "ip": "172.67.69.226",
+          "ip": "104.26.9.44",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -22470,7 +22393,7 @@
       {
         "requestedUrl": "https://tumeplay.fabrique.social.gouv.fr/",
         "finalUrl": "https://tumeplay.fabrique.social.gouv.fr/",
-        "fetchTime": "2022-11-04T15:15:58.486Z",
+        "fetchTime": "2022-11-04T19:24:55.039Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -22533,53 +22456,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 6080,
+            "numericValue": 6250,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1568,
-                  "firstMeaningfulPaint": 1568,
-                  "largestContentfulPaint": 1681,
-                  "interactive": 6080,
-                  "speedIndex": 3548,
-                  "totalBlockingTime": 671,
-                  "maxPotentialFID": 275,
+                  "firstContentfulPaint": 1718,
+                  "firstMeaningfulPaint": 1718,
+                  "largestContentfulPaint": 1718,
+                  "interactive": 6250,
+                  "speedIndex": 3646,
+                  "totalBlockingTime": 696,
+                  "maxPotentialFID": 312,
                   "cumulativeLayoutShift": 0.046958306206597224,
                   "cumulativeLayoutShiftMainFrame": 0.046958306206597224,
                   "totalCumulativeLayoutShift": 0.046958306206597224,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 309821921,
+                  "observedTimeOriginTs": 259310643,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 309821921,
-                  "observedFirstPaint": 967,
-                  "observedFirstPaintTs": 310788593,
-                  "observedFirstContentfulPaint": 967,
-                  "observedFirstContentfulPaintTs": 310788593,
-                  "observedFirstContentfulPaintAllFrames": 967,
-                  "observedFirstContentfulPaintAllFramesTs": 310788593,
-                  "observedFirstMeaningfulPaint": 967,
-                  "observedFirstMeaningfulPaintTs": 310788593,
-                  "observedLargestContentfulPaint": 967,
-                  "observedLargestContentfulPaintTs": 310788593,
-                  "observedLargestContentfulPaintAllFrames": 967,
-                  "observedLargestContentfulPaintAllFramesTs": 310788593,
-                  "observedTraceEnd": 4422,
-                  "observedTraceEndTs": 314243834,
-                  "observedLoad": 1314,
-                  "observedLoadTs": 311136372,
-                  "observedDomContentLoaded": 1299,
-                  "observedDomContentLoadedTs": 311120834,
+                  "observedNavigationStartTs": 259310643,
+                  "observedFirstPaint": 1113,
+                  "observedFirstPaintTs": 260423428,
+                  "observedFirstContentfulPaint": 1113,
+                  "observedFirstContentfulPaintTs": 260423428,
+                  "observedFirstContentfulPaintAllFrames": 1113,
+                  "observedFirstContentfulPaintAllFramesTs": 260423428,
+                  "observedFirstMeaningfulPaint": 1113,
+                  "observedFirstMeaningfulPaintTs": 260423428,
+                  "observedLargestContentfulPaint": 1113,
+                  "observedLargestContentfulPaintTs": 260423428,
+                  "observedLargestContentfulPaintAllFrames": 1113,
+                  "observedLargestContentfulPaintAllFramesTs": 260423428,
+                  "observedTraceEnd": 4566,
+                  "observedTraceEndTs": 263876197,
+                  "observedLoad": 1486,
+                  "observedLoadTs": 260796866,
+                  "observedDomContentLoaded": 1469,
+                  "observedDomContentLoadedTs": 260779385,
                   "observedCumulativeLayoutShift": 0.046958306206597224,
                   "observedCumulativeLayoutShiftMainFrame": 0.046958306206597224,
                   "observedTotalCumulativeLayoutShift": 0.046958306206597224,
-                  "observedFirstVisualChange": 932,
-                  "observedFirstVisualChangeTs": 310753921,
-                  "observedLastVisualChange": 1698,
-                  "observedLastVisualChangeTs": 311519921,
-                  "observedSpeedIndex": 1103,
-                  "observedSpeedIndexTs": 310924729
+                  "observedFirstVisualChange": 1112,
+                  "observedFirstVisualChangeTs": 260422643,
+                  "observedLastVisualChange": 1862,
+                  "observedLastVisualChangeTs": 261172643,
+                  "observedSpeedIndex": 1284,
+                  "observedSpeedIndexTs": 260594742
                 },
                 {
                   "lcpInvalidated": false
@@ -22601,19 +22524,19 @@
                   "numScripts": 15,
                   "numStylesheets": 1,
                   "numFonts": 2,
-                  "numTasks": 759,
-                  "numTasksOver10ms": 8,
-                  "numTasksOver25ms": 6,
+                  "numTasks": 758,
+                  "numTasksOver10ms": 9,
+                  "numTasksOver25ms": 5,
                   "numTasksOver50ms": 3,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.2890000000000157,
-                  "throughput": 4149449.6195272706,
-                  "maxRtt": 149.132,
-                  "maxServerLatency": 162.691,
-                  "totalByteWeight": 392276,
-                  "totalTaskTime": 524.6809999999995,
-                  "mainDocumentTransferSize": 27805
+                  "rtt": 1.9249999999999998,
+                  "throughput": 4486386.221929895,
+                  "maxRtt": 148.78400000000002,
+                  "maxServerLatency": 166.29299999999998,
+                  "totalByteWeight": 391523,
+                  "totalTaskTime": 541.2229999999987,
+                  "mainDocumentTransferSize": 27919
                 }
               ]
             }
@@ -22639,13 +22562,8 @@
         "slug": "ml",
         "mention": "Mentions légales",
         "maxScore": 4,
-        "score": 0,
-        "missingWords": [
-          "directeur (ou) directrice",
-          "publication",
-          "hébergeur (ou) hébergement",
-          "éditeur (ou) édité par (ou) editeur (ou) edité par"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
         "declarationUrl": "https://tumeplay.fabrique.social.gouv.fr/legal/web"
       },
@@ -22653,11 +22571,10 @@
         "slug": "pc",
         "mention": "Données personnelles",
         "maxScore": 4,
-        "score": 1,
+        "score": 2,
         "missingWords": [
           "finalité",
-          "durée de conservation",
-          "sous-traitants (ou) sous traitants"
+          "durée de conservation"
         ],
         "missingTrackers": [],
         "declarationUrl": "https://tumeplay.fabrique.social.gouv.fr/confidentiality"
@@ -22724,10 +22641,10 @@
       }
     ],
     "summary": {
-      "404": 4,
+      "404": "A+",
       "httpGrade": "D+",
-      "apdex": 0.946,
-      "apdexGrade": "F",
+      "apdex": 0.954,
+      "apdexGrade": "E",
       "uptime": 99.991,
       "uptimeGrade": "A",
       "testsslExpireSoon": false,
@@ -22749,7 +22666,7 @@
       "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "C",
-      "declaration-rgpd-ml": "D",
+      "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "D",
       "ecoindexGrade": "B"
     }
