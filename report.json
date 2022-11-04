@@ -21057,32 +21057,32 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2022-11-04T19:27:57Z",
-      "next_check_at": "2022-11-04T19:28:57Z",
+      "last_check_at": "2022-11-04T20:39:38Z",
+      "next_check_at": "2022-11-04T20:40:37Z",
       "mute_until": null,
       "favicon_url": "https://tumeplay.fabrique.social.gouv.fr/favicon.ico",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-11-04T19:19:59Z",
+        "tested_at": "2022-11-04T20:39:39Z",
         "expires_at": "2022-12-21T10:44:11Z",
         "valid": true,
         "error": null
       },
       "metrics": {
-        "apdex": 0.954,
+        "apdex": 0.945,
         "timings": {
           "redirect": 0,
-          "namelookup": 10,
-          "connection": 24,
-          "handshake": 27,
-          "response": 282,
-          "total": 343
+          "namelookup": 13,
+          "connection": 16,
+          "handshake": 26,
+          "response": 295,
+          "total": 350
         }
       },
       "uptimeGrade": "A",
-      "apdexGrade": "E"
+      "apdexGrade": "F"
     },
     "nmap": null,
     "dependabot": null,
@@ -21645,14 +21645,14 @@
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667590044"
+        "finding": "1667594324"
       },
       {
         "id": "HSTS_time",
@@ -22215,7 +22215,7 @@
         "ip": "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "148"
+        "finding": "147"
       }
     ],
     "thirdparties": {
@@ -22230,7 +22230,7 @@
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Fri, 04 Nov 2022 19:25:31 GMT",
+        "date": "Fri, 04 Nov 2022 20:36:54 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
         "vary": "Accept-Encoding",
         "x-powered-by": "Next.js"
@@ -22332,7 +22332,7 @@
         },
         {
           "hostname": "ipapi.co",
-          "ip": "104.26.9.44",
+          "ip": "172.67.69.226",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -22393,7 +22393,7 @@
       {
         "requestedUrl": "https://tumeplay.fabrique.social.gouv.fr/",
         "finalUrl": "https://tumeplay.fabrique.social.gouv.fr/",
-        "fetchTime": "2022-11-04T19:24:55.039Z",
+        "fetchTime": "2022-11-04T20:36:20.091Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -22456,53 +22456,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 6250,
+            "numericValue": 6521,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1718,
-                  "firstMeaningfulPaint": 1718,
-                  "largestContentfulPaint": 1718,
-                  "interactive": 6250,
-                  "speedIndex": 3646,
-                  "totalBlockingTime": 696,
-                  "maxPotentialFID": 312,
-                  "cumulativeLayoutShift": 0.046958306206597224,
-                  "cumulativeLayoutShiftMainFrame": 0.046958306206597224,
-                  "totalCumulativeLayoutShift": 0.046958306206597224,
+                  "firstContentfulPaint": 1691,
+                  "firstMeaningfulPaint": 1691,
+                  "largestContentfulPaint": 1691,
+                  "interactive": 6521,
+                  "speedIndex": 3699,
+                  "totalBlockingTime": 708,
+                  "maxPotentialFID": 306,
+                  "cumulativeLayoutShift": 0.0016717809041341147,
+                  "cumulativeLayoutShiftMainFrame": 0.0016717809041341147,
+                  "totalCumulativeLayoutShift": 0.0016717809041341147,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 259310643,
+                  "observedTimeOriginTs": 291354176,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 259310643,
-                  "observedFirstPaint": 1113,
-                  "observedFirstPaintTs": 260423428,
-                  "observedFirstContentfulPaint": 1113,
-                  "observedFirstContentfulPaintTs": 260423428,
-                  "observedFirstContentfulPaintAllFrames": 1113,
-                  "observedFirstContentfulPaintAllFramesTs": 260423428,
-                  "observedFirstMeaningfulPaint": 1113,
-                  "observedFirstMeaningfulPaintTs": 260423428,
-                  "observedLargestContentfulPaint": 1113,
-                  "observedLargestContentfulPaintTs": 260423428,
-                  "observedLargestContentfulPaintAllFrames": 1113,
-                  "observedLargestContentfulPaintAllFramesTs": 260423428,
-                  "observedTraceEnd": 4566,
-                  "observedTraceEndTs": 263876197,
-                  "observedLoad": 1486,
-                  "observedLoadTs": 260796866,
-                  "observedDomContentLoaded": 1469,
-                  "observedDomContentLoadedTs": 260779385,
-                  "observedCumulativeLayoutShift": 0.046958306206597224,
-                  "observedCumulativeLayoutShiftMainFrame": 0.046958306206597224,
-                  "observedTotalCumulativeLayoutShift": 0.046958306206597224,
-                  "observedFirstVisualChange": 1112,
-                  "observedFirstVisualChangeTs": 260422643,
-                  "observedLastVisualChange": 1862,
-                  "observedLastVisualChangeTs": 261172643,
-                  "observedSpeedIndex": 1284,
-                  "observedSpeedIndexTs": 260594742
+                  "observedNavigationStartTs": 291354176,
+                  "observedFirstPaint": 923,
+                  "observedFirstPaintTs": 292276812,
+                  "observedFirstContentfulPaint": 923,
+                  "observedFirstContentfulPaintTs": 292276812,
+                  "observedFirstContentfulPaintAllFrames": 923,
+                  "observedFirstContentfulPaintAllFramesTs": 292276812,
+                  "observedFirstMeaningfulPaint": 923,
+                  "observedFirstMeaningfulPaintTs": 292276812,
+                  "observedLargestContentfulPaint": 923,
+                  "observedLargestContentfulPaintTs": 292276812,
+                  "observedLargestContentfulPaintAllFrames": 923,
+                  "observedLargestContentfulPaintAllFramesTs": 292276812,
+                  "observedTraceEnd": 4460,
+                  "observedTraceEndTs": 295814291,
+                  "observedLoad": 1375,
+                  "observedLoadTs": 292729355,
+                  "observedDomContentLoaded": 1373,
+                  "observedDomContentLoadedTs": 292726756,
+                  "observedCumulativeLayoutShift": 0.0016717809041341147,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0016717809041341147,
+                  "observedTotalCumulativeLayoutShift": 0.0016717809041341147,
+                  "observedFirstVisualChange": 934,
+                  "observedFirstVisualChangeTs": 292288176,
+                  "observedLastVisualChange": 1900,
+                  "observedLastVisualChangeTs": 293254176,
+                  "observedSpeedIndex": 1135,
+                  "observedSpeedIndexTs": 292489467
                 },
                 {
                   "lcpInvalidated": false
@@ -22520,23 +22520,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 33,
-                  "numScripts": 15,
+                  "numRequests": 35,
+                  "numScripts": 16,
                   "numStylesheets": 1,
                   "numFonts": 2,
-                  "numTasks": 758,
+                  "numTasks": 778,
                   "numTasksOver10ms": 9,
-                  "numTasksOver25ms": 5,
-                  "numTasksOver50ms": 3,
+                  "numTasksOver25ms": 6,
+                  "numTasksOver50ms": 2,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.9249999999999998,
-                  "throughput": 4486386.221929895,
-                  "maxRtt": 148.78400000000002,
-                  "maxServerLatency": 166.29299999999998,
-                  "totalByteWeight": 391523,
-                  "totalTaskTime": 541.2229999999987,
-                  "mainDocumentTransferSize": 27919
+                  "rtt": 1.9260000000000002,
+                  "throughput": 4155778.7879756386,
+                  "maxRtt": 148.743,
+                  "maxServerLatency": 122.49899999999997,
+                  "totalByteWeight": 392185,
+                  "totalTaskTime": 565.118999999999,
+                  "mainDocumentTransferSize": 27936
                 }
               ]
             }
@@ -22571,11 +22571,8 @@
         "slug": "pc",
         "mention": "Données personnelles",
         "maxScore": 4,
-        "score": 2,
-        "missingWords": [
-          "finalité",
-          "durée de conservation"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
         "declarationUrl": "https://tumeplay.fabrique.social.gouv.fr/confidentiality"
       }
@@ -22621,21 +22618,21 @@
     "ecoindex": [
       {
         "label": "EcoIndex",
-        "value": 70
+        "value": 63
       },
       {
         "label": "Note",
-        "value": "B"
+        "value": "C"
       },
       {
         "label": "GES",
-        "value": 1.6,
+        "value": 1.74,
         "unit": "gCO2e",
-        "comment": "Pour un total de 2000 visites par mois, ceci correspond à 36km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)"
+        "comment": "Pour un total de 2000 visites par mois, ceci correspond à 39km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)"
       },
       {
         "label": "Eau",
-        "value": 2.4,
+        "value": 2.61,
         "unit": "cl",
         "comment": "Pour un total de 2000 visites par mois, ceci correspond à 1 douche"
       }
@@ -22643,8 +22640,8 @@
     "summary": {
       "404": "A+",
       "httpGrade": "D+",
-      "apdex": 0.954,
-      "apdexGrade": "E",
+      "apdex": 0.945,
+      "apdexGrade": "F",
       "uptime": 99.991,
       "uptimeGrade": "A",
       "testsslExpireSoon": false,
@@ -22667,8 +22664,8 @@
       "statsGrade": "F",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
-      "declaration-rgpd-pc": "D",
-      "ecoindexGrade": "B"
+      "declaration-rgpd-pc": "A",
+      "ecoindexGrade": "C"
     }
   },
   {
