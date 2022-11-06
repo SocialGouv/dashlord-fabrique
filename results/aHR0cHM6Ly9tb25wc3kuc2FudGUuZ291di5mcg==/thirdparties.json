@@ -1,43 +1,12 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.59.202d",
-      "value": "1",
-      "domain": "monpsy.sante.gouv.fr",
-      "path": "/",
-      "expires": 1666496814,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.59.202d",
-      "value": "caef7916de839f1d.1666495014.",
-      "domain": "monpsy.sante.gouv.fr",
-      "path": "/",
-      "expires": 1700450214,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr;font-src 'self' data:;img-src 'self' data: https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 23 Oct 2022 03:16:53 GMT",
-    "etag": "\"4dbd-P/Qkyz7LIgvr+eS+nyL7kNaXqV8\"",
+    "date": "Sun, 06 Nov 2022 02:49:49 GMT",
+    "etag": "\"4dda-KoVSR3s11+qBPhyh0RnxMiF6taY\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
