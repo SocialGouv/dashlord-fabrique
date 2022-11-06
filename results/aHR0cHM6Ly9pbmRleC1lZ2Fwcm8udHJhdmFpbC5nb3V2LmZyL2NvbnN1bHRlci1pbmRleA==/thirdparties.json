@@ -1,42 +1,11 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.11.78e9",
-      "value": "1",
-      "domain": "index-egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 1667098841,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.11.78e9",
-      "value": "6cff91c3daab3e0a.1667097041.",
-      "domain": "index-egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 1701052241,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 30 Oct 2022 02:30:39 GMT",
-    "etag": "\"b536-n40G/AbZozcz9pr1lGaPfgDM9wg\"",
+    "date": "Sun, 06 Nov 2022 02:07:57 GMT",
+    "etag": "\"15yyufmiecw11d1\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
