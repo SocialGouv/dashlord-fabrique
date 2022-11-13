@@ -213,7 +213,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -360,7 +360,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -563,7 +563,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1667702588"
+              "finding"      : "1668306837"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -619,7 +619,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-tMV5MY2e04jxzWu/2KLWfg=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-cVP6yN9ioFsQrc6VGfhQ7Q=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1482,7 +1482,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1685,7 +1685,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1667702733"
+              "finding"      : "1668306937"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1741,7 +1741,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-AKuhZyWvtGLzyPWTo4hToQ=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-JO/fkYbf3G6DcGKG+U7Fww=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -2248,6 +2248,6 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "294"
+              "finding"      : "201"
           }
 ]
