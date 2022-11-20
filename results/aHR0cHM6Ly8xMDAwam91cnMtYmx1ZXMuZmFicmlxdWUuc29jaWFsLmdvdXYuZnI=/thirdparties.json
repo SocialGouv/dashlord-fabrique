@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "1000jours-blues.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1668308457,
+      "expires": 1668914495,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.70.8ecb",
-      "value": "7d8109940ec30145.1668306658.",
+      "value": "9d331cc7272d3816.1668912696.",
       "domain": "1000jours-blues.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1702261858,
+      "expires": 1702867896,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -36,11 +36,14 @@
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 13 Nov 2022 02:30:56 GMT",
-    "etag": "\"2bf8-puXDd/LRAPL8a+5X78rI8SAU+po\"",
+    "date": "Sun, 20 Nov 2022 02:51:34 GMT",
+    "etag": "\"2bf8-e9gmE1Hh0d0wbE9mFEtERoBPkps\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-powered-by": "Next.js",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
