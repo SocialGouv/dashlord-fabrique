@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "xiti",
-      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1668911642198&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=2x34x2&lng=en-US&idp=0234027967655&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
+      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1669515749238&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=2x22x29&lng=en-US&idp=0222298192949&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
       "details": {
         "id": "xiti",
         "message": "Use hosted Matomo instance"
@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1668913442,
+      "expires": 1669517549,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "580db89009226a1a.1668911643.",
+      "value": "5f36886db88f385f.1669515750.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1702866843,
+      "expires": 1703470950,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -46,8 +46,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net https://logs1412.xiti.com *.xiti.com *.doubleclick.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false https://www.googletagmanager.com *.doubleclick.net 'unsafe-inline'; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 20 Nov 2022 02:34:01 GMT",
-    "etag": "\"38973-1sc2cLBB8phiwJJOL/g+g0yXx/s\"",
+    "date": "Sun, 27 Nov 2022 02:22:28 GMT",
+    "etag": "\"38987-JT3YI3kBfFpev6DKYGGaIYdmhiw\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-robots-tag": "all"
