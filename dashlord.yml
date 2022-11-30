@@ -38,7 +38,7 @@ urls:
       - socialgouv/archifiltre-site
       - socialgouv/archifiltre-site-v2
       - socialgouv/archifiltre-statistics
-  - url: https://egapro.travail.gouv.fr
+  - url: https://egapro.travail.gouv.fr/index-egapro
     betaId: egalite.professionnelle
     category: fabrique
     tags:
@@ -47,7 +47,7 @@ urls:
       - socialgouv/egapro
       - socialgouv/egapro-api
       - socialgouv/egapro-next
-  - url: https://egapro.travail.gouv.fr/consulter-index
+  - url: https://egapro.travail.gouv.fr/representation-equilibree
     betaId: egalite.professionnelle
     category: fabrique
     tags:
