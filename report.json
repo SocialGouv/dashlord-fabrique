@@ -2712,7 +2712,7 @@
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -3048,14 +3048,14 @@
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1669858335"
+        "finding": "1669861871"
       },
       {
         "id": "HSTS_time",
@@ -3618,7 +3618,7 @@
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "139"
+        "finding": "136"
       }
     ],
     "thirdparties": {
@@ -3629,7 +3629,7 @@
           "value": "1",
           "domain": "egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1669860037,
+          "expires": 1669863569,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -3641,10 +3641,10 @@
         },
         {
           "name": "_pk_id.11.e81b",
-          "value": "e5fee3ec3a3f7e5d.1669858238.",
+          "value": "769503d2446d4a0a.1669861770.",
           "domain": "egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1703813438,
+          "expires": 1703816970,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -3658,7 +3658,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Thu, 01 Dec 2022 01:30:36 GMT",
+        "date": "Thu, 01 Dec 2022 02:29:27 GMT",
         "etag": "W/\"637df02f-507\"",
         "last-modified": "Wed, 23 Nov 2022 10:04:31 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -3920,7 +3920,7 @@
       {
         "requestedUrl": "https://egapro.travail.gouv.fr/index-egapro",
         "finalUrl": "https://egapro.travail.gouv.fr/index-egapro",
-        "fetchTime": "2022-12-01T01:29:58.210Z",
+        "fetchTime": "2022-12-01T02:28:55.355Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -3983,53 +3983,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4560,
+            "numericValue": 5156,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1118,
-                  "firstMeaningfulPaint": 2267,
-                  "largestContentfulPaint": 4426,
-                  "interactive": 4560,
-                  "speedIndex": 4673,
-                  "totalBlockingTime": 909,
-                  "maxPotentialFID": 1034,
+                  "firstContentfulPaint": 1052,
+                  "firstMeaningfulPaint": 2196,
+                  "largestContentfulPaint": 4538,
+                  "interactive": 5156,
+                  "speedIndex": 4772,
+                  "totalBlockingTime": 1018,
+                  "maxPotentialFID": 1217,
                   "cumulativeLayoutShift": 0.2737829895019531,
                   "cumulativeLayoutShiftMainFrame": 0.2737829895019531,
                   "totalCumulativeLayoutShift": 0.2737829895019531,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 154116506,
+                  "observedTimeOriginTs": 174051920,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 154116506,
-                  "observedFirstPaint": 1390,
-                  "observedFirstPaintTs": 155506127,
-                  "observedFirstContentfulPaint": 1390,
-                  "observedFirstContentfulPaintTs": 155506127,
-                  "observedFirstContentfulPaintAllFrames": 1390,
-                  "observedFirstContentfulPaintAllFramesTs": 155506127,
-                  "observedFirstMeaningfulPaint": 1390,
-                  "observedFirstMeaningfulPaintTs": 155506127,
-                  "observedLargestContentfulPaint": 1390,
-                  "observedLargestContentfulPaintTs": 155506127,
-                  "observedLargestContentfulPaintAllFrames": 1390,
-                  "observedLargestContentfulPaintAllFramesTs": 155506127,
-                  "observedTraceEnd": 4243,
-                  "observedTraceEndTs": 158359923,
-                  "observedLoad": 1749,
-                  "observedLoadTs": 155865667,
-                  "observedDomContentLoaded": 1354,
-                  "observedDomContentLoadedTs": 155470046,
+                  "observedNavigationStartTs": 174051920,
+                  "observedFirstPaint": 1406,
+                  "observedFirstPaintTs": 175458268,
+                  "observedFirstContentfulPaint": 1406,
+                  "observedFirstContentfulPaintTs": 175458268,
+                  "observedFirstContentfulPaintAllFrames": 1406,
+                  "observedFirstContentfulPaintAllFramesTs": 175458268,
+                  "observedFirstMeaningfulPaint": 1406,
+                  "observedFirstMeaningfulPaintTs": 175458268,
+                  "observedLargestContentfulPaint": 1406,
+                  "observedLargestContentfulPaintTs": 175458268,
+                  "observedLargestContentfulPaintAllFrames": 1406,
+                  "observedLargestContentfulPaintAllFramesTs": 175458268,
+                  "observedTraceEnd": 4354,
+                  "observedTraceEndTs": 178405702,
+                  "observedLoad": 1734,
+                  "observedLoadTs": 175786182,
+                  "observedDomContentLoaded": 1372,
+                  "observedDomContentLoadedTs": 175424373,
                   "observedCumulativeLayoutShift": 0.2737829895019531,
                   "observedCumulativeLayoutShiftMainFrame": 0.2737829895019531,
                   "observedTotalCumulativeLayoutShift": 0.2737829895019531,
-                  "observedFirstVisualChange": 1393,
-                  "observedFirstVisualChangeTs": 155509506,
-                  "observedLastVisualChange": 2243,
-                  "observedLastVisualChangeTs": 156359506,
-                  "observedSpeedIndex": 1560,
-                  "observedSpeedIndexTs": 155676606
+                  "observedFirstVisualChange": 1407,
+                  "observedFirstVisualChangeTs": 175458920,
+                  "observedLastVisualChange": 2224,
+                  "observedLastVisualChangeTs": 176275920,
+                  "observedSpeedIndex": 1567,
+                  "observedSpeedIndexTs": 175619142
                 },
                 {
                   "lcpInvalidated": false
@@ -4051,18 +4051,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 2,
-                  "numTasks": 366,
-                  "numTasksOver10ms": 5,
+                  "numTasks": 373,
+                  "numTasksOver10ms": 4,
                   "numTasksOver25ms": 1,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 115.196,
-                  "throughput": 6592872.016521827,
-                  "maxRtt": 123.60500000000002,
-                  "maxServerLatency": 2.501000000000019,
-                  "totalByteWeight": 575444,
-                  "totalTaskTime": 413.74999999999955,
+                  "rtt": 112.791,
+                  "throughput": 6764396.520942574,
+                  "maxRtt": 119.774,
+                  "maxServerLatency": 2.5539999999999736,
+                  "totalByteWeight": 575421,
+                  "totalTaskTime": 440.8850000000004,
                   "mainDocumentTransferSize": 930
                 }
               ]
@@ -4082,36 +4082,26 @@
     "trivy": null,
     "declaration-a11y": {
       "mention": "Accessibilité : partiellement conforme",
-      "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/index-egapro/a11y/declaration-accessibilite-rgaa-4-1.pdf"
+      "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/a11y/declaration-accessibilite-rgaa-4-1.pdf"
     },
     "declaration-rgpd": [
       {
         "slug": "ml",
         "mention": "Mentions légales",
         "maxScore": 4,
-        "score": 0,
-        "missingWords": [
-          "directeur (ou) directrice",
-          "publication",
-          "hébergeur (ou) hébergement",
-          "éditeur (ou) édité par (ou) editeur (ou) edité par"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
-        "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/index-egapro/mentions-legales"
+        "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/mentions-legales"
       },
       {
         "slug": "pc",
         "mention": "Politique de confidentialité",
         "maxScore": 4,
-        "score": 0,
-        "missingWords": [
-          "@",
-          "finalité",
-          "durée de conservation",
-          "sous-traitants (ou) sous traitants"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
-        "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/index-egapro/politique-confidentialite"
+        "declarationUrl": "https://egapro.travail.gouv.fr/index-egapro/politique-confidentialite"
       }
     ],
     "betagouv": {
@@ -4196,8 +4186,8 @@
       "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "B",
-      "declaration-rgpd-ml": "D",
-      "declaration-rgpd-pc": "D",
+      "declaration-rgpd-ml": "A",
+      "declaration-rgpd-pc": "A",
       "ecoindexGrade": "A"
     }
   },
@@ -4946,14 +4936,14 @@
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1669858318"
+        "finding": "1669861866"
       },
       {
         "id": "HSTS_time",
@@ -5516,7 +5506,7 @@
         "ip": "egapro.travail.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "94"
+        "finding": "131"
       }
     ],
     "thirdparties": {
@@ -5527,7 +5517,7 @@
           "value": "1",
           "domain": "egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1669860030,
+          "expires": 1669863575,
           "size": 16,
           "httpOnly": false,
           "secure": false,
@@ -5539,10 +5529,10 @@
         },
         {
           "name": "_pk_id.11.e81b",
-          "value": "c4e315a134b484b0.1669858231.",
+          "value": "c1037df338d9d4ef.1669861775.",
           "domain": "egapro.travail.gouv.fr",
           "path": "/",
-          "expires": 1703813431,
+          "expires": 1703816975,
           "size": 42,
           "httpOnly": false,
           "secure": false,
@@ -5556,7 +5546,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Thu, 01 Dec 2022 01:30:29 GMT",
+        "date": "Thu, 01 Dec 2022 02:29:34 GMT",
         "etag": "\"s4ecn53ti2121e\"",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
         "vary": "Accept-Encoding",
@@ -5801,7 +5791,7 @@
       {
         "requestedUrl": "https://egapro.travail.gouv.fr/representation-equilibree",
         "finalUrl": "https://egapro.travail.gouv.fr/representation-equilibree/",
-        "fetchTime": "2022-12-01T01:30:02.397Z",
+        "fetchTime": "2022-12-01T02:29:06.184Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://egapro.travail.gouv.fr/representation-equilibree) was redirected to https://egapro.travail.gouv.fr/representation-equilibree/. Try testing the second URL directly."
         ],
@@ -5866,53 +5856,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4041,
+            "numericValue": 4067,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1502,
-                  "firstMeaningfulPaint": 1502,
-                  "largestContentfulPaint": 1502,
-                  "interactive": 4041,
-                  "speedIndex": 1780,
-                  "totalBlockingTime": 153,
-                  "maxPotentialFID": 152,
+                  "firstContentfulPaint": 1503,
+                  "firstMeaningfulPaint": 1503,
+                  "largestContentfulPaint": 2443,
+                  "interactive": 4067,
+                  "speedIndex": 2099,
+                  "totalBlockingTime": 182,
+                  "maxPotentialFID": 206,
                   "cumulativeLayoutShift": 0.23594791666666667,
                   "cumulativeLayoutShiftMainFrame": 0.23594791666666667,
                   "totalCumulativeLayoutShift": 0.23594791666666667,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 415424237,
+                  "observedTimeOriginTs": 394747708,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 415424237,
-                  "observedFirstPaint": 746,
-                  "observedFirstPaintTs": 416170097,
-                  "observedFirstContentfulPaint": 746,
-                  "observedFirstContentfulPaintTs": 416170097,
-                  "observedFirstContentfulPaintAllFrames": 746,
-                  "observedFirstContentfulPaintAllFramesTs": 416170097,
-                  "observedFirstMeaningfulPaint": 746,
-                  "observedFirstMeaningfulPaintTs": 416170097,
-                  "observedLargestContentfulPaint": 746,
-                  "observedLargestContentfulPaintTs": 416170097,
-                  "observedLargestContentfulPaintAllFrames": 746,
-                  "observedLargestContentfulPaintAllFramesTs": 416170097,
-                  "observedTraceEnd": 3509,
-                  "observedTraceEndTs": 418933133,
-                  "observedLoad": 1195,
-                  "observedLoadTs": 416619002,
-                  "observedDomContentLoaded": 785,
-                  "observedDomContentLoadedTs": 416209480,
+                  "observedNavigationStartTs": 394747708,
+                  "observedFirstPaint": 981,
+                  "observedFirstPaintTs": 395728293,
+                  "observedFirstContentfulPaint": 981,
+                  "observedFirstContentfulPaintTs": 395728293,
+                  "observedFirstContentfulPaintAllFrames": 981,
+                  "observedFirstContentfulPaintAllFramesTs": 395728293,
+                  "observedFirstMeaningfulPaint": 981,
+                  "observedFirstMeaningfulPaintTs": 395728293,
+                  "observedLargestContentfulPaint": 981,
+                  "observedLargestContentfulPaintTs": 395728293,
+                  "observedLargestContentfulPaintAllFrames": 981,
+                  "observedLargestContentfulPaintAllFramesTs": 395728293,
+                  "observedTraceEnd": 3846,
+                  "observedTraceEndTs": 398594020,
+                  "observedLoad": 1536,
+                  "observedLoadTs": 396284017,
+                  "observedDomContentLoaded": 991,
+                  "observedDomContentLoadedTs": 395738235,
                   "observedCumulativeLayoutShift": 0.23594791666666667,
                   "observedCumulativeLayoutShiftMainFrame": 0.23594791666666667,
                   "observedTotalCumulativeLayoutShift": 0.23594791666666667,
-                  "observedFirstVisualChange": 742,
-                  "observedFirstVisualChangeTs": 416166237,
-                  "observedLastVisualChange": 909,
-                  "observedLastVisualChangeTs": 416333237,
-                  "observedSpeedIndex": 752,
-                  "observedSpeedIndexTs": 416176686
+                  "observedFirstVisualChange": 969,
+                  "observedFirstVisualChangeTs": 395716708,
+                  "observedLastVisualChange": 1136,
+                  "observedLastVisualChangeTs": 395883708,
+                  "observedSpeedIndex": 980,
+                  "observedSpeedIndexTs": 395727504
                 },
                 {
                   "lcpInvalidated": false
@@ -5934,18 +5924,18 @@
                   "numScripts": 12,
                   "numStylesheets": 4,
                   "numFonts": 3,
-                  "numTasks": 467,
-                  "numTasksOver10ms": 8,
-                  "numTasksOver25ms": 4,
+                  "numTasks": 476,
+                  "numTasksOver10ms": 4,
+                  "numTasksOver25ms": 3,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 80.256,
-                  "throughput": 7631632.941312377,
-                  "maxRtt": 83.14099999999999,
-                  "maxServerLatency": 2.244000000000028,
+                  "rtt": 111.871,
+                  "throughput": 5508452.870685021,
+                  "maxRtt": 116.312,
+                  "maxServerLatency": 2.8430000000000035,
                   "totalByteWeight": 385117,
-                  "totalTaskTime": 371.61399999999935,
+                  "totalTaskTime": 232.31099999999947,
                   "mainDocumentTransferSize": 16839
                 }
               ]
@@ -5971,29 +5961,19 @@
         "slug": "ml",
         "mention": "Mentions légales",
         "maxScore": 4,
-        "score": 0,
-        "missingWords": [
-          "directeur (ou) directrice",
-          "publication",
-          "hébergeur (ou) hébergement",
-          "éditeur (ou) édité par (ou) editeur (ou) edité par"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
-        "declarationUrl": "https://egapro.travail.gouv.fr/representation-equilibree/mentions-legales/"
+        "declarationUrl": "https://egapro.travail.gouv.fr/mentions-legales/"
       },
       {
         "slug": "pc",
         "mention": "Politique de confidentialité",
         "maxScore": 4,
-        "score": 0,
-        "missingWords": [
-          "@",
-          "finalité",
-          "durée de conservation",
-          "sous-traitants (ou) sous traitants"
-        ],
+        "score": 4,
+        "missingWords": [],
         "missingTrackers": [],
-        "declarationUrl": "https://egapro.travail.gouv.fr/representation-equilibree/politique-de-confidentialite/"
+        "declarationUrl": "https://egapro.travail.gouv.fr/politique-de-confidentialite/"
       }
     ],
     "betagouv": {
@@ -6078,8 +6058,8 @@
       "lighthouse_pwaGrade": "E",
       "statsGrade": "F",
       "declaration-a11y": "F",
-      "declaration-rgpd-ml": "D",
-      "declaration-rgpd-pc": "D",
+      "declaration-rgpd-ml": "A",
+      "declaration-rgpd-pc": "A",
       "ecoindexGrade": "B"
     }
   },
