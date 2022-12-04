@@ -269,7 +269,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "041C5BD1CC592A637AEB84D5F9DBED1CEF51"
+              "finding"      : "0481028E8D49D7CED75E73521918108E69F9"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,28 +283,28 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1113AC6083ECE2CE0CEE08648207194E04F7FC35"
+              "finding"      : "8C717E8BA62A7C7A88C2674B269FF94923D37214"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "16D49A088AAB9E32E937B5CC5FB0726FCF451834517D0792EDE05D7E2E76436B"
+              "finding"      : "3C0DD798715D44D924B24F9D6A6310E440508C20103C1C17F41096A78264CAF3"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFtDCCBJygAwIBAgISBBxb0cxZKmN664TV+dvtHO9RMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjExMTYxNDE3NDVaFw0yMzAyMTQxNDE3NDRaMCMxITAfBgNVBAMTGHd3dy5tb25wc3kuc2FudGUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ1opqTKNbSMsWqLnCcIKFL2hEX5Azm934v5av/J6YscO6FmfYtIcjeh9H8jah02JFyi71K+FcGwX+8v5hZT6hOc9V7X48CHfuaAvEWLMR98X0ltKWcVbF5bmKphTyxqoJnHBW82bnUmg6LNMmQcev63a0GtxtAzYEmo68rtwjcZtFiJEgnPZCq57/rIfdaEZBIeMfQ3Gzc1YQ+/NmEglkoLPV4THTWUrIkWWrm3Jksw/0N/AwMbbjoB8fhQEeEHAGLf1TWljvtkoHCrHCHhmaL7h2YediSs3oE9UC94BZt7suwMH9ZoQI0XA79T2PWRGyUsPkP7naR3nv3qCGEAEe0CAwEAAaOCAtEwggLNMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUvF5q0+fwQ2TTF/LtyUWf75FnI2YwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wgaEGA1UdEQSBmTCBloIccHN5LWVuZmFudC1hZG8uc2FudGUuZ291di5mcoIacHN5ZW5mYW50YWRvLnNhbnRlLmdvdXYuZnKCGHd3dy5tb25wc3kuc2FudGUuZ291di5mcoIgd3d3LnBzeS1lbmZhbnQtYWRvLnNhbnRlLmdvdXYuZnKCHnd3dy5wc3llbmZhbnRhZG8uc2FudGUuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhIEEe8oAAAQDAEYwRAIgGMrBsIYJn96QVhPUkGen1TKjeYrLgHhgeE0S7Ot8IZYCIBT1dRKjjxV9eboTncsPa18Qe3xxAcmvT+keIFlZu8tQAHYAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGEgQR78QAABAMARzBFAiBOLCtbmDg5UjMhTrgcv00K97cuMrVTUPrgJ+8WiGPipgIhAJVZoGuO+0ld7DC6FGSkBTN6aE5Z2Bm6Ku1H17xGZ9B5MA0GCSqGSIb3DQEBCwUAA4IBAQBCrre/VUH94BQW2IExGbrNsoe5PS5m7PN4xhSPA56cye97+dOKWx67+7k4uTeYvmGicru3v1b5ZJIeE6wS3A0fVW2/6JluzgEptVWCooFhItT1C/VHUx92a65zJOyXb5pJHH/8M1cqUn7YDdWkI9nqoKrSKElZDEY4QG+AG3QjOjWUYRqfodsEMjkkCnNVPS90r5d3/F0QBCNWOOAuAPVutFrp6TDVUBPqQZlvPOfgTnnwaYXSz51Z/eCErfEmfxY6ss+GeNWOux/GFHZLCQuzRIKuP8qtX0vTS82k7BE85ntL52PqIuK6J4rJ1wlUL9+Dag6157D1KGD/LMC31DuN\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFxzCCBK+gAwIBAgISBIECjo1J187XXnNSGRgQjmn5MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDIxMzEwMjhaFw0yMzAzMDIxMzEwMjdaMB8xHTAbBgNVBAMTFG1vbnBzeS5zYW50ZS5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnWimpMo1tIyxaoucJwgoUvaERfkDOb3fi/lq/8npixw7oWZ9i0hyN6H0fyNqHTYkXKLvUr4VwbBf7y/mFlPqE5z1XtfjwId+5oC8RYsxH3xfSW0pZxVsXluYqmFPLGqgmccFbzZudSaDos0yZBx6/rdrQa3G0DNgSajryu3CNxm0WIkSCc9kKrnv+sh91oRkEh4x9DcbNzVhD782YSCWSgs9XhMdNZSsiRZaubcmSzD/Q38DAxtuOgHx+FAR4QcAYt/VNaWO+2SgcKscIeGZovuHZh52JKzegT1QL3gFm3uy7Awf1mhAjRcDv1PY9ZEbJSw+Q/udpHee/eoIYQAR7QIDAQABo4IC6DCCAuQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS8XmrT5/BDZNMX8u3JRZ/vkWcjZjAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzCBtwYDVR0RBIGvMIGsghRtb25wc3kuc2FudGUuZ291di5mcoIccHN5LWVuZmFudC1hZG8uc2FudGUuZ291di5mcoIacHN5ZW5mYW50YWRvLnNhbnRlLmdvdXYuZnKCGHd3dy5tb25wc3kuc2FudGUuZ291di5mcoIgd3d3LnBzeS1lbmZhbnQtYWRvLnNhbnRlLmdvdXYuZnKCHnd3dy5wc3llbmZhbnRhZG8uc2FudGUuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhNMspBcAAAQDAEcwRQIhALv12i0kzTAXWVpB0iQCNmUK/K7LPKwX/lnkXRtCvcevAiAOFtsrlIqB3VbXLQcxi1iC0Is2HjvQUSahpoEHISbs6QB2AHoyjFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABhNMspDIAAAQDAEcwRQIhAPSEPARySYvkxBZJ1UrBsDZmS+TxevOP8mYI023k8c3eAiAHfpWd0VbwIbSYQIz4/GRAD8Bdfvb1L0maR4NOjRRrwzANBgkqhkiG9w0BAQsFAAOCAQEADwJAq0/jmFkOrlBTIo0fqqm5fSHWNgGN2Tuwzk/bWQhQucVRRxC9Zf6s6ldZKWNrMifzviYmMfPGawKD6nRZM15RrAq2PK+oQGeOYm2MNr64hvxkjsJr/ZN4NV/x+z84f89q5XT9gxvlGpR4KB1timQ/sdAzbRqIgsnmdKLb2brwFaDNyBFmh50BM0vmieid69XzC3ddViR0D0HAMFCe+HtAtlwsXR4CP2jPgATICN9JlzNjQFuzchn5o53hDqUKuCXRDG+3AgdM+RSjJP+xvKLbMKIh4fIIl0zP3CcV4ehKPw7zRtQXEhBXbdVDrWNvxJ0tTwLO2gF/Gd2DwSuMVA==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "www.monpsy.sante.gouv.fr"
+              "finding"      : "monpsy.sante.gouv.fr"
           }
 ,         {
               "id"           : "cert_commonName_wo_SNI",
@@ -318,7 +318,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "psy-enfant-ado.sante.gouv.fr psyenfantado.sante.gouv.fr www.monpsy.sante.gouv.fr www.psy-enfant-ado.sante.gouv.fr www.psyenfantado.sante.gouv.fr"
+              "finding"      : "monpsy.sante.gouv.fr psy-enfant-ado.sante.gouv.fr psyenfantado.sante.gouv.fr www.monpsy.sante.gouv.fr www.psy-enfant-ado.sante.gouv.fr www.psyenfantado.sante.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -346,21 +346,21 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "79 >= 30 days"
+              "finding"      : "88 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-11-16 14:17"
+              "finding"      : "2022-12-02 13:10"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-02-14 14:17"
+              "finding"      : "2023-03-02 13:10"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -549,7 +549,7 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1669515440"
+              "finding"      : "1670119612"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -736,7 +736,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=16D49A088AAB9E32E937B5CC5FB0726FCF451834517D0792EDE05D7E2E76436B"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=3C0DD798715D44D924B24F9D6A6310E440508C20103C1C17F41096A78264CAF3"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1112,6 +1112,6 @@
               "ip"           : "www.psyenfantado.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "97"
           }
 ]
