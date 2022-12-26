@@ -146,15 +146,6 @@ urls:
       - sante
     repositories:
       - betagouv/psy-enfant-ado
-  - url: https://sample-next-app.fabrique.social.gouv.fr
-    category: fabrique
-    tags:
-      - demo
-    repositories:
-      - socialgouv/sample-next-app
-    docker:
-      - ghcr.io/socialgouv/sample-next-app/app
-      - ghcr.io/socialgouv/sample-next-app/hasura
   - url: https://1000jours.fabrique.social.gouv.fr
     betaId: 1000.jours
     category: fabrique
