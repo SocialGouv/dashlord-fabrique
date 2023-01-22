@@ -1,21 +1,12 @@
 {
-  "trackers": [
-    {
-      "type": "xiti",
-      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1673749482882&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=2x24x42&lng=en-US&idp=0224425809682&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
-      "details": {
-        "id": "xiti",
-        "message": "Use hosted Matomo instance"
-      }
-    }
-  ],
+  "trackers": [],
   "cookies": [
     {
       "name": "_pk_ses.4.ef54",
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1673751283,
+      "expires": 1674356240,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +18,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "95193b13bb4ae611.1673749484.",
+      "value": "50c886c6372b5032.1674354440.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1707704684,
+      "expires": 1708309640,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -44,10 +35,10 @@
   "headers": {
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
-    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net https://logs1412.xiti.com *.xiti.com; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
+    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Jan 2023 02:24:42 GMT",
-    "etag": "\"38ff2-JAddMUInyW+EjZXq4hOafBi3fMY\"",
+    "date": "Sun, 22 Jan 2023 02:27:18 GMT",
+    "etag": "\"395e1-kDWt5nvtJuuygI4lKZd2qUEm2ss\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-robots-tag": "all"
@@ -145,60 +136,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "hostname": "logs1412.xiti.com",
-      "ip": "18.155.184.60",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
       }
     }
   ]
