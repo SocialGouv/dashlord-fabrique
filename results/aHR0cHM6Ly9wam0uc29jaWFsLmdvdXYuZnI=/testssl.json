@@ -269,7 +269,7 @@
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03F816FEF1B31F10F879A2C31A56679A4B9B"
+              "finding"      : "03F85C352AB23CCDD9E3FFA5B6E6F01F6ED4"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "229F5998EE868A5D57714F49CB8B537E8F7D334E"
+              "finding"      : "AE42D119C43F0984C898A6A81DE7FF0326DA023E"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "92E2048E241FAF60BAAE2244B30806DB5AB3DE02472297FE5CB40E117A072673"
+              "finding"      : "4509AE5974E289C3B65EDD4925FD63B89237794BBF6133FCA6F3FBF4B4CAFAE7"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFKTCCBBGgAwIBAgISA/gW/vGzHxD4eaLDGlZnmkubMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjExMTgwMjQxMDJaFw0yMzAyMTYwMjQxMDFaMB0xGzAZBgNVBAMTEnBqbS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALtoOZfZ7DAUAthwUOpsfTXs+hg0OptZeR2vl3TfI4c5ibGLU81KCPvgoZpJ4nW4baKXUfVfHjhLhwQ9ZxcTrPQXicyDv4XR1+iPjbixqgkRDHw+d2Cb0UzYAdOz2ao+5wFP5Z2L+/VPaCGinWTymaWuECmFhjCGEmVA4bYGakN9z3ok2eWKbdTm81rgnR83OeDjWvkVn6fcY1XwISHpyTEjXV9xGrmpSlVMCTu8scxmO+KV3ATTgg/26Xq4B7//QczsR8vqaqpD3V8URBI1WDuEbivYFaqzuBg/K2DogNwEULP9tQ0ID4sVZSJPrFRF45gr737Cdn2AwOzAlQR7vIUCAwEAAaOCAkwwggJIMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU9iMqaYC6y1Z/qj2wa8iriofniHswHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wHQYDVR0RBBYwFIIScGptLnNvY2lhbC5nb3V2LmZyMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXttJkAAAGEiNNU/gAABAMARzBFAiAniquTDvh2mSYb4/Y4e9QpYWdTNcBPJjO2hmMj4wcS6QIhAP09CeCDbD3TGJjcYpQTlA/osoUBQ+xcwjlG4xIFA+E5AHUAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGEiNNXEwAABAMARjBEAiBVjxQH7miBL1FI2N/Y0B5D0PXWRvYEubT087H1qTr2/QIgHpCeg0t+cB/Ljui6cJvsiK5SZTuXlBu0tXXFfOaxGrkwDQYJKoZIhvcNAQELBQADggEBAD81R7JdzJKtXOC6ISL8VWMCEuobbW7CtLjmIVe8mDDnK6RCTQ+ptVKfDysyemN4dQ/TjPi1vMb8p00R2Uf5pVXe8AZt8FcrEwFcHSj7kmuUmQphseCqbUpqqTzwkw9RKdocxMrhX8eHA5f7l48NxfSDuGe31MYlcmqeckKjpcT9V/MoxUWrUKcseomFQjqPFX7JxR4QnVPHorqmeXBp5v5p6/JO1/lTDmd+yJvvKm/bFrL+1zWjAEzObQwnd2wWUwjQslz/O5GkUjJ72LQThjUfB/tDvR9SQJ8ti9/AeQbnwjxE/fDdkulRrb3x1C0cF6TQvlEmEq9Pa/FqIH05njU=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFKjCCBBKgAwIBAgISA/hcNSqyPM3Z4/+ltubwH27UMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAxMTcwMTQxMjRaFw0yMzA0MTcwMTQxMjNaMB0xGzAZBgNVBAMTEnBqbS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALtoOZfZ7DAUAthwUOpsfTXs+hg0OptZeR2vl3TfI4c5ibGLU81KCPvgoZpJ4nW4baKXUfVfHjhLhwQ9ZxcTrPQXicyDv4XR1+iPjbixqgkRDHw+d2Cb0UzYAdOz2ao+5wFP5Z2L+/VPaCGinWTymaWuECmFhjCGEmVA4bYGakN9z3ok2eWKbdTm81rgnR83OeDjWvkVn6fcY1XwISHpyTEjXV9xGrmpSlVMCTu8scxmO+KV3ATTgg/26Xq4B7//QczsR8vqaqpD3V8URBI1WDuEbivYFaqzuBg/K2DogNwEULP9tQ0ID4sVZSJPrFRF45gr737Cdn2AwOzAlQR7vIUCAwEAAaOCAk0wggJJMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU9iMqaYC6y1Z/qj2wa8iriofniHswHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wHQYDVR0RBBYwFIIScGptLnNvY2lhbC5nb3V2LmZyMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXttJkAAAGFvZpM0gAABAMARzBFAiAUx2bueGR1kj3qnhvgTy0pMiSki6kbMUlkB26JxxLz3QIhAJpKKMFFYuepTypfEEvsrs73x02jq22j/8B/1WXs6U7HAHYAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGFvZpM4gAABAMARzBFAiEA0XiIhy//c9+E7K98AfFbwlz6OQAI9xbVLeJ7xrFSQRsCIGxkZ0HeQNYTuXgc7RHKcl7eeqLBKnba5dtrcqQKWXEpMA0GCSqGSIb3DQEBCwUAA4IBAQCIm5rjcgOAOZNiVUy8bi8+0ar23alLwwsxHBk0hh+U6uLsF5a/oDEYOU8/Aq6l0UqlLFuUzi9jiaXe7NQcXfQ74dpz0tk9q/jNhjdV1R3XeJhHDi5RXSqcLgHrm4XZXJa5Jp/aJEIza+Anv60TCHgyqkcRsfdOxcDA5jSZqHUGNKhw5h0QDSz1h0OZwP5JVaUhS/EPVogxRWybYxhfwdyHCzTZ4DkUv24LUzZ9rCrF7sm0VlLpFCGBN62F2+v1AYmWsMDtAX+gYn121pTPJTQhsMe4B+V8Felg/4/DKS/umKRYIZtz/cbBMpwOrFCH/1AoeJTJGEYgU9P2xMD8RnU4\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "finding"      : "84 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-11-18 02:41"
+              "finding"      : "2023-01-17 01:41"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-02-16 02:41"
+              "finding"      : "2023-04-17 01:41"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,14 +542,14 @@
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1673748181"
+              "finding"      : "1674353977"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -750,7 +750,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=92E2048E241FAF60BAAE2244B30806DB5AB3DE02472297FE5CB40E117A072673"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=4509AE5974E289C3B65EDD4925FD63B89237794BBF6133FCA6F3FBF4B4CAFAE7"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1126,6 +1126,6 @@
               "ip"           : "pjm.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "131"
+              "finding"      : "137"
           }
 ]
