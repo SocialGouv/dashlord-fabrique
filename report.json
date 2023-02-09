@@ -8434,7 +8434,7 @@
     "http": {
       "url": "https://domifa.fabrique.social.gouv.fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 05 Feb 2023 00:59:51 GMT",
+      "end_time": "Thu, 09 Feb 2023 09:47:42 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -8442,7 +8442,7 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 05 Feb 2023 00:59:49 GMT",
+        "Date": "Thu, 09 Feb 2023 09:47:41 GMT",
         "ETag": "W/\"63d85077-17f5\"",
         "Last-Modified": "Mon, 30 Jan 2023 23:19:19 GMT",
         "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
@@ -8452,9 +8452,9 @@
         "X-Frame-Options": "deny",
         "X-XSS-Protection": "1; mode=block"
       },
-      "scan_id": 33831337,
+      "scan_id": 34072783,
       "score": 75,
-      "start_time": "Sun, 05 Feb 2023 00:59:47 GMT",
+      "start_time": "Thu, 09 Feb 2023 09:47:37 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 1,
@@ -8646,15 +8646,15 @@
         "email:2246472474",
         "slack_compatible:1582935580"
       ],
-      "last_check_at": "2023-02-05T01:54:06Z",
-      "next_check_at": "2023-02-05T01:55:05Z",
+      "last_check_at": "2023-02-09T09:50:30Z",
+      "next_check_at": "2023-02-09T09:51:30Z",
       "mute_until": null,
       "favicon_url": "https://domifa.fabrique.social.gouv.fr/assets/favicon/favicon-32x32.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2023-02-05T01:53:06Z",
+        "tested_at": "2023-02-09T09:50:30Z",
         "expires_at": "2023-03-29T07:02:31Z",
         "valid": true,
         "error": null
@@ -8663,11 +8663,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 14,
-          "connection": 13,
-          "handshake": 19,
-          "response": 14,
-          "total": 60
+          "namelookup": 15,
+          "connection": 15,
+          "handshake": 21,
+          "response": 16,
+          "total": 66
         }
       },
       "uptimeGrade": "A",
@@ -8795,7 +8795,7 @@
         "finding": "not offered"
       },
       {
-        "id": "cipherlist_AVERAGE",
+        "id": "cipherlist_OBSOLETED",
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
@@ -8803,14 +8803,14 @@
         "finding": "not offered"
       },
       {
-        "id": "cipherlist_GOOD",
+        "id": "cipherlist_STRONG_NOFS",
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
-        "id": "cipherlist_STRONG",
+        "id": "cipherlist_STRONG_FS",
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
@@ -9031,7 +9031,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "OK",
-        "finding": "52 >= 30 days"
+        "finding": "47 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -9234,7 +9234,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "1675562039"
+        "finding": "1675936200"
       },
       {
         "id": "HSTS_time",
@@ -9811,7 +9811,7 @@
         "ip": "domifa.fabrique.social.gouv.fr/20.74.14.77",
         "port": "443",
         "severity": "INFO",
-        "finding": "96"
+        "finding": "138"
       }
     ],
     "thirdparties": {
@@ -9820,7 +9820,7 @@
       "headers": {
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 05 Feb 2023 01:52:28 GMT",
+        "date": "Thu, 09 Feb 2023 09:48:16 GMT",
         "etag": "W/\"63d85077-17f5\"",
         "last-modified": "Mon, 30 Jan 2023 23:19:19 GMT",
         "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -9952,6 +9952,24 @@
           "rootPath": true
         },
         {
+          "slug": "magento",
+          "name": "Magento",
+          "description": "Magento is an open-source ecommerce platform written in PHP.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Magento.svg",
+          "website": "https://magento.com",
+          "cpe": "cpe:2.3:a:magento:magento:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 6,
+              "slug": "ecommerce",
+              "name": "Ecommerce"
+            }
+          ],
+          "rootPath": true
+        },
+        {
           "slug": "sentry",
           "name": "Sentry",
           "description": "Sentry is an open-source platform for workflow productivity, aggregating errors from across the stack in real time.",
@@ -9978,6 +9996,40 @@
           "icon": "TypeScript.svg",
           "website": "https://www.typescriptlang.org",
           "cpe": null,
+          "categories": [
+            {
+              "id": 27,
+              "slug": "programming-languages",
+              "name": "Programming languages"
+            }
+          ]
+        },
+        {
+          "slug": "mysql",
+          "name": "MySQL",
+          "description": "MySQL is an open-source relational database management system.",
+          "confidence": 100,
+          "version": null,
+          "icon": "MySQL.svg",
+          "website": "http://mysql.com",
+          "cpe": "cpe:2.3:a:mysql:mysql:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 34,
+              "slug": "databases",
+              "name": "Databases"
+            }
+          ]
+        },
+        {
+          "slug": "php",
+          "name": "PHP",
+          "description": "PHP is a general-purpose scripting language used for web development.",
+          "confidence": 100,
+          "version": null,
+          "icon": "PHP.svg",
+          "website": "http://php.net",
+          "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
           "categories": [
             {
               "id": 27,
@@ -10171,7 +10223,7 @@
       {
         "requestedUrl": "https://domifa.fabrique.social.gouv.fr/",
         "finalUrl": "https://domifa.fabrique.social.gouv.fr/",
-        "fetchTime": "2023-02-05T01:51:56.167Z",
+        "fetchTime": "2023-02-09T09:47:20.907Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -10234,53 +10286,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5036,
+            "numericValue": 4959,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3640,
-                  "firstMeaningfulPaint": 4166,
-                  "largestContentfulPaint": 4091,
-                  "interactive": 5036,
-                  "speedIndex": 4596,
-                  "totalBlockingTime": 987,
-                  "maxPotentialFID": 999,
-                  "cumulativeLayoutShift": 0.6876106122334797,
-                  "cumulativeLayoutShiftMainFrame": 0.6876106122334797,
-                  "totalCumulativeLayoutShift": 0.6876106122334797,
+                  "firstContentfulPaint": 3608,
+                  "firstMeaningfulPaint": 4133,
+                  "largestContentfulPaint": 3833,
+                  "interactive": 4959,
+                  "speedIndex": 5075,
+                  "totalBlockingTime": 1101,
+                  "maxPotentialFID": 1131,
+                  "cumulativeLayoutShift": 0.15806624497307672,
+                  "cumulativeLayoutShiftMainFrame": 0.15806624497307672,
+                  "totalCumulativeLayoutShift": 0.15806624497307672,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 270141180,
+                  "observedTimeOriginTs": 309866162,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 270141180,
-                  "observedFirstPaint": 1196,
-                  "observedFirstPaintTs": 271337232,
-                  "observedFirstContentfulPaint": 1196,
-                  "observedFirstContentfulPaintTs": 271337232,
-                  "observedFirstContentfulPaintAllFrames": 1196,
-                  "observedFirstContentfulPaintAllFramesTs": 271337232,
-                  "observedFirstMeaningfulPaint": 1418,
-                  "observedFirstMeaningfulPaintTs": 271559219,
-                  "observedLargestContentfulPaint": 1298,
-                  "observedLargestContentfulPaintTs": 271438989,
-                  "observedLargestContentfulPaintAllFrames": 1298,
-                  "observedLargestContentfulPaintAllFramesTs": 271438989,
-                  "observedTraceEnd": 5118,
-                  "observedTraceEndTs": 275259350,
-                  "observedLoad": 1408,
-                  "observedLoadTs": 271549262,
-                  "observedDomContentLoaded": 1165,
-                  "observedDomContentLoadedTs": 271306272,
-                  "observedCumulativeLayoutShift": 0.6876106122334797,
-                  "observedCumulativeLayoutShiftMainFrame": 0.6876106122334797,
-                  "observedTotalCumulativeLayoutShift": 0.6876106122334797,
-                  "observedFirstVisualChange": 1197,
-                  "observedFirstVisualChangeTs": 271338180,
-                  "observedLastVisualChange": 1431,
-                  "observedLastVisualChangeTs": 271572180,
-                  "observedSpeedIndex": 1291,
-                  "observedSpeedIndexTs": 271432309
+                  "observedNavigationStartTs": 309866162,
+                  "observedFirstPaint": 1674,
+                  "observedFirstPaintTs": 311540436,
+                  "observedFirstContentfulPaint": 1674,
+                  "observedFirstContentfulPaintTs": 311540436,
+                  "observedFirstContentfulPaintAllFrames": 1674,
+                  "observedFirstContentfulPaintAllFramesTs": 311540436,
+                  "observedFirstMeaningfulPaint": 1942,
+                  "observedFirstMeaningfulPaintTs": 311807771,
+                  "observedLargestContentfulPaint": 1674,
+                  "observedLargestContentfulPaintTs": 311540436,
+                  "observedLargestContentfulPaintAllFrames": 1674,
+                  "observedLargestContentfulPaintAllFramesTs": 311540436,
+                  "observedTraceEnd": 5893,
+                  "observedTraceEndTs": 315759655,
+                  "observedLoad": 1921,
+                  "observedLoadTs": 311787521,
+                  "observedDomContentLoaded": 1613,
+                  "observedDomContentLoadedTs": 311479465,
+                  "observedCumulativeLayoutShift": 0.15806624497307672,
+                  "observedCumulativeLayoutShiftMainFrame": 0.15806624497307672,
+                  "observedTotalCumulativeLayoutShift": 0.15806624497307672,
+                  "observedFirstVisualChange": 1671,
+                  "observedFirstVisualChangeTs": 311537162,
+                  "observedLastVisualChange": 1954,
+                  "observedLastVisualChangeTs": 311820162,
+                  "observedSpeedIndex": 1728,
+                  "observedSpeedIndexTs": 311593702
                 },
                 {
                   "lcpInvalidated": false
@@ -10302,18 +10354,18 @@
                   "numScripts": 3,
                   "numStylesheets": 1,
                   "numFonts": 3,
-                  "numTasks": 1262,
-                  "numTasksOver10ms": 9,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 2,
+                  "numTasks": 1369,
+                  "numTasksOver10ms": 7,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 102.98400000000001,
-                  "throughput": 12545285.20841255,
-                  "maxRtt": 123.176,
-                  "maxServerLatency": 1330.505,
-                  "totalByteWeight": 944580,
-                  "totalTaskTime": 993.728000000004,
+                  "rtt": 140.558,
+                  "throughput": 10066625.903024565,
+                  "maxRtt": 148.54799999999994,
+                  "maxServerLatency": 1533.611,
+                  "totalByteWeight": 944588,
+                  "totalTaskTime": 1089.4809999999934,
                   "mainDocumentTransferSize": 2380
                 }
               ]
@@ -10324,9 +10376,9 @@
     ],
     "screenshot": true,
     "stats": {
-      "grade": "C",
+      "grade": "A",
       "url": "https://domifa.fabrique.social.gouv.fr",
-      "uri": ""
+      "uri": "stats"
     },
     "github_repository": null,
     "budget_page": null,
@@ -10361,7 +10413,7 @@
       "attributes": {
         "name": "DomiFa",
         "pitch": "Faciliter l'accès aux droits pour les personnes sans domicile stable, en simplifiant la gestion de la domiciliation",
-        "stats_url": "https://domifa.fabrique.social.gouv.fr",
+        "stats_url": "https://domifa.fabrique.social.gouv.fr/stats",
         "link": "https://domifa.fabrique.social.gouv.fr",
         "repository": "https://github.com/SocialGouv/domifa",
         "contact": "contact.domifa@fabrique.social.gouv.fr",
@@ -10445,7 +10497,7 @@
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.8,
       "lighthouse_pwaGrade": "B",
-      "statsGrade": "C",
+      "statsGrade": "A",
       "declaration-a11y": "C",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "A",
