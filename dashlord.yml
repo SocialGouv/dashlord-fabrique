@@ -124,21 +124,6 @@ urls:
       - socialgouv/emjpm-portail
     docker:
       - ghcr.io/socialgouv/emjpm-portail/app
-  - url: https://tumeplay.fabrique.social.gouv.fr
-    betaId: tumeplay
-    category: fabrique
-    tags:
-      - sante
-    repositories:
-      - socialgouv/tumeplay
-    docker:
-      - ghcr.io/socialgouv/tumeplay/backend
-      - ghcr.io/socialgouv/tumeplay/frontend-guyane
-      - ghcr.io/socialgouv/tumeplay/frontend-metropole
-      - ghcr.io/socialgouv/tumeplay/dashboard
-      - ghcr.io/socialgouv/tumeplay/tumeplay-app-guyane
-      - ghcr.io/socialgouv/tumeplay/tumeplay-app-metropole
-      - ghcr.io/socialgouv/tumeplay/tumeplay-strapi
   - url: https://www.psyenfantado.sante.gouv.fr
     betaId: psyenfantado
     category: fabrique
