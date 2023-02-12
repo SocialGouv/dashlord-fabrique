@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~179 ciphers]
- on fv-az566-316:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az247-561:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-02-05 02:03:48        --&gt;&gt; 20.74.14.77:443 (ozensemble.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-02-12 02:02:20        --&gt;&gt; 20.74.14.77:443 (ozensemble.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>039C5376CE773135C6D2B5548A717A3686DB (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F8350A1DB3F2CBFB6430E0B5B4136A1D3306EC3C
-                              SHA256 D4771830D76485D9B72FE6D26726E31F595C08B5819581BE855A2B1D0B747571
+<span style="font-weight:bold;"> Serial                       </span>03970722A4CE620FB918712299654FD278E1 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 D10ACEEF8C5BBBF9D74F6BD992E11CDA229FB922
+                              SHA256 83491D1C7A7D1894E83B3B6FD3F3DABF324A79E2F17817B3E5143F315F08E24E
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>ozensemble.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>ozensemble.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">36 &gt;= 30 days</span> (2022-12-13 15:58 --&gt; 2023-03-13 15:58)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">89 &gt;= 30 days</span> (2023-02-11 14:58 --&gt; 2023-05-12 14:58)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -152,7 +152,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D4771830D76485D9B72FE6D26726E31F595C08B5819581BE855A2B1D0B747571" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D4771830D76485D9B72FE6D26726E31F595C08B5819581BE855A2B1D0B747571</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=83491D1C7A7D1894E83B3B6FD3F3DABF324A79E2F17817B3E5143F315F08E24E" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=83491D1C7A7D1894E83B3B6FD3F3DABF324A79E2F17817B3E5143F315F08E24E</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -211,7 +211,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-02-05 02:05:17 [  91s] --&gt;&gt; 20.74.14.77:443 (ozensemble.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-02-12 02:04:28 [ 129s] --&gt;&gt; 20.74.14.77:443 (ozensemble.fr) &lt;&lt;--</span>
 
 
 </pre>
