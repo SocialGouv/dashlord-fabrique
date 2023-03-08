@@ -38,6 +38,11 @@ urls:
       - socialgouv/archifiltre-site
       - socialgouv/archifiltre-site-v2
       - socialgouv/archifiltre-statistics
+    docker:
+      - ghcr.io/socialgouv/archifiltre/archifiltre-site
+      - harbor.fabrique.social.gouv.fr/archifiltre/archifiltre-site-v2/app
+      - ghcr.io/socialgouv/archifiltre/archifiltre-statistics
+
   - url: https://egapro.travail.gouv.fr/index-egapro
     betaId: egalite.professionnelle
     category: fabrique
@@ -47,6 +52,13 @@ urls:
       - socialgouv/egapro
       - socialgouv/egapro-api
       - socialgouv/egapro-next
+    docker:
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/app
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/api
+      - ghcr.io/socialgouv/docker/nginx:7.0.1
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/simulateur
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/storybook
+
   - url: https://egapro.travail.gouv.fr/representation-equilibree
     betaId: egalite.professionnelle
     category: fabrique
@@ -54,6 +66,9 @@ urls:
       - travail
     repositories:
       - socialgouv/egapro-declaration
+    docker:
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/declaration
+
   - url: https://code.travail.gouv.fr
     betaId: codedutravail
     category: fabrique
@@ -65,6 +80,7 @@ urls:
     docker:
       - ghcr.io/socialgouv/cdtn/code-du-travail-api
       - ghcr.io/socialgouv/cdtn/code-du-travail-frontend
+
   - url: https://domifa.fabrique.social.gouv.fr
     betaId: domifa
     category: fabrique
@@ -73,8 +89,29 @@ urls:
     repositories:
       - socialgouv/domifa
     docker:
-      - ghcr.io/socialgouv/domifa/frontend
-      - ghcr.io/socialgouv/domifa/backend
+      - harbor.fabrique.social.gouv.fr/domifa/domifa/frontend
+      - harbor.fabrique.social.gouv.fr/domifa/domifa/backend
+
+  - url: https://mon-domifa.fabrique.social.gouv.fr
+    betaId: domifa
+    category: fabrique
+    tags:
+      - social
+    repositories:
+      - socialgouv/domifa
+    docker:
+      - harbor.fabrique.social.gouv.fr/domifa/domifa/portail-usagers
+
+  - url: https://admin-domifa.fabrique.social.gouv.fr
+    betaId: domifa
+    category: fabrique
+    tags:
+      - social
+    repositories:
+      - socialgouv/domifa
+    docker:
+      - harbor.fabrique.social.gouv.fr/domifa/domifa/portail-admins
+
   - url: https://emjpm.fabrique.social.gouv.fr
     betaId: e-mjpm
     category: fabrique
@@ -82,39 +119,11 @@ urls:
       - social
     repositories:
       - socialgouv/emjpm
-  - url: https://www.fabrique.social.gouv.fr
-    category: fabrique
-    pages:
-      - /actus
-      - /members
-    tags:
-      - social
-      - sante
-      - travail
-    repositories:
-      - socialgouv/www
     docker:
-      - ghcr.io/socialgouv/www/app
-  - url: https://monsuivipsy.fabrique.social.gouv.fr
-    betaId: monsuivipsy
-    category: fabrique
-    tags:
-      - sante
-    repositories:
-      - socialgouv/monsuivipsy
-      - socialgouv/monsuivipsy-site
-    docker:
-      - ghcr.io/socialgouv/monsuivipsy-site/app
-  - url: https://ozensemble.fr
-    betaId: ozensemble
-    category: fabrique
-    tags:
-      - sante
-    repositories:
-      - socialgouv/ozensemble
-      - socialgouv/ozensemble-site
-    docker:
-      - ghcr.io/socialgouv/ozensemble-site/app
+      - harbor.fabrique.social.gouv.fr/emjpm/app
+      - harbor.fabrique.social.gouv.fr/emjpm/api
+      - harbor.fabrique.social.gouv.fr/emjpm/hasura
+
   - url: https://pjm.social.gouv.fr
     betaId: e-mjpm
     category: fabrique
@@ -124,13 +133,64 @@ urls:
       - socialgouv/emjpm-portail
     docker:
       - ghcr.io/socialgouv/emjpm-portail/app
-  - url: https://www.psyenfantado.sante.gouv.fr
-    betaId: psyenfantado
+
+  - url: https://www.fabrique.social.gouv.fr
+    category: fabrique
+    tags:
+      - social
+      - sante
+      - travail
+    repositories:
+      - socialgouv/www
+    docker:
+      - ghcr.io/socialgouv/www/app
+
+  - url: https://monsuivipsy.fabrique.social.gouv.fr
+    betaId: monsuivipsy
     category: fabrique
     tags:
       - sante
     repositories:
-      - betagouv/psy-enfant-ado
+      - socialgouv/monsuivipsy
+      - socialgouv/monsuivipsy-site
+    docker:
+      - ghcr.io/socialgouv/monsuivipsy/app
+      - ghcr.io/socialgouv/monsuivipsy-site/app
+
+  - url: https://ozensemble.fr
+    betaId: ozensemble
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/ozensemble
+      - socialgouv/ozensemble-site
+    docker:
+      - ghcr.io/socialgouv/ozensemble/app
+      - ghcr.io/socialgouv/ozensemble-site/app
+
+  - url: https://tumeplay.fabrique.social.gouv.fr
+    betaId: tumeplay
+    category: fabrique
+    tags:
+      - sante
+    repositories:
+      - socialgouv/tumeplay
+    docker:
+      - ghcr.io/socialgouv/tumeplay/backend
+      - ghcr.io/socialgouv/tumeplay/frontend-guyane
+      - ghcr.io/socialgouv/tumeplay/frontend-metropole
+      - ghcr.io/socialgouv/tumeplay/dashboard
+      - ghcr.io/socialgouv/tumeplay/frontend-aime:prod
+
+  #  - url: https://www.psyenfantado.sante.gouv.fr
+  #    betaId: psyenfantado
+  #    category: fabrique
+  #    tags:
+  #     - sante
+  #   repositories:
+  #     - betagouv/psy-enfant-ado
+
   - url: https://1000jours.fabrique.social.gouv.fr
     betaId: 1000.jours
     category: fabrique
@@ -140,7 +200,8 @@ urls:
       - socialgouv/nos1000jours-landing
     docker:
       - ghcr.io/socialgouv/1000jours/strapi
-      - ghcr.io/socialgouv/les1000jours-landing/app
+      - ghcr.io/socialgouv/nos1000jours-landing/app
+
   - url: https://1000jours-blues.fabrique.social.gouv.fr
     betaId: 1000.jours
     category: fabrique
@@ -150,17 +211,9 @@ urls:
       - socialgouv/nos1000jours-blues
     docker:
       - ghcr.io/socialgouv/1000jours-blues/app
-  - url: https://carnet-de-bord.fabrique.social.gouv.fr
-    betaId: carnet.de.bord
-    category: fabrique
-    tags:
-      - sante
-    repositories:
-      - socialgouv/carnet-de-bord
-    docker:
-      - ghcr.io/socialgouv/carnet-de-bord/hasura
-      - ghcr.io/socialgouv/carnet-de-bord/app
-      - ghcr.io/socialgouv/carnet-de-bord/backend
+      - ghcr.io/socialgouv/nos1000jours-blues-epds-pro/app
+      - ghcr.io/socialgouv/nos1000jours-blues-epds-widget/app
+
   - url: https://enfants-du-spectacle.fabrique.social.gouv.fr
     betaId: enfants-du-spectacle
     category: fabrique
@@ -170,6 +223,8 @@ urls:
       - socialgouv/enfants-du-spectacle
     docker:
       - ghcr.io/socialgouv/enfants-du-spectacle/app
+      - ghcr.io/socialgouv/enfants-du-spectacle/form
+
   - url: https://mano-app.fabrique.social.gouv.fr
     betaId: mano
     category: fabrique
@@ -178,18 +233,20 @@ urls:
     repositories:
       - socialgouv/mano
     docker:
+      - ghcr.io/socialgouv/mano/www
       - ghcr.io/socialgouv/mano/api
-      - ghcr.io/socialgouv/mano/website
       - ghcr.io/socialgouv/mano/dashboard
-  - url: https://monpsy.sante.gouv.fr
-    betaId: monpsy
+
+  - url: https://monparcourspsy.sante.gouv.fr
     category: fabrique
+    betaId: monpsy
     tags:
       - sante
     repositories:
       - socialgouv/mon-psy-sante
     docker:
       - ghcr.io/socialgouv/mon-psy-sante/app
+
   - url: https://ressourcerie.fabrique.social.gouv.fr
     category: fabrique
     tags:
@@ -198,6 +255,7 @@ urls:
       - socialgouv/ressourcerie
     docker:
       - ghcr.io/socialgouv/ressourcerie/app
+
   - url: https://transitions-collectives.fabrique.social.gouv.fr
     category: fabrique
     tags:
@@ -206,20 +264,7 @@ urls:
       - socialgouv/transitions-collectives
     docker:
       - ghcr.io/socialgouv/transitions-collectives/app
-  - url: https://mon-domifa.fabrique.social.gouv.fr
-    betaId: domifa
-    category: social
-    tags:
-      - social
-    docker:
-      - ghcr.io/socialgouv/domifa/portail-usagers
-  - url: https://admin-domifa.fabrique.social.gouv.fr
-    betaId: domifa
-    category: social
-    tags:
-      - social
-    docker:
-      - ghcr.io/socialgouv/domifa/portail-admins
+
   - url: https://template.fabrique.social.gouv.fr
     category: fabrique
     tags:
