@@ -117,7 +117,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
@@ -125,14 +125,14 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
@@ -353,7 +353,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "74 >= 30 days"
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +549,14 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1675562978"
+              "finding"      : "1678587219"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1119,6 +1119,6 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "105"
+              "finding"      : "102"
           }
 ]
