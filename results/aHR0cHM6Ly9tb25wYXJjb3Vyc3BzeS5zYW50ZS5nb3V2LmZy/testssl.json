@@ -1,12 +1,5 @@
 [
          {
-              "id"           : "engine_problem",
-              "ip"           : "monparcourspsy.sante.gouv.fr/",
-              "port"         : "443",
-              "severity"     : "WARN",
-              "finding"      : "No engine or GOST support via engine with your /home/testssl/bin/openssl.Linux.x86_64"
-          }
-,         {
               "id"           : "service",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -213,7 +206,7 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -276,7 +269,7 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0429F8D4A84D685FFF2A83ECD1BE7496D719"
+              "finding"      : "0382FF3FC9AEDE0DDFA4AE78BBEF471E69BF"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +283,21 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5F23F4D3738A4F91E857556C7477A7FD28CFAC04"
+              "finding"      : "2501D9BBBB6E24BD3F73545F12DD35428B3FBA2D"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "CDA1AEB6FFBFD5DE9CA1A2958393FB21748F66E76A43C7017A0B5AAC54286A51"
+              "finding"      : "BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFPjCCBCagAwIBAgISBCn41KhNaF//KoPs0b50ltcZMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAxMzExMjEwMjVaFw0yMzA1MDExMjEwMjRaMCcxJTAjBgNVBAMTHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCTTj7KC7kWYbxxrLzzyMULv0WWwilIvLybPY3YFHbgjjPjhCSLkdV7pKwNDxf13C/EUJcPu/FI909/3u7ZesXt8qUwqOnct5IF4ODkxF4AHsN2RtBXr9M041e9OalHyHtFaI+Zew9pDGXc5szUA44vsfA1gkCLhItJ9YgAWOOHjWePdmTT+Ty8FOZJz4CwKAL9bMUzh3ZWhHtAOpqPA98ue/SumDFyxee96ytmdcdQdFdcNaJneD3RjqE16ZbRTGuOZnaKOOYCX8KszKieccl7tXVBjpHnMseTe5CKVDYO//KNmPaCJcGT89GTCFmrkGY6uOaF32X998PGHF0ULwfAgMBAAGjggJXMIICUzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFChL8PG+GEVjfANiU0CMaKLACanlMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdQB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYYH8zftAAAEAwBGMEQCIHUdcCZD+mLoIyrUqFM9xOkgGUted5dYwqAkTpMMY/ATAiAdyczF0Gc+lHJ7QpmoSriLJZQIXNviPDS7TYPyvh9x+AB3AOg+0No+9QY1MudXKLyJa8kD08vREWvs62nhd31tBr1uAAABhgfzN8gAAAQDAEgwRgIhAO//bsZ6ouYPrDwlfNEUvwZaxgZzjISLScm11SD9RkykAiEA7vRIB6WtkK0fFqIQflC+84bakC9AgM8pRV/IexbzP6wwDQYJKoZIhvcNAQELBQADggEBAEXKBkk2smw7jV/xYQ8ygJ3tzcHg6wqPSV3enEy+CA4dtAVTaOb9HUQlhm1bWbFmA2uAhwWu1VVMdBMT4qfzFAspw9uQP8jjzITQVfJiiOkmwDCtXDkX6tHNG1+ckK1hHzoE4GgBEDyorMdTjvNxDOH4WSDzv9ye3mExCuO/8ZHTwPeu9x9gkgU2BnGKe0fKZiLC8ZVXVWDN/CYw3U14XUIaYw32ayJ/UhguRk6AldqYy0TnJJHKxLSeWwpp32rU9+xw2P8bf/wDoXbd/EM4T2md1Hc84FVkhLmWCdfBA3RRA+/fTLIqf/kM8R/bSlRWy5uXpmCXVCCgb+m9uJpyo/c=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFQDCCBCigAwIBAgISA4L/P8mu3g3fpK54u+9HHmm/MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA0MDExMTEwNTBaFw0yMzA2MzAxMTEwNDlaMCcxJTAjBgNVBAMTHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCTTj7KC7kWYbxxrLzzyMULv0WWwilIvLybPY3YFHbgjjPjhCSLkdV7pKwNDxf13C/EUJcPu/FI909/3u7ZesXt8qUwqOnct5IF4ODkxF4AHsN2RtBXr9M041e9OalHyHtFaI+Zew9pDGXc5szUA44vsfA1gkCLhItJ9YgAWOOHjWePdmTT+Ty8FOZJz4CwKAL9bMUzh3ZWhHtAOpqPA98ue/SumDFyxee96ytmdcdQdFdcNaJneD3RjqE16ZbRTGuOZnaKOOYCX8KszKieccl7tXVBjpHnMseTe5CKVDYO//KNmPaCJcGT89GTCFmrkGY6uOaF32X998PGHF0ULwfAgMBAAGjggJZMIICVTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFChL8PG+GEVjfANiU0CMaKLACanlMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEGBgorBgEEAdZ5AgQCBIH3BIH0APIAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYc8ujn1AAAEAwBIMEYCIQCB88KSy6Z0HNYAPON0E9DZJU55RNAaxFFLA7K1TZWX2QIhAJgkw2Wre23bM/HnyLRNU3GCxDpT3AOOcd76lzsHNEtXAHcArfe++nz/EMiLnT2cHj4YarRnKV3PsQwkyoWGNOvcgooAAAGHPLo6GQAABAMASDBGAiEA+Ag4cBS2pzP2daqnrs+lv+ZBGaYuZi8zs+upuoWVBbYCIQCFj4Xj9AyANbB7EBAJXYZ04JeT7oqvdroYC2RxCtwfPzANBgkqhkiG9w0BAQsFAAOCAQEApWBzUQV0EcRzBL7T7nW6h00mewDAqrQJofF/+BUyDUeP+ZXjHKE6HDvFKqhMskb9Iwv+oqTFUWbuTouGZDOPS3Lc/3OCQREqLVU9AgrYl32BrYJ7PWg8AikV0G5lzRj/wQm9CdP7P1jfim5ycvUmiFjzJxQ/RjTzixDirVJhzBXLW5dj6Po2OprU3gZbQqH/SZJErlqlrFLJWqAumaNbZ68y4PDUQ2MRzqM0rEreb2U/KgcKdDyZgvXaz4T2vnZlQ/40e8P8tlr7k2zoSZQ+EcIty2LRx0IZL+tnrXD0B1FRThsHGswpNJqRqG0G7VBpsN18BeQx35aWGXfrg0FnOg==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +346,21 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "36 >= 30 days"
+              "finding"      : "89 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-01-31 12:10"
+              "finding"      : "2023-04-01 11:10"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-05-01 12:10"
+              "finding"      : "2023-06-30 11:10"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +549,7 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1679798501"
+              "finding"      : "1680403580"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -743,7 +736,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=CDA1AEB6FFBFD5DE9CA1A2958393FB21748F66E76A43C7017A0B5AAC54286A51"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1119,6 +1112,6 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "61"
           }
 ]
