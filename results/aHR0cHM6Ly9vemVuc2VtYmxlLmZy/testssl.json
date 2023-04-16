@@ -269,7 +269,7 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03970722A4CE620FB918712299654FD278E1"
+              "finding"      : "040D9D3F4B1DD355DDAF2FE1B0A7E8380407"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "D10ACEEF8C5BBBF9D74F6BD992E11CDA229FB922"
+              "finding"      : "0F160A98D8C1AA8BD348C9C5353984B371ECF135"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "83491D1C7A7D1894E83B3B6FD3F3DABF324A79E2F17817B3E5143F315F08E24E"
+              "finding"      : "F390B30D99B5727BCDCEE42F6CD0337262D3DA21D363156DE5DD8A79B4D1927D"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFITCCBAmgAwIBAgISA5cHIqTOYg+5GHEimWVP0njhMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAyMTExNDU4MzNaFw0yMzA1MTIxNDU4MzJaMBgxFjAUBgNVBAMTDW96ZW5zZW1ibGUuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqTH4Hzv9grTiiSgRA96/6dycdUB0ku4loFLre2di5ZdhnKeCuqNI+cHqTO0kZiRSOOdcPnehId5hCWLN0lyVGiNcDN9c4uQoPR29WzovsE1CRanmHVS9V3xb5m+bS+Enn/iogaKUfQRzzNRUkF9er8hrk8SvZKKwkw8XiVUwCCQzQQeSHg4JOPd2BTMrfPba7ISSG1Qlyy4JD8YhhG0M6df5FHEGmOQmC/ewyhSmAzZQradZav6XWA6KmmH4Q5X0PdDjGvv+SqPvJuQn9jWmMxMR5N0imILdyijZswrY4Qbi6myYEtEcYqHKefyIjZ7/KwAAXaAPL9H3dzcmxxfydAgMBAAGjggJJMIICRTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFHS8kCGKIs9ghRc4+fkCdRPC+6dmMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBgGA1UdEQQRMA+CDW96ZW5zZW1ibGUuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYZBMxp6AAAEAwBHMEUCIEKJkwAKNIkQsr9peBp+e9yoJ+uk78Zq6QxwlXhA85/sAiEAkTsyOaanuB8EgyWIQZ9ntNA5CLT5nInUPWrDkQgzTvoAdwCt9776fP8QyIudPZwePhhqtGcpXc+xDCTKhYY069yCigAAAYZBMxqYAAAEAwBIMEYCIQDzhFQUbSKhUIe+lF11jAW4+WoUd1faZdaeUz7Si6Rg6AIhAPiO3PwhOBbgM6ac2+dLCf7u03eleXGTx/eE589o1RbzMA0GCSqGSIb3DQEBCwUAA4IBAQBlygy4F0AR9J+nm+4Kpv70k6YfyRa5gXdQJQgyS0MyP0U/HpVcYYSy+SUZdoGYJkwkTkxX60e+O6vJdjcHxoMrHw+QMDFVu5+YCPydp8P9XWjt9fBRv0myy82HQ9y4cRHjcSGujctwSJMxE6r/7HfEMmOQhowa4oSMaSvDXHTuAuag0Eev4l6Eudq3b7ZGSqG5l3xDpS/jAQZEIm4DFP3osALYNMlxcmlOQpXQq5Fv1HWvh5mpcUjm71BcKdJrzBBQDaTimJHOCGcR6gbEKqz6fX5PSFWvoIlHB+Igx6AGQnmEqkfF9TnzRbMs8o4jCcFJYTUkdefzUodEMSKHvX5G\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFIDCCBAigAwIBAgISBA2dP0sd01Xdry/hsKfoOAQHMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA0MTIxMzU5MDdaFw0yMzA3MTExMzU5MDZaMBgxFjAUBgNVBAMTDW96ZW5zZW1ibGUuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqTH4Hzv9grTiiSgRA96/6dycdUB0ku4loFLre2di5ZdhnKeCuqNI+cHqTO0kZiRSOOdcPnehId5hCWLN0lyVGiNcDN9c4uQoPR29WzovsE1CRanmHVS9V3xb5m+bS+Enn/iogaKUfQRzzNRUkF9er8hrk8SvZKKwkw8XiVUwCCQzQQeSHg4JOPd2BTMrfPba7ISSG1Qlyy4JD8YhhG0M6df5FHEGmOQmC/ewyhSmAzZQradZav6XWA6KmmH4Q5X0PdDjGvv+SqPvJuQn9jWmMxMR5N0imILdyijZswrY4Qbi6myYEtEcYqHKefyIjZ7/KwAAXaAPL9H3dzcmxxfydAgMBAAGjggJIMIICRDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFHS8kCGKIs9ghRc4+fkCdRPC+6dmMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBgGA1UdEQQRMA+CDW96ZW5zZW1ibGUuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYd1+kFGAAAEAwBIMEYCIQCKsgBzdajfAaLqtm2v5LEgoJpny4P/aSfhLID4tP8iTAIhAKtsfXFCehcoqB7OgPgizI4D6FRkhgcOgojc9q84RCsXAHUAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGHdfpBWAAABAMARjBEAiBxRkkiscr0SQSDbFtb0flOmyGsSwMXFlQTqTENqdCVKQIgY1TdY4pbMJV2V5Iu6fOYrB/9UnJGddkStLcYqN/gmzMwDQYJKoZIhvcNAQELBQADggEBAHHO79pF/d+bLj+g48FGuTklfWLCsQLt+G5GlgqqWKKWdf9BMreCNo0FEDHXJ4FfJW1fEJD07LvPqXZ4mZ9w7a+kcIQDabkAuenMDf+LJQ+U2EIZoC48zzbe0VQxdkJDqnH/sBDeESZalQuU578BfXUY3rTRtSfjGNMDgzIO1H4MvyxLU8qGawAeqjvaPUgDV1jHE0pxKPCvj2EjAcKwvmA5JEuhO12VsRFdNrM1/+Ua+Ou4nZMKBm2zjGpyGHRugrBY5ah26rAQSIcSnwvsL69E4gAW80MI7CGKsngbTvJM1jpIy9Soalh7GjelP1L8AoxSMvgNkZDABl/eMguPUvU=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "finding"      : "86 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-02-11 14:58"
+              "finding"      : "2023-04-12 13:59"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-05-12 14:58"
+              "finding"      : "2023-07-11 13:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,14 +542,14 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1681004831"
+              "finding"      : "1681630790"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -750,7 +750,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=83491D1C7A7D1894E83B3B6FD3F3DABF324A79E2F17817B3E5143F315F08E24E"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=F390B30D99B5727BCDCEE42F6CD0337262D3DA21D363156DE5DD8A79B4D1927D"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1126,6 +1126,6 @@
               "ip"           : "ozensemble.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "102"
+              "finding"      : "94"
           }
 ]

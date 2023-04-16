@@ -1,22 +1,17 @@
 [
-  {
-    "label": "EcoIndex",
-    "value": 75
-  },
-  {
-    "label": "Note",
-    "value": "B"
-  },
-  {
-    "label": "GES",
-    "value": 1.5,
-    "unit": "gCO2e",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 33km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)"
-  },
-  {
-    "label": "Eau",
-    "value": 2.25,
-    "unit": "cl",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 1 douche"
-  }
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://ozensemble.fr",
+        "size": 841.728,
+        "nodes": 235,
+        "requests": 26,
+        "grade": "B",
+        "score": 79.0,
+        "ges": 1.42,
+        "water": 2.13,
+        "ecoindex_version": "5.4.2",
+        "date": "2023-04-16 07:37:11.679386",
+        "page_type": "article"
+    }
 ]
