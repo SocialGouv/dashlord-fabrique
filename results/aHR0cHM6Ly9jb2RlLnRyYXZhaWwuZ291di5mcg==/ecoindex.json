@@ -1,22 +1,17 @@
 [
-  {
-    "label": "EcoIndex",
-    "value": 51
-  },
-  {
-    "label": "Note",
-    "value": "C"
-  },
-  {
-    "label": "GES",
-    "value": 1.98,
-    "unit": "gCO2e",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 44km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)"
-  },
-  {
-    "label": "Eau",
-    "value": 2.97,
-    "unit": "cl",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 1 douche"
-  }
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://code.travail.gouv.fr",
+        "size": 1494.36,
+        "nodes": 860,
+        "requests": 92,
+        "grade": "E",
+        "score": 39.0,
+        "ges": 2.22,
+        "water": 3.33,
+        "ecoindex_version": "5.4.2",
+        "date": "2023-04-23 01:44:02.399850",
+        "page_type": "article"
+    }
 ]
