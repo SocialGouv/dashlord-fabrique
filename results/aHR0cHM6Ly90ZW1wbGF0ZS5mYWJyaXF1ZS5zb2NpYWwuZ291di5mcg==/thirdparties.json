@@ -8,10 +8,10 @@
   "cookies": [
     {
       "name": "_pk_id.63.f7e2",
-      "value": "c4af870fc98f979d.1682221135.",
+      "value": "4da807bdecd2a9e4.1682824568.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1716176335,
+      "expires": 1716779768,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -26,7 +26,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1682222935,
+      "expires": 1682826367,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -41,7 +41,7 @@
       "value": "light",
       "domain": ".template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1713757134.753871,
+      "expires": 1714360567.237359,
       "size": 18,
       "httpOnly": false,
       "secure": false,
@@ -55,7 +55,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 23 Apr 2023 03:38:53 GMT",
+    "date": "Sun, 30 Apr 2023 03:16:06 GMT",
     "etag": "W/\"64390859-3621\"",
     "last-modified": "Fri, 14 Apr 2023 08:01:29 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -163,20 +163,6 @@
       "hostname": "dummyimage.com",
       "ip": "104.21.32.200",
       "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
