@@ -346,7 +346,7 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "68 >= 30 days"
+              "finding"      : "61 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1682819408"
+              "finding"      : "1683424144"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -615,11 +615,25 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; font-src 'self'; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
+          }
+,         {
               "id"           : "X-XSS-Protection",
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1; mode=block"
+          }
+,         {
+              "id"           : "Cache-Control",
+              "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1126,6 +1140,6 @@
               "ip"           : "admin-domifa.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "55"
+              "finding"      : "95"
           }
 ]
