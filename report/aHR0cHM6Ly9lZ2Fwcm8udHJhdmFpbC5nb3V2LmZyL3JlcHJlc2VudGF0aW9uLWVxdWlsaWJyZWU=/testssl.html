@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az577-689:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az262-298:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-04-30 01:35:14                --&gt;&gt; 20.74.14.77:443 (egapro.travail.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-05-07 01:38:55                --&gt;&gt; 20.74.14.77:443 (egapro.travail.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>0370A28C4957EA58138306D818CF5AE8A043 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 D9CB17591F87BE4F2829AB93336191AD657ECD8C
-                              SHA256 D0934EBAB7EB1DCE1A02A4932D5ECE5E0DBE39A5D27799E2157F7F4229BAD71D
+<span style="font-weight:bold;"> Serial                       </span>03A6C1D045835C46AB27519CAF7534095034 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 A164529E2B46DC3D576FFC2BDAA3AC4C5DAB1BA2
+                              SHA256 7424B2FE5424580E45136595C8AA25D71E01BA00E35BDE1050DB70B376AFE0E6
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>egapro.travail.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>egapro.travail.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">32 &gt;= 30 days</span> (2023-03-03 11:47 --&gt; 2023-06-01 11:47)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2023-05-02 10:48 --&gt; 2023-07-31 10:48)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -123,7 +123,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -165,7 +165,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D0934EBAB7EB1DCE1A02A4932D5ECE5E0DBE39A5D27799E2157F7F4229BAD71D" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D0934EBAB7EB1DCE1A02A4932D5ECE5E0DBE39A5D27799E2157F7F4229BAD71D</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7424B2FE5424580E45136595C8AA25D71E01BA00E35BDE1050DB70B376AFE0E6" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7424B2FE5424580E45136595C8AA25D71E01BA00E35BDE1050DB70B376AFE0E6</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -224,7 +224,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-04-30 01:36:58 [ 107s] --&gt;&gt; 20.74.14.77:443 (egapro.travail.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-05-07 01:40:37 [ 104s] --&gt;&gt; 20.74.14.77:443 (egapro.travail.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
