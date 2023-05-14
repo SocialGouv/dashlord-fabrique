@@ -269,7 +269,7 @@
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03BBE959AAFC9D51962F716FE9A59F36B2E8"
+              "finding"      : "03560E3DC18A2800A6EC13902AFD01318C34"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "F4BF322BFDA4386D84BE62BF0AF0C3E26419A9FD"
+              "finding"      : "0EE4BD95FE36E44696E466C2F464266CD30E9C7F"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "E434A1FE3A52C3E4772FAACCB9C4923CF580651050333F8ED8E32979C423269C"
+              "finding"      : "C253457DE90817A4C4AFD4E80356CD3CFB71A672ADAB8BA2A95F4D8165727879"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFZDCCBEygAwIBAgISA7vpWar8nVGWL3Fv6aWfNrLoMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAzMTIxNDA2MDBaFw0yMzA2MTAxNDA1NTlaMDoxODA2BgNVBAMTL3RyYW5zaXRpb25zLWNvbGxlY3RpdmVzLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApGSgnAM0ga7mkJh6mP6pig8uL3oKZGRPFRykasL982jdiaUJpOd5QMkio3yP3f93p3f4QCzc+cbMwZvHdUl85iVvXandO6S2/4ARHrN9zP01xAn8pF6G3SXdxhvwujIcaYAX3X5bNTbLzMad7cbFozoVODzSB3PCPtZcIbBHHlablXtYWzpN2sk2WYYb65I0PIl2cl40qvA0BYMHXiW9wombZfVh7NINr63FUybkse+1ZHdngOZCbnAI+kvIyBMq/QwzkLh5eXyKRkMJIbQt8o0jpKcJHTGXgO0L/lUZnKLctXVWSSRsGqJpqCvWmTQL0SjAe1AF+CNI7PU5T0rt2QIDAQABo4ICajCCAmYwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQzMC1DYhEleM4s0njLrwqFN7h5ljAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzA6BgNVHREEMzAxgi90cmFuc2l0aW9ucy1jb2xsZWN0aXZlcy5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhtZbaM0AAAQDAEcwRQIgEW74zgFmlaoXcxcviuy2I38CCMA0Y67M6CGDAskzKiYCIQCjbQfukEHbKa3OkcOzLTx8dB9aMi/Hz0+KYF6hDfdNeQB2AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKKAAABhtZbaPMAAAQDAEcwRQIhAOR8Z94oJXjItDulSN2osT1ayKMre2ZlF+EcqZdARUN9AiAF+H/6aU3zAiCFDNavQkuIeK33E/rDBfnqjNUkz9LB5jANBgkqhkiG9w0BAQsFAAOCAQEArP9wYA7w0ITWaIiMzjLHl6M2WZGY/dgAW1qOVfiXzb9sljjmFv0DmlXU4UqzauTfbfucg7IDExgJmNcZEsRaAqhXDkAWzUIIyUdlYLpDrclto3iAYfekIwe2zH99hJToh7+dDFaep3CY706yz3zJSGJQ8O9CwZDWxMsFka5wr+LmwdMqKeNoDl4KGeIZk4aC+WU3T0ZamC0JrPfEciwA3Bfo18TiSvFWuNW74M3EfkjPUVClnYg9l7KZW8lvPjUm/PMF/RnmNTJiNOVXeitZMLFteaWUExtobTSY5AaBZLtUneNc3TBYxuLtBKQVfFVn8tM+vK40tr2vW6HWdB+AzQ==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFYjCCBEqgAwIBAgISA1YOPcGKKACm7BOQKv0BMYw0MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA1MTExMzA2MjJaFw0yMzA4MDkxMzA2MjFaMDoxODA2BgNVBAMTL3RyYW5zaXRpb25zLWNvbGxlY3RpdmVzLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApGSgnAM0ga7mkJh6mP6pig8uL3oKZGRPFRykasL982jdiaUJpOd5QMkio3yP3f93p3f4QCzc+cbMwZvHdUl85iVvXandO6S2/4ARHrN9zP01xAn8pF6G3SXdxhvwujIcaYAX3X5bNTbLzMad7cbFozoVODzSB3PCPtZcIbBHHlablXtYWzpN2sk2WYYb65I0PIl2cl40qvA0BYMHXiW9wombZfVh7NINr63FUybkse+1ZHdngOZCbnAI+kvIyBMq/QwzkLh5eXyKRkMJIbQt8o0jpKcJHTGXgO0L/lUZnKLctXVWSSRsGqJpqCvWmTQL0SjAe1AF+CNI7PU5T0rt2QIDAQABo4ICaDCCAmQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQzMC1DYhEleM4s0njLrwqFN7h5ljAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzA6BgNVHREEMzAxgi90cmFuc2l0aW9ucy1jb2xsZWN0aXZlcy5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQIGCisGAQQB1nkCBAIEgfMEgfAA7gB1AHoyjFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABiAsiX9gAAAQDAEYwRAIgBC3mLST72hPaIuYQDwvpsSNtknMK4LysPLRDugby8kcCIEzgN3D7phlyzBJTL/dpa9iuHVdPxmp+Hknxaab6aiSNAHUArfe++nz/EMiLnT2cHj4YarRnKV3PsQwkyoWGNOvcgooAAAGICyJf6QAABAMARjBEAiBgoJ5aEcyDHjOyS69dnFieFifJUKeRGJxw4BOnN6LFzQIgfVosOZzygu7ik6kZ4jXMpnMHxgH1GcVvYW2vxIK+4MkwDQYJKoZIhvcNAQELBQADggEBADre2/lTebeDMuSNqU6G35lB9l6MbBT+3c7KLZKaRYh3nb6nz3nStugJCIGAtmv0II/l6lSxCidbM7SLGObVlvoHqv1dBwkLkN/3vL95TNmxAZb5xMT2E4U5y9qhs0w723HNDLImzy3Y3sVmccY0YnuAEHSH0c6TSY6cEi0HhaP9rgwZvx1i3KtbzYkiiuUFNHwzSSgwpZ5CN0EQ/MRyFUVK5eSGEBrlbsvD2+eYdT4L4ISaXJ/IxpFT5wGD7BnFcql5icyfmC8NMbnqDtn9ElxJ6bdTsiRmMS6XRSKhJLtay3Zz8kl+TWUyrNO+6YHTYbduZdvvp4MYP9hJIR0EkZs=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "34 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-03-12 14:06"
+              "finding"      : "2023-05-11 13:06"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-06-10 14:05"
+              "finding"      : "2023-08-09 13:06"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,14 +542,14 @@
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1683428499"
+              "finding"      : "1684030506"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -757,7 +757,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E434A1FE3A52C3E4772FAACCB9C4923CF580651050333F8ED8E32979C423269C"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=C253457DE90817A4C4AFD4E80356CD3CFB71A672ADAB8BA2A95F4D8165727879"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1133,6 +1133,6 @@
               "ip"           : "transitions-collectives.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "56"
+              "finding"      : "100"
           }
 ]
