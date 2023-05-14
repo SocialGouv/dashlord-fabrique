@@ -1,22 +1,17 @@
 [
-  {
-    "label": "EcoIndex",
-    "value": 76
-  },
-  {
-    "label": "Note",
-    "value": "A"
-  },
-  {
-    "label": "GES",
-    "value": 1.48,
-    "unit": "gCO2e",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 33km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)"
-  },
-  {
-    "label": "Eau",
-    "value": 2.22,
-    "unit": "cl",
-    "comment": "Pour un total de 2000 visites par mois, ceci correspond à 1 douche"
-  }
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://emjpm.fabrique.social.gouv.fr",
+        "size": 1351.625,
+        "nodes": 203,
+        "requests": 23,
+        "grade": "B",
+        "score": 78.0,
+        "ges": 1.44,
+        "water": 2.16,
+        "ecoindex_version": "5.4.2",
+        "date": "2023-05-14 01:39:27.230147",
+        "page_type": null
+    }
 ]
