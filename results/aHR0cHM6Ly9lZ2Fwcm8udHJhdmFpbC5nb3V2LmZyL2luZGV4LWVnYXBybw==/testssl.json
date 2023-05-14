@@ -346,7 +346,7 @@
               "ip"           : "egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "85 >= 30 days"
+              "finding"      : "78 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1683423536"
+              "finding"      : "1684027940"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -591,7 +591,7 @@
               "ip"           : "egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "X-Powered-By: Next.js"
+              "finding"      : "No application banner found"
           }
 ,         {
               "id"           : "cookie_count",
@@ -619,7 +619,7 @@
               "ip"           : "egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr https://www.googletagmanager.co; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://www.googletagmanager.com https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
+              "finding"      : "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -627,6 +627,13 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1; mode=block"
+          }
+,         {
+              "id"           : "Referrer-Policy",
+              "ip"           : "egapro.travail.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no-referrer, strict-origin-when-cross-origin"
           }
 ,         {
               "id"           : "Cache-Control",
