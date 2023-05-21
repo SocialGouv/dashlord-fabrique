@@ -18,7 +18,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/www-player.css",
+      "url": "https://www.youtube.com/s/player/e50626d8/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -26,7 +26,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/e50626d8/www-embed-player.vflset/www-embed-player.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -50,7 +50,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/player_ias.vflset/en_US/base.js",
+      "url": "https://www.youtube.com/s/player/e50626d8/player_ias.vflset/en_US/base.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -58,7 +58,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/fetch-polyfill.vflset/fetch-polyfill.js",
+      "url": "https://www.youtube.com/s/player/e50626d8/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/e50626d8/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/lnYuOV6CFLlQNBsFrKUp6iqofwcw6ChoCpHRG3e43aU.js",
+      "url": "https://www.google.com/js/th/CArqea_BMtmFg-uSis-Ut8_SWhTX20Rj4YEAuxCzmAg.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -138,7 +138,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/cfa9e7cb/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/e50626d8/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -177,6 +177,14 @@
       }
     },
     {
+      "type": "youtube",
+      "url": "https://www.youtube.com/generate_204?NXw2ug",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
       "type": "google",
       "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
       "details": {
@@ -186,7 +194,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?yLwPZg",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json&key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +215,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1684032204,
+      "expires": 1684642700,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +227,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "1cd38ff83d8d4fa8.1684030405.",
+      "value": "a278d5455467af55.1684640900.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1717985605,
+      "expires": 1718596100,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,7 +245,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 14 May 2023 02:13:23 GMT",
+    "date": "Sun, 21 May 2023 03:48:18 GMT",
     "etag": "\"5115-NX8WNMvEWcaiBfGgMqDcdJu8X+E\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -343,18 +351,18 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "151.101.21.229",
+      "ip": "146.75.105.229",
       "geoip": {
         "city": {
-          "geoname_id": 5809844,
+          "geoname_id": 4684888,
           "names": {
-            "de": "Seattle",
-            "en": "Seattle",
-            "es": "Seattle",
-            "fr": "Seattle",
-            "ja": "シアトル",
-            "pt-BR": "Seattle",
-            "ru": "Сиэтл"
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
           }
         },
         "continent": {
@@ -387,13 +395,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 47.6034,
-          "longitude": -122.3414,
-          "metro_code": 819,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 32.7908,
+          "longitude": -96.8336,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "98160"
+          "code": "75207"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -411,15 +419,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5815135,
-            "iso_code": "WA",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "en": "Washington",
-              "es": "Washington",
-              "fr": "Washington",
-              "ja": "ワシントン州",
-              "ru": "Вашингтон",
-              "zh-CN": "华盛顿州"
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
             }
           }
         ]
@@ -427,7 +435,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.251.33.110",
+      "ip": "142.251.33.46",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -481,7 +489,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.33.67",
+      "ip": "142.251.35.195",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -535,7 +543,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.211.226",
+      "ip": "142.250.138.155",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -589,7 +597,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.211.230",
+      "ip": "142.251.32.166",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -643,7 +651,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.250.217.74",
+      "ip": "142.251.32.170",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -697,7 +705,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.217.68",
+      "ip": "142.250.114.105",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -751,7 +759,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.251.211.246",
+      "ip": "142.251.33.22",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -805,7 +813,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.250.69.193",
+      "ip": "142.250.113.132",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -859,7 +867,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.69.195",
+      "ip": "142.250.138.94",
       "geoip": {
         "continent": {
           "code": "NA",
