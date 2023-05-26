@@ -223,6 +223,18 @@ jobs:
           repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/codescanalerts.json
 
+      - name: nmap vulnerabilities scan
+        if: ${{ matrix.sites.tools.nmap }}
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "MTES-MCT/nmap-action@main"
+        with:
+          host: ${{ steps.hostname.outputs.value }}
+          outputDir: "scans"
+          outputFile: "nmapvuln.json"
+          withVulnerabilities: true
+          raw: false
+
       - uses: SocialGouv/dashlord-actions/save@v1
         with:
           url: ${{ matrix.sites.url }}
