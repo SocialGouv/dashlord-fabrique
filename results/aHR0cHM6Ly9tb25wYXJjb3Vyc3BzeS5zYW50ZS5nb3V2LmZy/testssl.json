@@ -269,7 +269,7 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0382FF3FC9AEDE0DDFA4AE78BBEF471E69BF"
+              "finding"      : "04CB3C519D3E71E979958F73AB93AC6D6BAF"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2501D9BBBB6E24BD3F73545F12DD35428B3FBA2D"
+              "finding"      : "585CD3B16BAC44269D991B14C6A201335CC841EB"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B"
+              "finding"      : "7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFQDCCBCigAwIBAgISA4L/P8mu3g3fpK54u+9HHmm/MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA0MDExMTEwNTBaFw0yMzA2MzAxMTEwNDlaMCcxJTAjBgNVBAMTHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCTTj7KC7kWYbxxrLzzyMULv0WWwilIvLybPY3YFHbgjjPjhCSLkdV7pKwNDxf13C/EUJcPu/FI909/3u7ZesXt8qUwqOnct5IF4ODkxF4AHsN2RtBXr9M041e9OalHyHtFaI+Zew9pDGXc5szUA44vsfA1gkCLhItJ9YgAWOOHjWePdmTT+Ty8FOZJz4CwKAL9bMUzh3ZWhHtAOpqPA98ue/SumDFyxee96ytmdcdQdFdcNaJneD3RjqE16ZbRTGuOZnaKOOYCX8KszKieccl7tXVBjpHnMseTe5CKVDYO//KNmPaCJcGT89GTCFmrkGY6uOaF32X998PGHF0ULwfAgMBAAGjggJZMIICVTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFChL8PG+GEVjfANiU0CMaKLACanlMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEGBgorBgEEAdZ5AgQCBIH3BIH0APIAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYc8ujn1AAAEAwBIMEYCIQCB88KSy6Z0HNYAPON0E9DZJU55RNAaxFFLA7K1TZWX2QIhAJgkw2Wre23bM/HnyLRNU3GCxDpT3AOOcd76lzsHNEtXAHcArfe++nz/EMiLnT2cHj4YarRnKV3PsQwkyoWGNOvcgooAAAGHPLo6GQAABAMASDBGAiEA+Ag4cBS2pzP2daqnrs+lv+ZBGaYuZi8zs+upuoWVBbYCIQCFj4Xj9AyANbB7EBAJXYZ04JeT7oqvdroYC2RxCtwfPzANBgkqhkiG9w0BAQsFAAOCAQEApWBzUQV0EcRzBL7T7nW6h00mewDAqrQJofF/+BUyDUeP+ZXjHKE6HDvFKqhMskb9Iwv+oqTFUWbuTouGZDOPS3Lc/3OCQREqLVU9AgrYl32BrYJ7PWg8AikV0G5lzRj/wQm9CdP7P1jfim5ycvUmiFjzJxQ/RjTzixDirVJhzBXLW5dj6Po2OprU3gZbQqH/SZJErlqlrFLJWqAumaNbZ68y4PDUQ2MRzqM0rEreb2U/KgcKdDyZgvXaz4T2vnZlQ/40e8P8tlr7k2zoSZQ+EcIty2LRx0IZL+tnrXD0B1FRThsHGswpNJqRqG0G7VBpsN18BeQx35aWGXfrg0FnOg==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFPjCCBCagAwIBAgISBMs8UZ0+cel5lY9zq5OsbWuvMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA1MzExMDExMTVaFw0yMzA4MjkxMDExMTRaMCcxJTAjBgNVBAMTHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCTTj7KC7kWYbxxrLzzyMULv0WWwilIvLybPY3YFHbgjjPjhCSLkdV7pKwNDxf13C/EUJcPu/FI909/3u7ZesXt8qUwqOnct5IF4ODkxF4AHsN2RtBXr9M041e9OalHyHtFaI+Zew9pDGXc5szUA44vsfA1gkCLhItJ9YgAWOOHjWePdmTT+Ty8FOZJz4CwKAL9bMUzh3ZWhHtAOpqPA98ue/SumDFyxee96ytmdcdQdFdcNaJneD3RjqE16ZbRTGuOZnaKOOYCX8KszKieccl7tXVBjpHnMseTe5CKVDYO//KNmPaCJcGT89GTCFmrkGY6uOaF32X998PGHF0ULwfAgMBAAGjggJXMIICUzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFChL8PG+GEVjfANiU0CMaKLACanlMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHG1vbnBhcmNvdXJzcHN5LnNhbnRlLmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdQB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYhxgT9DAAAEAwBGMEQCIEq+jicCD80zny7mHOsM25DZhepGjEphHQH7jIQYiKZQAiASNeiCBTlHqdMYohXlOWfIwofD2/AXX0hZCIyYhJgvZAB3AOg+0No+9QY1MudXKLyJa8kD08vREWvs62nhd31tBr1uAAABiHGBPy8AAAQDAEgwRgIhAKF2xzj+K9l0ihUgv39BTtx8+Y3LtFutK0YheWmBHhJUAiEA13O4rdUIwEZ7sIeNlPuvWNOuoZb4rkTuwls3SsW1LekwDQYJKoZIhvcNAQELBQADggEBAHq4WPmeF+Fd8PPn64TBmoWFdIcHhM2Yp5HRf/afx1WPKo3rnQ7zjfGPF3/wNi/BfpllUeX1W1CtvAPCT0GCR7BNHHE1WVVoC6ixjueL37SJacWJqsdKIK7ohCeU3yIOVUyCGgYCSwixnEqLpx7gWXJFUCsybiW17ljd8grKXpuptms12qRDEPat90sXVHgBLDDJwjO1v43GewefI2hCQ3lndNEuAbgzc0UlFpU1BLBal0BHTvOsJLJVwVQqv0RdJQq6Tfn+IHl7Ri5/+oaXIX7SAS9OA41SAjehgE54F2CDiDWUoapRw3NHILLZpVHXPhN1e1cX6vk0OV7mSDgWrNw=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "finding"      : "86 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-04-01 11:10"
+              "finding"      : "2023-05-31 10:11"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-06-30 11:10"
+              "finding"      : "2023-08-29 10:11"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -549,7 +549,7 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1685242018"
+              "finding"      : "1685846765"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -736,7 +736,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1112,6 +1112,6 @@
               "ip"           : "monparcourspsy.sante.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "102"
+              "finding"      : "65"
           }
 ]
