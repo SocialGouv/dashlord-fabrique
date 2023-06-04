@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az615-716:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az934-205:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-05-28 02:46:01                --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-06-04 02:45:37                --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>0382FF3FC9AEDE0DDFA4AE78BBEF471E69BF (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 2501D9BBBB6E24BD3F73545F12DD35428B3FBA2D
-                              SHA256 BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B
+<span style="font-weight:bold;"> Serial                       </span>04CB3C519D3E71E979958F73AB93AC6D6BAF (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 585CD3B16BAC44269D991B14C6A201335CC841EB
+                              SHA256 7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>monparcourspsy.sante.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>monparcourspsy.sante.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">33 &gt;= 30 days</span> (2023-04-01 11:10 --&gt; 2023-06-30 11:10)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">86 &gt;= 30 days</span> (2023-05-31 10:11 --&gt; 2023-08-29 10:11)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -158,7 +158,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BF967EDFE6E4BBB7D4FA394215EE54E3706EB2DA7515FC07108EC3ECD8E7085B</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -217,7 +217,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-05-28 02:47:41 [ 102s] --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-06-04 02:46:40 [  65s] --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
