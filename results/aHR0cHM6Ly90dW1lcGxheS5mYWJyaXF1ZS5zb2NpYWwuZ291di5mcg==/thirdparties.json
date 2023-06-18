@@ -5,12 +5,43 @@
       "url": "https://ipapi.co/json/"
     }
   ],
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "_pk_ses.77.0d7f",
+      "value": "1",
+      "domain": "tumeplay.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1687057842,
+      "size": 16,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_pk_id.77.0d7f",
+      "value": "f576699706140f10.1687056042.",
+      "domain": "tumeplay.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1721011242,
+      "size": 42,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
   "headers": {
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 11 Jun 2023 02:43:39 GMT",
+    "date": "Sun, 18 Jun 2023 02:40:40 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
