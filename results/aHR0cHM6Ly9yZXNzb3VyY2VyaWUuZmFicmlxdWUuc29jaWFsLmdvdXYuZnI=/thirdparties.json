@@ -15,7 +15,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr https://plausible.numericite.eu; font-src 'self' data:; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://plausible.numericite.eu https://cdn.ravenjs.com https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 25 Jun 2023 03:01:44 GMT",
+    "date": "Sun, 02 Jul 2023 03:15:08 GMT",
     "etag": "\"behjt8gzl61che\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -216,7 +216,7 @@
     },
     {
       "hostname": "cdn.ravenjs.com",
-      "ip": "151.101.130.217",
+      "ip": "151.101.2.217",
       "geoip": {
         "continent": {
           "code": "NA",
