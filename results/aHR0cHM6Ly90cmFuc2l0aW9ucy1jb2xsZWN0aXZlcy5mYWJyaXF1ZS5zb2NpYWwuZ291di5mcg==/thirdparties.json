@@ -17,24 +17,32 @@
       }
     },
     {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/1dda5629/www-player.css",
       "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
-      "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/www-player.css",
+      "url": "https://www.youtube.com/s/player/1dda5629/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/1dda5629/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/1dda5629/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -57,27 +65,19 @@
       }
     },
     {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/www-embed-player.vflset/www-embed-player.js",
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
       "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
     },
     {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/player_ias.vflset/en_US/base.js",
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
       "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/1dda5629/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/1PHk0JNxvj41n9Bv_scdeKVPFJjXC6QzpA5X3rwi72I.js",
+      "url": "https://www.google.com/js/th/V7JOy9E5LPAmHC4-uXpPG1TUC0v77ajXJMI6Ew5elJ8.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -138,15 +138,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/23604418/player_ias.vflset/en_US/embed.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://yt3.ggpht.com/CxSz0c9jDumZeOB71xT9UsV9gGfVo25EZFSSu9IC3BpiHikmAJ4Z4VYgzup_wJdtMJBZIMoG3g=s68-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/s/player/1dda5629/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -162,22 +154,6 @@
     },
     {
       "type": "google",
-      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google",
-      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google",
       "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
       "details": {
         "id": "google",
@@ -186,7 +162,31 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?J0zxMw",
+      "url": "https://yt3.ggpht.com/CxSz0c9jDumZeOB71xT9UsV9gGfVo25EZFSSu9IC3BpiHikmAJ4Z4VYgzup_wJdtMJBZIMoG3g=s68-c-k-c0x00ffffff-no-rj",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/generate_204?xo5sgQ",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1688269829,
+      "expires": 1688873496,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "86522c001fc15041.1688268029.",
+      "value": "e18e63273078a427.1688871697.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1722223229,
+      "expires": 1722826897,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,7 +237,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 02 Jul 2023 03:20:27 GMT",
+    "date": "Sun, 09 Jul 2023 03:01:35 GMT",
     "etag": "\"5115-BnsSVN69my1NYtaoIpTfqWKAv2Q\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -427,7 +427,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "172.217.14.174",
+      "ip": "142.250.113.93",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -481,7 +481,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.116.94",
+      "ip": "142.250.113.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -535,7 +535,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.45.34",
+      "ip": "142.250.113.154",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -567,9 +567,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -584,26 +584,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.40.70",
+      "ip": "142.250.115.149",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -635,9 +621,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -652,26 +638,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.251.40.74",
+      "ip": "142.250.115.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -703,9 +675,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -720,26 +692,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.113.104",
+      "ip": "142.250.115.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -793,75 +751,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.251.32.246",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "yt3.ggpht.com",
-      "ip": "142.250.138.132",
+      "ip": "142.251.116.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -915,7 +805,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.40.67",
+      "ip": "142.250.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -947,9 +837,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 38.894,
-          "longitude": -77.0365,
-          "time_zone": "America/New_York"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -964,21 +854,61 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4138106,
-            "iso_code": "DC",
-            "names": {
-              "de": "Washington, D.C.",
-              "en": "District of Columbia",
-              "es": "Washington D.C.",
-              "fr": "District de Columbia",
-              "ja": "ワシントン・コロンビア特別区",
-              "ru": "Округ Колумбия"
-            }
+        }
+      }
+    },
+    {
+      "hostname": "yt3.ggpht.com",
+      "ip": "142.250.114.132",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
           }
-        ]
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
       }
     }
   ]
