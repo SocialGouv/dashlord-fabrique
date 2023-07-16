@@ -1,12 +1,43 @@
 {
   "trackers": [],
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "_pk_ses.59.1a03",
+      "value": "1",
+      "domain": "monparcourspsy.sante.gouv.fr",
+      "path": "/",
+      "expires": 1689477088,
+      "size": 16,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_pk_id.59.1a03",
+      "value": "559610899258cf8f.1689475288.",
+      "domain": "monparcourspsy.sante.gouv.fr",
+      "path": "/",
+      "expires": 1723430488,
+      "size": 42,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
   "headers": {
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr;font-src 'self' data:;img-src 'self' data: https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 09 Jul 2023 02:56:21 GMT",
-    "etag": "\"5291-V7LYD4CzWIhHQ7oJGUyrvPVKyIo\"",
+    "date": "Sun, 16 Jul 2023 02:41:27 GMT",
+    "etag": "\"5291-Qj07fMjkCGu2MroerYqwRPiB/1E\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
