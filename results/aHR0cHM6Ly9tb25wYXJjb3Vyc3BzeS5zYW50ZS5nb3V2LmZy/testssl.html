@@ -10,7 +10,7 @@
 <pre>
 <span style="font-weight:bold;">
 ###########################################################
-    testssl.sh       3.2rc2 from </span><a href="https://testssl.sh/dev/" style="font-weight:bold;color:black;text-decoration:none;">https://testssl.sh/dev/</a>
+    testssl.sh       3.2rc3 from </span><a href="https://testssl.sh/dev/" style="font-weight:bold;color:black;text-decoration:none;">https://testssl.sh/dev/</a>
 <span style="font-weight:bold;">
       This program is free software. Distribution and
              modification under GPLv2 permitted.
@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az566-177:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az1432-153:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-07-16 02:42:12                --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-03-18 14:51:38                --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -89,7 +89,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;extended master secret/#23&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>no -- no lifetime advertised
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: yes
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>04CB3C519D3E71E979958F73AB93AC6D6BAF (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 585CD3B16BAC44269D991B14C6A201335CC841EB
-                              SHA256 7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E
+<span style="font-weight:bold;"> Serial                       </span>03C8FCDC57C5DEC7647FADFCC5DC27B4BD28 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F73BEFA27D704C7B849E27EF7D181EB2E94F27DA
+                              SHA256 735FEC4BF6E17E66FA18D75215C50A458CF9FB2EC275EBD8D291DA3A822F06C5
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>monparcourspsy.sante.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>monparcourspsy.sante.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">44 &gt;= 30 days</span> (2023-05-31 10:11 --&gt; 2023-08-29 10:11)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">87 &gt;= 30 days</span> (2024-03-15 15:37 --&gt; 2024-06-13 15:37)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -113,31 +113,22 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
 <span style="font-weight:bold;"> DNS CAA RR</span> (experimental)    <span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Certificate Transparency     </span><span style="color:#008817;">yes</span> (certificate extension)
-<span style="font-weight:bold;"> Certificates provided</span>        3
+<span style="font-weight:bold;"> Certificates provided</span>        2
 <span style="font-weight:bold;"> Issuer                       </span><i>R3</i> (<i>Let&apos;s Encrypt</i> from <i>US</i>)
 <span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2025-09-15 16:00). <i>R3</i> &lt;-- <i>ISRG Root X1</i>
-                              #2: <span style="color:#008817;">ok &gt; 40 days</span> (2024-09-30 18:14). <i>ISRG Root X1</i> &lt;-- <i>DST Root CA X3</i>
 <span style="font-weight:bold;"> Intermediate Bad OCSP</span> (exp.) <span style="color:#008817;">Ok</span>
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
-<span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
+<span style="font-weight:bold;"> HTTP Status Code           </span>  500 Internal Server Error<span style="color:#cd00cd;">. Oh, didn&apos;t expect &quot;500 Internal Server Error&quot;</span>
 <span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
-<span style="font-weight:bold;"> Application banner           </span><span style="color:#8a7237;font-weight:bold;">X-Powered-By</span>: Next.js
-<span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;)
-<span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">Content-Security-Policy</span>: default-src
-                                &apos;self&apos;;connect-src &apos;self&apos;
-                                https://*.gouv.fr;font-src &apos;self&apos; data:;img-src
-                                &apos;self&apos; data:
-                                https://*.tile.openstreetmap.org/;prefetch-src
-                                &apos;self&apos; https://*.gouv.fr;script-src &apos;self&apos;
-                                https://*.gouv.fr;frame-src &apos;self&apos;
-                                https://*.gouv.fr;style-src &apos;self&apos;
-                                &apos;unsafe-inline&apos;
+<span style="font-weight:bold;"> Application banner           </span>--
+<span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;) -- maybe better try target URL of 30x
+<span style="font-weight:bold;"> Security headers             </span><span style="color:#c05600;">--</span>
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
 
@@ -150,15 +141,14 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Secure Renegotiation (RFC 5746)           </span><span style="color:#008817;font-weight:bold;">supported (OK)</span>
 <span style="font-weight:bold;"> Secure Client-Initiated Renegotiation     </span><span style="color:#008817;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> CRIME, TLS </span>(CVE-2012-4929)                <span style="color:#008817;">not vulnerable (OK)</span>
-<span style="font-weight:bold;"> BREACH</span> (CVE-2013-3587)                    <span style="color:#c05600;">potentially NOT ok, &quot;gzip deflate&quot; HTTP compression detected.</span> - only supplied &quot;/&quot; tested
-                                           Can be ignored for static pages or if no secrets in the page
+<span style="font-weight:bold;"> BREACH</span> (CVE-2013-3587)                    <span style="color:#008817;">no gzip/deflate/compress/br HTTP compression (OK) </span> - only supplied &quot;/&quot; tested
 <span style="font-weight:bold;"> POODLE, SSL</span> (CVE-2014-3566)               <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>, no SSLv3 support
 <span style="font-weight:bold;"> TLS_FALLBACK_SCSV</span> (RFC 7507)              <span style="color:#008817;">No fallback possible (OK)</span>, no protocol below TLS 1.2 offered
 <span style="font-weight:bold;"> SWEET32</span> (CVE-2016-2183, CVE-2016-6329)    <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7919A2F4B3360F9BEA16BBEDA9A94C22F5EE737F23E4E676D9CD40C71F2E885E</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=735FEC4BF6E17E66FA18D75215C50A458CF9FB2EC275EBD8D291DA3A822F06C5" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=735FEC4BF6E17E66FA18D75215C50A458CF9FB2EC275EBD8D291DA3A822F06C5</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -217,7 +207,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-07-16 02:43:15 [  65s] --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-03-18 14:52:24 [  48s] --&gt;&gt; 20.74.14.77:443 (monparcourspsy.sante.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
