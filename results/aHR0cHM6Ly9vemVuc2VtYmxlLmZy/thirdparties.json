@@ -2,11 +2,11 @@
   "trackers": [],
   "cookies": [
     {
-      "name": "_pk_ses.34.6677",
+      "name": "_pk_ses.34.d3dd",
       "value": "1",
-      "domain": "ozensemble.fr",
+      "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1689476342,
+      "expires": 1710774195,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -17,11 +17,11 @@
       "sourcePort": 443
     },
     {
-      "name": "_pk_id.34.6677",
-      "value": "4674003b8de371d6.1689474543.",
-      "domain": "ozensemble.fr",
+      "name": "_pk_id.34.d3dd",
+      "value": "a2ddbe22d09debe5.1710772395.",
+      "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1723429743,
+      "expires": 1744727595,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -35,9 +35,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 16 Jul 2023 02:29:01 GMT",
-    "etag": "W/\"646ba66d-4fdb\"",
-    "last-modified": "Mon, 22 May 2023 17:29:17 GMT",
+    "date": "Mon, 18 Mar 2024 14:33:14 GMT",
+    "etag": "W/\"65f1936c-735b\"",
+    "last-modified": "Wed, 13 Mar 2024 11:52:12 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -47,21 +47,8 @@
   "endpoints": [
     {
       "hostname": "ozensemble.fr",
-      "ip": "20.74.14.77",
+      "ip": "57.128.91.43",
       "geoip": {
-        "city": {
-          "geoname_id": 2988507,
-          "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -92,51 +79,26 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "accuracy_radius": 1000,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
           "time_zone": "Europe/Paris"
         },
-        "postal": {
-          "code": "75001"
-        },
         "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
           "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
-            "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
-            }
-          },
-          {
-            "geoname_id": 2968815,
-            "iso_code": "75",
-            "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
-            }
-          }
-        ]
+        }
       }
     }
   ]
