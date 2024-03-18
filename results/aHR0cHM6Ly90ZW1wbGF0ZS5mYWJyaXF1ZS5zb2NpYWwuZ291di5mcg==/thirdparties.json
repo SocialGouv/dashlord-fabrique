@@ -7,26 +7,11 @@
   ],
   "cookies": [
     {
-      "name": "_pk_id.63.f7e2",
-      "value": "cbf045214c53fee6.1689475620.",
-      "domain": "template.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1723430820,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
       "name": "_pk_ses.63.f7e2",
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1689477419,
+      "expires": 1710775851,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -37,16 +22,46 @@
       "sourcePort": 443
     },
     {
-      "name": "data-fr-theme",
-      "value": "light",
-      "domain": ".template.fabrique.social.gouv.fr",
+      "name": "_pk_id.63.f7e2",
+      "value": "e6bb1bec5aeff2e2.1710774052.",
+      "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1721011619.348948,
-      "size": 18,
+      "expires": 1744729252,
+      "size": 42,
       "httpOnly": false,
       "secure": false,
       "session": false,
-      "sameSite": "Strict",
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Ftemplate.fabrique.social.gouv.fr",
+      "domain": "template.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 77,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__Host-next-auth.csrf-token",
+      "value": "81519b5f1dac8b0ddb3c5f13213cdecd781fcd06070ed9d22981d831c36b13ab%7C0b3002b43f82e118f7c81058e73c8df72923303a267fe5bb8cd76708ac492a84",
+      "domain": "template.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 158,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameSite": "Lax",
       "sameParty": false,
       "sourceScheme": "Secure",
       "sourcePort": 443
@@ -55,33 +70,17 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 16 Jul 2023 02:46:58 GMT",
-    "etag": "W/\"64390859-3621\"",
-    "last-modified": "Fri, 14 Apr 2023 08:01:29 GMT",
+    "date": "Mon, 18 Mar 2024 15:00:50 GMT",
+    "etag": "\"ft37lm4orjboy\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block"
+    "x-powered-by": "Next.js"
   },
   "endpoints": [
     {
       "hostname": "template.fabrique.social.gouv.fr",
-      "ip": "20.74.14.77",
+      "ip": "57.128.91.43",
       "geoip": {
-        "city": {
-          "geoname_id": 2988507,
-          "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -112,19 +111,51 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "accuracy_radius": 1000,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
           "time_zone": "Europe/Paris"
         },
-        "postal": {
-          "code": "75001"
-        },
         "registered_country": {
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
+          "names": {
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "dummyimage.com",
+      "ip": "172.67.154.145",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -134,40 +165,17 @@
             "zh-CN": "美国"
           }
         },
-        "subdivisions": [
-          {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
-            "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
-            }
-          },
-          {
-            "geoname_id": 2968815,
-            "iso_code": "75",
-            "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "dummyimage.com",
-      "ip": "104.21.32.200",
-      "geoip": {
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
