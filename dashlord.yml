@@ -43,31 +43,23 @@ urls:
       - harbor.fabrique.social.gouv.fr/archifiltre/archifiltre-site-v2/app
       - ghcr.io/socialgouv/archifiltre/archifiltre-statistics
 
-  - url: https://egapro.travail.gouv.fr/index-egapro
+  - url: https://egapro.travail.gouv.fr/
     betaId: egalite.professionnelle
     category: fabrique
     tags:
       - travail
     repositories:
-      - socialgouv/egapro
-      - socialgouv/egapro-api
-      - socialgouv/egapro-next
+      - SocialGouv/egapro
     docker:
-      - harbor.fabrique.social.gouv.fr/egapro/egapro/app
-      - harbor.fabrique.social.gouv.fr/egapro/egapro/api
-      - ghcr.io/socialgouv/docker/nginx:7.0.1
-      - harbor.fabrique.social.gouv.fr/egapro/egapro/simulateur
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/nginx
       - harbor.fabrique.social.gouv.fr/egapro/egapro/storybook
-
-  - url: https://egapro.travail.gouv.fr/representation-equilibree
-    betaId: egalite.professionnelle
-    category: fabrique
-    tags:
-      - travail
-    repositories:
-      - socialgouv/egapro-declaration
-    docker:
+      - harbor.fabrique.social.gouv.fr/egapro/egapro/simulateur
       - harbor.fabrique.social.gouv.fr/egapro/egapro/declaration
+    pages:
+      - /representation-equilibree
+      - /representation-equilibree/recherche
+      - /index-egapro
+      - /index-egapro/recherche
 
   - url: https://code.travail.gouv.fr
     betaId: codedutravail
