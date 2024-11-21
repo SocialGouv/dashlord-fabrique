@@ -128,7 +128,7 @@ jobs:
 
       - name: ZAP Scan
         if: ${{ matrix.sites.tools.zap }}
-        uses: zaproxy/action-baseline@v0.7.0
+        uses: zaproxy/action-baseline@v0.14.0
         continue-on-error: true
         with:
           token: "" # disable issue creation
