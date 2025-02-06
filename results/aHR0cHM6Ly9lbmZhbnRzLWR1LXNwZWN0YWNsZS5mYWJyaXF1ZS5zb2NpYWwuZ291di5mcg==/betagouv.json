@@ -4,6 +4,7 @@
   "attributes": {
     "name": "Enfants Du Spectacle",
     "pitch": "Simplifier les demandes d’emploi pour renforcer la protection des enfants",
+    "stats_url": "https://metabase-enfants-du-spectacle.fabrique.social.gouv.fr/public/dashboard/70ae0640-d606-419a-83c9-fe6b0069049d",
     "link": "https://enfants-du-spectacle.fabrique.social.gouv.fr/",
     "repository": "https://github.com/SocialGouv/enfants-du-spectacle",
     "contact": "enfantsduspectacle@fabrique.social.gouv.fr",
@@ -19,18 +20,14 @@
         "name": "construction",
         "start": "2021-07-01",
         "end": "2022-09-01"
-      },
-      {
-        "name": "acceleration",
-        "start": "2022-09-01",
-        "end": ""
-      },
-      {
-        "name": "transfer",
-        "start": "2024-02-27",
-        "end": ""
       }
-    ]
+    ],
+    "sponsors": [
+      "solidarite-sante"
+    ],
+    "thematiques": [],
+    "dashlord_url": "https://socialgouv.github.io/dashlord-fabrique/url/enfants-du-spectacle-fabrique-social-gouv-fr/",
+    "accessibility_status": "non conforme"
   },
   "relationships": {
     "incubator": {
