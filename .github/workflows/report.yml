@@ -18,11 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Website
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -34,7 +34,7 @@ jobs:
           base-path: /dashlord-fabrique
 
       # to save the generated report.json as artifact
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           path: report.json
           name: report
